@@ -5,6 +5,7 @@ const nextConfig = {
         {
           protocol: "https",
           hostname: "cdn.sanity.io",
+          port: "",
         },
       ],
     },
@@ -13,5 +14,5 @@ const nextConfig = {
     },
     // ...other config settings
   };
-  
+
   export default nextConfig;
