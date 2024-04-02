@@ -20,8 +20,13 @@ export default {
       name: 'titleImage',
       type: 'image',
       title: 'Title Image',
-     
-
+            fields: [
+          {
+            name: "alt",
+            title: "Alt",
+            type: "string"
+          }
+        ]
     },
 
     {
@@ -38,6 +43,8 @@ export default {
           type: 'block',
         },
       ],
+      
     },
+    
   ],
 }
