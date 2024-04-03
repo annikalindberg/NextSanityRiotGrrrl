@@ -3,8 +3,6 @@ import { fullBlog } from "../../lib/interface";
 import Image from "next/image";
 import { PortableText } from "@portabletext/react";
 
-export const revalidate = 30; // revalidate at most 30 seconds
-
 async function getData(slug: string) {
     const query = `
     *[_type == "blog" && slug.current == '${slug}' ]
@@ -36,11 +34,11 @@ return (
         src={urlFor(data.titleImage).url()}
         width={800}
         height={800}
-        alt="Title Image" // byt ut mot data.titleImage.alt om du har en alt text i din Sanity.io modell 
+        alt="Title Image" // byt ut mot data.titleImage.alt om du har en alt text i din Sanity.io modell
         priority // Load the image as soon as possible 
         className="rounded-lg mt-8 border"
       />
-    <div className="mt-16 prose prose-blue prose-lg dark:prose-invert prose-li:marker:text-primary prose-a:text-primary"> {/* prose-a:text-primary is a custom class. */}
+    <div className="mt-16 prose prose-blue prose-lg dark:prose-invert prose-li:marker:text-primary prose-a:text-primary">
         <PortableText value={data.content} />
       </div>
     </div>

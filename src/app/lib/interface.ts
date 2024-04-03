@@ -11,4 +11,8 @@ export interface simpleBlogCard {
     content: any;
     titleImage: any;
     
+    
   }
+
+
+

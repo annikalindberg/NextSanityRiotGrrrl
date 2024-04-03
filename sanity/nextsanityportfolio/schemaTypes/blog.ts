@@ -43,8 +43,8 @@ export default {
           type: 'block',
         },
       ],
-      
+
     },
-    
+
   ],
 }
