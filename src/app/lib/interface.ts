@@ -14,5 +14,16 @@ export interface simpleBlogCard {
     
   }
 
-
+// lib/interface.ts
+export interface Project {
+    title: string;
+    description: string;
+    image: string;
+    imageCaption?: string;
+    githubLink: string;
+    LiveDemoLink: string;
+    stack: string[];
+    notes?: string;
+    futureImprovements?: string;
+}
 
