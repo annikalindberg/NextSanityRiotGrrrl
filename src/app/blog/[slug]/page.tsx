@@ -23,21 +23,25 @@ export default async function BlogArticle({params}: {params: {slug: string}}) {
 return (
     <div>
         <h1> 
-          <span className="block text-base text-center text-primary font-semibold tracking-wide uppercase">
-            Annika - blogg
-          </span>
+    <span className="block text-base text-center text-primary font-semibold tracking-wide uppercase dark:text-gray-200">
+  Annika - blogg
+</span>
+
           <span className="mt-2 block text-3xl text-center leading-8 font-bold tracking-tight sm:text-4xl">
             {data.title}
           </span>
         </h1>
-        <Image
-        src={urlFor(data.titleImage).url()}
-        width={800}
-        height={800}
-        alt="Title Image" // byt ut mot data.titleImage.alt om du har en alt text i din Sanity.io modell
-        priority // Load the image as soon as possible 
-        className="rounded-lg mt-8 border"
-      />
+        <div className="relative h-96 mt-20">
+
+<Image
+  src={urlFor(data.titleImage).url()}
+  alt="Title Image"
+  layout="fill"
+  objectFit="cover" // This can be cover, contain, etc.
+  className="rounded-lg"
+/>
+</div>
+
     <div className="mt-16 prose prose-blue prose-lg dark:prose-invert prose-li:marker:text-primary prose-a:text-primary">
         <PortableText value={data.content} />
       </div>
