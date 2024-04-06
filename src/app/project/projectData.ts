@@ -6,6 +6,7 @@ const projects: Project[] = [
 
     {
         title: "teQueenMatch",
+        slug: "projects/[slug]",
         description: "Our final project at Technigo, where I, together with Irupé Pozo Graviz, came up with an idea how to address a problem we experienced when trying to address the gaps of representation and diversity within the tech industry. Specifically, we saw a lack of digital platforms aimed at connecting women and non-binary individuals within the tech community, particularly those from underrepresented groups or those new to the field. To bridge this gap, we developed a platform that enables users to find and connect with others based on mutual interests, experiences, and preferences. Imagine a Tinder designed for global tech talent, facilitating connections for mentorship, support, and shared experiences.",
         image: "/images/teQueenMatch.png",
         imageCaption: "Mockup of the teQueenMatch app",
@@ -19,7 +20,7 @@ const projects: Project[] = [
         title: "DoulaSkapet Company Web Page",
         description: "Freelance job building a company web page for DoulaSkapet, a doulateam based in Stockholm, Sweden. This webpage is built bottom to top by me, including the designs, logos and content, domain-set up and SEO-optimization. I used Create React App as a starter and React Router for navigation. MUI Material is the library I used for component styling together with useTheme for customization. The design is made by me, and so is the logos and UX/UI. Im using React Helmet for SEO and Google Analytics for tracking and monitoring. I have been struggling quite a bit with utilizing GA to it's fullest using React Routing. Why I am currently looking into migrating to Next JS and utilize server side rendering and utilizing optimization benefits of SSR. The page is hosted on Netlify using a custom domain.",
         stack: ["React JS", "Node.js", "SEO", "Google Analytics", "SEO", "Domain Management","Node.js" ],
-        image: "/images/doulaskapet-projectimage.png",
+        image: "/images/doulaskapet.png",
         imageCaption: "",
         githubLink: "https://github.com/annikalindberg/DoulaSkapet",
         LiveDemoLink: "https://doulaskapet.se/"
@@ -117,6 +118,18 @@ const projects: Project[] = [
         githubLink: 'https://github.com/AnnikaLindberg/project-guess-who',
         LiveDemoLink: 'https://comforting-fudge-9d6c21.netlify.app/'
     }
-];
+].map(project => {
+  // Generate the slug
+  const slug = project.title.toLowerCase().replace(/[\s\W-]+/g, '-');
+
+  // Log the original title and the generated slug
+  console.log(`Title: ${project.title}, Slug: ${slug}`);
+
+  // Return the new project object with the slug
+  return {
+    ...project,
+    slug // Shorthand for slug: slug
+  };
+});
 
 export default projects;

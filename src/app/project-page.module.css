@@ -33,3 +33,15 @@
     margin-top: 10px;
     font-style: italic;
 }
+
+/* project-page.module.css */
+.card img {
+    width: 100%;
+    /* Use 100% to make it responsive */
+    height: 200px;
+    /* Set a fixed height */
+    object-fit: cover;
+    /* This will ensure the image covers the area without distortion */
+    border-radius: 4px;
+    /* Optional: for rounded corners */
+}
