@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    /* Gradient start color for the light mode body background */
+    --body-bg-start: 31.36, 95.65%, 90.98%;
+    /* Gradient end color for the light mode body background */
+    --body-bg-end: 250, 100%, 95.29%;
+
+    --foreground: 224 71.4% 4.1%;
+    /* Default text color */
+    --card: 0 0% 100%;
+    /* Background color for card components */
+    --card-foreground: 224 71.4% 4.1%;
+    /* Text color for card components */
+    --popover: 0 0% 100%;
+    /* Background color for popover elements */
+    --popover-foreground: 224 71.4% 4.1%;
+    /* Text color for popover elements */
+    --primary: 262.1 83.3% 57.8%;
+    /* Primary brand color for UI elements */
+    --primary-foreground: 210 20% 98%;
+    /* Text color to be used on primary color background */
+    --secondary: 220 14.3% 95.9%;
+    /* Secondary background color for UI elements */
+    --secondary-foreground: 220.9 39.3% 11%;
+    /* Text color to be used on secondary color background */
+    --muted: 220 14.3% 95.9%;
+    /* Color for muted text or less prominent elements */
+    --muted-foreground: 220 8.9% 46.1%;
+    /* Foreground color for elements that are disabled or inactive */
+    --accent: 220 14.3% 95.9%;
+    /* Accent color for highlighting important elements (like buttons, links) */
+    --accent-foreground: 220.9 39.3% 11%;
+    /* Text color to be used on accent color background */
+    --destructive: 0 84.2% 60.2%;
+    /* Color used for destructive actions (like delete buttons) */
+    --destructive-foreground: 210 20% 98%;
+    /* Text color to be used on destructive color background */
+    --border: 220 13% 91%;
+    /* Border color for elements */
+    --input: 220 13% 91%;
+    /* Background color for input fields */
+    --ring: 262.1 83.3% 57.8%;
+    /* Ring or focus color for elements like buttons or inputs */
+    --radius: 0.3rem;
+    /* Border radius for elements to give rounded corners */
+    --hero-bg-light-start: 120 100% 50%;
+    /* Hero component gradient start color in light mode */
+    --hero-bg-light-end: 300 100% 50%;
+    /* Hero component gradient end color in light mode */
+  }
+
+  .dark {
+    /* Gradient start color for the dark mode body background */
+    --body-bg-start: 0deg 37.65% 14.25%;
+    /* Gradient end color for the dark mode body background */
+    --body-bg-end: 165.65deg 22.17% 12.49%;
+    --foreground: 210 20% 98%;
+    /* Default text color in dark mode */
+    --card: 291, 81%, 12%;
+    /* Background color for card components in dark mode */
+    --card-foreground: 210 20% 98%;
+    /* Text color for card components in dark mode */
+    --popover: 224 71.4% 4.1%;
+    /* Background color for popover elements in dark mode */
+    --popover-foreground: 210 20% 98%;
+    /* Text color for popover elements in dark mode */
+    --primary: 263.4 70% 50.4%;
+    /* Primary brand color for UI elements in dark mode */
+    --primary-foreground: 210 20% 98%;
+    /* Text color to be used on primary color background in dark mode */
+    --secondary: 215 27.9% 16.9%;
+    /* Secondary background color for UI elements in dark mode */
+    --secondary-foreground: 210 20% 98%;
+    /* Text color to be used on secondary color background in dark mode */
+    --muted: 215 27.9% 16.9%;
+    /* Color for muted text or less prominent elements in dark mode */
+    --muted-foreground: 217.9 10.6% 64.9%;
+    /* Foreground color for elements that are disabled or inactive in dark mode */
+    --accent: 215 27.9% 16.9%;
+    /* Accent color for highlighting important elements in dark mode */
+    --accent-foreground: 210 20% 98%;
+    /* Text color to be used on accent color background in dark mode */
+    --destructive: 0 62.8% 30.6%;
+    /* Color used for destructive actions in dark mode */
+    --destructive-foreground: 210 20% 98%;
+    /* Text color to be used on destructive color background in dark mode */
+    --border: 215 27.9% 16.9%;
+    /* Border color for elements in dark mode */
+    --input: 215 27.9% 16.9%;
+    /* Background color for input fields in dark mode */
+    --ring: 263.4 70% 50.4%;
+    /* Ring or focus color for elements like buttons or inputs in dark mode */
+    --hero-bg-dark-start: 154 50% 25%;
+    /* Hero component gradient start color in dark mode */
+    --hero-bg-dark-end: 300 50% 25%;
+    /* Hero component gradient end color in dark mode */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    background: linear-gradient(to left, hsl(var(--body-bg-start)), hsl(var(--body-bg-end)));
+    color: hsl(var(--foreground));
+    /* Other styles ... */
+  }
+
+  .dark body {
+    background: linear-gradient(to left, hsl(var(--body-bg-start)), hsl(var(--body-bg-end)));
+    color: hsl(var(--foreground));
+    /* Other styles ... */
+  }
+}
