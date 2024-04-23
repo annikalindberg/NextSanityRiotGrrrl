@@ -1,5 +1,5 @@
 // src/pages/projects/[slug].tsx
-/* import { GetStaticPaths, GetStaticProps } from 'next';
+import { GetStaticPaths, GetStaticProps } from 'next';
 import projects from '../../project/projectData';
 import { Project } from '../../lib/interface';
 
@@ -12,8 +12,8 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ project }) => {
     <div>
       <h1>{project.title}</h1>
       <p>{project.description}</p>
-      {/* Render other project details */
-   /*  </div>
+       Render other project details
+    </div>
   );
 };
 
@@ -40,4 +40,4 @@ export const getStaticProps: GetStaticProps<ProjectPageProps> = async ({ params 
   };
 };
 
-export default ProjectPage; */ 
+export default ProjectPage; 
