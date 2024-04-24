@@ -1,6 +1,5 @@
 'use client'
 import Image from 'next/image';
-import Link from 'next/link';
 import { motion } from 'framer-motion';
 import  Check from '../../public/assets/check.svg';
 
@@ -55,7 +54,7 @@ const PricingPage = () => {
             features: [
               "Scanning av kod kompletterat med manuell testning av upp till 5 unika sidor (du väljer själv vilka)", "Detaljerad analys utifrån kriterier som behöver uppfyllas gentemot WCAG 2.2 (nivå A och AA), Tillgänglighetsdirektivet och DOS-lagen", "Sammanställning av resultat och rekommendationer för åtgärder", "Hänvisning till resurser för att åtgärda brister", 
             ],
-            buttonLabel: "Start Trial",
+            buttonLabel: "Boka Audit Medium",
             bgClass: "bg-blue-100 shadow-4xl dark:bg-fuchsia-950",
             widthClass: "",
           },
@@ -67,7 +66,7 @@ const PricingPage = () => {
               "Hälsostatus för din hemsida",
               "En första scanning av din hemsida för att identifiera eventuella tillgänglighetsbriste","Manuell tesning av 10 sidor (du väljer själv vilka)","Sammnaställning med identifierade brister rangordnade efter impact och komplexitet"
             ],
-            buttonLabel: "Start Trial",
+            buttonLabel: "Boka Audit Large",
             bgClass: "bg-green-100 shadow-4xl dark:bg-green-950",
             widthClass: "",
           }
