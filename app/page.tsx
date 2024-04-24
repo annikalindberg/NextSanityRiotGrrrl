@@ -3,8 +3,8 @@ import Image from "next/image";
 import banner from "@/public/images/banner-nobg.svg";
 import SectionDivider from "@/components/ui/SectionDivider";
 import { motion } from "framer-motion";
-
-export default function Home() {
+/* import {Pricing }from "./components/pricing";
+ */export default function Home() {
   return (
   <motion.div 
    initial={{ opacity: 0, y: 100 }}
@@ -32,7 +32,8 @@ className="flex items-center space-x-5">
       </p>
       </span>
 </div>
-      <div className="items-center space-y-3 xl:grid xl:grid-cols-1 xl:gap-x-8 xl:space-y-0">
+{/* <Pricing />
+ */}      <div className="items-center space-y-3 xl:grid xl:grid-cols-1 xl:gap-x-8 xl:space-y-0">
         <motion.div className="flex flex-col items-center pt-8">
                 
       

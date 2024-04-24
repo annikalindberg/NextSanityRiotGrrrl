@@ -28,7 +28,7 @@ export default function RootLayout({
           >
           <Navbar />
 {/*           <Hero />
- */}          <main className="max-w-2xl mx-auto px-4 ">{children}</main>
+ */}          <main className="max-w-3xl mx-auto px-4 ">{children}</main>
         </ThemeProvider>
         </body>
     </html>

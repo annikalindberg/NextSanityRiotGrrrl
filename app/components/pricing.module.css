@@ -1,0 +1,12 @@
+.multiLineEllipsis {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    /* Adjust the number of lines */
+    -webkit-box-orient: vertical;
+}
+
+.specialCard {
+    transform: scale(1.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

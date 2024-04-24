@@ -15,6 +15,9 @@ export default function Navbar() {
             <Link href="/blogpage" className="font-bold text-3xl text-primary">
       Blog
       </Link>
+            <Link href="/pricing" className="font-bold text-3xl text-primary">
+      Erbjudanden
+      </Link>
 
       <ModeToggle />
     </nav>
