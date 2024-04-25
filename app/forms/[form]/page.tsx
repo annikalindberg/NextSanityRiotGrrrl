@@ -6,6 +6,8 @@ import { motion } from 'framer-motion'
 
 export default function DynamicForm({ params }: { params: { form: string } }) {
   const formTitle = decodeURIComponent(params.form).replace(/-/g, ' ')
+
+  const auditType = decodeURIComponent(params.form).replace(/-/g, ' ')
   return (
     <motion.section
       id="contact"
@@ -40,7 +42,11 @@ export default function DynamicForm({ params }: { params: { form: string } }) {
 
       <form
         className="mt-10 flex flex-col dark:text-black"
-        action={async formData => {
+        onSubmit={async event => {
+          event.preventDefault() // Don't forget to prevent the default form submission!
+          const formData = new FormData(event.currentTarget)
+          formData.append('auditType', formTitle) // Append the audit type to the formData
+
           const { data, error } = await auditRequest(formData)
 
           if (error) {
@@ -52,6 +58,9 @@ export default function DynamicForm({ params }: { params: { form: string } }) {
           console.log(data)
         }}
       >
+        {/* Hidden input to include the audit type */}
+
+        <input type="hidden" name="auditType" value={auditType} />
         <label
           htmlFor="senderEmail"
           className="dark:text-white mb-1 mt-2 text-left"
@@ -91,28 +100,6 @@ export default function DynamicForm({ params }: { params: { form: string } }) {
           placeholder="Enter your URL here"
         />
 
-        {/*   <label
-          id="planLabel"
-          htmlFor="selectPlan"
-          className="font-semibold mb-2"
-        >
-          Select Plan (required)
-        </label>
-        <select
-          id="selectPlan"
-          name="selectPlan"
-          className={`h-14 px-4 rounded-lg border dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none`}
-          required
-          aria-labelledby="planLabel"
-        >
-          <option value="" disabled selected>
-            --Vad är du intresserad av?--
-          </option>
-          <option value="Audit Small">Audit Small (kostnadsfritt)</option>
-          <option value="Audit Medium">Audit Medium</option>
-          <option value="Audit Large">Audit Large</option>
-        </select>
- */}
         <button
           type="submit"
           className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 text-white font-semibold py-3 rounded-lg mt-5"

@@ -11,6 +11,7 @@ export const auditRequest = async (formData: FormData) => {
   const senderEmail = formData.get('senderEmail')
   const message = formData.get('message')
   const addUrl = formData.get('addUrl')
+  const auditType = formData.get('auditType')
 
   // simple server-side validation
   if (!validateString(senderEmail, 500)) {
@@ -34,8 +35,8 @@ export const auditRequest = async (formData: FormData) => {
       react: React.createElement(AuditReqForm, {
         message: message,
         senderEmail: senderEmail,
-        selectPlan: '',
         addUrl: addUrl ? String(addUrl) : '',
+        auditType: auditType ? String(auditType) : '',
       }),
     })
   } catch (error: unknown) {

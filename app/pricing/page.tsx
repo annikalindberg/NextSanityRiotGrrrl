@@ -5,7 +5,7 @@ import Check from '../../public/assets/check.svg'
 import Link from 'next/link'
 import classes from '../components/pricing.module.css'
 
-const slugify = text => text.toLowerCase().replace(/\s+/g, '-')
+const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, '-')
 
 const fadeInAnimationVariants = {
   initial: {

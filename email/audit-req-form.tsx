@@ -15,14 +15,15 @@ import { Tailwind } from '@react-email/tailwind'
 type ContactFormEmailProps = {
   message: string
   senderEmail: string
-  selectPlan: string
   addUrl: string
+  auditType: string
 }
 
 export default function AuditReqForm({
   message,
   senderEmail,
   addUrl,
+  auditType,
 }: ContactFormEmailProps) {
   return (
     <Html>
@@ -39,6 +40,8 @@ export default function AuditReqForm({
               <Hr />
               <Text>Avsändarens epost: {senderEmail}</Text>
               <Text>URL: {addUrl}</Text>
+              <Text>Audit Type: {auditType}</Text>{' '}
+              {/* Display the audit type in the email */}
             </Section>
           </Container>
         </Body>
