@@ -31,14 +31,14 @@ const PricingPage = () => {
       <h1 className="text-[#172026] text-center font-medium text-2xl lg:text-[42px]">
         Flexible plans for you
       </h1>
-      <p className="pt-[16px] pb-[40px] text-center text-[#36485C] lg:text-[18px]">
-        No hidden fees!
+      <p className="pt-[16px] pb-[40px] text-center text-[#36485C] lg:text-[18px] mb-10 mt-7 leading-7">
+        Våra tester inkluderar en övergripande granskning av koden samt manuella tester av användarflödena. Vi använder verktyg som skärmläsare och tangentbordsnavigering för att säkerställa att alla element på din webbplats är tillgängliga för varje användare.
       </p>
  <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-6 lg:gap-8">        {[
           {
             title: "Audit Small",
             description: "Perfekt för dig som är osäker på hur din hemsida presterar tillgänglighetsmässigt och vill ha en första överblick.",
-            price: "Gratis",
+            price: "Gratis erbjudande",
             features: [
               "Hälsostatus för din hemsida", "Vi gör en översiktlig koll för att identifiera de vanligaste tillgänglighetsbristerna",
               "Manuell tesning av 2 sidor (du väljer själv vilka)",
@@ -52,7 +52,8 @@ const PricingPage = () => {
             description: "Här får du en djupgående analys av din webbplats tillgänglighetsstatus och vad som behöver åtgärdas.",
             price: "7000 kr",
             features: [
-              "Scanning av kod kompletterat med manuell testning av upp till 5 unika sidor (du väljer själv vilka)", "Detaljerad analys utifrån kriterier som behöver uppfyllas gentemot WCAG 2.2 (nivå A och AA), Tillgänglighetsdirektivet och DOS-lagen", "Sammanställning av resultat och rekommendationer för åtgärder", "Hänvisning till resurser för att åtgärda brister", 
+              "Kostnadsfritt och förutsättningslöst första möte för att diskutera dina behov och förväntningar innan vi bestämmer oss för att gå vidare",
+              "Manuella tester av upp till 5 unika sidor (du väljer själv vilka)", "Detaljerad analys utifrån kriterier som behöver uppfyllas gentemot WCAG 2.2 (nivå A och AA), tillgänglighetsdirektivet och DOS-lagen", "Detaljerad sammanställning av resultat och rekommendationer för åtgärder", "Stöd i att göra smarta prioriteringar utifrån parametrar som impact, svårighetsgrad etc.", "Hänvisning till resurser för att åtgärda brister", "Möjlighet att boka en uppföljningsaudit för att säkerställa att åtgärderna har haft önskad effekt",
             ],
             buttonLabel: "Boka Audit Medium",
             bgClass: "bg-blue-100 shadow-4xl dark:bg-fuchsia-950",
@@ -63,8 +64,9 @@ const PricingPage = () => {
             description: "Personligt utformad tjänst för dig som vill ha en heltäckande analys av din hemsida och en individuellt utformad handlingsplan med tekniskt stöd för att åtgärda bristerna.",
             price: "10000 kr",
             features: [
+            "Allt som ingår i Audit Medium plus:",
               "Hälsostatus för din hemsida",
-              "En första scanning av din hemsida för att identifiera eventuella tillgänglighetsbriste","Manuell tesning av 10 sidor (du väljer själv vilka)","Sammnaställning med identifierade brister rangordnade efter impact och komplexitet"
+              "En första scanning av din hemsida för att identifiera eventuella tillgänglighetsbriste","Manuell tesning av 10 sidor (du väljer själv vilka)","Sammnaställning med identifierade brister rangordnade efter impact och komplexitet", "Tillgänglighetsredogörelse",
             ],
             buttonLabel: "Boka Audit Large",
             bgClass: "bg-green-100 shadow-4xl dark:bg-green-950",

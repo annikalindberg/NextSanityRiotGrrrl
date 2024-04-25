@@ -18,6 +18,9 @@ export default function Navbar() {
             <Link href="/pricing" className="font-bold text-3xl text-primary">
       Erbjudanden
       </Link>
+            <Link href="/contact" className="font-bold text-3xl text-primary">
+      Kontakt
+      </Link>
 
       <ModeToggle />
     </nav>
