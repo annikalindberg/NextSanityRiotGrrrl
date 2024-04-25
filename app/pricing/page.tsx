@@ -29,9 +29,13 @@ const PricingPage = () => {
       className="py-12 lg:py-15"
       aria-label="Pricing Options"
     >
-      <h1 className="text-[#172026] text-center font-medium text-2xl lg:text-[42px]">
-        Flexible plans for you
+      <h1 className="text-center mb-6 text-2xl md:text-3xl lg:text-3xl font-semibold text-[#36485C]">
+        Hur tillgänglig är din webbplats?{' '}
+        <div className="mt-4"> Låt oss testa! </div>
       </h1>
+      <h2 className="text-center text-[#36485C] text-lg lg:text-2xl mt-5">
+        Boka kostnadsfri audit idag!
+      </h2>
       <p className="pt-[16px] pb-[40px] text-center text-[#36485C] lg:text-[18px] mb-10 mt-7 leading-7">
         Våra tester inkluderar en övergripande granskning av koden samt manuella
         tester av användarflödena. Vi använder verktyg som skärmläsare och
@@ -42,16 +46,16 @@ const PricingPage = () => {
         {' '}
         {[
           {
-            title: 'Audit Small',
+            title: 'Kostnadsfri Audit Small',
             description:
               'Perfekt för dig som är osäker på hur din hemsida presterar tillgänglighetsmässigt och vill ha en första överblick.',
-            price: 'Gratis erbjudande',
+            price: 'Gratis',
             features: [
               'Hälsostatus för din hemsida',
               'Vi gör en översiktlig koll för att identifiera de vanligaste tillgänglighetsbristerna',
               'Manuell tesning av 2 sidor (du väljer själv vilka)',
             ],
-            buttonLabel: 'Boka gratis audit small',
+            buttonLabel: 'Boka kostnadsfri Audit Small',
             bgClass: 'bg-stone-50 dark:bg-rose-950',
             widthClass: '',
           },
@@ -59,7 +63,7 @@ const PricingPage = () => {
             title: 'Audit Medium',
             description:
               'Här får du en djupgående analys av din webbplats tillgänglighetsstatus och vad som behöver åtgärdas.',
-            price: '7000 kr',
+            price: '7 000 kr',
             features: [
               'Kostnadsfritt och förutsättningslöst första möte för att diskutera dina behov och förväntningar innan vi bestämmer oss för att gå vidare',
               'Manuella tester av upp till 5 unika sidor (du väljer själv vilka)',
@@ -77,7 +81,7 @@ const PricingPage = () => {
             title: 'Audit Large',
             description:
               'Personligt utformad tjänst för dig som vill ha en heltäckande analys av din hemsida och en individuellt utformad handlingsplan med tekniskt stöd för att åtgärda bristerna.',
-            price: '10000 kr',
+            price: '10 000 kr',
             features: [
               'Allt som ingår i Audit Medium plus:',
               'Hälsostatus för din hemsida',
@@ -93,7 +97,7 @@ const PricingPage = () => {
         ].map((card, index) => (
           <article
             key={index}
-            className={`border-2 border-blue-200 dark:border-rose-100 w-full md:w-2/3 lg:w-${
+            className={`border-2 border-blue-200 dark:border-rose-100 w-10/12 md:w-2/3 lg:w-${
               index === 1 ? '2/5' : '1/5'
             } rounded-lg p-7 flex flex-col justify-between ${
               card.bgClass
@@ -104,7 +108,7 @@ const PricingPage = () => {
             }`}
           >
             {index === 1 && (
-              <span className="absolute top-0 right-0 p-2 bg-red-500 text-white text-sm rounded-bl-lg">
+              <span className="absolute top-0 right-2 md:right-5 p-2 bg-red-500 text-white text-sm rounded-bl-lg ">
                 Best Value!
               </span>
             )}
@@ -132,7 +136,13 @@ const PricingPage = () => {
                     whileInView="animate"
                     custom={featureIndex}
                   >
-                    <Image src={Check} alt="Included" width={10} height={10} />
+                    <Image
+                      aria-hidden="true"
+                      src={Check}
+                      alt="Included"
+                      width={10}
+                      height={10}
+                    />
                     <span>{feature}</span>
                   </motion.li>
                 ))}

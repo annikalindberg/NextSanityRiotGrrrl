@@ -1,44 +1,53 @@
-'use client'; // This file is client-side only
-import Image from "next/image";
-import banner from "@/public/images/banner-nobg.svg";
-import SectionDivider from "@/components/ui/SectionDivider";
-import { motion } from "framer-motion";
+'use client' // This file is client-side only
+import Image from 'next/image'
+import banner from '@/public/images/banner-nobg.svg'
+import SectionDivider from '@/components/ui/SectionDivider'
+import { motion } from 'framer-motion'
 /* import {Pricing }from "./components/pricing";
- */export default function Home() {
+ */ export default function Home() {
   return (
-  <motion.div 
-   initial={{ opacity: 0, y: 100 }}
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
-  className="divide-y  divide-gray-100 dark:divide-gray-700 pt-8 ">
+      className="divide-y  divide-gray-100 dark:divide-gray-700 pt-8 "
+    >
       <div className="space-y-20 pt-5 pb-8 md:space-x-5 ">
-         <h1 className="leading-50 text-7xl font-bold"> Framtidens webbutveckling <span className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent">prisvärda</span> och <span className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent">tillgängliga</span> digitala  <span className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent">lösningar</span>
-</h1>  
-<Image
-            alt="Picture of Annika Lindberg"
-            src={banner}  
-            width={576}
-        height={576}
-            className=" rounded-xl object-cover object-top" />
-<span 
-
-className="flex items-center space-x-5">
-   
-
-
-<SectionDivider />
-      <p className="mt-30 font-medium text-3xl">Varför välja mellan <span className=" italic"> {' '} tillgänglighet</span>  och <span className=" italic"> {' '}snygg design,</span> när du kan få<span className="font-bold"> {' '}båda?</span> 
-      
-      </p>
-      </span>
-</div>
-{/* <Pricing />
- */}      <div className="items-center space-y-3 xl:grid xl:grid-cols-1 xl:gap-x-8 xl:space-y-0">
+        <h1 className="leading-50 md:text-5xl lg:text-7xl font-bold">
+          {' '}
+          Framtidens webbutveckling{' '}
+          <span className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent">
+            prisvärda
+          </span>{' '}
+          och{' '}
+          <span className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent">
+            tillgängliga
+          </span>{' '}
+          digitala{' '}
+          <span className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent">
+            lösningar
+          </span>
+        </h1>
+        <Image
+          alt=""
+          src={banner}
+          width={576}
+          height={576}
+          className=" rounded-xl object-cover object-top"
+        />
+        <span className="flex items-center space-x-5">
+          <SectionDivider />
+          <p className="mt-30 font-medium text-3xl">
+            Varför välja mellan <span className=" italic"> tillgänglighet</span>{' '}
+            och <span className=" italic"> snygg design,</span> när du kan få
+            <span className="font-bold"> båda?</span>
+          </p>
+        </span>
+      </div>
+      {/* <Pricing />
+       */}{' '}
+      <div className="items-center space-y-3 xl:grid xl:grid-cols-1 xl:gap-x-8 xl:space-y-0">
         <motion.div className="flex flex-col items-center pt-8">
-                
-      
-     
-        
           <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
             Annika Lindberg
           </h3>
@@ -88,19 +97,24 @@ className="flex items-center space-x-5">
 
         <div className="prose max-w-none prose-lg pt-8 pb-7 dark:prose-invert xl:col-span-2">
           <p>
-            Im a Stockholm-based front-end developer with a flair for crafting accessible, React.js-based web solutions that meet WCAG 2.2 standards.
+            Im a Stockholm-based front-end developer with a flair for crafting
+            accessible, React.js-based web solutions that meet WCAG 2.2
+            standards.
           </p>
           <p>
-            My work in the non-profit and education sectors fuels my drive to create SEO-optimized, accessible and professional websites with performance in mind. I craft tailored to your specific organizational needs, which often go beyond what template-based site builders can provide.
-
-          </p>
-          <p>React.js, Typescript, Next.js, Web Content Accessibility Standards, UX/UI, SEO, Hosting, CMS
+            My work in the non-profit and education sectors fuels my drive to
+            create SEO-optimized, accessible and professional websites with
+            performance in mind. I craft tailored to your specific
+            organizational needs, which often go beyond what template-based site
+            builders can provide.
           </p>
           <p>
-            Let s build something great together.
+            React.js, Typescript, Next.js, Web Content Accessibility Standards,
+            UX/UI, SEO, Hosting, CMS
           </p>
+          <p>Let s build something great together.</p>
         </div>
       </div>
     </motion.div>
-  );
+  )
 }
