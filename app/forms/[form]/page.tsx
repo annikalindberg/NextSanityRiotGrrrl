@@ -4,7 +4,8 @@ import toast from 'react-hot-toast'
 import { auditRequest } from '@/actions/auditRequest'
 import { motion } from 'framer-motion'
 
-export default function Contact() {
+export default function DynamicForm({ params }: { params: { form: string } }) {
+  const formTitle = decodeURIComponent(params.form).replace(/-/g, ' ')
   return (
     <motion.section
       id="contact"
@@ -23,7 +24,7 @@ export default function Contact() {
       }}
     >
       <h1 className="mt-20 text-4xl font-semibold dark:text-white">
-        Boka Audit Small!{' '}
+        Du har valt att boka en {formTitle}!
       </h1>
 
       <p className="text-gray-700 mt-6 dark:text-white/80">
@@ -116,7 +117,7 @@ export default function Contact() {
           type="submit"
           className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 text-white font-semibold py-3 rounded-lg mt-5"
         >
-          Send Email
+          Send Request
         </button>
       </form>
     </motion.section>

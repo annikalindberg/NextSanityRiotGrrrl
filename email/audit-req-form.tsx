@@ -27,7 +27,7 @@ export default function AuditReqForm({
   return (
     <Html>
       <Head />
-      <Preview>Ny auditrequest from NextToEdit Tech SOlutions</Preview>
+      <Preview>Ny auditrequest from NextToEdit Tech Solutions</Preview>
       <Tailwind>
         <Body className="bg-gray-100 text-black">
           <Container>
