@@ -34,7 +34,7 @@ const SoftwarePage = () => {
           <h1 className="text-center mb-6 text-2xl md:text-3xl lg:text-3xl font-semibold text-[#36485C] dark:text-white">
             Tillgänglig webbplats som växer med dig
           </h1>
-          <ul className=" text-xs space-y-2 flex justify-center flex-col">
+          <ul className=" space-y-2 flex justify-center flex-col text-2xl">
             {[
               'SEO-optimerade, skräddarsydda hemsidor efter dina behov',
               'Handkodade, tillgänglighets- och SEO-optimerade hemsidor',
@@ -42,7 +42,7 @@ const SoftwarePage = () => {
             ].map((item, index) => (
               <motion.li
                 key={index}
-                className="flex items-center"
+                className="flex items-center dark:text-white"
                 variants={fadeInAnimationVariants}
                 initial="initial"
                 whileInView="animate"

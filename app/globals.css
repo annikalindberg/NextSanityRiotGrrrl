@@ -5,10 +5,12 @@
 
 @layer base {
   :root {
+    /* hsl(0deg 0% 85.39% / 0%),
+    hsl(208.81deg 100% 96.8%)); */
     /* Gradient start color for the light mode body background */
-    --body-bg-start: 31.36, 95.65%, 90.98%;
+    --body-bg-start: 0deg 0% 85.39% 0%;
     /* Gradient end color for the light mode body background */
-    --body-bg-end: 250, 100%, 95.29%;
+    --body-bg-end: 208.81deg 100% 96.8%;
 
     --foreground: 224 71.4% 4.1%;
     /* Default text color */
