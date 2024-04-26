@@ -4,6 +4,8 @@ import './globals.css'
 import { ThemeProvider } from './components/theme-provider'
 import Navbar from './components/Navbar'
 import { Toaster } from 'react-hot-toast'
+import { Navigation } from './components/NavigationMenu'
+import Footer from './components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,8 +29,10 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          <main className="max-w-3xl mx-auto px-4 ">{children}</main>
+          <Navigation />
+          <main>{children}</main>
           <Toaster position="top-right" />
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
