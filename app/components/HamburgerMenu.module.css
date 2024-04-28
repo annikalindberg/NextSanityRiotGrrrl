@@ -1,0 +1,43 @@
+/* styles/HamburgerMenu.module.css */
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menuOpen,
+.menuClosed {
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
+    max-height: 0;
+    /* Initially hidden */
+}
+
+.menuOpen {
+    max-height: 500px;
+    background-color: yellow;
+    /* Adjust based on content */
+}
+
+.menuItem {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.menuList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menuLink {
+    /* Updated class name for a */
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}

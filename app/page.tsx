@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import Logo from '@/public/images/Logo.svg'
 import Hero from './components/Hero'
 import Check from '@/public/assets/check.svg'
+import Link from 'next/link'
 
 const fadeInAnimationVariants = {
   initial: {
@@ -33,7 +34,7 @@ export default function Home() {
           <h2 className="pt-4 pb-2 text-2xl font-bold  ">
             Vad vinner du på att tillgänglighetsoptimera din webb?
           </h2>
-          <div className="prose max-w-none prose-lg pt-8 pb-7 dark:prose-invert xl:col-span-2">
+          <div className="prose max-w-none prose-lg pb-7 dark:prose-invert xl:col-span-2 mb-0.5">
             <p>
               Vare sig ditt mål är att öka försäljningen, attrahera fler kunder,
               eller förbättra din synlighet online, är din webbplats hjärtat i
@@ -51,6 +52,19 @@ export default function Home() {
               Tillgänglighet är en investering som ger avkastning även i form
               av:
             </p>
+            <p className="">
+              Vill du veta mer om hur du kan förbättra tillgängligheten på din
+              webbplats och därigenom inte bara möta lagkrav men även förstärka
+              ditt varumärkes rykte? Kontakta oss idag för att utforska hur
+              enkelt och fördelaktigt det kan vara att göra din webbplats
+              tillgänglig för alla.
+            </p>
+            <Link
+              href="/pricing"
+              className=" rounded bg-rose-900 text-white dark:bg-fuchsia-100 dark:text-slate-900 py-4 px-4 font-medium hover:bg-rose-800 dark:hover:bg-fuchsia-200 transition-colors duration-500 ease-in-out  transform hover:scale-105 "
+            >
+              Läs mer om våra priser och paket
+            </Link>
           </div>
 
           <motion.section
@@ -60,7 +74,7 @@ export default function Home() {
             className="py-1 lg:py-15"
             aria-label="Pricing Options"
           >
-            <ul className=" text-1xl space-y-2 flex justify-center flex-col">
+            <ul className=" text-1xl space-y-3 flex justify-center flex-col">
               {[
                 'Fler positiva användarupplevelser',
                 'En webbplats som älskas av sökmotorer',

@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from './components/theme-provider'
-import Navbar from './components/Navbar'
 import { Toaster } from 'react-hot-toast'
 import { Navigation } from './components/NavigationMenu'
 import Footer from './components/Footer'
@@ -28,7 +27,6 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />
           <Navigation />
           <main>{children}</main>
           <Toaster position="top-right" />

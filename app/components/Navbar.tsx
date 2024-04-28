@@ -1,4 +1,4 @@
-import Link from 'next/link'
+/* import Link from 'next/link'
 import { ModeToggle } from './ModeToggle'
 
 export default function Navbar() {
@@ -24,3 +24,4 @@ export default function Navbar() {
     </nav>
   )
 }
+ */

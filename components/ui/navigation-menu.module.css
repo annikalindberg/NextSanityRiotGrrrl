@@ -1,0 +1,21 @@
+/* .navWrapper { */
+/*  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+/*     height: 100vh;
+    width: 100%;
+    background: linear-gradient(80deg,
+            hsl(var(--hero-bg-light-start)) 67%,
+            hsl(var(--hero-bg-light-end)) 33%);
+    color: var(--text-color); */
+/*     text-align: center;
+ */
+/*     padding: 1rem;
+}
+
+.dark .nav-wrapper {
+    background: linear-gradient(80deg,
+            hsl(var(--hero-bg-dark-start)) 67%,
+            hsl(var(--hero-bg-dark-end)) 33%);
+} */

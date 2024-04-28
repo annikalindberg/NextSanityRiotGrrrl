@@ -2,7 +2,7 @@ import Image from 'next/image'
 import banner from '@/public/images/banner1.svg'
 import SectionDivider from '@/components/ui/SectionDivider'
 import { motion } from 'framer-motion'
-import Logo from '@/public/images/Logo.svg'
+import Logo from '@/public/images/GradientLogo.png'
 
 export default function Hero() {
   return (

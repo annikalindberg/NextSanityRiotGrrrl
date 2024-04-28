@@ -8,11 +8,11 @@
     /* hsl(0deg 0% 85.39% / 0%),
     hsl(208.81deg 100% 96.8%)); */
     /* Gradient start color for the light mode body background */
-    --body-bg-start: 0deg 0% 85.39% 0%;
+    --body-bg-start: 210deg 50% 95.39%;
     /* Gradient end color for the light mode body background */
-    --body-bg-end: 208.81deg 100% 96.8%;
+    --body-bg-end: 250.81deg 20% 86.8%;
+    --foreground: 520 0.9% 12.1%;
 
-    --foreground: 224 71.4% 4.1%;
     /* Default text color */
     --card: 0 0% 100%;
     /* Background color for card components */
@@ -58,9 +58,13 @@
 
   .dark {
     /* Gradient start color for the dark mode body background */
-    --body-bg-start: 0deg 37.65% 14.25%;
+    --body-bg-start: 210,
+      100%,
+      10%;
     /* Gradient end color for the dark mode body background */
-    --body-bg-end: 165.65deg 22.17% 12.49%;
+    --body-bg-end: 311,
+      83%,
+      8%;
     --foreground: 210 20% 98%;
     /* Default text color in dark mode */
     --card: 291, 81%, 12%;
