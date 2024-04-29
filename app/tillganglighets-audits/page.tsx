@@ -127,7 +127,7 @@ const PricingPage = () => {
                 <h2 className="text-2xl font-semibold lg:text-2xl pt-4 text-center leading-10">
                   {card.price}
                 </h2>
-                <ol className="mt-4 text-xs ">
+                <ol aria-label="Ingår i paketet" className="mt-4 text-xs ">
                   {card.features.map((feature, featureIndex) => (
                     <motion.li
                       key={featureIndex}

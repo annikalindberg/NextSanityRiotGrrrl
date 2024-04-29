@@ -74,7 +74,10 @@ export default function Home() {
             className="py-1 lg:py-15"
             aria-label="Pricing Options"
           >
-            <ul className=" text-1xl space-y-3 flex justify-center flex-col">
+            <ul
+              aria-label="Fördelar med tillgänglighetsoptimering"
+              className=" text-1xl space-y-3 flex justify-center flex-col"
+            >
               {[
                 'Fler positiva användarupplevelser',
                 'En webbplats som älskas av sökmotorer',

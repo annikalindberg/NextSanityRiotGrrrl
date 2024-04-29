@@ -60,7 +60,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function Navigation() {
   return (
-    <NavigationMenu className="flex items-center mt-2 md:m-5">
+    <NavigationMenu className="flex items-center mt-2 md:m-5 lg:ml-8">
       <ModeToggle />
 
       <NavigationMenuList>
@@ -68,15 +68,19 @@ export function Navigation() {
           <NavigationMenuLink asChild>
             <a href="/">
               <Image
+                width={100}
+                height={100}
                 src={Logo}
                 alt="Logo"
-                className="w-20 mt-2 mr-1 h-200 md:w-40 md:h-400 md:mr-10 md:ml-10"
+                className=" w-20 mt-2 ml-2 mr-3 h-200 md:w-40 md:h-400 md:mr-40 md:ml-10"
               />
             </a>
           </NavigationMenuLink>
-          <NavigationMenuTrigger>Tjänster</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="p-1 text-xs md:text-sm lg:text-lg">
+            Tjänster
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid gap-3 md:p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+            <ul className="grid gap-3  md:p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
                 <div className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md">
                   <Image src={TopLogo} alt="Logo" className="w-40 h-400 mb-2" />
@@ -112,7 +116,9 @@ export function Navigation() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Om oss</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="p-1 text-xs md:text-sm lg:text-lg">
+            Om oss
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-1 lg:w-[600px] ">
               {components.map(component => (
@@ -127,13 +133,13 @@ export function Navigation() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        {/*         <NavigationMenuItem>
           <Link href="/contact" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Kontakta oss
             </NavigationMenuLink>
           </Link>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
       </NavigationMenuList>
     </NavigationMenu>
   )
