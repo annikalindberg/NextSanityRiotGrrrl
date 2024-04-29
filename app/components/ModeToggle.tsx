@@ -16,7 +16,7 @@ export function ModeToggle() {
   const { setTheme } = useTheme()
 
   return (
-    <div className=" p-6">
+    <div className=" p-2 md:p-6">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant="outline" size="icon">

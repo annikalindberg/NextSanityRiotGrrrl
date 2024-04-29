@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
-import Logo from '@/public/images/Logo.svg'
+import Logo from '@/public/images/GreenLogo.png'
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -16,6 +16,8 @@ import {
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu'
 import { ModeToggle } from '../components/ModeToggle'
+import TopLogo from '@/public/images/TopLogo.png'
+import BottomLogo from '@/public/images/BottomLogo.png'
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -58,29 +60,38 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function Navigation() {
   return (
-    <NavigationMenu className=" ml-auto">
+    <NavigationMenu className="flex items-center mt-2 md:m-5">
       <ModeToggle />
+
       <NavigationMenuList>
-        <NavigationMenuItem>
+        <NavigationMenuItem className="flex items-center">
+          <NavigationMenuLink asChild>
+            <a href="/">
+              <Image
+                src={Logo}
+                alt="Logo"
+                className="w-20 mt-2 mr-1 h-200 md:w-40 md:h-400 md:mr-10 md:ml-10"
+              />
+            </a>
+          </NavigationMenuLink>
           <NavigationMenuTrigger>Tjänster</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+            <ul className="grid gap-3 md:p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
-                <NavigationMenuLink asChild>
-                  <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
-                  >
-                    <Image src={Logo} alt="Logo" className="w-40 h-400" />
-                    <div className="mb-2 mt-4 text-lg font-medium">
-                      NextToEdit Tech Solutions
-                    </div>
-                    <p className="text-sm leading-tight text-muted-foreground">
-                      Vi utvecklar, designar och optimerar webbplatser och appar
-                      för att vara tillgängliga för alla.
-                    </p>
-                  </a>
-                </NavigationMenuLink>
+                <div className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md">
+                  <Image src={TopLogo} alt="Logo" className="w-40 h-400 mb-2" />
+                  <p className="text-sm leading-tight text-muted-foreground">
+                    Vi utvecklar, designar och optimerar webbplatser och appar
+                    för att vara tillgängliga för alla.
+                  </p>
+                  <div className="mb-2 mt-4 text-lg font-medium">
+                    <Image
+                      src={BottomLogo}
+                      alt="Logo"
+                      className="w-40 h-400 ml-4"
+                    />
+                  </div>
+                </div>
               </li>
               <ListItem href="/utvecklartjanster" title="Utvecklartjänster">
                 Professionell Webbutveckling med Fokus på Tillgänglighet och
