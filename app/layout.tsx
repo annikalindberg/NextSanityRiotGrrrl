@@ -1,12 +1,20 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Nunito, PT_Sans } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from './components/theme-provider'
 import { Toaster } from 'react-hot-toast'
 import { Navigation } from './components/NavigationMenu'
 import Footer from './components/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const nunito = Nunito({
+  subsets: ['latin'],
+  weight: ['300', '400', '600', '800'],
+})
+const ptSans = PT_Sans({
+  // Make sure the function name matches the imported name
+  subsets: ['latin'],
+  weight: ['400', '700'], // Choose the weights you need
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -20,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="se">
-      <body className={inter.className}>
+      <body className={`${nunito.className} ${ptSans.className}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

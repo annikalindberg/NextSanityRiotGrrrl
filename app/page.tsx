@@ -1,8 +1,6 @@
 'use client' // This file is client-side only
 import Image from 'next/image'
-import SectionDivider from '@/components/ui/SectionDivider'
 import { motion } from 'framer-motion'
-import Logo from '@/public/images/Logo.svg'
 import Hero from './components/Hero'
 import Check from '@/public/assets/check.svg'
 import Link from 'next/link'
@@ -91,8 +89,8 @@ export default function Home() {
                   whileInView="animate"
                 >
                   <Image
-                    src="../public/assets/check.svg"
-                    alt=""
+                    src={Check}
+                    alt="Checkbox icon"
                     aria-hidden="true"
                     width={16}
                     height={16}

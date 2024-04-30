@@ -5,6 +5,8 @@
 
 @layer base {
   :root {
+    --font-heading: 'Nunito', sans-serif;
+    --font-body: 'PT Sans', sans-serif;
     /* hsl(0deg 0% 85.39% / 0%),
     hsl(208.81deg 100% 96.8%)); */
     /* Gradient start color for the light mode body background */
@@ -106,12 +108,27 @@
     --hero-bg-dark-end: 300 50% 25%;
     /* Hero component gradient end color in dark mode */
   }
+
+  h1 {
+    @apply md:text-4xl lg:text-5xl;
+    font-family: var(--font-heading);
+
+  }
+
+  p {
+    @apply text-base;
+    font-family: var(--font-body);
+
+  }
 }
+
+
 
 @layer base {
   * {
     @apply border-border;
   }
+
 
   body {
     background: linear-gradient(to left, hsl(var(--body-bg-start)), hsl(var(--body-bg-end)));

@@ -9,42 +9,36 @@ export default function Hero() {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
-      className=" mr-10 ml-10 	"
+      className="border-2 border-rose-600 md:border-slate-800 md:m-10 lg:border-green-800 lg:m-20  	"
     >
-      <div className="space-y-9 pt-10  pb-7 lg:ml-20 lg:mr-20 ">
-        {' '}
-        <h1 className="leading-50 text-3xl md:text-4xl lg:text-6xl font-bold lg:max-w-xl">
-          {' '}
-          Framtidens webbutveckling{' '}
-          <span className="bg-gradient-to-r from-orange-400 via-rose-700 dark:rose-100 dark:to-red-100 to-red-900 bg-clip-text text-transparent ">
-            prisvärda
-          </span>{' '}
-          och{' '}
-          <span className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-900 bg-clip-text text-transparent">
-            tillgängliga
-          </span>{' '}
-          digitala{' '}
-          <span className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent">
-            lösningar
-          </span>
-        </h1>{' '}
-        <span className=" items-center flex pr-3">
-          <SectionDivider />
-          <p className=" pl-3 md:mt-30 md:max-w-xl font-medium md:text-3xl leading-50">
-            Varför välja mellan <span className=" italic"> tillgänglighet</span>{' '}
-            och innovativ<span className=" italic">design,</span> när du kan få
-            <span className="font-bold"> båda?</span>
-          </p>
-        </span>
-      </div>
-      <div className="flex flex-col justify-center items-center gap-3 lg:gap-5">
-        <Image
-          alt="Illustration av människor med funktionsvariationer som sitter i en kontorsmiljö"
-          src={banner}
-          width={500}
-          height={500}
-          className="items-center flex w-500 h-500"
-        />
+      <div className="border-2 border-green-600 mt-5 max-w-xs ml-4 md:border-pink-600 md:max-w-sm gap-3 lg:gap-5 lg:max-w-xl ">
+        <h1 className="border-2 border-blue-600 font-bold leading-normal ">
+          Webbutveckling med tillgänglighetsperspektiv <span>&</span> <br />
+          Tillgänglighetsgranskning med utvecklarperspektiv
+        </h1>
+        <p className="border-2 border-rose-600 mt-3 md:text-xl lg:text-3xl md:ml-20 md:m-7">
+          Varför välja mellan <span className=" italic"> tillgänglighet</span>{' '}
+          och innovativ<span className=" italic">design,</span> när du kan få
+          <span className="font-bold"> båda?</span>
+        </p>{' '}
+        <p className="text-sm ...">
+          The quick brown fox Webbutveckling med tillgänglighetsperspektiv{' '}
+          <span>&</span> <br />
+          Tillgänglighetsgranskning med ett utvecklarperspektiv ...
+        </p>
+        <h1 className="text-base ...">The quick brown fox ...</h1>
+        <p className="text-lg ...">The quick brown fox lg...</p>
+        <p className="text-xl ...">The quick brown fox ...</p>
+        <p className="text-2xl ...">The quick brown fox ...</p>
+        <div className="flex flex-col justify-center items-center gap-3 lg:gap-5">
+          <Image
+            alt="Illustration av människor med funktionsvariationer som sitter i en kontorsmiljö"
+            src={banner}
+            width={500}
+            height={500}
+            className="items-center flex w-500 h-500"
+          />
+        </div>
       </div>
     </motion.div>
   )
