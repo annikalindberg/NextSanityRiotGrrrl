@@ -43,6 +43,7 @@ const PricingPage = () => {
           skärmläsare och tangentbordsnavigering för att säkerställa att alla
           element på din webbplats är tillgängliga för varje användare.
         </p>
+
         <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-6 lg:gap-8">
           {' '}
           {[
@@ -89,7 +90,8 @@ const PricingPage = () => {
                 'En första scanning av din hemsida för att identifiera eventuella tillgänglighetsbriste',
                 'Manuell tesning av 10 sidor (du väljer själv vilka)',
                 'Sammnaställning med identifierade brister rangordnade efter impact och komplexitet',
-                'Tillgänglighetsredogörelse',
+                'Lista med rekommenderade åtgärder - tydligt och konkret för ditt utvecklarteam att agera på direkt',
+                'En tillgänglighetsredogörelse att lägga till på din hemsida',
               ],
               buttonLabel: 'Boka Audit Large',
               bgClass: 'bg-green-100 shadow-4xl dark:bg-green-950',

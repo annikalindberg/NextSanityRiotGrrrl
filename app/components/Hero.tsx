@@ -27,18 +27,19 @@ export default function Hero() {
               båda? <br />
             </span>{' '}
           </p>{' '}
-          <p className="mt-8 md:mt-8 lg:mt-15 tracking-wider">
-            Med oss slipper du kompromissa. <br />
+          <p className="mt-5 md:mt-8 lg:mt-15 tracking-wider">
+            Vi är utvecklare och experter på tillgänglighet. Med oss slipper du
+            kompromissa. <br />
           </p>
-          <p className="mt-8 md:mt-8 lg:mt-15 font-bold">
+          <p className="mt-5 md:mt-8 lg:mt-15 font-bold">
             {' '}
-            Nyfiken på att veta mer? Välkommen att boka ett förutisättningslöst
-            samtal med oss så berättar vi mer.
+            Boka ett kostnadsfritt och förutsättningslöst samtal så berättar vi
+            mer.
           </p>{' '}
           <div className="mt-8 md:mt-10 lg:mt-20">
             <Link
               href="/contact"
-              className=" rounded bg-rose-900 text-white dark:bg-fuchsia-100 dark:text-slate-900 py-4 px-4 font-medium hover:bg-rose-800 dark:hover:bg-fuchsia-200 transition-colors duration-500 ease-in-out  transform hover:scale-105 "
+              className="rounded bg-rose-900 text-white dark:bg-fuchsia-100 dark:text-slate-900 py-4 px-4 font-medium hover:bg-rose-800 dark:hover:bg-fuchsia-200 transition-colors duration-500 ease-in-out  transform hover:scale-105 "
             >
               Boka en gratis konsultation
             </Link>
@@ -46,7 +47,7 @@ export default function Hero() {
         </div>
         {/* Image container */}
         <motion.div
-          initial={{ x: 200, opacity: 0 }} // Start from the right side with no visibility
+          initial={{ x: 200, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }} // End at the normal position with full opacity
           transition={{ type: 'spring', stiffness: 100, delay: 0.5 }} // Customize the type of animation and its properties
           className="flex justify-center items-center lg:w-1/2"
@@ -57,7 +58,7 @@ export default function Hero() {
             src={girl}
             width={400}
             height={400}
-            className="items-center"
+            className="items-center w-1/2 mt-10 justify-center lg:w-full"
           />
         </motion.div>
       </div>
