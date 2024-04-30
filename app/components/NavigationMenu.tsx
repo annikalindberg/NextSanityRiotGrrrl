@@ -22,13 +22,13 @@ import BottomLogo from '@/public/images/BottomLogo.png'
 const components: { title: string; href: string; description: string }[] = [
   {
     title: 'Vilka vi är',
-    href: '/docs/primitives/alert-dialog',
+    href: '/om-oss',
     description:
       'A modal dialog that interrupts the user with important content and expects a response.',
   },
   {
     title: 'Tidigare projekt',
-    href: '/docs/primitives/hover-card',
+    href: '/project',
     description:
       'For sighted users to preview content available behind a link.',
   },

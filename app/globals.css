@@ -110,14 +110,16 @@
   }
 
   h1 {
-    @apply md:text-4xl lg:text-5xl;
+    @apply text-3xl leading-relaxed text-center md:text-4xl lg:text-5xl;
     font-family: var(--font-heading);
 
   }
 
   p {
-    @apply text-base;
+    @apply text-base md:text-lg lg:text-xl;
+
     font-family: var(--font-body);
+
 
   }
 }
