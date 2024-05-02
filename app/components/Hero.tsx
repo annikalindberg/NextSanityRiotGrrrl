@@ -13,21 +13,18 @@ export default function Hero() {
       className="md:m-10  lg:m-20"
     >
       {/* Wrap content and image in a flex container only on large screens */}
-      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-center">
+      <div className="flex flex-col lg:flex-row lg:justify-center">
         {/* Text container */}
         <div className=" mt-5 max-w-xs ml-4  md:max-w-sm lg:max-w-xl lg:mr-10">
-          <h1 className=" font-bold leading-relaxed tracking-wider text-3xl md:text-4xl lg:text-6xl md:leading-normal lg:leading-normal">
+          <h1 className=" text-left font-bold leading-relaxed tracking-wider text-3xl md:text-4xl lg:text-6xl md:leading-normal lg:leading-normal">
             Kvalitetssäkrade webbplatser <br />
             <span className="tracking-widest"> för alla</span>
           </h1>
-          <p className=" mt-3 text-xl md:text-xl lg:text-3xl md:ml-20 md:m-7">
-            Varför välja mellan <span className="italic">tillgänglighet</span>{' '}
-            och innovativ <span className="italic">design,</span> när du kan få{' '}
-            <span className="font-bold mb-4">
-              båda? <br />
-            </span>{' '}
+          <p className=" mt-3 text-xl md:text-xl lg:text-3xl md:m-4">
+            Varför välja mellan <em>tillgänglighet</em> och innovativ{' '}
+            <em>design,</em> när du kan få <strong>båda?</strong>{' '}
           </p>{' '}
-          <p className="mt-5 md:mt-8 lg:mt-15 tracking-wider">
+          <p className="mt-5 md:mt-8 lg:mt-15 tracking-wider leading-10">
             Vi är utvecklare och experter på tillgänglighet. Med oss slipper du
             kompromissa. <br />
           </p>
@@ -36,7 +33,7 @@ export default function Hero() {
             Boka ett kostnadsfritt och förutsättningslöst samtal så berättar vi
             mer.
           </p>{' '}
-          <div className="mt-8 md:mt-10 lg:mt-20">
+          <div className=" items-center flex justify-center mt-8 md:mt-10 lg:mt-20">
             <Link
               href="/contact"
               className="rounded bg-rose-900 text-white dark:bg-fuchsia-100 dark:text-slate-900 py-4 px-4 font-medium hover:bg-rose-800 dark:hover:bg-fuchsia-200 transition-colors duration-500 ease-in-out  transform hover:scale-105 "
@@ -56,9 +53,9 @@ export default function Hero() {
           <Image
             alt="Kvinna med en laptop i knät och knutna nävar i luften som en segergest."
             src={girl}
-            width={400}
-            height={400}
-            className="items-center w-1/2 mt-10 justify-center lg:w-full"
+            width={300}
+            height={300}
+            className="items-center w-1/2 justify-center lg:w-3/4"
           />
         </motion.div>
       </div>

@@ -44,6 +44,12 @@ const components: { title: string; href: string; description: string }[] = [
     description:
       'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
   },
+  {
+    title: 'Kontakta oss',
+    href: '/contact',
+    description:
+      'Boka kostnadsfri konsultation eller ställ frågor om våra tjänster.',
+  },
   /*   {
     title: 'Boka kostnadsfri audit',
     href: '/tillganglighets-audits',
@@ -67,11 +73,12 @@ export function Navigation() {
             <NavigationMenuLink asChild>
               <a href="/">
                 <Image
-                  width={100}
-                  height={100}
-                  src={Logo}
                   alt="Logo"
-                  className=" w-20 mt-2 ml-2 mr-3 h-200 md:w-40 md:h-400 md:mr-40 md:ml-10"
+                  src={Logo}
+                  width={500} // Maximum width the image can scale up to
+                  height={500} // Maintain the aspect ratio
+                  sizes=" w-xs md:w-300 lg:w-500" // Responsive sizes
+                  className="w-20 md:w-56 lg:w-64 ml-2 mr-3 md:ml-4 md:mr-6 lg:ml-10 lg:mr-20"
                 />
               </a>
             </NavigationMenuLink>

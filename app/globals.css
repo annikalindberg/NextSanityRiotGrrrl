@@ -109,6 +109,9 @@
     /* Hero component gradient end color in dark mode */
   }
 
+
+
+
   h1 {
     @apply text-3xl leading-relaxed text-center md:text-4xl lg:text-5xl;
     font-family: var(--font-heading);
@@ -119,9 +122,10 @@
     @apply text-base md:text-lg lg:text-xl;
 
     font-family: var(--font-body);
-
-
   }
+
+
+
 }
 
 
