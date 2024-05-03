@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import Check from '@/public/assets/check.svg'
 import Link from 'next/link'
 import banner from '@/public/images/banner2.svg'
+import manbaby from '@/public/images/manbaby.svg'
 
 const articleVariants = {
   initial: { opacity: 0, y: 50 },
@@ -24,13 +25,13 @@ const fadeInAnimationVariants = {
 export default function FaqTillganglighet() {
   return (
     <>
+      {' '}
       <motion.div
         initial={{ x: 200, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }} // End at the normal position with full opacity
         transition={{ type: 'spring', stiffness: 100, delay: 0.5 }} // Customize the type of animation and its properties
         className="flex justify-center items-center"
       >
-        {' '}
         <Image
           alt="Illustreration av en funktionsdiversifierad grupp människor med olika hudfärger och kön. som sträcker upp händer i luften och är glada."
           src={banner}
@@ -45,51 +46,77 @@ export default function FaqTillganglighet() {
         variants={articleVariants}
         className="divide-y  divide-gray-100 dark:divide-gray-700 pt-8 "
       >
-        <h2>&quot;Digital tillgänglighet&quot;..?</h2>
+        <h2>Därför ska du ha en tillgänglig webbplats</h2>{' '}
         <p>
           Många pratar idag om vikten av att ha en tillgänglig webbplats. Men
-          vad innebär det egentligen?{' '}
-        </p>{' '}
+          vad innebär det egentligen?
+        </p>
+        <p className="mt-4"></p>
         <p>
           En tillgänglig webbplats är en webbplats som är utformad och byggd på
           ett sätt som gör att alla, oavsett funktionsvariationer, kan använda
           den. Det kan handla om allt från att göra texten på sidan läsbar för
           skärmläsare, till att se till att knappar och länkar är lätta att
           klicka på för personer med nedsatt rörlighet.
-        </p>
-        <h2>Tillgänglighet gagnar alla</h2>
+        </p>{' '}
+        <h2>Första intrycket</h2>
         <p>
           Oavsett om du driver en liten blogg eller en stor e-handel, är din
-          webbplats en av dina viktigaste tillgångar. Vare sig ditt mål är att
-          öka försäljningen, attrahera fler kunder, eller förbättra din
-          synlighet online, är din webbplats hjärtat i din digitala strategi och
-          ditt ansikte utåt. I 99 fall av 100 är det den första plats en kund
-          eller besökare kommer i kontakt med ditt varumärke. Att öka
-          tillgängligheten på din webbplats är därför inte bara en fråga om att
-          följa lagar och regler, eller att vara &quot;snäll mot människor med
-          funktionsvariationer&quot;. Det är en fråga om att skapa en bättre
-          webbplats för<strong> alla,</strong> och därigenom öka din{' '}
+          webbplats en av dina <strong>viktigaste tillgångar</strong>. Oavsett
+          vad målet är med din verksamhet, är din webbplats hjärtat i din
+          digitala strategi och ditt ansikte utåt. I 99 fall av 100 är det den
+          första plats en kund eller besökare kommer i kontakt med ditt
+          varumärke. Att öka tillgängligheten på din webbplats är därför inte
+          bara en fråga om att följa lagar och regler, eller att vara
+          `&quot;`snäll mot människor med funktionsvariationer`&quot;`. Det är
+          en fråga om att skapa en bättre webbplats för<strong> alla,</strong>{' '}
+          och därigenom öka din{' '}
           <strong>synlighet, din trovärdighet, och ditt förtroende</strong>{' '}
           online.
         </p>
-        <p className="ml-6 mt-4 mb-4 md:mr-20 lg:mr-50 lg:ml-50">
-          {' '}
-          <em>
-            Att ha en webbplats som är tillgänglig för alla, förbättrar även
-            upplevelsen för <strong>alla</strong> besökare
-          </em>
-        </p>
-        <h2>När var du funktionshindrad senast?</h2>
+        <h2>Tillgänglighet gagnar alla</h2>
         <p>
           Tillgänglighet på din webbplats gynnar inte bara individer med
-          permanenta funktionsnedsättningar. Tänk på alla situationer där någon
-          kan uppleva tillfälliga svårigheter, som att navigera en webbplats med
-          en hand när man håller en bebis, eller att försöka läsa i en bullrig
-          miljö. Genom att göra din webbplats tillgänglig skapar du en bättre
-          upplevelse för alla användare, oavsett deras situation. Din webbplats
-          bör vara mer än bara laglydig; den bör vara en attraktiv plats dit
-          dina besökare vill återvända till igen och igen.{' '}
+          permanenta funktionsnedsättningar.{' '}
         </p>
+        <p className="mt-4">
+          Tänk på alla situationer där någon kan uppleva tillfälliga
+          svårigheter, som att navigera en webbplats med en hand när man håller
+          en bebis, eller att försöka läsa i en bullrig miljö.
+        </p>{' '}
+        <motion.div
+          initial={{ x: 200, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }} // End at the normal position with full opacity
+          transition={{ type: 'spring', stiffness: 100, delay: 0.5 }} // Customize the type of animation and its properties
+          className="flex flex-col justify-center items-center md:flex-row md:items-center md:justify-center lg:space-x-6"
+        >
+          {' '}
+          <div className="flex   md:w-1/2 lg:justify-between">
+            <Image
+              alt="Man som pratar i telefon samtidigt som han sitter vid en laptop med en bebis i famnen som han tröstar."
+              src={manbaby}
+              width={600}
+              height={400}
+              className=" max-w-80 rounded-xl mt-6 mb-6 lg:inline-block align-top"
+            />
+          </div>
+          <div className="flex flex-col justify-center items-center  md:w-1/2 md:p-8 ">
+            {' '}
+            <p>
+              Genom att göra din webbplats tillgänglig skapar du en bättre
+              upplevelse för alla användare, oavsett deras situation. Din
+              webbplats bör vara mer än bara laglydig; den bör vara en attraktiv
+              plats dit dina besökare vill återvända till igen och igen.{' '}
+            </p>{' '}
+            <p className="ml-6 mt-4 mb-4 md:mr-20 lg:mr-auto lg:ml-auto">
+              {' '}
+              <em>
+                Att ha en webbplats som är tillgänglig för alla, förbättrar även
+                upplevelsen för <strong>alla</strong> besökare
+              </em>
+            </p>{' '}
+          </div>
+        </motion.div>
         <h2>Tillgänglighet ökar SEO</h2>
         <p>
           Att skapa en tillgänglig webbplats är inte bara en god gärning; det är
@@ -106,10 +133,10 @@ export default function FaqTillganglighet() {
           alla kan använda, vilket i sin tur kan minska avhopp och öka
           konverteringarna.
         </p>
-        <h2>Undvik juridiska påföljder</h2>
+        <h2>Den nya lagen om tillgänglighet - 2025 </h2>
         <p>
-          Att ignorera tillgänglighet kan leda till juridiska utmaningar och
-          skada ditt varumärkes anseende. Många länder har lagar som kräver
+          Att ignorera tillgänglighet kan inte bara skada ditt varumärkes
+          anseende, många länder har även lagar som kräver
           tillgänglighetsstandarder för digitala plattformar, och att inte
           uppfylla dessa krav kan resultera i kostsamma rättsprocesser.
         </p>{' '}
@@ -117,7 +144,7 @@ export default function FaqTillganglighet() {
           I Sverige har vi sedan 2018 en lag som kräver att offentliga
           webbplatser och appar ska vara tillgängliga.
         </p>
-        <h3>Den nya lagen om tillgänglighet - 2025 </h3>
+        <h3>Undvik juridiska påföljder</h3>
         <p>
           I Sverige kommer från och med 2025 även privata och kommeriella
           aktörer komma att omfattas av lagarna om digital tillgänglighet.
@@ -128,10 +155,10 @@ export default function FaqTillganglighet() {
         </p>
         <h2>Moraliska aspekten: En inkluderande digital värld</h2>
         <p>
-          Sist men absolut inte minst, har vi det mest uppenbara skälet. Det är
-          för de flesta en självklarhet att vi inte vill exkludera användare,
-          men när det kommer till kritan är det precis det vi gör när vi inte
-          tar tillgänglighet på allvar.{' '}
+          Sist men såklart inte minst, har vi det mest uppenbara skälet; den
+          moraliska. För de allra flesta är det självklart att vi inte ska
+          exkludera användare, men när det kommer till kritan är det precis det
+          vi gör när vi inte tar tillgänglighet på allvar.{' '}
         </p>
         <p className="mt-4">
           {' '}
@@ -154,12 +181,6 @@ export default function FaqTillganglighet() {
           och jämlikhet, det är också en fråga om affärsmässig framgång.
           Tillgänglighet är en investering som ger avkastning även i form av:
         </p>
-        <p className="mt-4">
-          Vill du veta mer om hur du kan förbättra tillgängligheten på din
-          webbplats och därigenom inte bara möta lagkrav men även förstärka ditt
-          varumärkes rykte? Kontakta oss idag för att utforska hur enkelt och
-          fördelaktigt det kan vara att göra din webbplats tillgänglig för alla.
-        </p>{' '}
         <motion.section
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
@@ -173,12 +194,11 @@ export default function FaqTillganglighet() {
             className=" text-1xl space-y-3 flex justify-center flex-col"
           >
             {[
-              'Generera fler positiva användarupplevelser',
-              'Älskas av sökmotorer',
-              'Ge ökad seriostet och trovärdighet',
-              'Öka konverteringar',
-              'Minska avhopp',
-              'Förbättra din SEO',
+              'Fler positiva användarupplevelser',
+              'Förbättrad SEO',
+              'Ökad seriostet och trovärdighet',
+              'Fler konverteringar',
+              'Lugn och ro inför 2025',
             ].map((item, index) => (
               <motion.li
                 key={index}
@@ -208,6 +228,16 @@ export default function FaqTillganglighet() {
         </p>{' '}
         <p>Precis som det är för oss på NextToEdit Tech Solutions</p>
         <p className="">Vill ni joina oss i den digitala revolutionen?</p>{' '}
+        <p className="mt-4">
+          {' '}
+          <p className="mt-4">
+            Vill du veta mer om hur du kan förbättra tillgängligheten på din
+            webbplats och därigenom inte bara möta lagkrav men även förstärka
+            ditt varumärkes rykte?{' '}
+          </p>
+          Kontakta oss idag för att utforska hur enkelt och fördelaktigt det kan
+          vara att göra din webbplats tillgänglig för alla.
+        </p>{' '}
         <div className="flex items-center">
           <Link
             href="/pricing"

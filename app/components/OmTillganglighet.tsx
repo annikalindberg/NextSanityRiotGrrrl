@@ -26,7 +26,7 @@ const fadeInAnimationVariants = {
 export default function OmTillganglighet() {
   return (
     <div className="bg-sky-100 dark:bg-sky-900 pt-5 md:pt-10 lg:pt-20 min-h-screen">
-      <section className=" max-w-3xl  px-4 m-4 ">
+      <section className=" max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {' '}
         <FaqTillganglighet />
         {/*       <motion.div
