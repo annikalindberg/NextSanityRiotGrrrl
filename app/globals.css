@@ -113,9 +113,24 @@
 
 
   h1 {
-    @apply text-3xl leading-relaxed text-center md:text-4xl lg:text-5xl;
+    @apply text-3xl leading-relaxed mb-4 mt-4 md:mb-5 lg:mb-6 lg:mt-9 md:text-4xl lg:text-5xl;
     font-family: var(--font-heading);
 
+  }
+
+  h2 {
+    @apply text-3xl mb-4 mt-4 md:mb-4 md:mt-9 lg:mb-6 lg:mt-9 md:text-3xl lg:text-3xl;
+    font-family: var(--font-heading);
+  }
+
+  h3 {
+    @apply text-2xl mt-4 mb-2 md:mt-8 md:mb-4 lg:mt-8 lg:mb-5 md:text-xl lg:text-2xl;
+    font-family: var(--font-heading);
+  }
+
+  h4 {
+    @apply text-lg mt-4 mb-2 md:mt-6 md:mb-3 md:text-xl lg:mb-4 lg:mt-8 lg:text-2xl;
+    font-family: var(--font-heading);
   }
 
   p {

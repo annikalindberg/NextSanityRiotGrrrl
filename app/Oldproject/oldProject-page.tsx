@@ -1,8 +1,6 @@
-// src/pages/projects/page.tsx
-'use client'
+/* 'use client'
 import projects from './projectData'
-/* import { Project } from '../lib/interface';
- */ import Image from 'next/image'
+import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../project-page.module.css'
 import TechStackFilter from '../components/TechStackFilter'
@@ -12,7 +10,7 @@ import { getUniqueTechStacks } from '../lib/techStacks'
 const ProjectsPage = () => {
   const [filter, setFilter] = useState<string[]>([])
   const [currentPage, setCurrentPage] = useState(0)
-  const projectsPerPage = 6 // Number of projects per page
+  const projectsPerPage = 6
 
   const filteredProjects = useMemo(
     () =>
@@ -53,11 +51,9 @@ const ProjectsPage = () => {
                 Go to {project.title}
               </Link>
             </div>
-            {/* Other project details */}
           </div>
         ))}
       </div>
-      {/* Pagination Controls */}
       <div>
         <button
           onClick={() => setCurrentPage(currentPage - 1)}
@@ -77,9 +73,4 @@ const ProjectsPage = () => {
 }
 
 export default ProjectsPage
-
-// styles/project-page.module.css
-/* Existing styles... */
-
-/* Responsive and accessible styles with Tailwind CSS */
-/* Add them inline using className or create a custom class in the module.css */
+ */

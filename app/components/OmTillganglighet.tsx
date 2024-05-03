@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Check from '@/public/assets/check.svg'
 import Link from 'next/link'
 import banner from '@/public/images/banner2.svg'
-import AsideOmTillganglighet from '@/components/Aside'
+import FaqTillganglighet from './FaqTillganglighet'
 
 const articleVariants = {
   initial: { opacity: 0, y: 50 },
@@ -26,12 +26,10 @@ const fadeInAnimationVariants = {
 export default function OmTillganglighet() {
   return (
     <div className="bg-sky-100 dark:bg-sky-900 pt-5 md:pt-10 lg:pt-20 min-h-screen">
-      <AsideOmTillganglighet />
-
-      <main className=" max-w-3xl mx-auto px-4 m-4 ">
+      <section className=" max-w-3xl  px-4 m-4 ">
         {' '}
-        <h1 className="pt-4  font-bold  ">Varför digital tillgänglighet?</h1>
-        <motion.div
+        <FaqTillganglighet />
+        {/*       <motion.div
           initial={{ x: 200, opacity: 0 }} // Start from the right side with no visibility
           animate={{ x: 0, opacity: 1 }} // End at the normal position with full opacity
           transition={{ type: 'spring', stiffness: 100, delay: 0.5 }} // Customize the type of animation and its properties
@@ -45,10 +43,8 @@ export default function OmTillganglighet() {
             height={400}
             className="mt-10 justify-center"
           />
-        </motion.div>
-        <div className="prose max-w-none prose-lg pb-7 dark:prose-invert xl:col-span-2 mb-0.5">
-          <p>Vi hjälper dig reda ut begreppen.</p>
-          <h2>&quot;Digital tillgänglighet&quot;..?</h2>
+        </motion.div> */}
+        {/* <h2>&quot;Digital tillgänglighet&quot;..?</h2>
           <p>
             Många pratar idag om vikten av att ha en tillgänglig webbplats. Men
             vad innebär det egentligen?{' '}
@@ -94,15 +90,14 @@ export default function OmTillganglighet() {
             ditt varumärkes rykte? Kontakta oss idag för att utforska hur enkelt
             och fördelaktigt det kan vara att göra din webbplats tillgänglig för
             alla.
-          </p>{' '}
-          <Link
+          </p>{' '} */}
+        {/*  <Link
             href="/pricing"
             className=" rounded bg-rose-900 text-white dark:bg-fuchsia-100 dark:text-slate-900 py-4 px-4 font-medium hover:bg-rose-800 dark:hover:bg-fuchsia-200 transition-colors duration-500 ease-in-out  transform hover:scale-105 "
           >
             Läs mer om våra priser och paket
-          </Link>
-        </div>
-        <motion.article
+          </Link> */}
+        {/*   <motion.article
           initial="initial"
           animate="animate"
           variants={articleVariants}
@@ -157,8 +152,8 @@ export default function OmTillganglighet() {
             med dessa behov i åtanke är essentiellt för att skapa en tillgänglig
             och inkluderande digital miljö.
           </p>
-        </motion.article>
-        <motion.section
+        </motion.article> */}
+        {/* <motion.section
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.175 }}
@@ -193,8 +188,8 @@ export default function OmTillganglighet() {
               </motion.li>
             ))}
           </ul>
-        </motion.section>
-      </main>
+        </motion.section> */}
+      </section>
     </div>
   )
 }

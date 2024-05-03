@@ -1,4 +1,4 @@
-import { Slash } from 'lucide-react'
+/* import { Slash } from 'lucide-react'
 
 import {
   Breadcrumb,
@@ -32,3 +32,4 @@ export function BreadcrumbWithCustomSeparator() {
     </Breadcrumb>
   )
 }
+ */
