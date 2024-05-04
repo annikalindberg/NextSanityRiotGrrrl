@@ -1,11 +1,11 @@
 'use client'
 
 import * as React from 'react'
-import Link from 'next/link'
-
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import Logo from '@/public/images/GreenLogo.png'
+import Link from 'next/link'
+import { navigationMenuTriggerStyle } from '@/components/ui/navigation-menu'
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -13,7 +13,6 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu'
 import { ModeToggle } from '../components/ModeToggle'
 import TopLogo from '@/public/images/TopLogo.png'
@@ -67,7 +66,7 @@ const components: { title: string; href: string; description: string }[] = [
 export function Navigation() {
   return (
     <>
-      <NavigationMenu className="flex items-center mt-2 md:m-5 lg:ml-8">
+      <NavigationMenu className=" pt-2 md:p-5 lg:p-8 sticky top-0 z-50 bg-amber-50 dark:bg-rose-950 rounded-xl shadow-md">
         <NavigationMenuList>
           <NavigationMenuItem className="flex items-center">
             <NavigationMenuLink asChild>
@@ -78,7 +77,7 @@ export function Navigation() {
                   width={500} // Maximum width the image can scale up to
                   height={500} // Maintain the aspect ratio
                   sizes=" w-xs md:w-300 lg:w-500" // Responsive sizes
-                  className="w-20 md:w-56 lg:w-64 ml-2 mr-3 md:ml-4 md:mr-6 lg:ml-10 lg:mr-20"
+                  className=" focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer w-20 md:w-56 lg:w-64 ml-2 pr-3 md:ml-4 md:mr-6 lg:ml-10 lg:mr-20"
                 />
               </a>
             </NavigationMenuLink>
@@ -86,9 +85,9 @@ export function Navigation() {
               Tjänster
             </NavigationMenuTrigger>
             <NavigationMenuContent>
-              <ul className="grid gap-3  md:p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+              <ul className=" grid gap-3  md:p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                 <li className="row-span-3">
-                  <div className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md">
+                  <div className="dark:bg-rose-950 flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md">
                     <Image
                       src={TopLogo}
                       alt="Logo"
@@ -144,13 +143,29 @@ export function Navigation() {
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
-          {/*         <NavigationMenuItem>
-      <Link href="/contact" legacyBehavior passHref>
-        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-          Kontakta oss
-        </NavigationMenuLink>
-      </Link>
-    </NavigationMenuItem> */}
+          <NavigationMenuItem>
+            <NavigationMenuTrigger className="p-1 text-xs md:text-sm lg:text-lg">
+              Kontakta oss
+            </NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-1 lg:w-[600px] ">
+                <ListItem
+                  title="Kontakta oss"
+                  href="/contact"
+                  className="text-lg"
+                >
+                  {' '}
+                  Boka kostnadsfri konsultation eller ställ frågor om våra
+                  tjänster.
+                </ListItem>{' '}
+              </ul>
+            </NavigationMenuContent>
+            <Link href="/faq" legacyBehavior passHref>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                FAQ{' '}
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
       <ModeToggle />
