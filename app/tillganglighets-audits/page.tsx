@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import Check from '../../public/assets/check.svg'
 import Link from 'next/link'
 import classes from '../components/pricing.module.css'
+import { FaqTillganglighet } from '@/components/ui/Faq-tillganglighet'
 
 const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, '-')
 
@@ -163,6 +164,7 @@ const PricingPage = () => {
           ))}
         </div>
       </motion.section>
+      <FaqTillganglighet />
     </main>
   )
 }

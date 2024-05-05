@@ -10,7 +10,7 @@ export function FaqTillganglighet() {
   return (
     <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1">
-        <AccordionTrigger>
+        <AccordionTrigger className="text-left">
           Vad innebär det att en webbplats är tillgänglighetsoptimerad?
         </AccordionTrigger>
         <AccordionContent>
@@ -22,7 +22,7 @@ export function FaqTillganglighet() {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-2">
-        <AccordionTrigger>
+        <AccordionTrigger className="text-left">
           Varför är tillgänglighet viktigt för en webbplats?
         </AccordionTrigger>
         <AccordionContent>
@@ -36,7 +36,7 @@ export function FaqTillganglighet() {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3">
-        <AccordionTrigger>
+        <AccordionTrigger className="text-left">
           Hur testar jag om min webbplats är tillgänglighetsoptimerad?
         </AccordionTrigger>
         <AccordionContent>
@@ -59,7 +59,7 @@ export function FaqTillganglighet() {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-4">
-        <AccordionTrigger>
+        <AccordionTrigger className="text-left">
           Ungefär hur många användare är det som påverkas negativt om min
           webbplats brister i tillgänglighet?
         </AccordionTrigger>
@@ -80,7 +80,7 @@ export function FaqTillganglighet() {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-5">
-        <AccordionTrigger>
+        <AccordionTrigger className="text-left">
           Varför hänger SEO och tillgänglighet ihop?
         </AccordionTrigger>
         <AccordionContent>
@@ -98,7 +98,7 @@ export function FaqTillganglighet() {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-6">
-        <AccordionTrigger>
+        <AccordionTrigger className="text-left">
           Om tillgänglighet är så viktigt, varför bygges inte alla webbplatser
           tillgänglighetsoptimerade från början?
         </AccordionTrigger>
@@ -121,7 +121,7 @@ export function FaqTillganglighet() {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-7">
-        <AccordionTrigger>
+        <AccordionTrigger className="text-left">
           Innebär tillgänglighetsanpassning att min sida kommer att bli tråkig
           och ful?
         </AccordionTrigger>
@@ -149,7 +149,7 @@ export function FaqTillganglighet() {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-8">
-        <AccordionTrigger>
+        <AccordionTrigger className="text-left">
           Jag har hört att det finns enklare sätt att göra en webbplats mer
           tillgänglig utan att behöva göra en hel omdesign. Är det sant?
         </AccordionTrigger>

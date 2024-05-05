@@ -23,7 +23,7 @@ const fadeInAnimationVariants = {
     },
   }),
 }
-export default function FaqTillganglighet() {
+export default function Tillganglighet() {
   return (
     <>
       {' '}
