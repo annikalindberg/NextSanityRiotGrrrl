@@ -47,26 +47,27 @@ export default function FaqTillganglighet() {
         variants={articleVariants}
         className="divide-y  divide-gray-100 dark:divide-gray-700 pt-8 "
       >
-        <h2>Varför tillgänglighet?</h2>{' '}
+        <h2>Tillgänglighet online: Mer än bara ett krav</h2>{' '}
         <p>
           Många pratar idag om vikten av att ha en tillgänglig webbplats. Men
           vad innebär det egentligen, och vad har du att vinna på att optimera
           tillgängligheten digitalt?{' '}
         </p>
         <p className="mt-4">
-          I denna artikel kommer jag att gå igenom de viktigaste anledningarna
-          till varför du bör ha en tillgänglig webbplats. Vi kommer att titta på
-          hur tillgänglighet kan gynna din verksamhet, och varför det är så
-          viktigt att börja tänka på tillgänglighet redan idag.
+          Låt oss förklara varför en tillgänglig webbplats inte bara är ett
+          lagkrav utan också en <strong>fördel</strong> för din verksamhet. Vi
+          kommer att titta på hur tillgänglighet kan gynna din verksamhet, och
+          varför det är så viktigt att börja tänka på tillgänglighet redan idag.
         </p>
         <p className="mt-4">
           Men först och främst, vad betyder det att en webbplats är{' '}
-          <em>tillgänglig</em>? Enkelt förklarat betyder det att en webbplats är
-          utformad och byggd på ett sätt som gör att alla, oavsett
-          funktionsvariationer, kan använda den. Det kan handla om allt från att
-          göra texten på sidan läsbar för skärmläsare, till att se till att
-          knappar och länkar är lätta att klicka på för personer med nedsatt
-          rörlighet.
+          <em>tillgänglig</em>?
+        </p>
+        <p className="mt-4">
+          Tillgänglighet betyder att din webbplats är byggd så att alla, oavsett
+          funktionsvariation, enkelt kan interagera med den. Detta inkluderar
+          allt från skärmläsarvänlig text till lättanvända interaktiva element
+          för personer med begränsad rörlighet.
         </p>{' '}
         <h2>Varför tillgänglighetsoptimera?</h2>
         <p>
@@ -77,7 +78,11 @@ export default function FaqTillganglighet() {
           tech-startup eller en stor e-handel, så är din webbplats en av dina{' '}
           <strong>viktigaste tillgångar</strong>. Oavsett vad målet är med din
           verksamhet, är din webbplats hjärtat i din digitala strategi och ditt
-          ansikte utåt.
+          ansikte utåt. Över 20% av befolkningen lever med en permanent
+          funktionsnedsättning. I Sverige, där nästan alla, 97.2% av
+          befolkningen, använder internet dagligen, innebär detta att cirka 2
+          miljoner människor kan stöta på hinder när de besöker en webbplats som
+          inte är tillgängligt utformad.
         </p>
         <h2>Tillgänglighet gagnar alla</h2>
         <p>
@@ -124,10 +129,9 @@ export default function FaqTillganglighet() {
         </motion.div>
         <h2>Tillgänglighet ökar SEO</h2>
         <p>
-          Över en miljard människor globalt lever med någon form av
-          funktionsnedsättning. Genom att säkerställa att din webbplats är
-          tillgänglig, utvidgar du din potentiella kundbas och öppnar din
-          verksamhet för en bredare publik.
+          En tillgänglig webbplats är inte bara en fördel för användarna, det är
+          också en fördel för din{' '}
+          <strong>synlighet i sökmotorerna och ditt SEO</strong>.{' '}
         </p>
         <h2>Tillgänglighet ökar konverteringarna </h2>
         <p>
@@ -158,8 +162,9 @@ export default function FaqTillganglighet() {
           uppfylla dessa krav kan resultera i kostsamma rättsprocesser.
         </p>{' '}
         <p>
-          I Sverige har vi sedan 2018 en lag som kräver att offentliga
-          webbplatser och appar ska vara tillgängliga.
+          Sedan 2018 krävs att offentliga webbplatser i Sverige ska vara
+          tillgängliga, och från och med 2025 gäller detta även för privata
+          företag. Att inte följa dessa krav kan leda till sanktioner.
         </p>
         <h3>Vad innebär tillgänglighetsdirektivet?</h3>
         <p>
@@ -194,7 +199,7 @@ export default function FaqTillganglighet() {
           central roll i att säkerställa att alla har lika tillgång till
           information och möjligheter.{' '}
         </p>
-        <h4>Sammanfattningsvis...</h4>
+        <h3>Sammanfattningsvis...</h3>
         <motion.section
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
@@ -203,17 +208,18 @@ export default function FaqTillganglighet() {
           aria-label="Pricing Options"
         >
           <p>
-            En stor del alla webbplatser har allvarliga tillgänglighetsbrister,
-            vilket leder till att en stor del av användarna inte kan använda
-            webbplatsen. Det finns många fördelar och vinster med att
-            tillgänglighetsoptimera sin webbplats, utöver de argument som
-            vanlighetvis lyfts fram. Här är några av de vinster som du uppnår
-            genom att förbättra tillgängligheten på din webbplats.
+            Sammanfattningsvis, en tillgänglig webbplats är inte bara en fördel;
+            det är en nödvändighet i dagens digitala värld. Låt oss hjälpa dig
+            att göra din webbplats tillgänglig för alla.
           </p>
-          <h4>Vinster med att tillgänlighetsförbättra</h4>
+
+          <p className="mt-4">
+            Slutligen. Önskar du att din webbplats ska ge dig och din
+            verksamhet:{' '}
+          </p>
           <ul
             aria-label="Fördelar med tillgänglighetsoptimering"
-            className=" text-1xl space-y-3 flex justify-center flex-col"
+            className="mt-4 mb-4 text-1xl space-y-3 flex justify-center flex-col"
           >
             {[
               'Fler positiva användarupplevelser',
@@ -224,7 +230,7 @@ export default function FaqTillganglighet() {
             ].map((item, index) => (
               <motion.li
                 key={index}
-                className="flex items-center"
+                className="flex items-center mt-4"
                 variants={fadeInAnimationVariants}
                 initial="initial"
                 whileInView="animate"
@@ -243,23 +249,10 @@ export default function FaqTillganglighet() {
           </ul>
         </motion.section>{' '}
         <p>
-          Vi på NextToEdit Tech Solutions tycker att tillgänglighet
-          <em> bör vara</em>, och tror att tillgänlighet i framtiden{' '}
-          <em>kommer att vara </em>någonting självklart och redan inbyggt i allt
-          nytt digitalt skapande.
-        </p>{' '}
-        <p>Precis som det är för oss på NextToEdit Tech Solutions</p>
-        <p className="">Vill ni joina oss i den digitala revolutionen?</p>{' '}
-        <p className="mt-4">
-          Vill du veta mer om hur du kan förbättra tillgängligheten på din
-          webbplats och därigenom inte bara möta lagkrav men även förstärka ditt
-          varumärkes rykte?{' '}
-        </p>
-        <p>
           Kontakta oss idag för att utforska hur enkelt och fördelaktigt det kan
           vara att göra din webbplats tillgänglig för alla.
         </p>{' '}
-        <div className="flex items-center">
+        <div className="flex items-center mt-8 mb-6">
           <Link
             href="/pricing"
             className=" m-12 mx-auto rounded bg-rose-900 text-white dark:bg-fuchsia-100 dark:text-slate-900 py-4 px-4 font-medium hover:bg-rose-800 dark:hover:bg-fuchsia-200 transition-colors duration-500 ease-in-out  transform hover:scale-105 "
@@ -267,6 +260,15 @@ export default function FaqTillganglighet() {
             Jag vill ha proffshjälp att tillgänlighetsoptimera!
           </Link>
         </div>
+        <p>
+          Vi på NextToEdit Tech Solutions tycker att tillgänglighet
+          <em> bör vara</em>, och tror att tillgänlighet i framtiden{' '}
+          <em>kommer att vara </em>någonting självklart och redan inbyggt i allt
+          nytt digitalt skapande.
+        </p>{' '}
+        <p className="mt-8 text-center text-2xl font-semibold">
+          Joina oss i den digitala revolutionen
+        </p>{' '}
       </motion.article>
     </>
   )

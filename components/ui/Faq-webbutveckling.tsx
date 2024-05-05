@@ -5,11 +5,11 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion'
 
-export function FaqAccordion() {
+export function FaqWebbutveckling() {
   return (
     <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1">
-        <AccordionTrigger>
+        <AccordionTrigger className="text-left">
           Vad innebär det att bygga en &quot;handkodad&quot; webbsida?
         </AccordionTrigger>
         <AccordionContent>
@@ -21,7 +21,7 @@ export function FaqAccordion() {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-2">
-        <AccordionTrigger>
+        <AccordionTrigger className="text-left">
           Vad är fördelarna med en handkodad webbsida jämfört med no-code
           plattformar?
         </AccordionTrigger>
@@ -36,7 +36,7 @@ export function FaqAccordion() {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3">
-        <AccordionTrigger>
+        <AccordionTrigger className="text-left">
           Hur påverkar en handkodad webbsida min digitala närvaro?
         </AccordionTrigger>
         <AccordionContent>
@@ -48,7 +48,7 @@ export function FaqAccordion() {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-4">
-        <AccordionTrigger>
+        <AccordionTrigger className="text-left">
           Vilka är de ekonomiska fördelarna med att välja en handkodad webbsida?
         </AccordionTrigger>
         <AccordionContent>
@@ -60,7 +60,7 @@ export function FaqAccordion() {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-5">
-        <AccordionTrigger>
+        <AccordionTrigger className="text-left">
           Hur kan jag få hjälp och support efter att min webbsida har lanserats?
         </AccordionTrigger>
         <AccordionContent>
@@ -72,7 +72,7 @@ export function FaqAccordion() {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-6">
-        <AccordionTrigger>
+        <AccordionTrigger className="text-left">
           Hur säkerställer du att webbsidan är tillgänglig för alla användare?
         </AccordionTrigger>
         <AccordionContent>
@@ -93,7 +93,7 @@ export function FaqAccordion() {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-7">
-        <AccordionTrigger>
+        <AccordionTrigger className="text-left">
           Varför är en skräddarsydd landningssida fördelaktig för digital
           marknadsföring?
         </AccordionTrigger>
@@ -105,7 +105,7 @@ export function FaqAccordion() {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-8">
-        <AccordionTrigger>
+        <AccordionTrigger className="text-left">
           Hur optimerar du webbsidor för snabbare laddningstider?
         </AccordionTrigger>
         <AccordionContent>
@@ -116,7 +116,7 @@ export function FaqAccordion() {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-9">
-        <AccordionTrigger>
+        <AccordionTrigger className="text-left">
           Kan jag uppdatera min webbsida själv efter att den är utvecklad?
         </AccordionTrigger>
         <AccordionContent>
@@ -132,7 +132,7 @@ export function FaqAccordion() {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-10">
-        <AccordionTrigger>
+        <AccordionTrigger className="text-left">
           Vem äger rättigheterna till koden och designen på webbsidan?
         </AccordionTrigger>
         <AccordionContent>

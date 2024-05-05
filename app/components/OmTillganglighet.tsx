@@ -1,6 +1,6 @@
 'use client' // This file is client-side only
 
-import FaqTillganglighet from './FaqTillganglighet'
+import FaqTillganglighet from './Tillganglighet'
 
 export default function OmTillganglighet() {
   return (

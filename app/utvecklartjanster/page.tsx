@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Check from '../../public/assets/check.svg'
 import Link from 'next/link'
 import classes from '../components/pricing.module.css'
-
+import { FaqWebbutveckling } from '@/components/ui/Faq-webbutveckling'
 const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, '-')
 
 // Simplified animation object
@@ -172,6 +172,18 @@ const SoftwarePage = () => (
           </article>
         ))}
       </div>
+    </motion.section>
+    <motion.section
+      {...animationProps}
+      transition={{ delay: 0.175 }}
+      animate={{ opacity: 1, y: 0, transition: { delay: 0.175 } }}
+      className="py-12 lg:py-15"
+      aria-label="Frequently Asked Questions"
+    >
+      <h2 className="mb-6 text-2xl font-semibold text-center text-[#36485C] dark:text-white lg:text-3xl">
+        Vanliga frågor
+      </h2>
+      <FaqWebbutveckling />
     </motion.section>
   </main>
 )

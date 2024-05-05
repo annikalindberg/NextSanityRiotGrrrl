@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FaqAccordion } from '@/components/ui/Faq-accordion'
+import { FaqWebbutveckling } from '@/components/ui/Faq-webbutveckling'
 
 export default function Faq() {
   return (
@@ -21,7 +21,7 @@ export default function Faq() {
         }}
       >
         <h1>Faq</h1>
-        <FaqAccordion />
+        <FaqWebbutveckling />
       </motion.section>
     </main>
   )
