@@ -38,11 +38,11 @@ const components: { title: string; href: string; description: string }[] = [
       'For sighted users to preview content available behind a link.',
   },
 
-  {
+  /*   {
     title: 'Konsulttjänster',
     href: '/konsulttjanster',
     description: 'Visually or semantically separates content.',
-  },
+  }, */
   {
     title: 'Blogg',
     href: '/blogpage',
