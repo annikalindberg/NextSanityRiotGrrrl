@@ -1,4 +1,4 @@
-/* import { Project } from '../lib/interface'
+import { Project } from '../lib/interface'
 
 const projects: Project[] = [
   {
@@ -186,4 +186,3 @@ const projects: Project[] = [
 })
 
 export default projects
- */
