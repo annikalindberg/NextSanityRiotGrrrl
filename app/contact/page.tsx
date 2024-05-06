@@ -24,9 +24,9 @@ export default function Contact() {
         }}
       >
         <h1 className="mt-20 text-4xl font-semibold dark:text-white">
-          Kontakta mig!{' '}
+          Skriv till oss på NextToEdit Tech Solutions!{' '}
         </h1>
-
+        {/* 
         <p className="text-gray-700 mt-6 dark:text-white/80">
           Please contact me directly at{' '}
           <a
@@ -36,7 +36,7 @@ export default function Contact() {
             annika.edit.lindberg&#64;gmail&#46;com
           </a>{' '}
           or through this form.
-        </p>
+        </p> */}
 
         <form
           className="mt-10 flex flex-col dark:text-black"
@@ -56,7 +56,7 @@ export default function Contact() {
             htmlFor="senderEmail"
             className="dark:text-white mb-1 mt-2 text-left"
           >
-            Your Email:
+            Skriv din e-post:
           </label>
           <input
             id="senderEmail"
@@ -65,16 +65,16 @@ export default function Contact() {
             type="email"
             required
             maxLength={500}
-            placeholder="Enter your email here"
+            placeholder="Skriv din e-post här..."
           />
           <label htmlFor="message" className="dark:text-white mt-3 text-left">
-            Your Message:
+            Skriv ditt meddelande:
           </label>
           <textarea
             id="message"
             className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
             name="message"
-            placeholder="Write your message here"
+            placeholder="Skriv ditt meddelande här..."
             required
             maxLength={5000}
           />
@@ -104,7 +104,7 @@ export default function Contact() {
             type="submit"
             className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 text-white font-semibold py-3 rounded-lg mt-5"
           >
-            Send Email
+            Skicka
           </button>
         </form>
       </motion.section>

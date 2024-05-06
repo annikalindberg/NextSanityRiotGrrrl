@@ -1,4 +1,4 @@
-import { type ClassValue } from 'clsx'
+'use client'
 import {
   Accordion,
   AccordionContent,
@@ -76,16 +76,19 @@ export function FaqTillganglighet() {
           Över 20% av befolkningen lever med en permanent funktionsnedsättning.
           I Sverige, där nästan alla, 97.2% av befolkningen, använder internet
           dagligen, innebär detta att cirka 2 miljoner potentiella användare som
-          din webbplats utesluter. Och detta är bara i Sverige. Lägger vi
-          dessutom till alla som har tillfälliga funktionshinder, vilket du
-          själv säkert upplevt om du brutit ett finger eller bara glömt dina
-          hörlurar och försöker kolla på en video på tåget, så blir det en stor
-          del av befolkningen som påverkas negativt av en otillgänglig
-          webbplats. Det är inte bara personer med funktionsnedsättningar som
-          påverkas av en otillgänglig webbplats. Äldre personer, personer med
-          långsam internetuppkoppling, personer som använder mobiltelefoner och
-          surfplattor, och personer som inte talar svenska som förstaspråk kan
-          också ha svårt att använda en otillgänglig webbplats.
+          din webbplats utesluter. Och detta är bara i Sverige.{' '}
+          <p>
+            Lägger vi dessutom till alla som har tillfälliga funktionshinder,
+            vilket du själv säkert upplevt om du brutit ett finger eller bara
+            glömt dina hörlurar och försöker kolla på en video på tåget, så blir
+            det en stor del av befolkningen som påverkas negativt av en
+            otillgänglig webbplats. Det är inte bara personer med
+            funktionsnedsättningar som påverkas av en otillgänglig webbplats.
+            Äldre personer, personer med långsam internetuppkoppling, personer
+            som använder mobiltelefoner och surfplattor, och personer som inte
+            talar svenska som förstaspråk kan också ha svårt att använda en
+            otillgänglig webbplats.
+          </p>
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-5">
@@ -168,24 +171,47 @@ export function FaqTillganglighet() {
           kan läggas till på en befintlig webbplats, så kallade
           overlay-lösningar. Dessa lösningar har blivit starkt kritiserade av
           användare som använder hjälpmedel som skärmläsare, eftersom de ofta
-          inte fungerar korrekt med dessa hjälpmedel. Det är viktigt att komma
-          ihåg att tillgänglighet inte är något som kan läggas till i efterhand,
-          utan något som måste byggas in i webbplatsen från början. En
-          tillgänglighetsoptimerad webbplats är en webbplats som är utformad och
-          utvecklad för att vara användbar för alla människor, inklusive
-          personer med funktionsnedsättningar. Det innebär att webbplatsen är
-          utformad för att vara lätt att navigera, förstå och använda för alla
-          användare, oavsett deras förmåga eller tekniska kunskaper. Om du vill
-          göra din webbplats mer tillgänglig är det bästa sättet att bygga in
-          tillgänglighetsstandarder direkt i koden från början. Detta innebär
-          att du behöver anlita en webbutvecklare som har kunskap om
-          tillgänglighet och som kan implementera dessa standarder på rätt sätt.
-          Boka en kostnadsfri konsultation med mig för att diskutera hur jag kan
-          hjälpa dig att göra din webbplats mer tillgänglig. En &quot;quick
-          fix&quot; är sällan en hållbar lösning när det kommer till
-          tillgänglighet. Overlay-lösningar är inte bara ineffektiva ur
-          tillgänglighetssynpunkt, de kan också vara olagliga enligt
-          tillgänglighetsdirektivet och Europastandarden EN 301 549.
+          inte fungerar korrekt med dessa hjälpmedel.
+          <p className="mt-3 mb-3">
+            {' '}
+            Det är viktigt att komma ihåg att tillgänglighet inte är något som
+            kan läggas till i efterhand, utan något som måste byggas in i
+            webbplatsen från början.{' '}
+          </p>{' '}
+          <p>
+            En tillgänglighetsoptimerad webbplats är en webbplats som är
+            utformad och utvecklad för att vara användbar för alla människor,
+            inklusive personer med funktionsnedsättningar. Det innebär att
+            webbplatsen är utformad för att vara lätt att navigera, förstå och
+            använda för <strong>alla</strong> {''}
+            användare, oavsett deras förmåga eller tekniska kunskaper.{' '}
+          </p>
+          <p className="mt-3 mb-3">
+            Om du vill göra din webbplats mer tillgänglig är det bästa sättet
+            att bygga in tillgänglighetsstandarder direkt i koden från början.
+            Detta innebär att du behöver anlita en webbutvecklare som har
+            kunskap om tillgänglighet och som kan implementera dessa standarder
+            på rätt sätt.{' '}
+          </p>
+          <p>
+            En &quot;quick fix&quot; är sällan en hållbar lösning när det kommer
+            till tillgänglighet. Overlay-lösningar är inte bara ineffektiva ur
+            tillgänglighetssynpunkt, de kan också vara olagliga enligt
+            tillgänglighetsdirektivet och Europastandarden EN 301 549.{' '}
+          </p>
+          <p className="mt-3">
+            {' '}
+            Boka en kostnadsfri konsultation med oss för att diskutera hur vi
+            kan hjälpa dig att göra din webbplats mer tillgänglig. Boka här:
+          </p>
+          <div className=" items-center flex justify-center mt-8 md:mt-10 lg:mt-20">
+            <Link
+              href="/tillganglighets-audits"
+              className="rounded bg-rose-900 text-white dark:bg-fuchsia-100 dark:text-slate-900 py-4 px-4 font-medium hover:bg-rose-800 dark:hover:bg-fuchsia-200 transition-colors duration-500 ease-in-out  transform hover:scale-105 "
+            >
+              Se vilka paket vi erbjuder och boka en kostnadsfri konsultation
+            </Link>
+          </div>
         </AccordionContent>
       </AccordionItem>
     </Accordion>

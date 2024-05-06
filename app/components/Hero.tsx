@@ -17,14 +17,9 @@ export default function Hero() {
         {/* Text container */}
         <div className=" mt-5 max-w-xs ml-4  md:max-w-sm lg:max-w-xl lg:mr-10">
           <h1 className=" text-left font-bold leading-relaxed tracking-wider text-3xl md:text-4xl lg:text-6xl md:leading-normal lg:leading-normal">
-            Kvalitetssäkrade webbplatser <br />
-            <span className="tracking-widest"> för alla</span>
+            Vi bygger och tillgänglighets- optimerar din webbplats.{' '}
           </h1>
-          <p className=" mt-3 text-xl md:text-xl lg:text-3xl md:m-4">
-            Varför välja mellan <em>tillgänglighet</em> och innovativ{' '}
-            <em>design,</em> när du kan få <strong>båda?</strong>{' '}
-          </p>{' '}
-          <p className="mt-5 md:mt-8 lg:mt-15 tracking-wider leading-10">
+          <p className="mt-5 md:mt-8 lg:mt-15 leading-10">
             Vi är utvecklare och experter på tillgänglighet. Med oss slipper du
             kompromissa. <br />
           </p>
