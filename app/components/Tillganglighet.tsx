@@ -12,7 +12,7 @@ const articleVariants = {
 }
 const fadeInAnimationVariants = {
   initial: {
-    opacity: 0,
+    opacity: 0.5,
     y: 100,
   },
   animate: (index: number) => ({
@@ -23,6 +23,7 @@ const fadeInAnimationVariants = {
     },
   }),
 }
+
 export default function Tillganglighet() {
   return (
     <>
@@ -84,7 +85,7 @@ export default function Tillganglighet() {
           miljoner människor kan stöta på hinder när de besöker en webbplats som
           inte är tillgängligt utformad.
         </p>
-        <h2>Tillgänglighet gagnar alla</h2>
+        <h2>1. Tillgänglighet gagnar alla</h2>
         <p>
           Tillgänglighet på din webbplats gynnar inte bara individer med
           permanenta funktionsnedsättningar.{' '}
@@ -127,13 +128,13 @@ export default function Tillganglighet() {
             </p>{' '}
           </div>
         </motion.div>
-        <h2>Tillgänglighet ökar SEO</h2>
+        <h2>2. Tillgänglighet ökar SEO</h2>
         <p>
           En tillgänglig webbplats är inte bara en fördel för användarna, det är
           också en fördel för din{' '}
           <strong>synlighet i sökmotorerna och ditt SEO</strong>.{' '}
         </p>
-        <h2>Tillgänglighet ökar konverteringarna </h2>
+        <h2>3. Tillgänglighet ökar konverteringarna </h2>
         <p>
           Att öka tillgängligheten på din webbplats är därför inte bara en fråga
           om att följa lagar och regler, eller att vara `&quot;`snäll mot
@@ -150,11 +151,7 @@ export default function Tillganglighet() {
           </strong>{' '}
           online.
         </p>
-        <p>
-          En förbättrad användarupplevelse leder till minskade avhopp och ökad
-          konvertering.
-        </p>
-        <h2>Den nya lagen om tillgänglighet - 2025 </h2>
+        <h2>4. Den nya lagen om tillgänglighet - 2025 </h2>
         <p>
           Att ignorera tillgänglighet kan inte bara skada ditt varumärkes
           anseende, många länder har även lagar som kräver
@@ -176,7 +173,7 @@ export default function Tillganglighet() {
           om sanktionsavgift till lägst 10 000 och högst 10 000 000 SEK.
         </p>
         <h2>
-          Alla har rätt till information och tjänster - oavsett
+          5. Alla har rätt till information och tjänster - oavsett
           funktionsvariation
         </h2>
         <p>
@@ -255,7 +252,7 @@ export default function Tillganglighet() {
         <div className="flex items-center mt-8 mb-6">
           <Link
             href="/pricing"
-            className=" m-12 mx-auto rounded bg-rose-900 text-white dark:bg-fuchsia-100 dark:text-slate-900 py-4 px-4 font-medium hover:bg-rose-800 dark:hover:bg-fuchsia-200 transition-colors duration-500 ease-in-out  transform hover:scale-105 "
+            className=" m-12 mx-auto rounded bg-rose-900 text-white dark:bg-rose-100 dark:text-slate-950 py-4 px-4 font-medium hover:bg-rose-800 dark:hover:bg-fuchsia-200 transition-colors duration-500 ease-in-out  transform hover:scale-105 "
           >
             Jag vill ha proffshjälp att tillgänlighetsoptimera!
           </Link>

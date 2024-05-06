@@ -16,7 +16,7 @@ export function ModeToggle() {
   const { setTheme } = useTheme()
 
   return (
-    <div className=" p-1 flex justify-end md:m-6">
+    <div className=" p-1 flex sticky top-0 justify-end md:m-6">
       <DropdownMenu>
         <DropdownMenuTrigger className="" asChild>
           <Button variant="outline" size="icon">

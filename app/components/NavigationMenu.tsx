@@ -26,6 +26,12 @@ const components: { title: string; href: string; description: string }[] = [
       'A modal dialog that interrupts the user with important content and expects a response.',
   },
   {
+    title: 'Varför tillgänglighetsoptimera din webbplats?',
+    href: '/varfor-tillganglighetsoptimera-din-webbplats',
+    description:
+      '5 starka skäl till varför du bör tillgänglighetsoptimera din webbplats.',
+  },
+  {
     title: 'Tidigare projekt',
     href: '/project',
     description:
@@ -77,7 +83,7 @@ export function Navigation() {
                   width={500} // Maximum width the image can scale up to
                   height={500} // Maintain the aspect ratio
                   sizes=" w-xs md:w-300 lg:w-500" // Responsive sizes
-                  className=" focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer w-20 md:w-56 lg:w-64 ml-2 pr-3 md:ml-4 md:mr-6 lg:ml-10 lg:mr-20"
+                  className=" focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer w-20 h-auto md:w-56 lg:w-64 ml-2 pr-3 md:ml-4 md:mr-6 lg:ml-10 lg:mr-20"
                 />
               </a>
             </NavigationMenuLink>

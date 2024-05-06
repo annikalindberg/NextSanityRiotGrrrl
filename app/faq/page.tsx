@@ -2,6 +2,10 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { FaqWebbutveckling } from '@/components/ui/Faq-webbutveckling'
+import { FaqTillganglighet } from '@/components/ui/Faq-tillganglighet'
+import BottomLogo from '@/public/images/BottomLogo.png'
+import TillganglighetLogo from '@/public/images/TopLogo.png'
+import Image from 'next/image'
 
 export default function Faq() {
   return (
@@ -20,7 +24,28 @@ export default function Faq() {
           once: true,
         }}
       >
-        <h1>Faq</h1>
+        <h1>Vanliga frågor</h1>
+        <div className="flex flex-col md:flex-row items-center justify-center  md:justify-between ">
+          <h2>Tillgänglighet</h2>
+          <Image
+            width={300}
+            height={300}
+            src={TillganglighetLogo}
+            alt="TillganglighetLogo"
+            className="mt-10 md:w-300 md:mt-2 md:mb-12"
+          />
+        </div>{' '}
+        <FaqTillganglighet />{' '}
+        <div className="flex flex-col md:flex-row items-center justify-center  md:justify-between ">
+          <h2>Webbutveckling</h2>
+          <Image
+            width={300}
+            height={300}
+            src={BottomLogo}
+            alt="Logo"
+            className="mt-10 md:mt-12 md:w-300"
+          />
+        </div>{' '}
         <FaqWebbutveckling />
       </motion.section>
     </main>

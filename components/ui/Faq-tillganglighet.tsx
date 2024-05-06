@@ -5,6 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion'
+import Link from 'next/link'
 
 export function FaqTillganglighet() {
   return (
@@ -32,7 +33,15 @@ export function FaqTillganglighet() {
           tillgänglighetsoptimerad webbplats öka din målgrupps storlek och
           förbättra användarupplevelsen för alla användare. Slutligen kan en
           tillgänglighetsoptimerad webbplats också förbättra din webbplats SEO
-          och sökmotorrankning.
+          och sökmotorrankning. Läs gärna mer om hur tillgänglighet och SEO
+          hänger ihop här:
+          <Link
+            href="/varfor-tillganglighetsoptimera-din-webbplats"
+            passHref
+            className="text-blue-600"
+          >
+            Varför är tillgänglighet viktigt för en webbplats?
+          </Link>
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3">
