@@ -12,13 +12,13 @@ import { useActiveSectionContext } from './active-section-context'
 import { FaRegFilePdf } from 'react-icons/fa'
 
 export default function Intro() {
-  const { ref } = useSectionInView('Home', 0.5)
+  const { ref } = useSectionInView('Top', 0.5)
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
 
   return (
     <section
       ref={ref}
-      id="home"
+      id="top"
       className="mb-28 max-w-[45rem] sm:mb-0 scroll-mt-[100rem]"
     >
       <div className="flex items-center justify-center">

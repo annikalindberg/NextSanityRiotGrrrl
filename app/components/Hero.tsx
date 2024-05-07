@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import banner from '@/public/images/banner1.svg'
 import { motion } from 'framer-motion'
 import girl from '@/public/images/girl.svg'
 import Link from 'next/link'
