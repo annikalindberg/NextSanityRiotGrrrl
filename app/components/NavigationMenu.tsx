@@ -120,13 +120,16 @@ export function Navigation() {
                   href="/tillganglighets-audits"
                   title="Tillgänglighets-audits"
                 >
-                  Vi har arbetat med digital tillgänglighet i över 15 år, och är
-                  experter inom området. Vi erbjuder tillgänglighets-audits av
-                  webbplatser till förmånliga priser och med olika
-                  paketlösningar. Vi bjuder på en kostnadsfri första audit för
-                  att du som kund ska få ett smakprov på hur vi arbetar och
-                  vilka förbättringar som kan göras.Vår vision är att webben ska
-                  vara en plats för alla.
+                  Experter på tillgänglighet för webb med 15 år i branchen. Vi
+                  erbjuder tillgänglighets-audits av webbplatser till förmånliga
+                  priser och med olika paketlösningar. Vi bjuder på en
+                  kostnadsfri första audit för att du som kund ska få ett
+                  smakprov på hur vi arbetar och vilka förbättringar som kan
+                  göras.Vår vision är att webben ska vara en plats för alla.
+                </ListItem>
+                <ListItem href="/konsulttjanster" title="Konsulttjänster">
+                  På jakt efter en konsult specialiserad inom Frontend och UX?
+                  Då är det här du ska kika in{' '}
                 </ListItem>
               </ul>
             </NavigationMenuContent>

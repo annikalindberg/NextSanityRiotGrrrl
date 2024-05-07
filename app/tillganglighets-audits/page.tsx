@@ -49,10 +49,12 @@ const PricingPage = () => {
           {' '}
           {[
             {
-              title: 'Kostnadsfri Audit Small',
+              title: 'Audit Small',
               description:
                 'Perfekt för dig som är osäker på hur din hemsida presterar tillgänglighetsmässigt och vill ha en första överblick.',
-              price: 'Gratis',
+              price: '4 000 kr',
+              offer: 'Kostnadsfri',
+              linethroughPrice: '4 000 kr',
               features: [
                 'Hälsostatus för din hemsida',
                 'Vi gör en översiktlig koll för att identifiera de vanligaste tillgänglighetsbristerna',
@@ -90,7 +92,7 @@ const PricingPage = () => {
                 'Hälsostatus för din hemsida',
                 'En första scanning av din hemsida för att identifiera eventuella tillgänglighetsbriste',
                 'Manuell tesning av 10 sidor (du väljer själv vilka)',
-                'Sammnaställning med identifierade brister rangordnade efter impact och komplexitet',
+                'Sammnanställning med identifierade brister rangordnade efter impact och komplexitet',
                 'Lista med rekommenderade åtgärder - tydligt och konkret för ditt utvecklarteam att agera på direkt',
                 'En tillgänglighetsredogörelse att lägga till på din hemsida',
               ],

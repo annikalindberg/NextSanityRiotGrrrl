@@ -5,6 +5,8 @@ import { ThemeProvider } from './components/theme-provider'
 import { Toaster } from 'react-hot-toast'
 import { Navigation } from './components/NavigationMenu'
 import Footer from './components/Footer'
+import ActiveSectionContextProvider from './components/annika/active-section-context'
+import ThemeContextProvider from './components/annika/theme-context'
 
 const nunito = Nunito({
   subsets: ['latin'],
@@ -36,7 +38,11 @@ export default function RootLayout({
           disableTransitionOnChange // Prevent transition on initial page load and theme change (re-enable with a delay) to avoid a flash of light and dark mode on initial load (remove if not important to you)
         >
           <Navigation />
-          <main>{children}</main>
+          <ThemeContextProvider>
+            <ActiveSectionContextProvider>
+              <main>{children}</main>
+            </ActiveSectionContextProvider>
+          </ThemeContextProvider>
           <Toaster position="top-right" />
           <Footer />
         </ThemeProvider>
