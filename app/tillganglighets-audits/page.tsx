@@ -23,7 +23,7 @@ const fadeInAnimationVariants = {
 }
 const PricingPage = () => {
   return (
-    <main className="max-w-3xl mx-auto px-4 ">
+    <main className="max-w-3xl md:max-w-6xl mx-auto px-4 ">
       <motion.section
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -31,29 +31,28 @@ const PricingPage = () => {
         className="py-12 lg:py-15"
         aria-label="Pricing Options"
       >
-        <h1 className="text-center mb-6 text-2xl md:text-3xl lg:text-3xl font-semibold text-[#36485C]">
+        <h1 className="text-center mb-6 text-2xl dark:text-white md:text-3xl lg:text-3xl font-semibold text-[#36485C]">
           Hur tillgänglig är din webbplats?{' '}
           <div className="mt-4"> Låt oss testa! </div>
         </h1>
-        <h2 className="text-center text-[#36485C] text-lg lg:text-2xl mt-5">
+        <h2 className="text-center text-[#36485C] dark:text-white text-lg lg:text-2xl mt-5">
           Boka kostnadsfri audit idag!
         </h2>
-        <p className="pt-[16px] pb-[40px] text-center text-[#36485C] lg:text-[18px] mb-10 mt-7 leading-7">
+        <p className="pt-[16px] pb-[40px] max-w-3xl md:mx-auto text-center text-[#36485C] dark:text-white lg:text-[18px] mb-10 mt-7 leading-7">
           Våra tester inkluderar en övergripande granskning av koden samt
           manuella tester av användarflödena. Vi använder verktyg som
           skärmläsare och tangentbordsnavigering för att säkerställa att alla
           element på din webbplats är tillgängliga för varje användare.
         </p>
-
-        <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-6 lg:gap-8">
+        <div className="flex flex-col md:flex-row justify-center  items-center md:items-start gap-12 lg:gap-8">
           {' '}
           {[
             {
               title: 'Audit Small',
               description:
                 'Perfekt för dig som är osäker på hur din hemsida presterar tillgänglighetsmässigt och vill ha en första överblick.',
-              price: '4 000 kr',
-              offer: 'Kostnadsfri',
+              price: 'öppningserbjudande',
+              offer: 'Kostnadsfritt',
               linethroughPrice: '4 000 kr',
               features: [
                 'Hälsostatus för din hemsida',
@@ -102,6 +101,7 @@ const PricingPage = () => {
             },
           ].map((card, index) => (
             <article
+              aria-label="{card.title}"
               key={index}
               className={`border-2 border-blue-200 dark:border-rose-100 w-10/12 md:w-2/3 lg:w-${
                 index === 1 ? '2/5' : '1/5'
@@ -124,15 +124,26 @@ const PricingPage = () => {
                   {card.title}
                 </h3>
                 <p
-                  className={`${classes.multiLineEllipsis} text-center text-xs leading-5`}
+                  className={`${classes.multiLineEllipsis} text-center text-xs md:text-sm leading-5`}
                 >
                   {card.description}
                 </p>
 
-                <h2 className="text-2xl font-semibold lg:text-2xl pt-4 text-center leading-10">
+                {/*   <h2 className="text-2xl font-semibold lg:text-2xl pt-4 text-center leading-10">
                   {card.price}
-                </h2>
-                <ol aria-label="Ingår i paketet" className="mt-4 text-xs ">
+                </h2> */}
+                <div className="text-center mt-4">
+                  <p className="text-xl font-semibold line-through">
+                    {card.linethroughPrice}
+                  </p>
+                  <p
+                    className="text-xl font-bold text-green-600"
+                    aria-live="polite"
+                  >
+                    {card.offer} {card.price}
+                  </p>
+                </div>
+                <ol aria-label="Ingår i paketet" className="mt-4 md:text-md ">
                   {card.features.map((feature, featureIndex) => (
                     <motion.li
                       key={featureIndex}
@@ -146,8 +157,9 @@ const PricingPage = () => {
                         aria-hidden="true"
                         src={Check}
                         alt="Included"
-                        width={10}
-                        height={10}
+                        width={20}
+                        height={20}
+                        className="dark:bg-white mr-3"
                       />
                       <span>{feature}</span>
                     </motion.li>
@@ -163,9 +175,22 @@ const PricingPage = () => {
                 {card.buttonLabel}
               </Link>
             </article>
-          ))}
-        </div>
-      </motion.section>
+          ))}{' '}
+        </div>{' '}
+      </motion.section>{' '}
+      <p className=" text-[#36485C] dark:text-white lg:text-xl">
+        * Alla priser exklusive moms
+      </p>
+      <section
+        {...fadeInAnimationVariants}
+        className="py-12 lg:py-15 max-w-xl mx-auto"
+        aria-label="Frequency Asked Questions"
+      >
+        <h2 className="mb-6 text-2xl font-semibold text-center text-[#36485C] dark:text-white lg:text-3xl">
+          Vanliga frågor
+        </h2>
+        <FaqTillganglighet />
+      </section>
       <FaqTillganglighet />
     </main>
   )

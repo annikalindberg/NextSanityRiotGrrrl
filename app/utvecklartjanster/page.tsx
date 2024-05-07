@@ -18,7 +18,7 @@ const animationProps = {
 }
 
 const SoftwarePage = () => (
-  <main className="max-w-3xl mx-auto px-4">
+  <main className="max-w-3xl md:max-w-6xl mx-auto px-4 ">
     <motion.section
       {...animationProps}
       transition={{ delay: 0.175 }}
@@ -30,7 +30,7 @@ const SoftwarePage = () => (
         <h1 className="mb-6 text-2xl font-semibold text-center text-[#36485C] dark:text-white lg:text-3xl">
           Tillgänglig webbplats som växer med dig
         </h1>
-        <ul className="flex flex-col justify-center space-y-2 lg:text-2xl">
+        <ul className="flex flex-col justify-center space-y-2 lg:text-xl">
           {[
             'SEO-optimerade, skräddarsydda hemsidor efter dina behov',
             'Handkodade, tillgänglighets- och SEO-optimerade hemsidor',
@@ -61,10 +61,10 @@ const SoftwarePage = () => (
           Bygg för framtiden – skala upp när du behöver.
         </h2>
       </div>
-      <div className="flex flex-col items-center justify-center gap-6 md:flex-row md:items-start lg:gap-8">
+      <div className="flex flex-col items-center justify-center gap-8 md:flex-row md:items-start lg:gap-8">
         {[
           {
-            title: 'Snabbstart',
+            title: 'Färdig webbplats på 1 vecka',
             description:
               'Kom igång snabbt och effektivt med vårt snabbstart-paket. ',
             price: '10 000 kr',
@@ -123,6 +123,7 @@ const SoftwarePage = () => (
           },
         ].map((card, index) => (
           <article
+            aria-label="{card.title}"
             key={index}
             className={`border-2 border-blue-200 dark:border-rose-100 p-7 mt-10 rounded-lg flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:scale-105 ${card.bgClass}`}
           >
@@ -131,12 +132,12 @@ const SoftwarePage = () => (
                 {card.title}
               </h3>
               <p
-                className={`${classes.multiLineEllipsis} text-center text-xs leading-5`}
+                className={`${classes.multiLineEllipsis} text-center md:mx-auto  text-xs md:text-sm leading-5`}
               >
                 {card.description}
               </p>
 
-              <ol className="mt-4 text-xs">
+              <ol className="mt-4 text-xs md:text-lg ">
                 {card.features.map((feature, featureIndex) => (
                   <motion.li
                     key={featureIndex}
@@ -150,8 +151,9 @@ const SoftwarePage = () => (
                       src={Check}
                       aria-hidden="true"
                       alt="Included"
-                      width={10}
-                      height={10}
+                      width={20}
+                      height={20}
+                      className="dark:bg-white mr-3"
                     />
                     <span>{feature}</span>
                   </motion.li>
@@ -172,12 +174,15 @@ const SoftwarePage = () => (
           </article>
         ))}
       </div>
-    </motion.section>
+    </motion.section>{' '}
+    <p className=" text-[#36485C] dark:text-white lg:text-xl">
+      * Alla priser exklusive moms
+    </p>
     <motion.section
       {...animationProps}
       transition={{ delay: 0.175 }}
       animate={{ opacity: 1, y: 0, transition: { delay: 0.175 } }}
-      className="py-12 lg:py-15"
+      className="py-12 lg:py-15 max-w-xl mx-auto "
       aria-label="Frequently Asked Questions"
     >
       <h2 className="mb-6 text-2xl font-semibold text-center text-[#36485C] dark:text-white lg:text-3xl">

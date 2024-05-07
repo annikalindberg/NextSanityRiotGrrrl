@@ -19,7 +19,11 @@ export function FaqTillganglighet() {
           och utvecklad för att vara användbar för alla människor, inklusive
           personer med funktionsnedsättningar. Det innebär att webbplatsen är
           utformad för att vara lätt att navigera, förstå och använda för alla
-          användare, oavsett deras förmåga eller tekniska kunskaper.
+          användare, oavsett deras förmåga eller tekniska kunskaper.{' '}
+          <p className="mt-4">
+            Det innebär också att den är byggd för att fungera optimalt med
+            exempelvis skärmläsare och för den som navigerar med tangentbord.
+          </p>
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-2">
@@ -52,19 +56,27 @@ export function FaqTillganglighet() {
           Det finns flera verktyg och metoder för att testa om din webbplats är
           tillgänglighetsoptimerad. Ett enkelt sätt är att använda webbaserade
           verktyg som Lighthouse eller WAVE som kan identifiera
-          tillgänglighetsproblem på din webbplats. Oftast räcker det inte med
-          att testa med ett av dessa verktyg, eftersom olika verktyg kan hitta
-          olika problem. Det är därför en bra idé att använda flera verktyg och
-          metoder för att testa din webbplats tillgänglighet. Dessa
-          automatiserade testverktyg behöver dock alltid kompletteras med
-          manuella tester för att lyckas identifiera alla tillgänglighetsproblem
-          på din webbplats. Du behöver vara bekväm med att använda de vanligaste
-          assisterande teknologierna som skärmläsare för att kunna testa din
-          webbplats på rätt sätt. Har du inte själv rätt kunskap för att testa
-          din webbplats, bör du anlita någon som har det. Ett första steg kan
-          vara att boka kostnadsfri tillgänglighetsrådgivning med oss, för att
-          få en första diagnos av din webbplats tillgänglighet och råd hur du
-          ska ta nästa steg.
+          tillgänglighetsproblem på din webbplats.{' '}
+          <p>
+            Oftast räcker det inte med att testa med ett av dessa verktyg,
+            eftersom olika verktyg kan hitta olika problem. Det är därför en bra
+            idé att använda flera verktyg och metoder för att testa din
+            webbplats tillgänglighet.{' '}
+          </p>
+          <p className="mt-3">
+            Automatiserade testverktyg behöver dock alltid kompletteras med
+            manuella tester för att lyckas identifiera alla
+            tillgänglighetsproblem på din webbplats. Du behöver vara bekväm med
+            att använda de vanligaste assisterande teknologierna som skärmläsare
+            för att kunna testa din webbplats på rätt sätt.{' '}
+          </p>{' '}
+          <p className="mt-3">
+            Har du inte själv rätt kunskap för att testa din webbplats, bör du
+            anlita någon som har det. Ett första steg kan vara att boka
+            kostnadsfri tillgänglighetsrådgivning med oss, för att få en första
+            diagnos av din webbplats tillgänglighet och råd hur du ska ta nästa
+            steg.
+          </p>
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-4">
@@ -73,21 +85,26 @@ export function FaqTillganglighet() {
           webbplats brister i tillgänglighet?
         </AccordionTrigger>
         <AccordionContent>
-          Över 20% av befolkningen lever med en permanent funktionsnedsättning.
-          I Sverige, där nästan alla, 97.2% av befolkningen, använder internet
-          dagligen, innebär detta att cirka 2 miljoner potentiella användare som
-          din webbplats utesluter. Och detta är bara i Sverige.{' '}
+          {' '}
           <p>
+            I Sverige använder nästan alla, 97,2% av befolkningen internet
+            dagligen. Om din webbplats har brister i tillgämglighet utesluter
+            den cirk a 2 miljoner potentiella användare. detta är bara i
+            Sverige.{' '}
+          </p>
+          <p className="mt-4">
+            Det är inte bara personer med funktionsnedsättningar som påverkas av
+            en otillgänglig webbplats. Äldre personer, personer med långsam
+            internetuppkoppling, personer som använder mobiltelefoner och
+            surfplattor, och personer som inte talar svenska som förstaspråk kan
+            också ha svårt att använda en otillgänglig webbplats.
+          </p>
+          <p className="mt-4">
             Lägger vi dessutom till alla som har tillfälliga funktionshinder,
             vilket du själv säkert upplevt om du brutit ett finger eller bara
             glömt dina hörlurar och försöker kolla på en video på tåget, så blir
             det en stor del av befolkningen som påverkas negativt av en
-            otillgänglig webbplats. Det är inte bara personer med
-            funktionsnedsättningar som påverkas av en otillgänglig webbplats.
-            Äldre personer, personer med långsam internetuppkoppling, personer
-            som använder mobiltelefoner och surfplattor, och personer som inte
-            talar svenska som förstaspråk kan också ha svårt att använda en
-            otillgänglig webbplats.
+            otillgänglig webbplats.{' '}
           </p>
         </AccordionContent>
       </AccordionItem>
@@ -103,10 +120,12 @@ export function FaqTillganglighet() {
           göra den mer läsbar för både användare och sökmotorer. Till exempel,
           om du använder korrekt HTML-kodning och alt-text för bilder, kan
           sökmotorer förstå innehållet på din webbplats bättre och ranka den
-          högre i sökresultat. Dessutom, många av de åtgärder som krävs för att
-          göra en webbplats tillgänglighetsoptimerad, såsom att förbättra
-          laddningstiden och användarupplevelsen, kan också förbättra din
-          webbplats SEO.
+          högre i sökresultat.{' '}
+          <p className="mt-3">
+            Dessutom, många av de åtgärder som krävs för att göra en webbplats
+            tillgänglighetsoptimerad, såsom att förbättra laddningstiden och
+            användarupplevelsen, kan också förbättra din webbplats SEO.
+          </p>
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-6">
@@ -119,17 +138,25 @@ export function FaqTillganglighet() {
           HTML. Denna teknik var och är fortfarande tillgänglighetsoptimerad i
           sig själv. Men när webben utvecklades och blev mer avancerad, tillkom
           fler tekniker och verktyg som gjorde det enklare att bygga webb och
-          som inte alltid var lika tillgänglighetsoptimerade. Det är också så
-          att det är enklare och snabbare att bygga en webbplats som inte är
-          tillgänglighetsoptimerad. Många webbplatser byggs av personer som inte
-          har kunskap om tillgänglighet, och med hjälp av plattformar som inte
-          prioriterar tillgänglighet. Det är också så att det inte finns några
-          lagkrav som tvingar webbplatser att vara tillgänglighetsoptimerade,
-          vilket gör att många inte ser det som en prioritet. Dock har det på
-          senare år blivit allt mer uppmärksammat och det finns fler och fler
-          som ser tillgänglighet som en viktig del av webbutveckling. Nu finns
-          det också olika lagkrav som ställer krav på att vissa webbplatser ska
-          vara tillgänglighetsoptimerade.
+          som inte alltid var lika tillgänglighetsoptimerade.
+          <p className="mt4">
+            {' '}
+            Det är också så att det är enklare och snabbare att bygga en
+            webbplats som inte är tillgänglighetsoptimerad.{' '}
+          </p>{' '}
+          <p className="mt-4">
+            Många webbplatser byggs av personer som inte har kunskap om
+            tillgänglighet, och med hjälp av plattformar som inte prioriterar
+            tillgänglighet. Det är också så att det inte finns några lagkrav som
+            tvingar webbplatser att vara tillgänglighetsoptimerade, vilket gör
+            att många inte ser det som en prioritet.
+          </p>{' '}
+          <p className="mt-4">
+            Dock har det på senare år blivit allt mer uppmärksammat och det
+            finns fler och fler som ser tillgänglighet som en viktig del av
+            webbutveckling. Nu finns det också olika lagkrav som ställer krav på
+            att vissa webbplatser ska vara tillgänglighetsoptimerade.
+          </p>
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-7">
@@ -143,21 +170,33 @@ export function FaqTillganglighet() {
           människor, inklusive personer med funktionsnedsättningar. Det innebär
           att webbplatsen är utformad för att vara lätt att navigera, förstå och
           använda för alla användare, oavsett deras förmåga eller tekniska
-          kunskaper. En tillgänglighetsoptimerad webbplats är en webbplats som
-          är användarvänlig, lätt att navigera och som fungerar felfritt på alla
-          enheter. Det innebär att din webbplats kommer att vara mer attraktiv
-          och användarvänlig för alla användare, vilket kan öka din målgrupps
-          storlek och förbättra användarupplevelsen. En vanlig missuppfattning
-          är att en tillgänglig webbplats måste kompromissa med design och
-          estetik. Detta är långt ifrån sanningen. Modern webbdesign tillåter
-          kreativitet och innovation även inom ramarna för
-          tillgänglighetsstandarder. Du kan fortfarande skapa en visuellt
-          tilltalande webbplats som också är funktionell och tillgänglig för
-          alla. Som utvecklare ser jag det som en utmaning att lyckas kombinera
-          estetik och funktionalitet på ett sätt som gör att din webbplats
-          sticker ut och samtidigt är användarvänlig för alla. Boka en
-          kostnadsfri konsultation med mig för att diskutera dina behov och
-          designidéer.
+          kunskaper.{' '}
+          <p className="mt-4">
+            En tillgänglighetsoptimerad webbplats är en webbplats som är
+            användarvänlig, lätt att navigera och som fungerar felfritt på alla
+            enheter. Det innebär att din webbplats kommer att vara mer attraktiv
+            och användarvänlig för alla användare, vilket kan öka din målgrupps
+            storlek och förbättra användarupplevelsen.{' '}
+          </p>{' '}
+          <p className="mt-4">
+            En vanlig missuppfattning är att en tillgänglig webbplats måste
+            kompromissa med design och estetik. Detta är långt ifrån sanningen.
+          </p>{' '}
+          <p className="mt-4">
+            Modern webbdesign tillåter kreativitet och innovation även inom
+            ramarna för tillgänglighetsstandarder. Du kan fortfarande skapa en
+            visuellt tilltalande webbplats som också är funktionell och
+            tillgänglig för alla.{' '}
+          </p>{' '}
+          <p className="mt-4">
+            Som utvecklare ser jag det som en utmaning att lyckas kombinera
+            estetik och funktionalitet på ett sätt som gör att din webbplats
+            sticker ut och samtidigt är användarvänlig för alla.
+          </p>{' '}
+          <p className="mt-4">
+            Boka en kostnadsfri konsultation med mig för att diskutera dina
+            behov och designidéer.
+          </p>
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-8">
