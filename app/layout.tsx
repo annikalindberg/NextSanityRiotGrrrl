@@ -33,7 +33,7 @@ export default function RootLayout({
           attribute="class"
           defaultTheme="system"
           enableSystem
-          disableTransitionOnChange
+          disableTransitionOnChange // Prevent transition on initial page load and theme change (re-enable with a delay) to avoid a flash of light and dark mode on initial load (remove if not important to you)
         >
           <Navigation />
           <main>{children}</main>

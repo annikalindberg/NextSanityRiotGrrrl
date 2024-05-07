@@ -17,7 +17,22 @@ export default function Hero() {
         {/* Text container */}
         <div className=" mt-5 max-w-xs ml-4  md:max-w-sm lg:max-w-xl lg:mr-10">
           <h1 className=" text-left font-bold leading-relaxed tracking-wider text-3xl md:text-4xl lg:text-6xl md:leading-normal lg:leading-normal">
-            Vi bygger och tillgänglighets- optimerar din webbplats.{' '}
+            Vi{' '}
+            <span
+              className="text-rose-900 dark:text-fuchsia-100 font-bold
+            "
+            >
+              {' '}
+              bygger{' '}
+            </span>{' '}
+            och{' '}
+            <span
+              className="text-rose-900 dark:text-fuchsia-100 font-bold
+            "
+            >
+              tillgänglighets- optimerar{' '}
+            </span>{' '}
+            din webbplats.{' '}
           </h1>
           <p className="mt-5 md:mt-8 lg:mt-15 leading-10">
             Vi är utvecklare och experter på tillgänglighet. Med oss slipper du

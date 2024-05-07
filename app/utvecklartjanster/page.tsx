@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Check from '../../public/assets/check.svg'
 import Link from 'next/link'
 import classes from '../components/pricing.module.css'
-import { FaqWebbutveckling } from '@/components/ui/Faq-webbutveckling'
+import { FaqWebbutveckling } from '@/app/components/Faq-webbutveckling'
 const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, '-')
 
 // Simplified animation object
