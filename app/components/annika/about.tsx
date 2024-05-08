@@ -3,6 +3,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { useSectionInView } from './hooks'
+import SectionDivider from './section-divider'
 
 export default function About() {
   const { ref } = useSectionInView('About')
@@ -16,69 +17,134 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <h2 className="text-3xl font-bold mb-3 text-center">
-        Frontend to Full Stack
-      </h2>
-      <p className="font-medium ">
-        In 2020, I transitionend from a career as a executive coordinator into
-        web development, and I havent looked back since. 2023 I decided to
-        enroll Technigo bootcamp and leverage my skills into the leading
-        technologies on the market. After graduation I started building on my
-        portfolio, my tech stack, and my passion for code.{' '}
-      </p>
-      <div>
-        {' '}
-        <p>
-          My background in education and accessibility compliance, has provided
-          me with a deep understanding for web accessibility as a developer. I
-          keep investing in my interest and earned several certificates within
-          web accessibility standards and UX-design. In my freelance developer
-          toolkit I provide accessibility audits as well as hands-on tips in how
-          to improve code and UX/UI to be compliant to WCAG and WAI-ARIA
-          standards.
-        </p>
-      </div>
-      <hr className="w-10 h-1 mx-auto my-8 bg-cyan-600 border-0 rounded md:my-12 dark:bg-pink-500" />
-      <h3 className="text-3xl mt-4 font-bold text-left dark:text-pink-500 text-pink-800">
-        Freelancing Developer{' '}
-      </h3>
-
-      <div className="mt-4 mb-4">
-        {' '}
-        As a freelancing developer, based in Stockholm, Sweden, I build
-        customized and hand-crafted applications and offer accessibility audits
-        for small to middle size organizations and businesses webpages.
+      {' '}
+      <div className=" mb-4">
+        <h2 className="text-3xl font-bold mb-3 text-center">
+          Webbutvecklare och Tillgänglighetsexpert
+        </h2>{' '}
         <hr className="w-10 h-1 mx-auto my-8  bg-pink-600 border-0 rounded md:my-9 dark:bg-cyan-400" />
-        <h3 className="text-3xl mt-4 font-bold mb-3  mr-5 text-cyan-800 dark:text-cyan-500">
-          FemTech devotion
+        <h3 className="text-3xl  font-bold text-left dark:text-pink-500 text-pink-800">
+          Expertis inom Frontend och Fullstack-utveckling{' '}
         </h3>
-        <p>
-          BTW Im also a professional BIRTH DOULA Why I seek all the opportunitys
-          to combine my two passions in life <span aria-hidden> 💕</span> and
-          FemTech allows me to actually do so At DAYA Innovation Lab, a FemTech
-          incubator, I am currently living that dream. Its amazing getting to be
-          in the hub where innovation and technology really can make life better
-          for so many people. I get amazed by the power of technology and the
-          impact it can have on the world.
+        <hr className="w-10 h-1 mx-auto my-8 bg-cyan-600 border-0 rounded md:my-12 dark:bg-pink-500" />
+        <h3 className="text-3xl text-center font-bold mb-3  mr-5 text-cyan-800 dark:text-cyan-200">
+          Specialisering inom Webb Tillgänglighet{' '}
+        </h3>{' '}
+        <div className="flex items-center justify-center">
+          <SectionDivider />
+        </div>
+        <p className="font-medium">
+          Med en bakgrund som utbildare och projektledare inom offentlig sektor
+          och ideell sektor, har jag alltid drivits av att möta och lösa
+          utmaningar. Efter över tio år i dessa roller, tog jag klivet in i
+          tech-världen och har inte sett tillbaka sedan dess. Min dagliga
+          drivkraft är passionen för kodning och att skapa användbara,
+          tillgängliga digitala lösningar.
+        </p>
+        <hr className="w-10 h-1 mx-auto my-8 bg-cyan-600 border-0 rounded md:my-12 dark:bg-pink-500" />
+        <p className="mt-4">
+          Jag har en djup förståelse för tillgänglighet på webben, vilket
+          säkerställer att de webbplatser jag utvecklar inte bara är
+          funktionella utan också tillgängliga enligt aktuella standarder och
+          lagkrav. För mig är tillgänglighet en naturlig del av webbutvecklings
+          alla faser, från design till utveckling och testning. Jag praktiserar
+          tillgänglighet både i kod och design för att uppfylla aktuella
+          standarder, men har även lång erfarenhet av att använda ett
+          inkluderande språk i allt från copywriting, design och kommunikation.
         </p>
       </div>
       <hr className="w-10 h-1 mx-auto my-8 bg-cyan-600 border-0 rounded md:my-12 dark:bg-pink-500" />
-      <h3 className="text-3xl mt-4 font-bold text-left dark:text-pink-500 text-pink-800">
+      <h3 className="text-3xl  font-bold text-left dark:text-pink-500 text-pink-800">
         Tech Stack{' '}
       </h3>
+      <h2 className="text-3xl font-bold mb-3 text-center">
+        Webbutvecklare och Tillgänglighetsexpert
+      </h2>
+      <div>
+        <h3 className=" font-bold text-cyan-800 dark:text-cyan-200 ">
+          Frontend Utveckling
+        </h3>
+        <p className="mt-2">
+          HTML5, CSS3, JavaScript, TypeScript: Rutinerad inom grundläggande och
+          avancerade frontend-tekniker.
+        </p>
+        <p className="mt-4">
+          React, Next.js: Erfarenhet i moderna JavaScript-ramverk och bibliotek
+          för byggande av skalbara SPA och SSR applikationer.
+        </p>
+        <p className="mt-4">
+          Redux, Context API: Hantering av applikationsstatus och dataflöden i
+          komplexa projekt.
+        </p>
+        <p className="mt-4">
+          jQuery: Kunskap inom detta bibliotek, även om dess relevans har
+          minskat med moderna frontend-ramverk.
+        </p>
+        <p className="mt-4">
+          Tailwind CSS: Implementering av utility-first CSS för snabb och
+          effektiv UI-utveckling.
+        </p>
+        <p className="mt-4">
+          Framer Motion: Användning för sofistikerade animationer inom
+          React-ekosystemet.
+        </p>
 
-      <div className="mt-4 mb-4">
-        <p>
-          Speaking about tech.. React, Next.js, Node.js, and MongoDB is where I
-          find myself most of the time. TypeScript/JavaScript is my first coding
-          language. I naturally expand my tech stack based on the specific
-          problems I need to solve with my code. My primary focus is always on
-          the end user and the future maintainers of the code. I honor{' '}
-          <span className="font-bold">best practices</span> to ensure a positive
-          experience for both developers and end user. I love combining my
-          interest in the latest design trends, keep playfulness and innovative
-          edge yet making sure the design is accessible for anyone to use.
-        </p>{' '}
+        <h3 className=" font-bold text-cyan-800 dark:text-cyan-200 ">
+          Backend Utveckling
+        </h3>
+        <p className="mt-4">
+          Node.js, Express: Skapande av server-side applikationer med
+          JavaScript.
+        </p>
+        <p className="mt-4">
+          MongoDB, Mongoose: Utveckling och hantering av NoSQL-databaser för
+          applikationer med stora datamängder.
+        </p>
+        <p className="mt-4">
+          APIs: Design och integration av RESTful och GraphQL APIs för effektiv
+          kommunikation mellan klient och server.
+        </p>
+
+        <h3 className=" font-bold text-cyan-800 dark:text-cyan-200 ">
+          UX/UI Design
+        </h3>
+        <p className="mt-4">
+          Figma: Prototyping och UI-design för att skapa interaktiva och
+          användarvänliga gränssnitt.
+        </p>
+        <p className="mt-4">
+          UX-design: Kompetens i att optimera användarupplevelser genom väl
+          genomtänkta designprinciper.
+        </p>
+
+        <h3 className=" font-bold text-cyan-800 dark:text-cyan-200 ">
+          Tillgänglighet och SEO
+        </h3>
+        <p className="mt-4">
+          WCAG 2.2, WAI-ARIA: Tillämpning av tillgänglighetsstandarder för att
+          säkerställa webbplatser är tillgängliga för alla användare.
+        </p>
+        <p className="mt-4">
+          SEO, Google Analytics: Optimering av webbsidor för sökmotorer och
+          analys av användarbeteende för att förbättra sidans prestanda och
+          synlighet.
+        </p>
+
+        <h3 className=" font-bold text-cyan-800 dark:text-cyan-200 ">
+          Versionshantering och Verktyg
+        </h3>
+        <p className="mt-4">
+          Git: Effektiv hantering av kodbaser och projektversioner genom
+          branschstandard verktyg för versionskontroll.
+        </p>
+
+        <h3 className=" font-bold text-cyan-800 dark:text-cyan-200 ">
+          CMS och Övriga Verktyg
+        </h3>
+        <p className="mt-4">
+          Sanity: Användning av headless CMS för flexibel och skalbar
+          innehållshantering.
+        </p>
       </div>
     </motion.section>
   )

@@ -99,7 +99,7 @@ export const projectsData = [
     title: 'teQueenMatch',
     slug: 'projects/[slug]',
     description:
-      'Fullstack app containing a API using Express, Node.js and MongoDB and a frontend in React. The purpose of the app is to connect women and non-binary individuals within the tech community, facilitating connections for mentorship, support, and shared experiences.',
+      'Fullstack webb application created in collaboration with non-profit organization teQueenMatch. The purpose of the app is to connect women and non-binary individuals within the tech community, facilitating connections for mentorship, support, and shared experiences.',
     imageUrl: '/images/teQueenMatch.png',
     imageCaption: 'Mockup of the teQueenMatch app',
     githubLink: 'https://github.com/annikalindberg/teQueenMatch',
@@ -140,126 +140,9 @@ export const projectsData = [
     githubLink: 'https://github.com/annikalindberg/DoulaSkapet',
     LiveDemoLink: 'https://doulaskapet.se/',
   },
-  {
-    title: 'My Code Diary',
-    description:
-      'A diary app challenge implemented with a focus on scalability and extensibility, featuring Material-UI for the UI components and configured for future API integration. Technologies include React JS, Redux, and Axios.',
-    imageUrl: '/images/codeDiary.png',
-    tags: ['React JS', 'Redux', 'Node.js', 'API', 'Axios', 'Node.js'],
-    githubLink: 'https://github.com/annikalindberg/diary-app',
-    LiveDemoLink: 'https://annikasdiary.netlify.app/',
-  },
-  {
-    title: 'Wordgame Swedish Weather',
-    description:
-      'A creative take on the Hangman game with a theme suitable for learning Swedish or English words, utilizing React JS, Redux for state management, and Axios for API data fetching.',
-    imageUrl: '/images/swedishwordsproject.png',
-    tags: ['React JS', 'Redux', 'API', 'Axios', 'Node.js'],
-    githubLink: 'https://github.com/annikalindberg/Hangman-game',
-    LiveDemoLink: 'https://swedishweatherwords.netlify.app/',
-  },
-  {
-    title: 'Rabbit Hole Maze-game',
-    description:
-      'An Alice in Wonderland-themed labyrinth game leveraging Redux for async actions and reducers, focusing on integrating APIs and creating reusable components. Built with React JS and Redux.',
-    imageUrl: '/images/rabbithole.jpg',
-    tags: ['React JS', 'Redux', 'API', 'Animation', 'Axios', 'Node.js'],
-    githubLink: 'https://github.com/annikalindberg/project-labyrinth',
-    LiveDemoLink: 'https://rabbit-hole-labyrinth-annika-fiona.netlify.app/',
-  },
-  {
-    title: 'Happy-Thoughts-Project',
-    description:
-      'A microblogging platform for sharing joyful moments, supported by a custom Express API and MongoDB for the backend. Incorporates full stack development with React on the frontend.',
-    imageUrl: '/images/happythoughts.png',
-    tags: [
-      'Express',
-      'Mongo DB',
-      'CSS',
-      'JavaScript',
-      'React',
-      'API',
-      'Axios',
-      'Fullstack',
-      'Node.js',
-    ],
-    githubLink: 'https://github.com/annikalindberg/project-happy-thoughts',
-    LiveDemoLink: 'https://sweet-unicorn-99f547.netlify.app/',
-  },
-  {
-    title: 'To Do App',
-    description:
-      'A To-Do app emphasizing state management via React and Redux, featuring custom reducers and the createSlice method from Redux Toolkit for a modular approach. Styled with vanilla CSS.',
-    imageUrl: '/images/to-do-app.png',
-    tags: ['CSS3', 'JavaScript', 'React', 'Redux', 'Node.js'],
-    githubLink: 'https://github.com/annikalindberg/project-todos',
-    LiveDemoLink: 'https://animated-paletas-c14d00.netlify.app/',
-  },
-  {
-    title: 'Space-Quiz Project',
-    description:
-      'A collaborative effort to create a quiz application using React and Redux, demonstrating the use of selectors for state access and dispatch for triggering actions. Developed with React JS and Redux.',
-    imageUrl: '/images/reduxquiz.png',
-    tags: ['CSS3', 'JavaScript', 'React', 'Redux', 'Node.js'],
-    githubLink: 'https://github.com/annikalindberg/project-redux-space-quiz',
-    LiveDemoLink: 'https://annika-spacequiz.netlify.app/',
-  },
-  {
-    title: 'Movie releases',
-    description:
-      'A React-based multi-page application showcasing client-side navigation with React Router and asynchronous data fetching from an external API, utilizing hooks for enhanced functionality.',
-    imageUrl: '/images/movies.png',
-    tags: ['HTML5', 'CSS3', 'JavaScript', 'React', 'Redux', 'Axios', 'Node.js'],
-    githubLink: 'https://github.com/annikalindberg/project-movies',
-    LiveDemoLink: 'https://cosmic-daffodil-7c032f.netlify.app/',
-  },
-  {
-    title: 'Backend API for Happy Thoughts',
-    description:
-      "Developed an Express and MongoDB API featuring endpoints for managing 'Happy Thoughts', including functionality for posting and liking thoughts. Focuses on backend development.",
-    imageUrl: '/images/happythoughts.png',
-    tags: [
-      'Express',
-      'Mongo DB',
-      'JavaScript',
-      'API',
-      'Backend',
-      'API',
-      'Node.js',
-    ],
-    githubLink: 'https://github.com/annikalindberg/project-happy-thoughts-api ',
-    LiveDemoLink: 'https://happy-thoughts-express-api.onrender.com/',
-  },
-  {
-    title: 'Music releases',
-    description:
-      'A React project showcasing new music releases using the Spotify API, developed through pair programming. Highlights the use of useState hooks for state management.',
-    imageUrl: '/images/musicreleases.png',
-    tags: ['HTML5', 'CSS3', 'JavaScript', 'React', 'Node.js'],
-    githubLink: 'https://github.com/chas-academy/project-music-releases',
-    LiveDemoLink: 'https://anna-annikas.netlify.app/',
-  },
-  {
-    title: 'Weather app',
-    description:
-      'A weather dashboard application built with vanilla JavaScript, displaying current weather and a 5-day forecast by fetching data from a weather API. Developed through pair programming.',
-    imageUrl: '/images/weatherapp.png',
-    tags: ['HTML5', 'CSS3', 'JavaScript', 'API'],
-    githubLink: 'https://github.com/annikalindberg/project-weather-app',
-    LiveDemoLink: 'https://rainbow-rolypoly-c2ce71.netlify.app/',
-  },
-  {
-    title: 'Guess who the game',
-    description:
-      'A digital version of the classic board game "Guess Who", implemented in vanilla JavaScript. Focuses on utilizing objects, arrays, and DOM manipulation.',
-    imageUrl: '/images/guess-who.png',
-    tags: ['HTML5', 'CSS3', 'JavaScript'],
-    githubLink: 'https://github.com/AnnikaLindberg/project-guess-who',
-    LiveDemoLink: 'https://comforting-fudge-9d6c21.netlify.app/',
-  },
 ] as const
 
-export const skillsData = [
+/* export const skillsData = [
   'HTML5',
   'CSS3',
   'JavaScript',
@@ -273,10 +156,45 @@ export const skillsData = [
   'MongoDB',
   'Redux',
   'jQuery',
-  'UX/UI',
+  'UX-design',
+  'WCAG 2.2',
+  'WAI-ARIA',
+  'SEO',
+  'Google Analytics',
   'Express',
   'APIs',
   'Sanity',
   'Figma',
   'Framer Motion',
+] as const */
+
+export const frontendSkills = [
+  'HTML5',
+  'CSS3',
+  'JavaScript',
+  'TypeScript',
+  'React',
+  'Next.js',
+  'Tailwind',
+  'Redux',
+  'jQuery',
+  'Figma',
+  'Framer Motion',
 ] as const
+
+export const backendSkills = [
+  'Node.js',
+  'Express',
+  'Mongoose',
+  'MongoDB',
+  'APIs',
+] as const
+
+export const tillgänglighetSkills = [
+  'WCAG 2.2',
+  'WAI-ARIA',
+  'SEO',
+  'Google Analytics',
+] as const
+
+export const generalSkills = ['Git', 'Sanity', 'UX-design'] as const

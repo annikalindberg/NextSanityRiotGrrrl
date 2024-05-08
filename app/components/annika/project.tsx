@@ -1,14 +1,6 @@
 'use client'
 
-import {
-  AwaitedReactNode,
-  JSXElementConstructor,
-  Key,
-  ReactElement,
-  ReactNode,
-  ReactPortal,
-  useRef,
-} from 'react'
+import { useRef } from 'react'
 import { projectsData } from './data'
 import Image from 'next/image'
 import { motion, useScroll, useTransform } from 'framer-motion'
@@ -67,29 +59,14 @@ export default function Project({
             {description}
           </p>
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
-            {tags.map(
-              (
-                tag:
-                  | string
-                  | number
-                  | bigint
-                  | boolean
-                  | ReactElement<any, string | JSXElementConstructor<any>>
-                  | Iterable<ReactNode>
-                  | ReactPortal
-                  | Promise<AwaitedReactNode>
-                  | null
-                  | undefined,
-                index: Key | null | undefined
-              ) => (
-                <li
-                  className="bg-black/[0.7] px-4 py-2 text-[0.7rem] uppercase tracking-wider text-white rounded-md dark:text-white/80 dark:bg-purple-950"
-                  key={index}
-                >
-                  {tag}
-                </li>
-              )
-            )}
+            {tags.map((tag, index) => (
+              <li
+                className="bg-black/[0.7] px-4 py-2 text-[0.7rem] uppercase tracking-wider text-white rounded-md dark:text-white/80 dark:bg-purple-950"
+                key={index}
+              >
+                {tag}
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -113,7 +90,7 @@ export default function Project({
         group-even:right-[initial] group-even:-left-40"
         />
       </article>
-      <div className="flex flex-col justify-center items-center space-y-4 mt-4 sm:mt-0 ml-5">
+      <div className="flex flex-col justify-center items-center space-y-6 mt-4 sm:mt-0 ml-9">
         {LiveDemoLink ? (
           <a
             href={LiveDemoLink}
