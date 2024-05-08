@@ -12,7 +12,7 @@ export function FaqTillganglighet() {
     <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1">
         <AccordionTrigger className="text-left">
-          Vad innebär det att en webbplats är tillgänglighetsoptimerad?
+          Vad innebär det att en webbplats är tillgänglig?
         </AccordionTrigger>
         <AccordionContent>
           En tillgänglighetsoptimerad webbplats är en webbplats som är utformad
@@ -28,27 +28,58 @@ export function FaqTillganglighet() {
       </AccordionItem>
       <AccordionItem value="item-2">
         <AccordionTrigger className="text-left">
+          Vad menar ni när ni säger &quot;tillgänglighetsoptimerad
+          webbplats&quot;?{' '}
+        </AccordionTrigger>
+        <AccordionContent>
+          <p>
+            När vi pratar om tillgänglighetsoptimering, refererar vi till
+            processen att göra en webbplats tillgänglig och användbar för alla
+            personer, oavsett funktionsnedsättning eller tekniska
+            förutsättningar. Detta begrepp skiljer sig från enbart
+            &quot;tillgänglighetsanpassning&quot;, som ofta kan uppfattas som
+            att webbplatsen justeras för att passa specifika grupper. Vi ser det
+            inte som en isolerad anpassning, utan snarare som en omfattande
+            optimering.
+          </p>{' '}
+          <p className="mt-4">
+            Optimering för tillgänglighet innebär att vi integrerar
+            tillgänglighet i varje steg av webbutvecklingsprocessen, från
+            planering till genomförande och vidare underhåll. Det handlar inte
+            bara om att lägga till tillgängliga funktioner som en eftertanke,
+            likt hur meta-taggar läggs till för SEO. Istället ser vi
+            tillgängligheten som en grundläggande aspekt av webbdesign som
+            påverkar allt från kodstruktur till användarinteraktion och visuell
+            design.
+          </p>
+          <p className="mt-4">
+            Att optimera för tillgänglighet handlar om att identifiera och ta
+            bort hinder som kan begränsa användarnas förmåga att navigera,
+            förstå och interagera med webbplatsen. Genom att se till att alla
+            element på sidan är tillgängliga och fungerar smidigt för alla
+            användare, inklusive de som använder assistiv teknik som
+            skärmläsare, försäkrar vi att webbplatsen är inkluderande.
+          </p>
+        </AccordionContent>
+      </AccordionItem>
+
+      <AccordionItem value="item-3">
+        <AccordionTrigger className="text-left">
           Varför är tillgänglighet viktigt för en webbplats?
         </AccordionTrigger>
         <AccordionContent>
           Tillgänglighet är viktigt för en webbplats av flera skäl. För det
           första är det ett etiskt krav att se till att alla användare har
-          tillgång till information och tjänster på webben. För det andra kan en
-          tillgänglighetsoptimerad webbplats öka din målgrupps storlek och
-          förbättra användarupplevelsen för alla användare. Slutligen kan en
-          tillgänglighetsoptimerad webbplats också förbättra din webbplats SEO
-          och sökmotorrankning. Läs gärna mer om hur tillgänglighet och SEO
-          hänger ihop här:
-          <Link
-            href="/varfor-tillganglighetsoptimera-din-webbplats"
-            passHref
-            className="text-blue-600"
-          >
-            Varför är tillgänglighet viktigt för en webbplats?
-          </Link>
+          tillgång till information och tjänster på webben.{' '}
+          <p className="mt-4">
+            För det andra kan en tillgänglighetsoptimerad webbplats öka din
+            målgrupps storlek och förbättra användarupplevelsen för alla
+            användare. Slutligen kan en tillgänglighetsoptimerad webbplats också
+            förbättra din webbplats SEO och sökmotorrankning.{' '}
+          </p>
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem value="item-3">
+      <AccordionItem value="item-4">
         <AccordionTrigger className="text-left">
           Hur testar jag om min webbplats är tillgänglighetsoptimerad?
         </AccordionTrigger>
@@ -79,7 +110,7 @@ export function FaqTillganglighet() {
           </p>
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem value="item-4">
+      <AccordionItem value="item-5">
         <AccordionTrigger className="text-left">
           Ungefär hur många användare är det som påverkas negativt om min
           webbplats brister i tillgänglighet?
@@ -108,7 +139,7 @@ export function FaqTillganglighet() {
           </p>
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem value="item-5">
+      <AccordionItem value="item-6">
         <AccordionTrigger className="text-left">
           Varför hänger SEO och tillgänglighet ihop?
         </AccordionTrigger>
@@ -128,7 +159,7 @@ export function FaqTillganglighet() {
           </p>
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem value="item-6">
+      <AccordionItem value="item-7">
         <AccordionTrigger className="text-left">
           Om tillgänglighet är så viktigt, varför bygges inte alla webbplatser
           tillgänglighetsoptimerade från början?
@@ -159,7 +190,7 @@ export function FaqTillganglighet() {
           </p>
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem value="item-7">
+      <AccordionItem value="item-8">
         <AccordionTrigger className="text-left">
           Innebär tillgänglighetsanpassning att min sida kommer att bli tråkig
           och ful?
@@ -199,7 +230,7 @@ export function FaqTillganglighet() {
           </p>
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem value="item-8">
+      <AccordionItem value="item-9">
         <AccordionTrigger className="text-left">
           Jag har hört att det finns enklare sätt att göra en webbplats mer
           tillgänglig utan att behöva göra en hel omdesign. Är det sant?

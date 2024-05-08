@@ -4,19 +4,23 @@ import Intro from '../components/annika/intro'
 import Projects from '../components/annika/projects'
 import SectionDivider from '../components/annika/section-divider'
 import Skills from '../components/annika/skills'
-/* import Header from '../components/annika/header'
- */
+import AnnikaSocialLinks from '../components/annika/annikaSocialLinks'
+
 export default function Home() {
   return (
-    <main className="flex flex-col items-center px-4  ">
+    <article className="flex flex-col items-center px-4  ">
       {/*    <Header /> */}
       <Intro />
       <SectionDivider />
       <About />
       <SectionDivider />
-      <Projects />
       <Skills />
+      <SectionDivider />
+      <Projects />
+      <SectionDivider />
       <Experience />
-    </main>
+      <SectionDivider />
+      <AnnikaSocialLinks />
+    </article>
   )
 }

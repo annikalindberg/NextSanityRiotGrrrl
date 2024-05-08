@@ -2,11 +2,18 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { useSectionInView } from './hooks'
 import SectionDivider from './section-divider'
+import Link from 'next/link'
+import { BsArrowRight, BsLinkedin } from 'react-icons/bs'
+import { HiDownload } from 'react-icons/hi'
+import { FaGithubSquare } from 'react-icons/fa'
+import { useSectionInView } from './hooks'
+import { FaRegFilePdf } from 'react-icons/fa'
+import kaffekopp from '@/public/images/kaffekopp.svg'
+import Image from 'next/image'
 
 export default function About() {
-  const { ref } = useSectionInView('About')
+  const { ref } = useSectionInView('Top', 0.5)
 
   return (
     <motion.section
@@ -18,133 +25,100 @@ export default function About() {
       id="about"
     >
       {' '}
-      <div className=" mb-4">
-        <h2 className="text-3xl font-bold mb-3 text-center">
-          Webbutvecklare och Tillgänglighetsexpert
-        </h2>{' '}
-        <hr className="w-10 h-1 mx-auto my-8  bg-pink-600 border-0 rounded md:my-9 dark:bg-cyan-400" />
-        <h3 className="text-3xl  font-bold text-left dark:text-pink-500 text-pink-800">
-          Expertis inom Frontend och Fullstack-utveckling{' '}
-        </h3>
-        <hr className="w-10 h-1 mx-auto my-8 bg-cyan-600 border-0 rounded md:my-12 dark:bg-pink-500" />
-        <h3 className="text-3xl text-center font-bold mb-3  mr-5 text-cyan-800 dark:text-cyan-200">
-          Specialisering inom Webb Tillgänglighet{' '}
-        </h3>{' '}
-        <div className="flex items-center justify-center">
-          <SectionDivider />
-        </div>
-        <p className="font-medium">
-          Med en bakgrund som utbildare och projektledare inom offentlig sektor
-          och ideell sektor, har jag alltid drivits av att möta och lösa
-          utmaningar. Efter över tio år i dessa roller, tog jag klivet in i
-          tech-världen och har inte sett tillbaka sedan dess. Min dagliga
-          drivkraft är passionen för kodning och att skapa användbara,
-          tillgängliga digitala lösningar.
-        </p>
-        <hr className="w-10 h-1 mx-auto my-8 bg-cyan-600 border-0 rounded md:my-12 dark:bg-pink-500" />
-        <p className="mt-4">
-          Jag har en djup förståelse för tillgänglighet på webben, vilket
-          säkerställer att de webbplatser jag utvecklar inte bara är
-          funktionella utan också tillgängliga enligt aktuella standarder och
-          lagkrav. För mig är tillgänglighet en naturlig del av webbutvecklings
-          alla faser, från design till utveckling och testning. Jag praktiserar
-          tillgänglighet både i kod och design för att uppfylla aktuella
-          standarder, men har även lång erfarenhet av att använda ett
-          inkluderande språk i allt från copywriting, design och kommunikation.
-        </p>
-      </div>
+      <h3 className="text-3xl text-center text-teal-900 dark:text-teal-50font-bold ">
+        15 + års erfarenhet av tillgänglighetsarbete, projektledning och
+        utbildning{' '}
+      </h3>{' '}
+      <p className="mt-4">
+        För mig är tillgänglighet en naturlig del av webbutvecklings alla faser,
+        från design till utveckling och testning. Jag praktiserar tillgänglighet
+        både i kod och design för att uppfylla aktuella standarder, men har även
+        lång erfarenhet av att använda ett inkluderande språk i allt från
+        copywriting, design och kommunikation.
+      </p>
+      <p className="font-medium mt-4">
+        Med en bakgrund som utbildare och projektledare inom offentlig sektor
+        och ideell sektor, har jag alltid drivits av att möta och lösa
+        utmaningar. Efter över tio år i dessa roller, tog jag klivet in i
+        tech-världen och har inte sett tillbaka sedan dess. Min dagliga
+        drivkraft är passionen för kodning och att skapa användbara,
+        tillgängliga digitala lösningar.
+      </p>
       <hr className="w-10 h-1 mx-auto my-8 bg-cyan-600 border-0 rounded md:my-12 dark:bg-pink-500" />
-      <h3 className="text-3xl  font-bold text-left dark:text-pink-500 text-pink-800">
-        Tech Stack{' '}
-      </h3>
-      <h2 className="text-3xl font-bold mb-3 text-center">
-        Webbutvecklare och Tillgänglighetsexpert
-      </h2>
-      <div>
-        <h3 className=" font-bold text-cyan-800 dark:text-cyan-200 ">
-          Frontend Utveckling
-        </h3>
-        <p className="mt-2">
-          HTML5, CSS3, JavaScript, TypeScript: Rutinerad inom grundläggande och
-          avancerade frontend-tekniker.
-        </p>
-        <p className="mt-4">
-          React, Next.js: Erfarenhet i moderna JavaScript-ramverk och bibliotek
-          för byggande av skalbara SPA och SSR applikationer.
-        </p>
-        <p className="mt-4">
-          Redux, Context API: Hantering av applikationsstatus och dataflöden i
-          komplexa projekt.
-        </p>
-        <p className="mt-4">
-          jQuery: Kunskap inom detta bibliotek, även om dess relevans har
-          minskat med moderna frontend-ramverk.
-        </p>
-        <p className="mt-4">
-          Tailwind CSS: Implementering av utility-first CSS för snabb och
-          effektiv UI-utveckling.
-        </p>
-        <p className="mt-4">
-          Framer Motion: Användning för sofistikerade animationer inom
-          React-ekosystemet.
-        </p>
-
-        <h3 className=" font-bold text-cyan-800 dark:text-cyan-200 ">
-          Backend Utveckling
-        </h3>
-        <p className="mt-4">
-          Node.js, Express: Skapande av server-side applikationer med
-          JavaScript.
-        </p>
-        <p className="mt-4">
-          MongoDB, Mongoose: Utveckling och hantering av NoSQL-databaser för
-          applikationer med stora datamängder.
-        </p>
-        <p className="mt-4">
-          APIs: Design och integration av RESTful och GraphQL APIs för effektiv
-          kommunikation mellan klient och server.
-        </p>
-
-        <h3 className=" font-bold text-cyan-800 dark:text-cyan-200 ">
-          UX/UI Design
-        </h3>
-        <p className="mt-4">
-          Figma: Prototyping och UI-design för att skapa interaktiva och
-          användarvänliga gränssnitt.
-        </p>
-        <p className="mt-4">
-          UX-design: Kompetens i att optimera användarupplevelser genom väl
-          genomtänkta designprinciper.
-        </p>
-
-        <h3 className=" font-bold text-cyan-800 dark:text-cyan-200 ">
-          Tillgänglighet och SEO
-        </h3>
-        <p className="mt-4">
-          WCAG 2.2, WAI-ARIA: Tillämpning av tillgänglighetsstandarder för att
-          säkerställa webbplatser är tillgängliga för alla användare.
-        </p>
-        <p className="mt-4">
-          SEO, Google Analytics: Optimering av webbsidor för sökmotorer och
-          analys av användarbeteende för att förbättra sidans prestanda och
-          synlighet.
-        </p>
-
-        <h3 className=" font-bold text-cyan-800 dark:text-cyan-200 ">
-          Versionshantering och Verktyg
-        </h3>
-        <p className="mt-4">
-          Git: Effektiv hantering av kodbaser och projektversioner genom
-          branschstandard verktyg för versionskontroll.
-        </p>
-
-        <h3 className=" font-bold text-cyan-800 dark:text-cyan-200 ">
-          CMS och Övriga Verktyg
-        </h3>
-        <p className="mt-4">
-          Sanity: Användning av headless CMS för flexibel och skalbar
-          innehållshantering.
-        </p>
+      <h3 className="text-2xl text-center font-bold mb-8 mt-8  mr-5 text-cyan-800 dark:text-cyan-200">
+        Driven och engagerad lagspelare som älskar nya utmaningar, att
+        programmera och att dricka kaffe{' '}
+      </h3>{' '}
+      <p className="text-lg font-medium mt-14 text-center">
+        Låt oss boka en förutsättningslös fika och prata om hur vi kan
+        samarbeta!
+      </p>{' '}
+      <div className="flex flex-row items-center justify-around mt-4">
+        <Link
+          href="https://www.annikalindberg-ts.com/#contact"
+          className="group bg-gradient-to-bl from-fuchsia-900 to-pink-600  text-white px-7 py-3 flex items-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 hover:bg-orange-900 active:scale-105 transition dark:text-stone-100 dark:hover:bg-red-900 cursor-pointer borderBlack"
+          rel="noopener noreferrer"
+          target="_blank"
+          aria-label="Boka möte med mig - öppnas i ny flik"
+          title="External link to Annikas contact form"
+        >
+          Boka möte med mig{' '}
+          <BsArrowRight className="opacity-70 group-hover:translate-x-5 transition" />
+        </Link>
+        <Image
+          src={kaffekopp}
+          alt="En kaffekopp"
+          width={200}
+          height={200}
+          className="mb-12"
+        />{' '}
+      </div>
+      <div className="flex items-center justify-center">
+        <motion.div
+          className="flex flex-col sm:flex-row items-center justify-center gap-6 px-4 text-lg font-medium"
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.1,
+          }}
+        >
+          <a
+            className="group bg-red-50 hover:bg-red-100 px-7 py-3 flex items-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:hover:text-white-50 dark:hover:bg-zinc-700 dark:bg-gradient-to-br from-zinc-900 to-cyan-900"
+            href="/AnnikaLindberg-CV1.2.pdf"
+            download="AnnikaLindberg-CV.pdf"
+            aria-label="Download Annikas CV - opens in new tab"
+          >
+            Ladda ner mitt CV{' '}
+            <HiDownload className="opacity-60 group-hover:translate-y- transition" />
+            <FaRegFilePdf />
+          </a>
+          <div className="flex-row flex items-center justify-center gap-2 ">
+            {' '}
+            <p className="text-sm">Lägg till mig på LinkedIn</p>
+            <Link
+              className="bg-white-50 p-3 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white"
+              href="https://www.linkedin.com/in/annika-lindberg-frontend-developer/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit Annikas Linkedin profile page - opens in new tab"
+              title="External link to Annikas LinkedIn"
+            >
+              {' '}
+              <BsLinkedin />
+            </Link>
+            <p className="text-sm">och GitHub</p>
+            <Link
+              className="bg-white-50 p-3 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white"
+              href="https://github.com/annikalindberg"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="External link to Annikas GitHub"
+              aria-label="Visit Annikas Github profile page - opens in new tab"
+            >
+              <FaGithubSquare />
+            </Link>
+          </div>
+        </motion.div>
       </div>
     </motion.section>
   )

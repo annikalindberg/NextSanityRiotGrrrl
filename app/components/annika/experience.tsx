@@ -18,8 +18,8 @@ export default function Experience() {
   const reversedData = [...experiencesData].reverse()
 
   return (
-    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
-      <h1>My experience</h1>
+    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-6">
+      <h1 className="text-center">My experience</h1>
       <VerticalTimeline lineColor="">
         {reversedData.map((item, index) => (
           <React.Fragment key={index}>

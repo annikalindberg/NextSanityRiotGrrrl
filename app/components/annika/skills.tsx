@@ -31,9 +31,12 @@ export default function Skills() {
     <section
       id="skills"
       ref={ref}
-      className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
+      className="mb-28 max-w-[53rem] scroll-mt-20 text-center sm:mb-40"
     >
-      <h2>Frontend</h2>
+      <h2 className="text-fuchsia-950 dark:text-fuchsia-200 font-bold">
+        Skills
+      </h2>
+      <h3>Frontend</h3>
       <ol className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {frontendSkills.map((frontendSkill, index) => (
           <motion.li
@@ -51,7 +54,7 @@ export default function Skills() {
           </motion.li>
         ))}
       </ol>
-      <h2>Backend</h2>
+      <h3 className="mt-14">Backend</h3>
       <ol className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {backendSkills.map((backendSkill, index) => (
           <motion.li
@@ -69,7 +72,7 @@ export default function Skills() {
           </motion.li>
         ))}
       </ol>
-      <h2>Tillgänglighet och SEO</h2>
+      <h3 className="mt-14">Tillgänglighet och SEO</h3>
       <ol className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {tillgänglighetSkills.map((tillgänglighetSkill, index) => (
           <motion.li
@@ -87,7 +90,7 @@ export default function Skills() {
           </motion.li>
         ))}
       </ol>
-      <h2>Övriga Skills</h2>
+      <h3 className="mt-14">Övriga Skills</h3>
       <ol className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {generalSkills.map((generalSkill, index) => (
           <motion.li
