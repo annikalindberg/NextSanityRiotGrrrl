@@ -1,12 +1,11 @@
-'use client'
 import Tillganglighet from '../components/Tillganglighet'
 
-/* export const metadata = {
+export const metadata = {
   title:
     'Varför tillgänglighetsoptimera din webbplats? | NextToEdit Tech Solutions',
   description:
     'Tillgänglighetsoptimering av din webbplats är en viktig del av att skapa en webbplats som är användbar för alla. Lär dig mer om varför tillgänglighetsoptimering är viktigt och hur du kan göra din webbplats mer tillgänglig.',
-} */
+}
 
 export default function OmTillganglighet() {
   return (

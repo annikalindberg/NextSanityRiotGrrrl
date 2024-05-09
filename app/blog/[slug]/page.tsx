@@ -3,6 +3,19 @@ import { fullBlog } from '../../lib/interface'
 import Image from 'next/image'
 import { PortableText } from '@portabletext/react'
 
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string }
+}) {
+  const data = await getData(params.slug)
+  return {
+    title: data.title,
+    description: data.content,
+    image: urlFor(data.titleImage).url(),
+  }
+}
+
 async function getData(slug: string) {
   const query = `
     *[_type == "blog" && slug.current == '${slug}' ]
