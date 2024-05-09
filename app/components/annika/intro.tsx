@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { motion } from 'framer-motion'
+import profil from '@/public/images/annika-konsult.svg'
 
 export default function Intro() {
   return (
@@ -18,17 +19,17 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/images/annika.png"
+              src={profil}
               alt="Annika portrait"
               width={384}
               height={384}
               quality="100"
               priority={true}
-              className="h-24 w-24 sm:h-48 sm:w-48 rounded-xl object-cover border-[0.rem] sm:border-[0.2rem] border-gray-300 shadow-xl mb-3"
+              className="h-24 w-24 sm:h-48 sm:w-48 rounded-full object-cover border-[0.rem] sm:border-[0.2rem] border-gray-300 shadow-xl mb-3"
             />
           </motion.div>
 
-          <motion.span
+          {/* <motion.span
             className="absolute bottom-0 left-0 text-5xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -38,7 +39,7 @@ export default function Intro() {
               delay: 0.1,
               duration: 0.7,
             }}
-          ></motion.span>
+          ></motion.span> */}
         </div>
       </div>
 

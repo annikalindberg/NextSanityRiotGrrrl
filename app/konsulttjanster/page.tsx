@@ -13,19 +13,21 @@ export const metadata = {
 }
 export default function Home() {
   return (
-    <article className="flex flex-col items-center px-4  ">
-      {/*    <Header /> */}
-      <Intro />
-      <SectionDivider />
-      <About />
-      <SectionDivider />
-      <Skills />
-      <SectionDivider />
-      <Projects />
-      <SectionDivider />
-      <Experience />
-      <SectionDivider />
-      <AnnikaSocialLinks />
-    </article>
+    <div className="bg-gradient-to-t from-green-300 to-neutral-100">
+      <article className="flex flex-col items-center px-4 pt-10  ">
+        {/*    <Header /> */}
+        <Intro />
+        <SectionDivider />
+        <About />
+        <SectionDivider />
+        <Skills />
+        <SectionDivider />
+        <Projects />
+        <SectionDivider />
+        <Experience />
+        <SectionDivider />
+        <AnnikaSocialLinks />
+      </article>
+    </div>
   )
 }

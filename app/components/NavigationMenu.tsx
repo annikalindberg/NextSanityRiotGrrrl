@@ -23,7 +23,7 @@ const components: { title: string; href: string; description: string }[] = [
     title: 'Vilka vi är',
     href: '/om-oss',
     description:
-      'A modal dialog that interrupts the user with important content and expects a response.',
+      'Lär känna oss och varför vi brinner för tillgänglighet på webben.',
   },
   {
     title: 'Varför tillgänglighetsoptimera din webbplats?',
@@ -35,7 +35,7 @@ const components: { title: string; href: string; description: string }[] = [
     title: 'Tidigare projekt',
     href: '/project',
     description:
-      'For sighted users to preview content available behind a link.',
+      'Se exempel på tidigare projekt och hur vi hjälpt våra kunder att nå sina mål.',
   },
 
   /*   {
@@ -47,7 +47,7 @@ const components: { title: string; href: string; description: string }[] = [
     title: 'Blogg',
     href: '/blogpage',
     description:
-      'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
+      'Läs våra senaste inlägg om webbutveckling, tillgänglighet och UX.',
   },
   {
     title: 'Kontakta oss',
