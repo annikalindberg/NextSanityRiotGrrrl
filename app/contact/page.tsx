@@ -4,6 +4,12 @@ import toast from 'react-hot-toast'
 import { sendEmail } from '@/actions/sendEmail'
 import { motion } from 'framer-motion'
 
+/* export const metadata = {
+  title: 'Kontakta oss | NextToEdit Tech Solutions',
+  description:
+    'Kontakta NextToEdit Tech Solutions för att få hjälp med din webbplats eller för att boka en kostnadsfri genomgång av din webbplats.',
+} */
+
 export default function Contact() {
   return (
     <main className="max-w-3xl mx-auto px-4 ">

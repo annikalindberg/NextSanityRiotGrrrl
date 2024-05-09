@@ -22,25 +22,27 @@ export default function Hero() {
             "
             >
               {' '}
-              bygger{' '}
+              skapar{' '}
             </span>{' '}
-            och{' '}
+            webbplatser{' '}
             <span
               className="text-rose-900 dark:text-fuchsia-100 font-bold
             "
             >
-              tillgänglighets- optimerar{' '}
+              optimerade{' '}
             </span>{' '}
-            din webbplats.{' '}
+            utifrån tillgänglighet, SEO och användbarhet.{' '}
           </h1>
           <p className="mt-5 md:mt-8 lg:mt-15 leading-10">
-            Vi är utvecklare och experter på tillgänglighet. Med oss slipper du
-            kompromissa. <br />
-          </p>
+            Vi gör även tillgänglighets-audits och coachar företag i
+            tillgänglighet och <em>inclusive design.</em>
+          </p>{' '}
+          <p className="mt-4"> Nyfiken på att veta mer?</p>
           <p className="mt-5 md:mt-8 lg:mt-15 font-bold">
             {' '}
-            Boka ett kostnadsfritt och förutsättningslöst samtal så berättar vi
-            mer.
+            Boka ett kostnadsfritt och förutsättningslöst samtal berättar vi mer
+            om hur vi kan förbättra din digitala närvaro, öka synlighet och
+            förbättra användarupplevelsen för dina besökare. s
           </p>{' '}
           <div className=" items-center flex justify-center mt-8 md:mt-10 lg:mt-20">
             <Link

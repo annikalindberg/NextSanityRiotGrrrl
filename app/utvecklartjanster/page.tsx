@@ -7,6 +7,12 @@ import classes from '../components/pricing.module.css'
 import { FaqWebbutveckling } from '@/app/components/Faq-webbutveckling'
 const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, '-')
 
+/* export const metadata = {
+  title: 'Webbplatsutveckling | NextToEdit Tech Solutions',
+  description:
+    'NextToEdit Tech Solutions erbjuder skräddarsydda webbplatser som växer med dig. Välj en lösning som växer med din verksamhet.',
+} */
+
 // Simplified animation object
 const animationProps = {
   initial: { opacity: 0, y: 100 },
