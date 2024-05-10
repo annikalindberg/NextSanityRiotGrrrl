@@ -1,6 +1,6 @@
 import React from 'react'
 import { OmOssAccordion } from '../components/OmOssAccordion'
-import OmOss from '../components/OmOss'
+import OmOss from '../components/om-oss/OmOss'
 
 export default function OmOssPage() {
   return (
