@@ -108,7 +108,7 @@ export default function Contact() {
  */}
           <button
             type="submit"
-            className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 text-white font-semibold py-3 rounded-lg mt-5"
+            className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 text-white font-semibold py-3 rounded-lg mt- hover:bg-rose-800   dark:hover:bg-fuchsia-200 transition-colors duration-500 ease-in-out transform hover:scale-105 focus:ring-4 focus:ring-rose-500 dark:focus:ring-fuchsia-500 focus:ring-offset-4"
           >
             Skicka
           </button>

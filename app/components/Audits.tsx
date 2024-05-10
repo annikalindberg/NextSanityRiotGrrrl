@@ -4,8 +4,7 @@ import { motion } from 'framer-motion'
 import Check from '../../public/assets/check.svg'
 import Link from 'next/link'
 import classes from '../components/pricing.module.css'
-
-const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, '-')
+import { slugify } from '@/lib/utils'
 
 const fadeInAnimationVariants = {
   initial: {
@@ -47,7 +46,7 @@ export function Audits() {
           {' '}
           {[
             {
-              title: 'Audit Small',
+              title: 'Kostnadsfri Audit',
               description:
                 'Perfekt för dig som är osäker på hur din hemsida presterar tillgänglighetsmässigt och vill ha en första överblick.',
               price: 'öppningserbjudande',
@@ -132,9 +131,9 @@ export function Audits() {
                   {card.price}
                 </h2> */}
                 <div className="text-center mt-4">
-                  <p className="text-xl font-semibold line-through">
+                  {/*   <p className="text-xl font-semibold line-through">
                     {card.linethroughPrice}
-                  </p>
+                  </p> */}
                   <p
                     className="text-xl font-bold text-green-600"
                     aria-live="polite"
@@ -166,9 +165,10 @@ export function Audits() {
                 </ol>
               </div>
               <Link
+                role="button"
                 href={`/forms/${slugify(card.title)}`}
                 aria-label={`Boka ${card.title}`}
-                className="mt-4 rounded bg-rose-900 text-white dark:bg-fuchsia-100 dark:text-slate-900 py-2 px-4 font-medium hover:bg-rose-800 dark:hover:bg-fuchsia-200 transition-colors duration-500 ease-in-out  transform hover:scale-105 "
+                className="mt-4 rounded bg-rose-900 text-white dark:bg-fuchsia-100 dark:text-slate-900 py-2 px-4 font-medium hover:bg-rose-800 dark:hover:bg-fuchsia-200 transition-colors duration-500 ease-in-out transform hover:scale-105 "
                 onClick={() => console.log(`${card.buttonLabel} clicked`)}
               >
                 {card.buttonLabel}

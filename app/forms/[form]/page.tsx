@@ -30,7 +30,7 @@ export default function DynamicForm({ params }: { params: { form: string } }) {
           Du har valt att boka en {formTitle}!
         </h1>
 
-        <p className="text-gray-700 mt-6 dark:text-white/80">
+        {/*         <p className="text-gray-700 mt-6 dark:text-white/80">
           Please contact me directly at{' '}
           <a
             className="underline"
@@ -39,7 +39,7 @@ export default function DynamicForm({ params }: { params: { form: string } }) {
             annika.edit.lindberg&#64;gmail&#46;com
           </a>{' '}
           or through this form.
-        </p>
+        </p> */}
 
         <form
           className="mt-10 flex flex-col dark:text-black"
@@ -56,7 +56,6 @@ export default function DynamicForm({ params }: { params: { form: string } }) {
             }
 
             toast.success('Email sent successfully!')
-            console.log(data)
           }}
         >
           {/* Hidden input to include the audit type */}
@@ -64,9 +63,9 @@ export default function DynamicForm({ params }: { params: { form: string } }) {
           <input type="hidden" name="auditType" value={auditType} />
           <label
             htmlFor="senderEmail"
-            className="dark:text-white mb-1 mt-2 text-left"
+            className="dark:text-white mb-4 text-left"
           >
-            Your Email:
+            Din E-post:
           </label>
           <input
             id="senderEmail"
@@ -77,8 +76,8 @@ export default function DynamicForm({ params }: { params: { form: string } }) {
             maxLength={500}
             placeholder="Enter your email here"
           />
-          <label htmlFor="message" className="dark:text-white mt-3 text-left">
-            Your Message:
+          <label htmlFor="message" className="mt-4 dark:text-white text-left">
+            Ditt meddelande (frivilligt)
           </label>
           <textarea
             id="message"
@@ -88,8 +87,11 @@ export default function DynamicForm({ params }: { params: { form: string } }) {
             required
             maxLength={5000}
           />
-          <label htmlFor="addUrl" className="dark:text-white mt-3 text-left">
-            Your URL:
+          <label
+            htmlFor="addUrl"
+            className="dark:text-white mt-4 mb-3 text-left"
+          >
+            URL till webbplatsen du vill att vi granskar
           </label>
           <input
             id="addUrl"
@@ -103,9 +105,9 @@ export default function DynamicForm({ params }: { params: { form: string } }) {
 
           <button
             type="submit"
-            className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 text-white font-semibold py-3 rounded-lg mt-5"
+            className="bg-gradient-to-r from-green-200 via-red-200 to-purple-200 text-slate-950 font-bold py-3 rounded-lg mt-5 focus: "
           >
-            Send Request
+            Skicka förfrågan
           </button>
         </form>
       </motion.section>

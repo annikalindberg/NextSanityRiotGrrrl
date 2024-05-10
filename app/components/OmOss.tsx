@@ -6,6 +6,7 @@ import Link from 'next/link'
 import annika from '@/public/images/annika.svg'
 import womanbaby from '@/public/images/womenbaby.svg'
 import alex from '@/public/images/alex.svg'
+import classes from '../components/omoss.module.css'
 
 const articleVariants = {
   initial: { opacity: 0, y: 50 },
@@ -29,39 +30,57 @@ export default function OmOss() {
   return (
     <>
       {' '}
+      <h1>
+        NextToEdit Tech Solutions – för en digital värld där alla har plats.
+      </h1>{' '}
+      <p className={classes.text}>
+        Vi startade det här företaget med en enkel, men kraftfull idé: att göra
+        den digitala världen tillgänglig för alla.{' '}
+      </p>{' '}
+      <p className={classes.text}>
+        Är du den som redan drömmer i kod, eller kanske du fortfarande tror att
+        &quot;cookie&quot; bara är något gott till kaffet? Oavsett, du är på
+        rätt ställe. Vi är här för att göra din digitala resa så smidig och
+        rolig som möjligt.{' '}
+      </p>{' '}
+      <h2>Vi som är NextToEdit Tech Solutions</h2>
       <motion.div
         initial={{ x: 200, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }} // End at the normal position with full opacity
         transition={{ type: 'spring', stiffness: 100, delay: 0.5 }} // Customize the type of animation and its properties
-        className="flex justify-center items-center"
+        className="flex flex-col md:flex-row  justify-center "
       >
-        <Image
-          alt="Annika Lindberg porträtt"
-          src={annika}
-          width={600}
-          height={400}
-          className="items-center w-1/2 justify-center lg:w-3/4"
-        />
-        <Image
-          alt="Alex Alexandersson porträtt"
-          src={alex}
-          width={600}
-          height={400}
-          className="items-center w-1/2 justify-center lg:w-3/4"
-        />
+        <figure className=" mb-10 items-center w-1/2 justify-center lg:w-3/4">
+          <Image
+            alt="Annika Lindberg porträtt"
+            src={annika}
+            width={600}
+            height={400}
+            /*             className="items-center w-1/2 justify-center lg:w-3/4"
+             */
+          />
+          <figcaption className={classes.figcaption}>
+            Annika Lindberg, Frontend- och Fullstack-utvecklare
+          </figcaption>
+        </figure>
+        <figure className="mb-10 items-center w-1/2 justify-center lg:w-3/4">
+          <Image
+            alt="Alex Alexandersson porträtt"
+            src={alex}
+            width={600}
+            height={400}
+          />
+          <figcaption className={classes.figcaption}>
+            Alex Alexandersson, titel
+          </figcaption>
+        </figure>
       </motion.div>
       <motion.article
         initial="initial"
         animate="animate"
         variants={articleVariants}
-        className="divide-y  divide-gray-100 dark:divide-gray-700 pt-8 "
+        className="pt-8 "
       >
-        <h1>Tillgänglighet online: Mer än bara ett krav</h1>{' '}
-        <p>
-          Många pratar idag om vikten av att ha en tillgänglig webbplats. Men
-          vad innebär det egentligen, och vad har du att vinna på att optimera
-          tillgängligheten digitalt?{' '}
-        </p>
         <p className="mt-4">
           Låt oss förklara varför en tillgänglig webbplats inte bara är ett
           lagkrav utan också en <strong>fördel</strong> för din verksamhet. Vi

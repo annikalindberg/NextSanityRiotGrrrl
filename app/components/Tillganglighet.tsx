@@ -46,7 +46,7 @@ export default function Tillganglighet() {
         initial="initial"
         animate="animate"
         variants={articleVariants}
-        className="divide-y  divide-gray-100 dark:divide-gray-700 pt-8 "
+        className=" pt-8 "
       >
         <h2>Tillgänglighet online: Mer än bara ett krav</h2>{' '}
         <p>

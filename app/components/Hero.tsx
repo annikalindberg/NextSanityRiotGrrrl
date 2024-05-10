@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import girl from '@/public/images/girl.svg'
 import Link from 'next/link'
+import { CTAButton } from './cta-buttons'
 
 export default function Hero() {
   return (
@@ -14,7 +15,7 @@ export default function Hero() {
       {/* Wrap content and image in a flex container only on large screens */}
       <div className="flex flex-col lg:flex-row lg:justify-center">
         {/* Text container */}
-        <div className=" mt-5 max-w-xs ml-4  md:max-w-sm lg:max-w-xl lg:mr-10">
+        <div className="max-w-xs ml-4  md:max-w-sm lg:max-w-xl lg:mr-10">
           <h1 className=" text-left font-bold leading-relaxed tracking-wider text-3xl md:text-4xl lg:text-6xl md:leading-normal lg:leading-normal">
             Vi{' '}
             <span
@@ -33,34 +34,37 @@ export default function Hero() {
             </span>{' '}
             utifrån tillgänglighet, SEO och användbarhet.{' '}
           </h1>
-          <p className="mt-5 md:mt-8 lg:mt-15 leading-10">
-            Vi gör även tillgänglighets-audits och coachar företag i
-            tillgänglighet och <em>inclusive design.</em>
+          <p className=" md:mt-8 lg:mt-15">
+            Just nu bjuder vi på en kostnadsfri audit med manuell testning av 2
+            sidor på din webbplats! Boka nu för att ta del av erbjudandet.
+          </p>
+          <div className=" items-center mt-10 mb-10 md:mt-16 md:mb-16 lg:mt-20 lg:mb-20">
+            <CTAButton
+              title="Kostnadsfri Audit"
+              buttonLabel="Boka kostnadsfri Audit"
+            />
+          </div>{' '}
+          <p className="mt-5 md:mt-8 lg:mt-15 leading-8">
+            Vi erbjuder olika paketlösningar där experter går igenom utvalda
+            delar av er webbplats, gör omfattande tillgänglighetstestning med en
+            åtgärdslista som vi presenterar för ert utvecklarteam. och coachar
+            företag i tillgänglighet och <em>inclusive design.</em>
           </p>{' '}
           <p className="mt-4"> Nyfiken på att veta mer?</p>
           <p className="mt-5 md:mt-8 lg:mt-15 font-bold">
             {' '}
             Boka ett kostnadsfritt och förutsättningslöst samtal berättar vi mer
             om hur vi kan förbättra din digitala närvaro, öka synlighet och
-            förbättra användarupplevelsen för dina besökare. s
+            förbättra användarupplevelsen för dina besökare.
           </p>{' '}
-          <div className=" items-center flex justify-center mt-8 md:mt-10 lg:mt-20">
-            <Link
-              href="/contact"
-              className="rounded bg-rose-900 text-white dark:bg-fuchsia-100 dark:text-slate-900 py-4 px-4 font-medium hover:bg-rose-800 dark:hover:bg-fuchsia-200 transition-colors duration-500 ease-in-out  transform hover:scale-105 "
-            >
-              Boka en gratis konsultation
-            </Link>
-          </div>
         </div>
         {/* Image container */}
         <motion.div
           initial={{ x: 200, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }} // End at the normal position with full opacity
           transition={{ type: 'spring', stiffness: 100, delay: 0.5 }} // Customize the type of animation and its properties
-          className="flex justify-center items-center lg:w-1/2"
+          className="flex flex-col justify-center items-center lg:w-1/2"
         >
-          {' '}
           <Image
             alt="Kvinna med en laptop i knät och knutna nävar i luften som en segergest."
             src={girl}
