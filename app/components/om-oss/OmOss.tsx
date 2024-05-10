@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Check from '@/public/assets/check.svg'
 import Link from 'next/link'
 import annika from '@/public/images/annika.svg'
-import womanbaby from '@/public/images/womenbaby.svg'
+import highfive from '@/public/images/highfive.svg'
 import alex from '@/public/images/alex.svg'
 import {
   Accordion,
@@ -165,47 +165,12 @@ export default function OmOss() {
         variants={articleVariants}
         className="pt-8 "
       >
-        <p className="mt-4">
-          Låt oss förklara varför en tillgänglig webbplats inte bara är ett
-          lagkrav utan också en <strong>fördel</strong> för din verksamhet. Vi
-          kommer att titta på hur tillgänglighet kan gynna din verksamhet, och
-          varför det är så viktigt att börja tänka på tillgänglighet redan idag.
-        </p>
-        <p className="mt-4">
-          Men först och främst, vad betyder det att en webbplats är{' '}
-          <em>tillgänglig</em>?
-        </p>
         <Tjanster />
         <p className="mt-4">
-          Tillgänglighet betyder att din webbplats är byggd så att alla, oavsett
-          funktionsvariation, enkelt kan interagera med den. Detta inkluderar
-          allt från skärmläsarvänlig text till lättanvända interaktiva element
-          för personer med begränsad rörlighet.
-        </p>{' '}
-        <h2>Varför tillgänglighetsoptimera?</h2>
-        <p>
-          Om vi vänder på frågan och istället frågar oss{' '}
-          <em>vad är syftet med din webbplats?</em> I 99 fall av 100 är det den
-          första plats en kund eller besökare kommer i kontakt med ditt
-          varumärke. Det spelar ingen roll om du driver en frisörsalong, en
-          tech-startup eller en stor e-handel, så är din webbplats en av dina{' '}
-          <strong>viktigaste tillgångar</strong>. Oavsett vad målet är med din
-          verksamhet, är din webbplats hjärtat i din digitala strategi och ditt
-          ansikte utåt. Över 20% av befolkningen lever med en permanent
-          funktionsnedsättning. I Sverige, där nästan alla, 97.2% av
-          befolkningen, använder internet dagligen, innebär detta att cirka 2
-          miljoner människor kan stöta på hinder när de besöker en webbplats som
-          inte är tillgängligt utformad.
-        </p>
-        <h2>1. Tillgänglighet gagnar alla</h2>
-        <p>
-          Tillgänglighet på din webbplats gynnar inte bara individer med
-          permanenta funktionsnedsättningar.{' '}
-        </p>
-        <p className="mt-4">
-          Tänk på alla situationer där någon kan uppleva tillfälliga
-          svårigheter, som att navigera en webbplats med en hand när man håller
-          en bebis, eller att försöka läsa i en bullrig miljö.
+          Våra specialkompetenser är inte bara en teknisk resurs – de är en del
+          av vår mission att göra digitala upplevelser bättre för alla. Genom
+          att välja oss som partner, inte bara följer du lagar och regler, utan
+          du tar också ett steg mot en mer inkluderande värld.
         </p>{' '}
         <motion.div
           initial={{ x: 200, opacity: 0 }}
@@ -216,8 +181,8 @@ export default function OmOss() {
           {' '}
           <div className="flex   md:w-1/2 lg:justify-between">
             <Image
-              alt="Man som pratar i telefon samtidigt som han sitter vid en laptop med en bebis i famnen som han tröstar."
-              src={womanbaby}
+              alt="Illustration av tre personer som ger varandra en high five."
+              src={highfive}
               width={600}
               height={400}
               className=" max-w-80 rounded-xl mt-6 mb-6 lg:inline-block align-top"
@@ -226,88 +191,24 @@ export default function OmOss() {
           <div className="flex flex-col justify-center items-center  md:w-1/2 md:p-8 ">
             {' '}
             <p>
-              Genom att göra din webbplats tillgänglig skapar du en bättre
-              upplevelse för alla användare, oavsett deras situation. Din
-              webbplats bör vara mer än bara laglydig; den bör vara en attraktiv
-              plats dit dina besökare vill återvända till igen och igen.{' '}
+              På NextToEdit Tech Solutions är tillgänglighet inte bara en del av
+              vår affärsmodell – det är kärnan i allt vi gör. Vårt åtagande är
+              att varje webbplats vi utvecklar ska vara tillgänglig för alla,
+              oavsett användarens fysiska eller kognitiva förmågor. Vi följer
+              strikt de internationella riktlinjerna för webbtillgänglighet och
+              anpassar oss kontinuerligt till rådande standarder och teknologier
+              för att säkerställa att våra digitala lösningar är så inkluderande
+              som möjligt.{' '}
             </p>{' '}
             <p className="ml-6 mt-4 mb-4 md:mr-20 lg:mr-auto lg:ml-auto">
               {' '}
               <em>
-                Att ha en webbplats som är tillgänglig för alla, förbättrar även
-                upplevelsen för <strong>alla</strong> besökare
+                Det handlar inte bara om att följa lagar och regler, utan om att
+                skapa en digital värld där varje person kan delta fullt ut.{' '}
               </em>
             </p>{' '}
           </div>
         </motion.div>
-        <h2>2. Tillgänglighet ökar SEO</h2>
-        <p>
-          En tillgänglig webbplats är inte bara en fördel för användarna, det är
-          också en fördel för din{' '}
-          <strong>synlighet i sökmotorerna och ditt SEO</strong>.{' '}
-        </p>
-        <h2>3. Tillgänglighet ökar konverteringarna </h2>
-        <p>
-          Att öka tillgängligheten på din webbplats är därför inte bara en fråga
-          om att följa lagar och regler, eller att vara `&quot;`snäll mot
-          människor med funktionsvariationer`&quot;`. Det är en fråga om att
-          skapa en bättre webbplats för<strong> alla,</strong> och därigenom öka
-          din <strong>synlighet, din trovärdighet, och ditt förtroende</strong>{' '}
-          online.
-        </p>{' '}
-        <p>
-          Tillgängliget är någonting som gynnnar{' '}
-          <strong> alla användare,</strong> vilket kommer att öka{' '}
-          <strong>
-            kvaliteten på din hemsida, din trovärdighet, och ditt förtroende
-          </strong>{' '}
-          online.
-        </p>
-        <h2>4. Den nya lagen om tillgänglighet - 2025 </h2>
-        <p>
-          Att ignorera tillgänglighet kan inte bara skada ditt varumärkes
-          anseende, många länder har även lagar som kräver
-          tillgänglighetsstandarder för digitala plattformar, och att inte
-          uppfylla dessa krav kan resultera i kostsamma rättsprocesser.
-        </p>{' '}
-        <p>
-          Sedan 2018 krävs att offentliga webbplatser i Sverige ska vara
-          tillgängliga, och från och med 2025 gäller detta även för privata
-          företag. Att inte följa dessa krav kan leda till sanktioner.
-        </p>
-        <h3>Vad innebär tillgänglighetsdirektivet?</h3>
-        <p>
-          I Sverige kommer från och med 2025 även privata och kommeriella
-          aktörer komma att omfattas av lagarna om digital tillgänglighet.
-          Direktivet innebär att nya produkter och tjänster bör uppfylla kraven
-          enligt standarden EN 301 549 tillsammans med WCAG 2.1. En
-          kontrollmyndighet kommer att granska att kraven uppfylls, och besluta
-          om sanktionsavgift till lägst 10 000 och högst 10 000 000 SEK.
-        </p>
-        <h2>
-          5. Alla har rätt till information och tjänster - oavsett
-          funktionsvariation
-        </h2>
-        <p>
-          För de allra flesta är det självklart att vi inte ska exkludera
-          användare, men när det kommer till kritan är det precis det vi gör när
-          vi inte tar tillgänglighet på allvar.{' '}
-        </p>{' '}
-        <p>
-          Att säkerställa att er webbplats följer lagkrav är en, om än mycket
-          viktig, del av tillgänglighetsoptimering. Men att skapa en tillgänglig
-          webbplats handlar om mer än att följa lagar och regler. Det handlar i
-          grund och botten om samma sak som allt annat inom webbutveckling:{' '}
-          <strong> att skapa en bra användarupplevelse.</strong>{' '}
-        </p>
-        <p className="mt-4">
-          {' '}
-          Tänk på att tillgång till information och tjänster är
-          <strong> en rättighet</strong>, inte ett privilegium. I en värld där
-          digital närvaro blir alltmer avgörande, spelar webbtillgänglighet en
-          central roll i att säkerställa att alla har lika tillgång till
-          information och möjligheter.{' '}
-        </p>
         <h3>Sammanfattningsvis...</h3>
         <motion.section
           initial={{ opacity: 0, y: 100 }}
