@@ -25,7 +25,7 @@ export default function About() {
       id="about"
     >
       {' '}
-      <h3 className="text-3xl text-center text-teal-900 dark:text-teal-50font-bold ">
+      <h3 className="text-3xl text-center text-teal-900 dark:text-teal-50 font-bold ">
         15 + års erfarenhet av tillgänglighetsarbete, projektledning och
         utbildning{' '}
       </h3>{' '}

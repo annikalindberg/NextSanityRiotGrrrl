@@ -12,9 +12,23 @@ export const metadata = {
 
 export default function Faq() {
   return (
-    <section className="max-w-3xl mx-auto px-4  ">
-      <FaqTillganglighet />
-      <FaqWebbutveckling />
-    </section>
+    <>
+      <h1 className="pl-4 lg:pl-12">Vanliga frågor</h1>
+
+      <section className="max-w-3xl mx-auto px-4   ">
+        <div
+          className="max-w-3xl mx-auto p-6 md:p-10 bg-gradient-to-l from-fuchsia-100 via-cyan-100 to-cyan-100 dark:bg-gradient-to-t dark:from-indigo-950 dark:to-indigo-850"
+          aria-label="Frequently Asked Questions"
+        >
+          <FaqTillganglighet />
+        </div>
+        <div
+          className="max-w-3xl mx-auto p-6 md:p-10 bg-gradient-to-t from-orange-100 via-blue-100 to-indigo-100 dark:bg-gradient-to-t dark:from-indigo-950 dark:to-indigo-850"
+          aria-label="Frequently Asked Questions"
+        >
+          <FaqWebbutveckling />
+        </div>
+      </section>
+    </>
   )
 }

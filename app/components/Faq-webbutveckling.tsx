@@ -1,19 +1,42 @@
+'use client'
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion'
+import Link from 'next/link'
+import React from 'react'
+import { motion } from 'framer-motion'
+import BottomLogo from '@/public/images/BottomLogo.png'
+import Image from 'next/image'
 
 export function FaqWebbutveckling() {
   return (
-    <section
-      className="py-12 lg:py-15 max-w-xl mx-auto "
-      aria-label="Frequently Asked Questions"
+    <motion.section
+      initial={{
+        opacity: 0,
+      }}
+      whileInView={{
+        opacity: 1,
+      }}
+      transition={{
+        duration: 1,
+      }}
+      viewport={{
+        once: true,
+      }}
     >
-      <h2 className="mb-6 text-2xl font-semibold text-center text-[#36485C] dark:text-white lg:text-3xl">
-        Vanliga frågor
-      </h2>
+      <div className="flex flex-col md:flex-row items-center justify-center  md:justify-between ">
+        <h2>Webbutveckling</h2>
+        <Image
+          width={300}
+          height={300}
+          src={BottomLogo}
+          alt="Logo"
+          className="mt-10 md:w-300 md:mt-2 md:mb-12"
+        />
+      </div>{' '}
       <Accordion type="single" collapsible className="w-full">
         <AccordionItem value="item-1">
           <AccordionTrigger className="text-left">
@@ -160,6 +183,6 @@ export function FaqWebbutveckling() {
           </AccordionContent>
         </AccordionItem>
       </Accordion>{' '}
-    </section>
+    </motion.section>
   )
 }

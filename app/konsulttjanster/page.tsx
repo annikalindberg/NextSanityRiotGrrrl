@@ -13,7 +13,7 @@ export const metadata = {
 }
 export default function Home() {
   return (
-    <div className="bg-gradient-to-t from-green-300 to-neutral-100">
+    <div className="bg-gradient-to-l from-fuchsia-100 via-cyan-100 to-cyan-100 dark:bg-gradient-to-t dark:from-indigo-950 dark:to-indigo-850 ">
       <article className="flex flex-col items-center px-4 pt-10  ">
         {/*    <Header /> */}
         <Intro />
