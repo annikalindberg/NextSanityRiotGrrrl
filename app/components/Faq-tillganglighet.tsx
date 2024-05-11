@@ -38,7 +38,11 @@ export function FaqTillganglighet() {
           className="mt-10 md:w-300 md:mt-2 md:mb-12"
         />
       </div>{' '}
-      <Accordion type="single" collapsible className="w-full">
+      <Accordion
+        type="single"
+        collapsible
+        className="max-w-xs ml-auto mr-auto p-10 bg-indigo-100 dark:bg-indigo-950 rounded-4xl md:max-w-4xl md:px-8"
+      >
         <AccordionItem value="item-1">
           <AccordionTrigger className="text-left">
             Vad innebär det att en webbplats är tillgänglig?

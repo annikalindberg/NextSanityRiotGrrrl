@@ -68,14 +68,14 @@ const Webbutveckling = () => (
               'Kom igång snabbt och effektivt med vårt snabbstart-paket. ',
             price: '10 000 kr',
             features: [
-              'Kostnadsfritt och förutsättningslöst första möte för att diskutera dina behov och förväntningar innan vi bestämmer oss för att gå vidare',
               'Stilren, fördesignad mall anpassad med ditt unika innehåll',
               'Responsiv och SEO-optimerad webbplats redo att lanseras inom 1-2 veckor.',
               'Fast antal sidor och bilder ingår, perfekt för en effektiv och professionell närvaro online',
               'Kontaktformulär',
               'Byggd enligt bästa praxis för tillgänglighet och SEO',
+              'Bildoptimering och laddningstidsoptimering av din webbplats',
+
               'Skalbart och flexibelt för framtida tillägg',
-              '1 månads kostnadsfri support',
             ],
             buttonLabel: 'Jag vill ha en snabbstart',
             bgClass: 'bg-stone-50 dark:bg-rose-950',
@@ -86,10 +86,8 @@ const Webbutveckling = () => (
               'Här är lösningen för dig som vill ha en skräddarsydd webbplats som växer med din verksamhet.',
             price: '30 000 kr',
             features: [
-              'Specialdesignad webbplats med unik design och funktionalitet',
-              'Strategiskt innehållsanalys och strukturering för att maximera konverteringar',
-              'Skräddarsydda formulär och interaktioner',
-              'UX (User Experience) och UI (User Interface) design för att skapa en användarvänlig och tilltalande webbplats',
+              'Specialdesignad webbplats med unik design och funktionalitet som animeringar',
+
               'Skräddarsytt CMS (Content Management System) för att enkelt kunna uppdatera innehållet på din webbplats',
               'Avancerad SEO (Search Engine Optimization)strategi, analyserad och framtagen specifikt för dina mål och din målgrupp',
               'Träning i hur du själv kan uppdatera och underhålla din webbplats',
@@ -111,6 +109,9 @@ const Webbutveckling = () => (
             features: [
               'Våra Enterprise-lösningar är skräddarsydda för att passa dina behov och mål och kravställning sker i samråd med dig och ditt team för att säkerställa att vi levererar en lösning som passar just er.',
               'En "discovery-fas" där vi tillsammans med dig och ditt team går igenom era behov och mål för att skapa en lösning som passar just er',
+              'Strategiskt innehållsanalys och strukturering för att maximera konverteringar',
+              'Skräddarsydda formulär och interaktioner',
+              'UX (User Experience) och UI (User Interface) design för att skapa en användarvänlig och tilltalande webbplats',
               'Robusta och skalbara webbapplikationer med större mängder data, en mer avancerad autentisering med krav på högre säkerhet och prestanda',
               'En djupgående analys av din nuvarande webbplats och digitala närvaro för att identifiera möjligheter och utmaningar',
               'UX-research, flödesscheman, prototyping i iterativa processer för att optimera utformaning och funktionalitet efter användarens behov',
@@ -172,6 +173,34 @@ const Webbutveckling = () => (
           </article>
         ))}
       </div>
+      <h3>I alla paket ingår:</h3>
+      <ul className="flex flex-col justify-center space-y-2 lg:text-xl">
+        {[
+          'Responsiv design som anpassar sig till alla skärmstorlekar',
+          'Optimering för sökmotorer (SEO)',
+          'Bildoptimering och laddningstidsoptimering',
+          'Tillgänglighetsstandard i enlighet med WCAG 2.2 (nivå AA), Tillgänglighetsdirektivet och Europastandarden EN 301 549',
+        ].map((item, index) => (
+          <motion.li
+            key={index}
+            className="flex items-center dark:text-white"
+            variants={animationProps}
+            initial="initial"
+            whileInView="animate"
+            custom={index}
+          >
+            <Image
+              src={Check}
+              alt=""
+              aria-hidden="true"
+              width={16}
+              height={16}
+              className="mr-2 dark:bg-white"
+            />
+            {item}
+          </motion.li>
+        ))}
+      </ul>
     </motion.div>{' '}
     <p className=" text-[#36485C] dark:text-white lg:text-xl">
       * Alla priser exklusive moms

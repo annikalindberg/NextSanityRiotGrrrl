@@ -65,7 +65,7 @@ export function Audits() {
               title: 'Audit Medium',
               description:
                 'Här får du en djupgående analys av din webbplats tillgänglighetsstatus och vad som behöver åtgärdas.',
-              price: '7 000 kr',
+              price: '8 000 kr',
               features: [
                 'Kostnadsfritt och förutsättningslöst första möte för att diskutera dina behov och förväntningar innan vi bestämmer oss för att gå vidare',
                 'Manuella tester av upp till 5 unika sidor (du väljer själv vilka)',
