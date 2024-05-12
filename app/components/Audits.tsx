@@ -42,8 +42,7 @@ export function Audits() {
           skärmläsare och tangentbordsnavigering för att säkerställa att alla
           element på din webbplats är tillgängliga för varje användare.
         </p>
-        <div className="flex flex-col md:flex-row justify-center  items-center md:items-start gap-12 lg:gap-8">
-          {' '}
+        <div className="flex flex-col items-center justify-center gap-8 md:flex-row md:items-start lg:gap-8">
           {[
             {
               title: 'Kostnadsfri Audit',
@@ -101,24 +100,10 @@ export function Audits() {
             <article
               aria-label="{card.title}"
               key={index}
-              className={`border-2 border-blue-200 dark:border-rose-100 w-10/12 md:w-2/3 lg:w-${
-                index === 1 ? '2/5' : '1/5'
-              } rounded-lg p-7 flex flex-col justify-between ${
-                card.bgClass
-              } transition-all duration-300 ease-in-out transform ${
-                index === 1
-                  ? `lg:scale-110 shadow-xl ${classes.specialCard}`
-                  : 'hover:scale-105'
-              }`}
+              className={`border-2 border-blue-200 dark:border-rose-100 p-7 mt-10 rounded-lg flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:scale-105 ${card.bgClass}`}
             >
-              {index === 1 && (
-                <span className="absolute top-0 right-2 md:right-5 p-2 bg-red-500 text-white text-sm rounded-bl-lg ">
-                  Best Value!
-                </span>
-              )}
-
               <div>
-                <h3 className="font-medium text-2xl text-center mb-5 mt-3">
+                <h3 className="mb-5 mt-3 text-2xl font-medium text-center">
                   {card.title}
                 </h3>
                 <p
@@ -127,20 +112,6 @@ export function Audits() {
                   {card.description}
                 </p>
 
-                {/*   <h2 className="text-2xl font-semibold lg:text-2xl pt-4 text-center leading-10">
-                  {card.price}
-                </h2> */}
-                <div className="text-center mt-4">
-                  {/*   <p className="text-xl font-semibold line-through">
-                    {card.linethroughPrice}
-                  </p> */}
-                  <p
-                    className="text-xl font-bold text-green-600"
-                    aria-live="polite"
-                  >
-                    {card.offer} {card.price}
-                  </p>
-                </div>
                 <ol aria-label="Ingår i paketet" className="mt-4 md:text-md ">
                   {card.features.map((feature, featureIndex) => (
                     <motion.li

@@ -63,20 +63,29 @@ const Webbutveckling = () => (
       <div className="flex flex-col items-center justify-center gap-8 md:flex-row md:items-start lg:gap-8">
         {[
           {
-            title: 'Färdig webbplats på 1 vecka',
+            title: 'Kickstart - snabbt och enkelt',
             description:
-              'Kom igång snabbt och effektivt med vårt snabbstart-paket. ',
-            price: '10 000 kr',
+              'Låt oss kickstarta din närvaro online med en professionell webbplats som inte spränger budgeten. Perfekt för småföretagare som behöver en snygg, funktionell webbplats snabbt och enkelt. Kom igång snabbt och effektivt med vårt snabbstart-paket. ',
+            price: '12 000 kr',
             features: [
-              'Stilren, fördesignad mall anpassad med ditt unika innehåll',
+              'Perfekt för småföretagare och som behöver en snygg, funktionell webbplats snabbt och enkelt.',
               'Responsiv och SEO-optimerad webbplats redo att lanseras inom 1-2 veckor.',
-              'Fast antal sidor och bilder ingår, perfekt för en effektiv och professionell närvaro online',
+              'Upp till 5 sidor ingår, perfekt för en effektiv och professionell närvaro online',
               'Kontaktformulär',
               'Byggd enligt bästa praxis för tillgänglighet och SEO',
               'Bildoptimering och laddningstidsoptimering av din webbplats',
-
+              'Med ett intuitivt CMS och en timmes personlig utbildning, tar du enkelt kontroll över din webbplats utan att behöva några tekniska förkunskaper.',
               'Skalbart och flexibelt för framtida tillägg',
+              'Domännamn och hosting ingår i 1 år (efter det överlåtes domännamn och hosting till dig om inget annat avtalas)',
             ],
+            notIncluded: [
+              'Copywriting (du skriver texterna själv)',
+              'Bilder (du tillhandahåller bilder)',
+              'Designanpassningar (du får välja mellan några fasta designmallar)',
+              'Extra funktionalitet (t.ex. e-handel, bokningssystem, medlemskap)',
+              'Anpassad SEO-strategi (du får en grundläggande SEO-optimering)',
+            ],
+
             buttonLabel: 'Jag vill ha en snabbstart',
             bgClass: 'bg-stone-50 dark:bg-rose-950',
           },

@@ -188,8 +188,10 @@ export default function OmOss() {
               className=" max-w-80 rounded-xl mt-6 mb-6 lg:inline-block align-top"
             />
           </div>
+          <h2 className="text-center">Varför välja oss?</h2>
           <div className="flex flex-col justify-center items-center  md:w-1/2 md:p-8 ">
             {' '}
+            <h3 className="text-center">Kundfokus</h3>
             <p>
               På NextToEdit Tech Solutions är tillgänglighet inte bara en del av
               vår affärsmodell – det är kärnan i allt vi gör. Vårt åtagande är
@@ -234,7 +236,7 @@ export default function OmOss() {
             {[
               'Fler positiva användarupplevelser',
               'Förbättrad SEO',
-              'Ökad seriostet och trovärdighet',
+              'Ökad seriositet och trovärdighet',
               'Fler konverteringar',
               'Lugn och ro inför 2025',
             ].map((item, index) => (

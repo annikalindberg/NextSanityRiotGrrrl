@@ -221,7 +221,7 @@ export default function Tillganglighet() {
             {[
               'Fler positiva användarupplevelser',
               'Förbättrad SEO',
-              'Ökad seriostet och trovärdighet',
+              'Ökad serioistet och trovärdighet',
               'Fler konverteringar',
               'Lugn och ro inför 2025',
             ].map((item, index) => (
