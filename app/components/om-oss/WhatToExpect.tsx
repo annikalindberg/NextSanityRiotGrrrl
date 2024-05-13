@@ -24,19 +24,19 @@ const fadeInAnimationVariants = {
 export default function WhatToExpect() {
   return (
     <>
-      <div className="flex flex-col mt-8 mb-6 ">
-        <h3>
+      <div className="flex flex-col mt-8 mb-6 px-2 py-2 ">
+        <h3 className="">
           Vad kan du förvänta dig när du anlitar NextToEdit Tech Solutions?
         </h3>
         <motion.div
           initial={{ x: 200, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }} // End at the normal position with full opacity
           transition={{ type: 'spring', stiffness: 100, delay: 0.5 }} // Customize the type of animation and its properties
-          className="flex flex-row mx-auto my-auto md:flex-row  "
+          className="flex flex-col items-center mx-auto my-auto md:flex-row  "
         >
           {' '}
           <Image
-            className=""
+            className="w-2/3 md:w-1/3 lg:w-1/4 "
             src={earth}
             alt="Jorden"
             width={400}
@@ -90,7 +90,7 @@ export default function WhatToExpect() {
           initial={{ x: 200, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }} // End at the normal position with full opacity
           transition={{ type: 'spring', stiffness: 100, delay: 0.5 }} // Customize the type of animation and its properties
-          className="flex flex-row mx-auto my-auto md:flex-row  "
+          className="flex flex-col mx-auto my-auto md:flex-row  "
         >
           <motion.section
             initial={{ opacity: 0, y: 100 }}
@@ -104,7 +104,7 @@ export default function WhatToExpect() {
               Vad kan du <strong>inte</strong> förvänta dig när du anlitar
               NextToEdit Tech Solutions?
             </h3>
-            <ul className="mt-4 mb-4 w-10/12  text-1xl space-y-3 flex justify-center flex-col">
+            <ul className="mt-4 mb-4 md:w-10/12  text-1xl space-y-3 flex justify-center flex-col">
               {[
                 'Snabba Fixar: Vi prioriterar kvalitet och noggrann planering framför hastighet. Vårt arbete är grundligt för att säkerställa hållbara resultat.',
                 'Standardlösningar: Vi erbjuder inga generiska, one-size-fits-all lösningar. Varje projekt är unikt och kräver sin egen specialanpassade lösning.',
@@ -132,7 +132,13 @@ export default function WhatToExpect() {
               ))}
             </ul>
           </motion.section>{' '}
-          <Image src={gaffatejp} alt="Gaffatejp" width={400} height={400} />
+          <Image
+            className=""
+            src={gaffatejp}
+            alt="Gaffatejp"
+            width={400}
+            height={400}
+          />
         </motion.div>
       </div>
     </>
