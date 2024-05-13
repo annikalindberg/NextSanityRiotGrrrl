@@ -39,7 +39,7 @@ export default function Footer() {
             >
               {' '}
               LinkedIn
-              <BsLinkedin className="lg:w-6 lg:h-6" />
+              <BsLinkedin className="md:w-4 lg:w-5 lg:h-5" />
             </Link>
             <Link
               className="bg-white-50 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white"
@@ -53,7 +53,7 @@ export default function Footer() {
               <InstagramLogoIcon className="lg:w-6 lg:h-6" />
             </Link>
             <Link
-              href="/blogg"
+              href="/blogpage"
               passHref
               className="text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 hover:underline focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
             >
@@ -75,7 +75,7 @@ export default function Footer() {
             Konsulttjänster
           </Link>
           <Link
-            href="/"
+            href="/utvecklartjanster"
             passHref
             className="text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 hover:underline focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
           >
@@ -117,20 +117,6 @@ export default function Footer() {
           >
             Blogg
           </Link>
-          {/*  <div id="social-links" className="flex items-center justify-center">
-            <div className="flex items-center gap-2">
-              <Link
-                className="bg-white-50 p-3 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white"
-                href="https://www.linkedin.com/in/annika-lindberg-frontend-developer/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Visit Annikas Linkedin profile page - opens in new tab"
-                title="External link to Annikas LinkedIn"
-              >
-                <BsLinkedin />
-              </Link>
-            </div>
-          </div> */}
         </div>
       </section>
       <hr className="mt-10 border-gray-300" />

@@ -26,7 +26,7 @@ export default function WhatToExpect() {
       <div className="text-center pt-16 md:text-center">
         <h2>Vad du kan förvänta dig när du bokar oss</h2>
       </div>
-      <div className="flex flex-col mt-8 px-24 pt-12 ">
+      <div className="flex flex-col mt-8 px-4 md:px-24 pt-12 ">
         {/* First pair: Image and List with Header */}
         <motion.div
           initial={{ x: -200, opacity: 0 }}
@@ -36,36 +36,35 @@ export default function WhatToExpect() {
         >
           <Image
             src={earth}
-            alt="Jorden"
-            width={400}
-            height={400}
+            alt="En hand sträcker ut en delad jordglob med gröna träd, en cykel och 3 vindkraftverk."
+            width={200}
+            height={200}
             layout="responsive"
-            className="max-w-xl my-4 md:my-0"
+            className="md:max-w-md max-h-60 my-4 md:my-0"
           />
           <motion.ul
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.175 }}
-            className="space-y-3 max-w-xl"
+            className="space-y-6 max-w-xl text-xl font-bold"
           >
             {[
-              'Personlig Service: Vi tar oss tid att förstå dina unika behov och skräddarsyr våra lösningar för att passa din verksamhet perfekt.',
-              'Hållbarhet och Tillgänglighet: Vi följer internationella riktlinjer för webbtillgänglighet och anpassar oss kontinuerligt till rådande standarder och teknologier.',
-              'Trygghet och Säkerhet: Vi arbetar med moderna tekniker och säkerhetslösningar för att skydda din webbplats och dina användare från hot och intrång.',
-              'Framtidssäkring: Vi utvecklar skalbara och flexibla lösningar som kan växa med din verksamhet och anpassas till framtida behov och krav.',
-              'Hög Kvalitet: Vi strävar efter att leverera högkvalitativa lösningar som är robusta, pålitliga och hållbara över tid.',
-              'Innovativ Design: Vårt kreativa team säkerställer att din webbplats inte bara är funktionell utan också visuellt tilltalande och "i tiden".',
-              'Utbildning och Support: Vi stannar inte vid leverans. Vi utbildar ditt team och erbjuder kontinuerlig support för att du ska kunna navigera din nya digitala miljö med lätthet.',
-              'Ett Långsiktigt Partnerskap: Vi ser varje klientrelation som en möjlighet att växa tillsammans, med öppen kommunikation och ärliga feedbackslingor.',
-              'Konkurrenskraftiga Priser: Våra priser är noggrant utformade för att vara konkurrenskraftiga och fördelaktiga, jämfört med plattformar där kostnader kan växa oväntat över tid.',
-              'Inga Dolda Avgifter: Vi erbjuder en transparent engångskostnad, så att du inte behöver oroa dig för att månadskostnader ackumuleras.',
-              'Kostnadseffektivitet: Med vår engångsbetalning behöver du inte bekymra dig över oändliga abonnemangsavgifter, vilket gör budgetplaneringen enklare och mer förutsägbar.',
-              'Högre Värde: Genom att välja oss får du tillgång till skräddarsydd, professionell design och utveckling som levererar mer än vad automatiserade webbplattformar kan erbjuda.',
-              'Budgetklarhet: Vi strävar efter fullständig öppenhet i våra priser, så att du vet exakt vad du betalar för och kan känna dig trygg i ditt beslut att investera i kvalitet.',
+              `Hög Kvalitet och framtidssäkrade lösningar.`,
+              `Innovativ Design: Estetisk och funktionell design som engagerar.`,
+              `Säkerhet: Moderna tekniker skyddar din webbplats och användare.`,
+              `Tillgänglighet: Vi följer internationella standarder för att säkerställa tillgänglighet.`,
+              `Utbildning och Support: Fortsatt support och utbildning post-leverans.`,
+              `Framtidssäkring: Flexibla lösningar som växer med din verksamhet.`,
+              `Personlig Service: Skräddarsydda lösningar för din unika verksamhet.`,
+              `Långsiktigt Partnerskap: Vi växer tillsammans genom öppen kommunikation.`,
+              `Hög prestanda: Slipp långa laddningstider på grund av standardiserade kodbaser.`,
+              `Budgetklarhet: Full öppenhet om kostnader - full kontroll.`,
+              `Inga Dolda Avgifter: Transparent prissättning med engångskostnad.`,
+              `Kostnadseffektivitet: Enkel budgetplanering utan löpande avgifter.`,
             ].map((item, index) => (
               <motion.li
                 key={index}
-                className="flex items-center mt-4"
+                className="flex items-center mt-4 bg-white p-4 border-2 border-gray-200 shadow-sm-blue-800/50 dark:border-gray-800 rounded-lg dark:bg-gray-800 dark:text-white"
                 variants={fadeInAnimationVariants}
                 initial="initial"
                 whileInView="animate"
@@ -85,36 +84,34 @@ export default function WhatToExpect() {
         </motion.div>
         <div className=" pt-16">
           <h2>
-            {' '}
-            Vad du{' '}
+            Anlita {` `}
             <strong>
               <em>inte</em>
             </strong>{' '}
-            bör förvänta dig av oss
+            oss om du föredrar:
           </h2>
         </div>
         <motion.div
           initial={{ x: 200, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ type: 'spring', stiffness: 100, delay: 0.6 }}
-          className="flex flex-col lg:flex-row md:gap-12 md:space-x-10"
+          className="flex flex-col mb-4 md:mb-12 lg:flex-row md:gap-12 md:space-x-10"
         >
           <motion.ul
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.275 }}
-            className="space-y-3 max-w-xl"
+            className="space-y-6 max-w-xl text-xl font-bold"
           >
             {[
-              'Snabba Fixar: Vi prioriterar kvalitet och noggrann planering framför hastighet. Vårt arbete är grundligt för att säkerställa hållbara resultat.',
-              'Standardlösningar: Vi erbjuder inga generiska, one-size-fits-all lösningar. Varje projekt är unikt och kräver sin egen specialanpassade lösning.',
-              'Billiga Genvägar: Vi kompromissar inte med kvaliteten för att sänka kostnaderna. Våra priser reflekterar värdet av hållbart och tillgängligt webbinnehåll.',
-              'Endast Teknisk Support: Medan vi erbjuder teknisk support, är vårt fokus på en helhetslösning som omfattar både teknik och strategisk rådgivning.',
-              'Omedelbar Överlämning: Vårt engagemang för ditt projekt innebär en kontinuerlig dialog och samarbete. Vi strävar efter partnerskap snarare än enkla affärstransaktioner.',
+              `"Quick-fix-lösningar": Vi bygger för hållbarhet, inte för att snabbt fixa.`,
+              `Billiga Genvägar: Vi har höga kvalitetskrav och lägger hantverksmässig stolthet i vårt arbete.`,
+              `Omedelbar Överlämning: Vi tar ansvar för det vi skapar. Vi bygger webbplatser som vi själva ska vilja använda och underhålla, inte bara sälja.`,
+              `Standardlösningar: Vi undviker generiska lösningar och "one-size-fits-all".`,
             ].map((item, index) => (
               <motion.li
                 key={index}
-                className="flex items-center"
+                className="flex items-center mt-4 bg-white p-4 border-2 border-gray-200 shadow-sm-blue-800/50 dark:border-gray-800 rounded-lg dark:bg-gray-800 dark:text-white"
                 variants={fadeInAnimationVariants}
                 initial="initial"
                 animate="animate"
@@ -133,10 +130,10 @@ export default function WhatToExpect() {
           <Image
             src={gaffatejp} // Change to your specific image
             alt="Gaffatejp"
-            width={300}
-            height={300}
+            width={200}
+            height={200}
             layout="responsive"
-            className="max-w-xl align-top md:my-0"
+            className="md:max-w-xl max-h-60 align-top  md:my-0"
           />
         </motion.div>
       </div>
