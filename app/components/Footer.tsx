@@ -11,7 +11,7 @@ import { InstagramLogoIcon } from '@radix-ui/react-icons'
 
 export default function Footer() {
   return (
-    <footer className="pl-20 pr-20 pb-5 pt-8 mt-10 bg-cyan-50 dark:bg-sky-950 dark:text-white text-gray-500">
+    <footer className="pl-20 pr-20 pb-10 pt-8  bg-cyan-50 dark:bg-sky-950 dark:text-white text-gray-500">
       <section className="flex flex-col md:flex-row justify-between space-y-4 md:space-y-0">
         <Link href="/">
           <Image
@@ -39,7 +39,7 @@ export default function Footer() {
             >
               {' '}
               LinkedIn
-              <BsLinkedin className="w-6 h-6" />
+              <BsLinkedin className="lg:w-6 lg:h-6" />
             </Link>
             <Link
               className="bg-white-50 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white"
@@ -50,7 +50,7 @@ export default function Footer() {
               title="External link to NextToEdit Instagram"
             >
               Instagram
-              <InstagramLogoIcon className="w-6 h-6" />
+              <InstagramLogoIcon className="lg:w-6 lg:h-6" />
             </Link>
             <Link
               href="/blogg"
@@ -104,11 +104,11 @@ export default function Footer() {
             Kontakt
           </Link>
           <Link
-            href="/om"
+            href="/om-oss"
             passHref
             className="text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 hover:underline focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
           >
-            Om
+            Om oss
           </Link>
           <Link
             href="/blogg"

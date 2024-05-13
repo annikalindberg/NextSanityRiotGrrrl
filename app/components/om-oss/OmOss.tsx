@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import Check from '@/public/assets/check.svg'
 import Link from 'next/link'
+import { CTAButton } from '../cta-buttons'
 import annika from '@/public/images/annika.svg'
 import highfive from '@/public/images/highfive.svg'
 import alex from '@/public/images/alex.svg'
@@ -214,13 +215,11 @@ export default function OmOss() {
           Kontakta oss idag för att utforska hur enkelt och fördelaktigt det kan
           vara att göra din webbplats tillgänglig för alla.
         </p>{' '}
-        <div className="flex items-center mt-8 mb-6">
-          <Link
-            href="/pricing"
-            className=" m-12 mx-auto rounded bg-rose-900 text-white dark:bg-rose-100 dark:text-slate-950 py-4 px-4 font-medium hover:bg-rose-800 dark:hover:bg-fuchsia-200 transition-colors duration-500 ease-in-out  transform hover:scale-105 "
-          >
-            Jag vill ha proffshjälp att tillgänlighetsoptimera!
-          </Link>
+        <div className=" mt-10 mb-10 md:mt-16 md:mb-16 lg:mt-20 lg:mb-20">
+          <CTAButton
+            title="Kostnadsfri Audit"
+            buttonLabel="Boka kostnadsfri Audit"
+          />
         </div>
       </motion.article>
     </>

@@ -1,7 +1,6 @@
 import React from 'react'
 import { FaqTillganglighet } from '../components/Faq-tillganglighet'
 import { FaqWebbutveckling } from '../components/Faq-webbutveckling'
-import Webbutveckling from '../components/Webbutveckling'
 
 export const metadata = {
   title:
