@@ -8,6 +8,8 @@ import Footer from './components/Footer'
 import ActiveSectionContextProvider from './components/annika/active-section-context'
 import ThemeContextProvider from './components/annika/theme-context'
 
+const gtag = `https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}` // Google Analytics
+
 const nunito = Nunito({
   subsets: ['latin'],
   weight: ['300', '400', '600', '800'],
@@ -29,7 +31,22 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="se">
+    <html lang="sv">
+      <head>
+        <script async src={gtag} />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', {
+                  page_path: window.location.pathname
+                });
+              `,
+          }}
+        />
+      </head>
       <body className={`${nunito.className} ${ptSans.className}`}>
         <ThemeProvider
           attribute="class"

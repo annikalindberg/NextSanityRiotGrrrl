@@ -1,4 +1,4 @@
-import React from 'react'
+/* import React from 'react'
 import Link from 'next/link'
 import { BsLinkedin } from 'react-icons/bs'
 import { FaGithubSquare } from 'react-icons/fa'
@@ -43,3 +43,4 @@ export default function SocialLinks() {
     </section>
   )
 }
+ */

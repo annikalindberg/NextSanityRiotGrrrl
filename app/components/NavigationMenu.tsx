@@ -135,7 +135,7 @@ export function Navigation() {
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="p-1 text-xs md:text-sm lg:text-lg">
+            <NavigationMenuTrigger className="p-1 md:p-4 text-xs md:text-sm lg:text-lg">
               Om oss
             </NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -160,7 +160,7 @@ export function Navigation() {
               <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-1 lg:w-[600px] ">
                 <ListItem
                   title="Kontakta oss"
-                  href="/contact"
+                  href="/kontakt"
                   className="text-lg"
                 >
                   {' '}
