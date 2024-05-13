@@ -1,6 +1,6 @@
 import React from 'react'
-import { OmOssAccordion } from '../components/OmOssAccordion'
 import OmOss from '../components/om-oss/OmOss'
+import WhatToExpect from '../components/om-oss/WhatToExpect'
 
 export default function OmOssPage() {
   return (
@@ -9,10 +9,10 @@ export default function OmOssPage() {
       <div className="max-w-3xl mx-auto px-4 pt-16">
         <OmOss />
       </div>
-      <div className="bg-gradient-to-t from-teal-200 via-amber-100 to-indigo-100 dark:bg-gradient-to-t dark:from-teal-800 dark:via-violet-950 dark:to-indigo-950"></div>
-      <section className="max-w-3xl mx-auto px-4 pt-16">
-        <OmOssAccordion />
-      </section>
+      <div className="bg-gradient-to-t from-teal-200 via-amber-100 to-indigo-100 dark:bg-gradient-to-t dark:from-teal-800 dark:via-violet-950 dark:to-indigo-950">
+        <WhatToExpect />
+      </div>
+      <section className="max-w-3xl mx-auto px-4 pt-16"></section>
     </>
   )
 }

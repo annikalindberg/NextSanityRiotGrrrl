@@ -172,6 +172,17 @@ export default function OmOss() {
           att välja oss som partner, inte bara följer du lagar och regler, utan
           du tar också ett steg mot en mer inkluderande värld.
         </p>{' '}
+        <h2 className="text-center">Varför välja oss?</h2>{' '}
+        <p>
+          På NextToEdit Tech Solutions är tillgänglighet inte bara en del av vår
+          affärsmodell – det är kärnan i allt vi gör. Vårt åtagande är att varje
+          webbplats vi utvecklar ska vara tillgänglig för alla, oavsett
+          användarens fysiska eller kognitiva förmågor. Vi följer strikt de
+          internationella riktlinjerna för webbtillgänglighet och anpassar oss
+          kontinuerligt till rådande standarder och teknologier för att
+          säkerställa att våra digitala lösningar är så inkluderande som
+          möjligt.{' '}
+        </p>{' '}
         <motion.div
           initial={{ x: 200, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }} // End at the normal position with full opacity
@@ -188,20 +199,8 @@ export default function OmOss() {
               className=" max-w-80 rounded-xl mt-6 mb-6 lg:inline-block align-top"
             />
           </div>
-          <h2 className="text-center">Varför välja oss?</h2>
           <div className="flex flex-col justify-center items-center  md:w-1/2 md:p-8 ">
             {' '}
-            <h3 className="text-center">Kundfokus</h3>
-            <p>
-              På NextToEdit Tech Solutions är tillgänglighet inte bara en del av
-              vår affärsmodell – det är kärnan i allt vi gör. Vårt åtagande är
-              att varje webbplats vi utvecklar ska vara tillgänglig för alla,
-              oavsett användarens fysiska eller kognitiva förmågor. Vi följer
-              strikt de internationella riktlinjerna för webbtillgänglighet och
-              anpassar oss kontinuerligt till rådande standarder och teknologier
-              för att säkerställa att våra digitala lösningar är så inkluderande
-              som möjligt.{' '}
-            </p>{' '}
             <p className="ml-6 mt-4 mb-4 md:mr-20 lg:mr-auto lg:ml-auto">
               {' '}
               <em>
@@ -211,55 +210,6 @@ export default function OmOss() {
             </p>{' '}
           </div>
         </motion.div>
-        <h3>Sammanfattningsvis...</h3>
-        <motion.section
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.175 }}
-          className="py-1 lg:py-15 mt-4 mb-4"
-          aria-label="Pricing Options"
-        >
-          <p>
-            Sammanfattningsvis, en tillgänglig webbplats är inte bara en fördel;
-            det är en nödvändighet i dagens digitala värld. Låt oss hjälpa dig
-            att göra din webbplats tillgänglig för alla.
-          </p>
-
-          <p className="mt-4">
-            Slutligen. Önskar du att din webbplats ska ge dig och din
-            verksamhet:{' '}
-          </p>
-          <ul
-            aria-label="Fördelar med tillgänglighetsoptimering"
-            className="mt-4 mb-4 text-1xl space-y-3 flex justify-center flex-col"
-          >
-            {[
-              'Fler positiva användarupplevelser',
-              'Förbättrad SEO',
-              'Ökad seriositet och trovärdighet',
-              'Fler konverteringar',
-              'Lugn och ro inför 2025',
-            ].map((item, index) => (
-              <motion.li
-                key={index}
-                className="flex items-center mt-4"
-                variants={fadeInAnimationVariants}
-                initial="initial"
-                whileInView="animate"
-              >
-                <Image
-                  src={Check}
-                  alt="Checkbox icon"
-                  aria-hidden="true"
-                  width={16}
-                  height={16}
-                  className="mr-2 dark:bg-white"
-                />
-                {item}
-              </motion.li>
-            ))}
-          </ul>
-        </motion.section>{' '}
         <p>
           Kontakta oss idag för att utforska hur enkelt och fördelaktigt det kan
           vara att göra din webbplats tillgänglig för alla.
@@ -272,15 +222,6 @@ export default function OmOss() {
             Jag vill ha proffshjälp att tillgänlighetsoptimera!
           </Link>
         </div>
-        <p>
-          Vi på NextToEdit Tech Solutions tycker att tillgänglighet
-          <em> bör vara</em>, och tror att tillgänlighet i framtiden{' '}
-          <em>kommer att vara </em>någonting självklart och redan inbyggt i allt
-          nytt digitalt skapande.
-        </p>{' '}
-        <p className="mt-8 text-center text-2xl font-semibold">
-          Joina oss i den digitala revolutionen
-        </p>{' '}
       </motion.article>
     </>
   )

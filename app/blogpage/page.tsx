@@ -5,6 +5,11 @@ import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
+export const metadata = {
+  title: 'Blogg om webbutveckling och tillgänglighet',
+  description:
+    'Håll dig uppdaterad om vad som händer inom webbutveckling och tillgänglighetsoptimering. Lär dig om fördelarna med handkodade sidor och hur tillgängliga webbplatser gynnar alla användare, få handfasta tips och hacks för att öka din SEO, webbtrafik och skapa fantastiska användarupplevelser.',
+}
 export const revalidate = 30 // revalidate at most 30 seconds
 
 async function getData() {
