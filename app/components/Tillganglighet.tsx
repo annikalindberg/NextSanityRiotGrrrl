@@ -26,8 +26,7 @@ const fadeInAnimationVariants = {
 
 export default function Tillganglighet() {
   return (
-    <>
-      {' '}
+    <section className=" max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <motion.div
         initial={{ x: 200, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }} // End at the normal position with full opacity
@@ -267,6 +266,6 @@ export default function Tillganglighet() {
           Det ska vara lätt att göra rätt!{' '}
         </p>{' '}
       </motion.article>
-    </>
+    </section>
   )
 }

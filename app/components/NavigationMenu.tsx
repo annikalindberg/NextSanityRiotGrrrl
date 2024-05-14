@@ -86,15 +86,23 @@ export function Navigation() {
                   className=" focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer w-20 h-auto md:w-56 lg:w-64 ml-2 pr-3 md:ml-4 md:mr-6 lg:ml-10 lg:mr-20"
                 />
               </a>
-            </NavigationMenuLink>
+            </NavigationMenuLink>{' '}
+            <Link href="/om-oss" legacyBehavior passHref>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                Om{' '}
+              </NavigationMenuLink>
+            </Link>{' '}
             <Link href="/tjanster" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 Tjänster{' '}
               </NavigationMenuLink>
+            </Link>{' '}
+            <Link href="/faq" legacyBehavior passHref>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                FAQ{' '}
+              </NavigationMenuLink>
             </Link>
-            {/*  <NavigationMenuTrigger className="p-1 text-xs md:text-sm lg:text-lg">
-              Tjänster
-            </NavigationMenuTrigger>
+            <NavigationMenuTrigger className="">Mer</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className=" grid gap-3  md:p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                 <li className="row-span-3">
@@ -117,28 +125,24 @@ export function Navigation() {
                     </div>
                   </div>
                 </li>
-                <ListItem href="/utvecklartjanster" title="Utvecklartjänster">
-                  Professionell Webbutveckling med Fokus på Tillgänglighet och
-                  Kvalitet
+                <ListItem href="/blogpage" title="NextToEdit Blogg">
+                  Läs våra senaste inlägg om webbutveckling, tillgänglighet och
+                  UX.
                 </ListItem>
                 <ListItem
-                  href="/tillganglighets-audits"
-                  title="Tillgänglighets-audits"
+                  href="/varfor-tillganglighetsoptimera-din-webbplats"
+                  title="Varför tillgänglighetsoptimera din webbplats?"
                 >
-                  Experter på tillgänglighet för webb med 15 år i branchen. Vi
-                  erbjuder tillgänglighets-audits av webbplatser till förmånliga
-                  priser och med olika paketlösningar. Vi bjuder på en
-                  kostnadsfri första audit för att du som kund ska få ett
-                  smakprov på hur vi arbetar och vilka förbättringar som kan
-                  göras.Vår vision är att webben ska vara en plats för alla.
+                  5 starka skäl till varför du bör tillgänglighetsoptimera din
+                  webbplats.
                 </ListItem>
-                <ListItem href="/konsulttjanster" title="Konsulttjänster">
-                  På jakt efter en konsult specialiserad inom Frontend och UX?
-                  Då är det här du ska kika in{' '}
+                <ListItem href="/kontakt" title="Kontakt">
+                  Boka kostnadsfri konsultation eller ställ frågor om våra
+                  tjänster.
                 </ListItem>
               </ul>
-            </NavigationMenuContent>*/}
-          </NavigationMenuItem>
+            </NavigationMenuContent>
+          </NavigationMenuItem>{' '}
           {/*  <NavigationMenuItem>
             <NavigationMenuTrigger className="p-1 md:p-4 text-xs md:text-sm lg:text-lg">
               Om oss
@@ -176,16 +180,15 @@ export function Navigation() {
               </ul> */}
             {/*             </NavigationMenuContent>
              */}{' '}
-            <Link href="/faq" legacyBehavior passHref>
+            {/*   <Link
+              href="/varfor-tillganglighetsoptimera-din-webbplats"
+              legacyBehavior
+              passHref
+            >
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                FAQ{' '}
+                Varfor tillganglighetsoptimera din webbplats{' '}
               </NavigationMenuLink>
-            </Link>
-            <Link href="/kontakt" legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Kontakt{' '}
-              </NavigationMenuLink>
-            </Link>
+            </Link>{' '} */}
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
