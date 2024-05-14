@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { slugify } from '@/lib/utils'
+import { buttonVariants } from '@/components/ui/button'
 
 interface CTAButtonProps {
   title: string // The title to be slugified and used in the URL
@@ -40,7 +41,7 @@ export const SmallCTAButton: React.FC<SmallCTAButtonProps> = ({
       role="button"
       href={`/forms/${slugify(buttonLabel)}`}
       aria-label={`Boka ${buttonLabel}`}
-      className={`mt-4 rounded bg-rose-900 text-white dark:bg-fuchsia-100 dark:text-slate-900 py-2 px-4 font-medium   hover:bg-rose-800   dark:hover:bg-fuchsia-200 focus:ring-4 focus:ring-rose-500 dark:focus:ring-fuchsia-500 focus:ring-offset-4 transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ${additionalClasses}`}
+      className={` w-48 text-center text-sm justify-center rounded bg-rose-900 text-white dark:bg-fuchsia-100 dark:text-slate-900 py-1 px-1 md:py-2 font-medium   hover:bg-rose-800   dark:hover:bg-fuchsia-200 focus:ring-4 focus:ring-rose-500 dark:focus:ring-fuchsia-500 focus:ring-offset-4 transform motion-reduce:transform-none hover:-translate-y-1 hover:scale-110 transition ease-in-out duration-300 ${additionalClasses}`}
       onClick={() => console.log(`${buttonLabel} clicked`)}
     >
       {buttonLabel}

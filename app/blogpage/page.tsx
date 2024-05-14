@@ -32,7 +32,7 @@ export default async function BlogPage() {
   console.log(data)
   return (
     <>
-      <main className="max-w-3xl mx-auto px-4 ">
+      <section className="max-w-3xl mx-auto px-4 ">
         <div className="grid grid-cols-1  md:grid-cols-2 mt-5 gap-5">
           {data.map((post, idx) => (
             <Card key={idx}>
@@ -60,7 +60,7 @@ export default async function BlogPage() {
             </Card>
           ))}
         </div>
-      </main>
+      </section>
     </>
   )
 }

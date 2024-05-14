@@ -19,7 +19,7 @@ import TopLogo from '@/public/images/TopLogo.png'
 import BottomLogo from '@/public/images/BottomLogo.png'
 
 const components: { title: string; href: string; description: string }[] = [
-  {
+  /*   {
     title: 'Vilka vi är',
     href: '/om-oss',
     description:
@@ -36,19 +36,19 @@ const components: { title: string; href: string; description: string }[] = [
     href: '/project',
     description:
       'Se exempel på tidigare projekt och hur vi hjälpt våra kunder att nå sina mål.',
-  },
+  }, */
 
   /*   {
     title: 'Konsulttjänster',
     href: '/konsulttjanster',
     description: 'Visually or semantically separates content.',
   }, */
-  {
+  /*  {
     title: 'Blogg',
     href: '/blogpage',
     description:
       'Läs våra senaste inlägg om webbutveckling, tillgänglighet och UX.',
-  },
+  } /*  */
   {
     title: 'Kontakta oss',
     href: '/contact',
@@ -134,7 +134,7 @@ export function Navigation() {
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
-          <NavigationMenuItem>
+          {/*  <NavigationMenuItem>
             <NavigationMenuTrigger className="p-1 md:p-4 text-xs md:text-sm lg:text-lg">
               Om oss
             </NavigationMenuTrigger>
@@ -151,7 +151,7 @@ export function Navigation() {
                 ))}
               </ul>
             </NavigationMenuContent>
-          </NavigationMenuItem>
+          </NavigationMenuItem> */}
           <NavigationMenuItem>
             <NavigationMenuTrigger className="p-1 text-xs md:text-sm lg:text-lg">
               Kontakta oss

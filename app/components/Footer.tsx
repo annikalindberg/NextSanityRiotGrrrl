@@ -4,80 +4,71 @@ import Link from 'next/link'
 import { BsLinkedin } from 'react-icons/bs'
 import { FaGithubSquare } from 'react-icons/fa'
 import { RxEnvelopeClosed } from 'react-icons/rx'
-import { SmallCTAButton } from './cta-buttons'
-import Logo from '@/public/images/GreenLogo.png'
-import Image from 'next/image'
 import { InstagramLogoIcon } from '@radix-ui/react-icons'
+import Image from 'next/image'
+import Logo from '@/public/images/GreenLogo.png'
+import { SmallCTAButton } from './cta-buttons'
 
 export default function Footer() {
   return (
-    <footer className="pl-20 pr-20 pb-10 pt-8  bg-cyan-50 dark:bg-sky-950 dark:text-white text-gray-500">
+    <footer className="px-5 sm:px-10 md:px-20 py-8 bg-cyan-50 dark:bg-sky-950 dark:text-white text-gray-500">
       <section className="flex flex-col md:flex-row justify-between space-y-4 md:space-y-0">
-        <Link href="/">
+        <Link href="/" className="block">
           <Image
             alt="Logo"
             src={Logo}
-            width={500} // Maximum width the image can scale up to
-            height={500} // Maintain the aspect ratio
-            sizes=" w-xs md:w-300 lg:w-500" // Responsive sizes
-            className=" focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer w-20 h-auto md:w-56 lg:w-64"
+            className="focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer w-20 h-auto md:w-56 lg:w-64"
+            width={500}
+            height={500}
+            sizes="(max-width: 768px) 20vw, (max-width: 1200px) 15vw, 500px"
           />
         </Link>
-        <div className="flex flex-col">
-          {' '}
-          <div id="social-links" className="flex">
-            <h3 className="text-gray-500 dark:text-gray-300">Följ oss</h3>
-          </div>
-          <div className="flex flex-col  gap-2">
+        <div className="flex flex-col space-y-2">
+          <h3 className="text-lg md:text-xl dark:text-gray-300">Följ oss!</h3>
+          <div className="flex flex-col gap-2">
             <Link
-              className="bg-white-50 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white"
               href="https://www.linkedin.com/in/annika-lindberg-frontend-developer/"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Visit Annikas Linkedin profile page - opens in new tab"
-              title="External link to Annikas LinkedIn"
+              aria-label="Visit Annika's LinkedIn profile - opens in new tab"
+              title="External link to Annika's LinkedIn"
+              className="bg-white-50 text-gray-700 hover:text-gray-900 flex items-center gap-2 p-2 rounded-full focus:ring-2 focus:ring-cyan-500 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white"
             >
-              {' '}
-              LinkedIn
-              <BsLinkedin className="md:w-4 lg:w-5 lg:h-5" />
+              LinkedIn <BsLinkedin className="md:w-5 md:h-5" />
             </Link>
             <Link
-              className="bg-white-50 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white"
               href="https://www.instagram.com/nexttoedit_solutions/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visit NextToEdit Instagram profile page - opens in new tab"
               title="External link to NextToEdit Instagram"
+              className="bg-white-50 text-gray-700 hover:text-gray-900 flex items-center gap-2 p-2 rounded-full focus:ring-2 focus:ring-cyan-500 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white"
             >
-              Instagram
-              <InstagramLogoIcon className="lg:w-6 lg:h-6" />
-            </Link>
-            <Link
-              href="/blogpage"
-              passHref
-              className="text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 hover:underline focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
-            >
-              Blogg
+              Instagram <InstagramLogoIcon className="md:w-5 md:h-5" />
             </Link>
           </div>
         </div>
-
-        {/*    */}
-
-        <div className="flex flex-col">
-          <h3 className="text-gray-500 dark:text-gray-300">Tjänster</h3>
+        <div className="flex flex-col  space-y-2">
+          <h3 className="text-lg md:text-xl dark:text-gray-300">Erbjudanden</h3>
+          <SmallCTAButton
+            title="Kostnadsfri Audit"
+            buttonLabel="Boka kostnadsfri Audit"
+          />
+        </div>
+        <div className="flex flex-col space-y-2">
+          <h3 className="text-lg md:text-xl dark:text-gray-300">Tjänster</h3>
           <Link
             href="/konsulttjanster"
             title="Konsulttjänster"
             passHref
-            className="text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 hover:underline focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
+            className="text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 focus:underline focus:ring-2 focus:ring-cyan-500 transition cursor-pointer"
           >
             Konsulttjänster
           </Link>
           <Link
             href="/utvecklartjanster"
             passHref
-            className="text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 hover:underline focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
+            className="text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 focus:underline focus:ring-2 focus:ring-cyan-500 transition cursor-pointer"
           >
             Utvecklartjänster
           </Link>
@@ -85,42 +76,31 @@ export default function Footer() {
             href="/tillganglighets-audits"
             title="Tillgänglighets-audits"
             passHref
-            className="text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 hover:underline focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
+            className="text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 focus:underline focus:ring-2 focus:ring-cyan-500 transition cursor-pointer"
           >
             Tillgänglighets-audits
-          </Link>{' '}
-          <SmallCTAButton
-            title="Kostnadsfri Audit"
-            buttonLabel="Boka kostnadsfri Audit"
-          />
+          </Link>
         </div>
-        <div className="flex flex-col">
-          <h3 className="text-gray-500 dark:text-gray-300">Kontakt</h3>
+        <div className="flex flex-col space-y-2">
+          <h3 className="text-lg md:text-xl dark:text-gray-300">Om oss</h3>
           <Link
             href="/kontakt"
             passHref
-            className="text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 hover:underline focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
+            className="text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 focus:underline focus:ring-2 focus:ring-cyan-500 transition cursor-pointer"
           >
             Kontakt
           </Link>
           <Link
             href="/om-oss"
             passHref
-            className="text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 hover:underline focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
+            className="text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 focus:underline focus:ring-2 focus:ring-cyan-500 transition cursor-pointer"
           >
             Om oss
           </Link>
-          <Link
-            href="/blogg"
-            passHref
-            className="text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 hover:underline focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
-          >
-            Blogg
-          </Link>
         </div>
       </section>
-      <hr className="mt-10 border-gray-300" />
-      <small className="block text-center text-xs mt-4 ">
+      <hr className="my-10 border-gray-300" />
+      <small className="block text-center text-xs mt-4">
         &copy; 2024 Annika Lindberg. All rights reserved.
       </small>
     </footer>
