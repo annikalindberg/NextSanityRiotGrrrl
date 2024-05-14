@@ -13,7 +13,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion'
-import Tjanster from '../om-oss/tjanster'
 import classes from '../om-oss/omoss.module.css'
 
 const articleVariants = {
@@ -166,7 +165,6 @@ export default function OmOss() {
         variants={articleVariants}
         className="pt-8 "
       >
-        <Tjanster />
         <p className="mt-4">
           Våra specialkompetenser är inte bara en teknisk resurs – de är en del
           av vår mission att göra digitala upplevelser bättre för alla. Genom

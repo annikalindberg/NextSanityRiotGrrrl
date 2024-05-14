@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import Check from '@/public/assets/check.svg'
 import gaffatejp from '@/public/images/gaffa.svg'
-import earth from '@/public/images/earth.svg'
+import jorden from '@/public/images/jorden.svg'
 import SectionDivider from '../annika/section-divider'
 
 const fadeInAnimationVariants = {
@@ -35,7 +35,7 @@ export default function WhatToExpect() {
           className="flex flex-col lg:flex-row items-center"
         >
           <Image
-            src={earth}
+            src={jorden}
             alt="En hand sträcker ut en delad jordglob med gröna träd, en cykel och 3 vindkraftverk."
             width={200}
             height={200}

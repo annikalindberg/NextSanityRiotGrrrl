@@ -21,7 +21,7 @@ const fadeInAnimationVariants = {
 }
 export function Audits() {
   return (
-    <main className="max-w-3xl md:max-w-6xl mx-auto px-4 ">
+    <article className="max-w-3xl md:max-w-6xl mx-auto px-4 ">
       <motion.section
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -33,14 +33,18 @@ export function Audits() {
           Hur tillgänglig är din webbplats?{' '}
           <div className="mt-4"> Låt oss testa! </div>
         </h1>
-        <h2 className="text-center text-[#36485C] dark:text-white text-lg lg:text-2xl mt-5">
+        <h2 className=" text-[#36485C] text-center dark:text-white text-lg lg:text-2xl mt-5">
           Boka kostnadsfri audit idag!
         </h2>
-        <p className="pt-[16px] pb-[40px] max-w-3xl md:mx-auto text-center text-[#36485C] dark:text-white lg:text-[18px] mb-10 mt-7 leading-7">
-          Våra tester inkluderar en övergripande granskning av koden samt
-          manuella tester av användarflödena. Vi använder verktyg som
-          skärmläsare och tangentbordsnavigering för att säkerställa att alla
-          element på din webbplats är tillgängliga för varje användare.
+        <p className="md:pt-6 md:pb-6 max-w-3xl md:mx-auto  lg:text-xl">
+          Vi är experter på tillgänglighet för webb med 15 år i branchen. Vi
+          erbjuder tillgänglighets-audits av webbplatser till förmånliga priser
+          och med olika paketlösningar.{' '}
+        </p>{' '}
+        <p className="pt-6 pb-6 max-w-3xl md:mx-auto lg:text-xl">
+          Vi bjuder på en kostnadsfri första audit för att du som kund ska få
+          ett smakprov på hur vi arbetar och vilka förbättringar som kan
+          göras.Vår vision är att webben ska vara en plats för alla.
         </p>
         <div className="flex flex-col items-center justify-center gap-8 md:flex-row md:items-start lg:gap-8">
           {[
@@ -156,6 +160,6 @@ export function Audits() {
         className="py-12 lg:py-15 max-w-xl mx-auto"
         aria-label="Frequency Asked Questions"
       ></section>
-    </main>
+    </article>
   )
 }

@@ -87,6 +87,11 @@ export function Navigation() {
                 />
               </a>
             </NavigationMenuLink>
+            <Link href="/tjanster" legacyBehavior passHref>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                Tjänster{' '}
+              </NavigationMenuLink>
+            </Link>
             <NavigationMenuTrigger className="p-1 text-xs md:text-sm lg:text-lg">
               Tjänster
             </NavigationMenuTrigger>
@@ -153,11 +158,12 @@ export function Navigation() {
             </NavigationMenuContent>
           </NavigationMenuItem> */}
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="p-1 text-xs md:text-sm lg:text-lg">
+            {/*       <NavigationMenuTrigger className="p-1 text-xs md:text-sm lg:text-lg">
               Kontakta oss
-            </NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-1 lg:w-[600px] ">
+            </NavigationMenuTrigger> */}
+            {/*             <NavigationMenuContent>
+             */}{' '}
+            {/*         <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-1 lg:w-[600px] ">
                 <ListItem
                   title="Kontakta oss"
                   href="/kontakt"
@@ -167,11 +173,17 @@ export function Navigation() {
                   Boka kostnadsfri konsultation eller ställ frågor om våra
                   tjänster.
                 </ListItem>{' '}
-              </ul>
-            </NavigationMenuContent>
+              </ul> */}
+            {/*             </NavigationMenuContent>
+             */}{' '}
             <Link href="/faq" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 FAQ{' '}
+              </NavigationMenuLink>
+            </Link>
+            <Link href="/kontakt" legacyBehavior passHref>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                Kontakt{' '}
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>

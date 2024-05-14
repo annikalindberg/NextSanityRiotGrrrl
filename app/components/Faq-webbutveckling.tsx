@@ -28,7 +28,7 @@ export function FaqWebbutveckling() {
       }}
     >
       <div className="flex flex-col md:flex-row items-center justify-center  md:justify-between ">
-        <h2>Webbutveckling</h2>
+        <h2>Webbutveckling FAQ</h2>
         <Image
           width={300}
           height={300}

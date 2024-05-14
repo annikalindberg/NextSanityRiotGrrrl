@@ -29,7 +29,7 @@ export function FaqTillganglighet() {
       }}
     >
       <div className="flex flex-col md:flex-row items-center justify-center  md:justify-between ">
-        <h2>Tillgänglighet</h2>
+        <h2>Tillgänglighet FAQ</h2>
         <Image
           width={300}
           height={300}
