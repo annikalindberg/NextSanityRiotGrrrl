@@ -35,8 +35,7 @@ const fadeInAnimationVariants = {
 
 export default function OmOss() {
   return (
-    <>
-      {' '}
+    <div className="max-w-3xl mx-auto px-4 pt-16">
       <h1>
         NextToEdit Tech Solutions – för en digital värld där alla har plats.
       </h1>{' '}
@@ -73,7 +72,7 @@ export default function OmOss() {
 
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
-                <AccordionTrigger className="w-full">
+                <AccordionTrigger className="w-full bg-red-200 dark:bg-rose-950 p-5">
                   Läs mer om Annika
                 </AccordionTrigger>{' '}
                 <AccordionContent>
@@ -117,7 +116,7 @@ export default function OmOss() {
             </figcaption>
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
-                <AccordionTrigger className="w-full">
+                <AccordionTrigger className="w-full bg-red-200  dark:bg-rose-950 p-5">
                   Läs mer om Alex
                 </AccordionTrigger>{' '}
                 <AccordionContent>
@@ -220,6 +219,6 @@ export default function OmOss() {
           />
         </div>
       </motion.article>
-    </>
+    </div>
   )
 }

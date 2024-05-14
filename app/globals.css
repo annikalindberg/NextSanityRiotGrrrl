@@ -69,7 +69,7 @@
       8%;
     --foreground: 210 20% 98%;
     /* Default text color in dark mode */
-    --card: 291, 81%, 12%;
+    --card: 291, 8%, 12%;
     /* Background color for card components in dark mode */
     --card-foreground: 210 20% 98%;
     /* Text color for card components in dark mode */

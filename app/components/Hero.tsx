@@ -16,7 +16,7 @@ export default function Hero() {
       <div className="flex flex-col lg:flex-row lg:justify-center">
         {/* Text container */}
         <div className="max-w-xs ml-4  md:max-w-sm lg:max-w-xl lg:mr-10">
-          <h1 className=" text-left font-bold leading-relaxed tracking-wider text-3xl md:text-4xl lg:text-6xl md:leading-normal lg:leading-normal">
+          <h1 className=" text-left font-bold leading-relaxed tracking-wide text-3xl md:text-4xl lg:text-6xl md:leading-normal ">
             Vi{' '}
             <span
               className="text-rose-900 dark:text-fuchsia-100 font-bold
@@ -44,14 +44,25 @@ export default function Hero() {
               buttonLabel="Boka kostnadsfri Audit"
             />
           </div>{' '}
-          <p className="mt-5 md:mt-8 lg:mt-15 leading-8">
+          {/*   <p className="mt-5 md:mt-8 lg:mt-15 leading-8">
             Vi erbjuder olika paketlösningar där experter går igenom utvalda
             delar av er webbplats, gör omfattande tillgänglighetstestning med en
-            åtgärdslista som vi presenterar för ert utvecklarteam. och coachar
-            företag i tillgänglighet och <em>inclusive design.</em>
-          </p>{' '}
-          <p className="mt-4"> Nyfiken på att veta mer?</p>
-          <p className="mt-5 md:mt-8 lg:mt-15 font-bold">
+            åtgärdslista som vi presenterar för ert utvecklarteam.
+          </p>{' '} */}
+          <p className="mt-4"> Behöver du en helt ny optimerad hemsida?</p>
+          <p className="mt-4 mb-2">
+            {' '}
+            Kolla in våra konkurrenskraftiga paketerbjudanden för tillgängliga
+            och hållbara hemsidor idag
+          </p>
+          <Link
+            href="/tjanster"
+            passHref
+            className="text-rose-900 dark:text-fuchsia-100 underline "
+          >
+            Läs mer om våra hemsidepaket
+          </Link>
+          <p className="mt-5 md:mt-8 lg:mt-15 font-bold leading-8">
             {' '}
             Boka ett kostnadsfritt och förutsättningslöst samtal berättar vi mer
             om hur vi kan förbättra din digitala närvaro, öka synlighet och
