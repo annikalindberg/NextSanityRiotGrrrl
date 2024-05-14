@@ -58,11 +58,11 @@ export default function Hero() {
           <Link
             href="/tjanster"
             passHref
-            className="text-rose-900 dark:text-fuchsia-100 underline "
+            className="text-ocean-950 font-extrabold text-lg md:text-xl lg:text-2xl dark:text-fuchsia-100 underline "
           >
             Läs mer om våra hemsidepaket
           </Link>
-          <p className="mt-5 md:mt-8 lg:mt-15 font-bold leading-8">
+          <p className="mt-5 md:mt-8 lg:mt-15 font-normal leading-8">
             {' '}
             Boka ett kostnadsfritt och förutsättningslöst samtal berättar vi mer
             om hur vi kan förbättra din digitala närvaro, öka synlighet och

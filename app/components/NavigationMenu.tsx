@@ -92,7 +92,7 @@ export function Navigation() {
                 Tjänster{' '}
               </NavigationMenuLink>
             </Link>
-            <NavigationMenuTrigger className="p-1 text-xs md:text-sm lg:text-lg">
+            {/*  <NavigationMenuTrigger className="p-1 text-xs md:text-sm lg:text-lg">
               Tjänster
             </NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -137,7 +137,7 @@ export function Navigation() {
                   Då är det här du ska kika in{' '}
                 </ListItem>
               </ul>
-            </NavigationMenuContent>
+            </NavigationMenuContent>*/}
           </NavigationMenuItem>
           {/*  <NavigationMenuItem>
             <NavigationMenuTrigger className="p-1 md:p-4 text-xs md:text-sm lg:text-lg">
