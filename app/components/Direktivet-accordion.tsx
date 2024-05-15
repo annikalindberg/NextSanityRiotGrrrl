@@ -14,10 +14,10 @@ export default function Direktivet() {
       <Accordion
         type="single"
         collapsible
-        className=" p-4 bg-indigo-100 dark:bg-indigo-950 rounded-4xl md:max-w-2xl md:px-8"
+        className=" pl-2 pr-2 pb-1 md:pt-2 bg-indigo-100 dark:bg-indigo-950 rounded-4xl md:max-w-2xl md:px-8"
       >
         <AccordionItem value="item-1">
-          <AccordionTrigger className="text-left">
+          <AccordionTrigger className="text-left text-lg">
             Läs mer om Tillgänglighetsdirektivet{' '}
           </AccordionTrigger>
           <AccordionContent>

@@ -299,7 +299,7 @@ export default function Tillganglighet() {
               href="/tillganglighets-audits"
               className=" m-12 mx-auto rounded bg-rose-900 text-white dark:bg-rose-100 dark:text-slate-950 py-4 px-4 font-medium hover:bg-rose-800 dark:hover:bg-fuchsia-200 transition-colors duration-500 ease-in-out  transform hover:scale-105 "
             >
-              Jag vill ha proffshjälp att tillgänlighetsoptimera!
+              Jag vill ha proffshjälp att tillgänglighetsoptimera!
             </Link>
           </div>
           <p>
