@@ -40,8 +40,8 @@ export default function Hero() {
           </p>
           <div className=" items-center mt-10 mb-10 md:mt-16 md:mb-16 lg:mt-20 lg:mb-20">
             <CTAButton
-              title="Kostnadsfri Audit"
-              buttonLabel="Boka kostnadsfri Audit"
+              title="Jag vill ha en kostnadsfri Audit"
+              buttonLabel="Jag vill ha en kostnadsfri Audit"
             />
           </div>{' '}
           {/*   <p className="mt-5 md:mt-8 lg:mt-15 leading-8">

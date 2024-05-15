@@ -16,7 +16,7 @@ const tjanst = [
   {
     title: 'Tillgänglighets-audits',
     smallDescription:
-      'Vi granskar befintliga webbplatser och identifierar tillgänglighetsbrister. Vi ser till att dina plattformar uppfyller gällande riktlinjer och lagar om digital tillgänglighet.',
+      'Vi granskar befintliga webbplatser och identifierar tillgänglighetsbrister. Vi ser till att dina webbsidor uppfyller gällande riktlinjer och lagar om digital tillgänglighet.',
     url: '/tillganglighets-audits',
   },
   {

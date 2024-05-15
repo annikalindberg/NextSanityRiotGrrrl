@@ -62,8 +62,7 @@ export function FaqTillganglighet() {
         </AccordionItem>
         <AccordionItem value="item-2">
           <AccordionTrigger className="text-left">
-            Vad menar ni när ni säger &quot;tillgänglighetsoptimerad
-            webbplats&quot;?{' '}
+            Vad menar ni med &quot;tillgänglighetsoptimerad webbplats&quot;?{' '}
           </AccordionTrigger>
           <AccordionContent>
             <p>
@@ -146,15 +145,15 @@ export function FaqTillganglighet() {
         </AccordionItem>
         <AccordionItem value="item-5">
           <AccordionTrigger className="text-left">
-            Ungefär hur många användare är det som påverkas negativt om min
-            webbplats brister i tillgänglighet?
+            Hur många användare är det som påverkas negativt om min webbplats
+            brister i tillgänglighet?
           </AccordionTrigger>
           <AccordionContent>
             {' '}
             <p>
               I Sverige använder nästan alla, 97,2% av befolkningen internet
-              dagligen. Om din webbplats har brister i tillgämglighet utesluter
-              den cirk a 2 miljoner potentiella användare. detta är bara i
+              dagligen. Om din webbplats har brister i tillgänglighet utesluter
+              den cirka två miljoner potentiella användare. Detta är bara i
               Sverige.{' '}
             </p>
             <p className="mt-4">
@@ -195,16 +194,19 @@ export function FaqTillganglighet() {
         </AccordionItem>
         <AccordionItem value="item-7">
           <AccordionTrigger className="text-left">
-            Om tillgänglighet är så viktigt, varför bygges inte alla webbplatser
+            Om tillgänglighet är så viktig, varför är inte alla webbplatser
             tillgänglighetsoptimerade från början?
           </AccordionTrigger>
           <AccordionContent>
-            I Internets begynnelse skrevs alla hemsidor i ett kodspråk som
-            kallas HTML. Denna teknik var och är fortfarande
-            tillgänglighetsoptimerad i sig själv. Men när webben utvecklades och
-            blev mer avancerad, tillkom fler tekniker och verktyg som gjorde det
-            enklare att bygga webb och som inte alltid var lika
-            tillgänglighetsoptimerade.
+            <p className="mt4">
+              Det är en bra fråga. När internet var nytt var inte
+              tillgängligheten lika prioriterad som den är idag. Ursprungligen
+              skrevs webbsidor i HTML, ett kodspråk som redan då stödde
+              tillgänglighet. Men när webben utvecklades och blev mer avancerad,
+              introducerades nya tekniker och verktyg. Dessa gjorde det enklare
+              att bygga webbplatser men var inte alltid optimerade för
+              tillgänglighet.
+            </p>
             <p className="mt4">
               {' '}
               Det är också så att det är enklare och snabbare att bygga en

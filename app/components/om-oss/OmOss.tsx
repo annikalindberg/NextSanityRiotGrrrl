@@ -76,28 +76,40 @@ export default function OmOss() {
                   Läs mer om Annika
                 </AccordionTrigger>{' '}
                 <AccordionContent>
+                  <h3> Från akademisk kunskap till teknisk skicklighet</h3>
                   <p className={classes.textSmall}>
                     Annika kombinerar sin akademiska bakgrund inom beteende- och
                     genusvetenskap med en passion för teknik och kodning. Med
-                    mer än femton års erfarenhet av tillgänglighetsarbete,
-                    projektledning och utbildning är hon en mästare på att skapa
+                    mer än femton års erfarenhet inom tillgänglighetsarbete,
+                    projektledning och utbildning är hon en expert på att skapa
                     inkluderande digitala miljöer som välkomnar alla användare.{' '}
                   </p>
+                  <h3> En banbrytande kraft för jämlikhet och inkludering</h3>
                   <p className={classes.textSmall}>
-                    Annika har en bakgrund inom beteende- och genusvetenskap och
-                    har arbetat med tillgänglighet i över femton år. Hon är en
-                    Fullstack-utvecklare och tillgänglighetsexpert som brinner
-                    för att skapa inkluderande digitala miljöer som välkomnar
-                    alla användare.
+                    Med en gedigen akademisk grund inom beteende- och
+                    genusvetenskap har Annika dedikerat sig åt att främja
+                    inkludering, jämlikhet och påverkansarbete. Tack vare hennes
+                    omfattande erfarenhet av att skapa välkomnande digitala
+                    miljöer är hon en ledare i att skapa webbplatser som
+                    välkomnar alla användare, samt att leda projekt och
+                    utbildningar inom tillgänglighet.{' '}
+                  </p>
+                  <h3> Teknisk expertis i praktiken</h3>
+                  <p className={classes.textSmall}>
+                    Annikas bakgrund från den ideella sektorn, där hon har lett
+                    utvecklingen av digitala plattformar och
+                    utbildningsverksamhet, gör henne till en ovärderlig resurs.
+                    Hon är tekniskt kompetent både inom Frontend- och
+                    fullstack-utveckling och är passionerad för att integrera
+                    tillgänglighet i alla faser av webbutvecklingen, från design
+                    till kodning och slutproduktion.{' '}
                   </p>
                   <p className={classes.textSmall}>
-                    Annikas erfarenhet från ideell sektor, där hon har lett
-                    utvecklingen av digitala plattformar och
-                    utbildningsverksamhet, gör henne till en ovärderlig resurs
-                    för att säkerställa att våra projekt inte bara möter, utan
-                    överträffar, alla tillgänglighetskrav. Hon är lika hemma i
-                    frontend som i fullstack-utveckling och brinner för att
-                    integrera tillgänglighet i alla faser av webbutvecklingen.
+                    {' '}
+                    Tekniskt är hon lika hemma i Frontend som i
+                    fullstack-utveckling och brinner för att integrera
+                    tillgänglighet i alla faser av webbutvecklingen, från design
+                    och flödes-scheman till kod och slutlig produktion.
                   </p>
                 </AccordionContent>
               </AccordionItem>
@@ -167,8 +179,8 @@ export default function OmOss() {
         <p className="mt-4">
           Våra specialkompetenser är inte bara en teknisk resurs – de är en del
           av vår mission att göra digitala upplevelser bättre för alla. Genom
-          att välja oss som partner, inte bara följer du lagar och regler, utan
-          du tar också ett steg mot en mer inkluderande värld.
+          att välja oss följer du inte bara lagar och regler utan tar också ett
+          steg mot en mer inkluderande värld.
         </p>{' '}
         <h2 className="text-center">Varför välja oss?</h2>{' '}
         <p>
@@ -177,7 +189,7 @@ export default function OmOss() {
           webbplats vi utvecklar ska vara tillgänglig för alla, oavsett
           användarens fysiska eller kognitiva förmågor. Vi följer strikt de
           internationella riktlinjerna för webbtillgänglighet och anpassar oss
-          kontinuerligt till rådande standarder och teknologier för att
+          kontinuerligt till rådande standarder och teknologier. Allt för att
           säkerställa att våra digitala lösningar är så inkluderande som
           möjligt.{' '}
         </p>{' '}

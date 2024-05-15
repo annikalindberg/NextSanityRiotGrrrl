@@ -22,15 +22,15 @@ const services = [
   {
     name: 'Webbutveckling',
     description:
-      'Vi bygger skräddarsydda webbplatser som är optimerade för tillgänglighet från grunden. Vi skapar lättläst, förståelig och välskriven kod. En responsiv design som fungerar på alla enheter och plattformar är en självklarhet.',
+      'Vi bygger skräddarsydda webbplatser som är optimerade för tillgänglighet från grunden. Vi skapar lättläst, förståelig och välskriven kod. En responsiv design som fungerar på alla enheter är en självklarhet.',
   },
   {
     name: 'Tillgänglighets-audits',
     description:
-      'Vi granskar befintliga webbplatser och identifierar tillgänglighetsbrister. Vi ser till att dina plattformar uppfyller gällande riktlinjer och lagar om digital tillgänglighet.',
+      'Vi granskar befintliga webbplatser och identifierar tillgänglighetsbrister. Vi ser till att dina webbplatser uppfyller gällande riktlinjer och lagar om digital tillgänglighet.',
   },
   {
-    name: 'Skräddarsydda workshops i tillgänglighet on demand',
+    name: 'Skräddarsydda workshops i tillgänglighet',
     description:
       'Vi utbildar, föreläser och coachar i tillgänglighet för webb. Vi rustar dig och/eller ditt team med värdefull kunskap som ni kan använda framöver i ert arbete med tillgänglighet.',
   },

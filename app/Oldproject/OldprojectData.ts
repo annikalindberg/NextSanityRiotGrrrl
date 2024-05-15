@@ -98,7 +98,7 @@ const projects: Project[] = [
     title: 'To Do App',
     image: '/images/to-do-app.png',
     description:
-      'This is a To-Do-App where I leveraged React and Redux to gain hands-on experience in state management. I implemented custom reducers and utilized the createSlice-method in Redux Toolkit, to manage application state in a modular fashion. While the frontend styling was achieved using vanilla CSS, the primary focus was on mastering state management through Redux.This involved experimenting with different code organization strategies, including slicing the codebase for optimized maintainability and readability.',
+      'This is a To-Do-App where I leveraged React and Redux to gain hands-on experience in state management. I implemented custom reducers and utilized the createSlice-method in Redux Toolkit, to manage application state in a modular fashion. While the Frontend styling was achieved using vanilla CSS, the primary focus was on mastering state management through Redux.This involved experimenting with different code organization strategies, including slicing the codebase for optimized maintainability and readability.',
     stack: ['CSS3', 'JavaScript', 'React', 'Redux', 'Node.js'],
     githubLink: 'https://github.com/annikalindberg/project-todos',
     LiveDemoLink: 'https://animated-paletas-c14d00.netlify.app/',

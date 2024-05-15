@@ -26,9 +26,21 @@ export default function DynamicForm({ params }: { params: { form: string } }) {
           once: true,
         }}
       >
-        <h1 className="mt-20 text-4xl font-semibold dark:text-white">
-          Du har valt att boka en {formTitle}!
+        <h1 className="mt-20 text-4xl dark:text-white">
+          Välkommen till bokningsförfrågan för: &quot; {formTitle}! &quot;
         </h1>
+        <p className="text-gray-700 mt-6 dark:text-white/80">
+          Fyll i formuläret nedan för att skicka en bokningsförfrågan.
+        </p>
+        <p className="text-gray-700 mt-6 dark:text-white/80">
+          Vi återkommer till dig inom 24 timmar.
+        </p>
+        <p className="text-gray-700 mt-6 dark:text-white/80">
+          Gäller ditt ärende en bokning av &quot;kostnadsfri audit&quot; kommer
+          vi att skicka en sammanställlning med resultat och förslag på åtgärder
+          inom 1-5 arbetsdagar, till den e-post adress du uppger. Vid oväntat
+          högt tryck kan det ta längre tid.{' '}
+        </p>
 
         {/*         <p className="text-gray-700 mt-6 dark:text-white/80">
           Please contact me directly at{' '}
@@ -55,7 +67,7 @@ export default function DynamicForm({ params }: { params: { form: string } }) {
               return
             }
 
-            toast.success('Email sent successfully!')
+            toast.success('Förfrågan skickad!')
           }}
         >
           {/* Hidden input to include the audit type */}
@@ -74,7 +86,7 @@ export default function DynamicForm({ params }: { params: { form: string } }) {
             type="email"
             required
             maxLength={500}
-            placeholder="Enter your email here"
+            placeholder="Ange din e-postadress"
           />
           <label htmlFor="message" className="mt-4 dark:text-white text-left">
             Ditt meddelande (frivilligt)
@@ -83,7 +95,7 @@ export default function DynamicForm({ params }: { params: { form: string } }) {
             id="message"
             className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
             name="message"
-            placeholder="Write your message here"
+            placeholder="Skriv ditt meddelande här"
             required
             maxLength={5000}
           />
@@ -100,7 +112,7 @@ export default function DynamicForm({ params }: { params: { form: string } }) {
             type="url"
             required
             maxLength={500}
-            placeholder="Enter your URL here"
+            placeholder="URL till webbplatsen du vill att vi granskar"
           />
 
           <button

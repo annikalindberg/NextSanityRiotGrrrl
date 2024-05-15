@@ -69,7 +69,7 @@ export const experiencesData = [
     title: 'Volonteer Developer',
     location: 'Zetkin Foundation',
     description:
-      'Open source project for political activism. I work on the frontend with React and TypeScript.',
+      'Open source project for political activism. I work on the Frontend with React and TypeScript.',
     icon: React.createElement(RiOpenSourceLine),
     date: '2023 - present',
   },

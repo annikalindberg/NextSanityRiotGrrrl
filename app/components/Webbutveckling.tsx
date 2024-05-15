@@ -88,7 +88,7 @@ const Webbutveckling = () => (
               'Anpassad SEO-strategi (du får en grundläggande SEO-optimering)',
             ],
 
-            buttonLabel: 'Jag vill ha en snabbstart',
+            buttonLabel: 'Bokningsförfrågan av Kickstart-paketet',
             bgClass: 'bg-stone-50 dark:bg-rose-950',
           },
           {
