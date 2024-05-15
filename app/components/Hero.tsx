@@ -82,6 +82,7 @@ export default function Hero() {
             width={300}
             height={300}
             className="items-center w-1/2 justify-center lg:w-3/4"
+            priority
           />
         </motion.div>
       </div>
