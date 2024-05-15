@@ -38,7 +38,7 @@ export default function Tillganglighet() {
           className="flex justify-center items-center"
         >
           {' '}
-          <h2>Fem skäl till varför din hemsida ska vara tillgänglig</h2>{' '}
+          <h2>Fem skäl till att din hemsida ska vara tillgänglig</h2>{' '}
           <Image
             alt="Illustreration av en funktionsdiversifierad grupp människor med olika hudfärger och kön. som sträcker upp händer i luften och är glada."
             src={banner}
@@ -172,7 +172,7 @@ export default function Tillganglighet() {
             Att inte uppfylla dessa krav kan resultera i kostsamma
             rättsprocesser. Den nya lagen som börjar gälla 2025,
             (tillgänglighetsdirektivet) har likheter med
-            webbtillgänglighetsdirektivet för offenlig sektor som började gälla
+            webbtillgänglighetsdirektivet för offentlig sektor som började gälla
             2019.{' '}
           </p>
           <Direktivet />
@@ -266,7 +266,7 @@ export default function Tillganglighet() {
               {[
                 'Fler positiva användarupplevelser',
                 'Förbättrad SEO',
-                'Ökad serioistet och trovärdighet',
+                'Ökad seriosistet och trovärdighet',
                 'Fler konverteringar',
                 'Lugn och ro inför 2025',
               ].map((item, index) => (
@@ -304,7 +304,7 @@ export default function Tillganglighet() {
           </div>
           <p>
             Vi på NextToEdit Tech Solutions tycker att tillgänglighet
-            <em> bör vara</em>, och tror att tillgänlighet i framtiden{' '}
+            <em> bör vara</em>, och tror att tillgänglighet i framtiden{' '}
             <em>kommer att vara </em>någonting självklart och redan inbyggt i
             allt nytt digitalt skapande.
           </p>{' '}

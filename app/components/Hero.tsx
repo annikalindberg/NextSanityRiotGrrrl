@@ -12,9 +12,8 @@ export default function Hero() {
       transition={{ delay: 0.175 }}
       className="md:m-10  lg:m-20"
     >
-      {/* Wrap content and image in a flex container only on large screens */}
+      {' '}
       <div className="flex flex-col lg:flex-row lg:justify-center">
-        {/* Text container */}
         <div className="max-w-xs ml-4  md:max-w-sm lg:max-w-xl lg:mr-10">
           <h1 className=" text-left font-bold leading-relaxed tracking-wide text-3xl md:text-4xl lg:text-6xl md:leading-normal ">
             Vi{' '}
@@ -64,8 +63,8 @@ export default function Hero() {
           </Link>
           <p className="mt-5 md:mt-8 lg:mt-15 font-normal leading-8">
             {' '}
-            Boka ett kostnadsfritt och förutsättningslöst samtal berättar vi mer
-            om hur vi kan förbättra din digitala närvaro, öka synlighet och
+            Boka ett kostnadsfritt och förutsättningslöst samtal, så berättar vi
+            mer om hur vi kan förbättra din digitala närvaro, öka synlighet och
             förbättra användarupplevelsen för dina besökare.
           </p>{' '}
         </div>

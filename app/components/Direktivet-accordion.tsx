@@ -18,7 +18,7 @@ export default function Direktivet() {
       >
         <AccordionItem value="item-1">
           <AccordionTrigger className="text-left">
-            Läs mer om det så kallade &quot;Tillgänglighetsdirektivet&quot;{' '}
+            Läs mer om Tillgänglighetsdirektivet{' '}
           </AccordionTrigger>
           <AccordionContent>
             <h3 className="mt-6">Webbtillgänglighetsdirektivet (2019) </h3>
