@@ -27,7 +27,7 @@ export default function DynamicForm({ params }: { params: { form: string } }) {
         }}
       >
         <h1 className="mt-20 text-4xl dark:text-white">
-          Välkommen till bokningsförfrågan för: &quot; {formTitle}! &quot;
+          Välkommen till bokningsförfrågan för: &quot;{formTitle}!&quot;
         </h1>
         <p className="text-gray-700 mt-6 dark:text-white/80">
           Fyll i formuläret nedan för att skicka en bokningsförfrågan.
