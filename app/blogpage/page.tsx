@@ -32,8 +32,8 @@ export default async function BlogPage() {
   console.log(data)
   return (
     <>
-      <section className="max-w-3xl mx-auto px-4 ">
-        <div className="grid grid-cols-1  md:grid-cols-2 mt-5 gap-5">
+      <section className="max-w-3xl mx-auto px-6 py-4 ">
+        <div className="grid grid-cols-1  md:grid-cols-2 mt-5 mb-5 gap-5">
           {data.map((post, idx) => (
             <Card key={idx}>
               <Image

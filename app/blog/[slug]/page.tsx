@@ -38,11 +38,11 @@ export default async function BlogArticle({
   console.log(data) // This will log the fetched data or null
 
   return (
-    <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div>
         <h1>
           <span className="block text-base text-center text-primary font-semibold tracking-wide uppercase dark:text-gray-200">
-            Annika - blogg
+            NextToEdit Tech Blogg
           </span>
 
           <span className="mt-2 block text-3xl text-center leading-8 font-bold tracking-tight sm:text-4xl">
@@ -63,6 +63,6 @@ export default async function BlogArticle({
           <PortableText value={data.content} />
         </div>
       </div>
-    </main>
+    </section>
   )
 }

@@ -9,7 +9,7 @@ export default function DynamicForm({ params }: { params: { form: string } }) {
 
   const auditType = decodeURIComponent(params.form).replace(/-/g, ' ')
   return (
-    <main className="max-w-3xl mx-auto px-4 ">
+    <section className="max-w-3xl mx-auto px-4 ">
       <motion.section
         id="contact"
         className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
@@ -124,6 +124,6 @@ export default function DynamicForm({ params }: { params: { form: string } }) {
           </button>
         </form>
       </motion.section>
-    </main>
+    </section>
   )
 }
