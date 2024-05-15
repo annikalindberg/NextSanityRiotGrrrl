@@ -12,7 +12,7 @@ import { SmallCTAButton } from './cta-buttons'
 export default function Footer() {
   return (
     <footer className="px-5 sm:px-10 md:px-20 py-8 bg-cyan-50 dark:bg-sky-950 dark:text-white text-gray-500">
-      <section className="flex flex-col md:flex-row justify-between space-y-4 md:space-y-0">
+      <section className="flex flex-col lg:flex-row justify-between space-y-4 md:space-y-0">
         <Link href="/" className="block">
           <Image
             alt="Logo"
@@ -32,7 +32,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               aria-label="Visit Annika's LinkedIn profile - opens in new tab"
               title="External link to Annika's LinkedIn"
-              className="bg-white-50 text-gray-700 hover:text-gray-900 flex items-center gap-2 p-2 rounded-full focus:ring-2 focus:ring-cyan-500 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white"
+              className="max-w-28 bg-white-50 text-gray-700 hover:text-gray-900 flex items-center gap-2 p-2 rounded-full focus:ring-2 focus:ring-cyan-500 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white"
             >
               LinkedIn <BsLinkedin className="md:w-5 md:h-5" />
             </Link>
@@ -42,7 +42,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               aria-label="Visit NextToEdit Instagram profile page - opens in new tab"
               title="External link to NextToEdit Instagram"
-              className="bg-white-50 text-gray-700 hover:text-gray-900 flex items-center gap-2 p-2 rounded-full focus:ring-2 focus:ring-cyan-500 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white"
+              className="max-w-28 bg-white-50 text-gray-700 hover:text-gray-900 flex items-center gap-2 p-2 rounded-full focus:ring-2 focus:ring-cyan-500 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white"
             >
               Instagram <InstagramLogoIcon className="md:w-5 md:h-5" />
             </Link>
@@ -103,6 +103,13 @@ export default function Footer() {
             className="text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 focus:underline focus:ring-2 focus:ring-cyan-500 transition cursor-pointer"
           >
             Cookiepolicy
+          </Link>
+          <Link
+            href="/Integritetspolicy"
+            passHref
+            className="text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 focus:underline focus:ring-2 focus:ring-cyan-500 transition cursor-pointer"
+          >
+            Integritetspolicy
           </Link>
         </div>
       </section>
