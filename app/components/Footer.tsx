@@ -97,6 +97,13 @@ export default function Footer() {
           >
             Om oss
           </Link>
+          <Link
+            href="/cookiepolicy"
+            passHref
+            className="text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 focus:underline focus:ring-2 focus:ring-cyan-500 transition cursor-pointer"
+          >
+            Cookiepolicy
+          </Link>
         </div>
       </section>
       <hr className="my-10 border-gray-300" />

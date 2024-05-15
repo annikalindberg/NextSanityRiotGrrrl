@@ -7,7 +7,7 @@ import { Navigation } from './components/NavigationMenu'
 import Footer from './components/Footer'
 import ActiveSectionContextProvider from './components/annika/active-section-context'
 import ThemeContextProvider from './components/annika/theme-context'
-import CookieBanner from './components/CookieBanner'
+import CookieBanner from './components/datainsamlig/CookieBanner'
 
 const gtag = `https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}` // Google Analytics
 
