@@ -41,6 +41,7 @@ export default function TjansterCards() {
                 src={utveckling}
                 alt="image"
                 width={300}
+                layout="responsive"
                 height={300}
                 className="rounded-t-lg h-[200px] object-cover  bg-green-400"
               />
@@ -66,6 +67,7 @@ export default function TjansterCards() {
                 alt="image"
                 width={300}
                 height={300}
+                layout="responsive"
                 className="rounded-t-lg h-[200px] object-cover bg-yellow-400"
               />
               <CardContent className="mt-5">
@@ -90,6 +92,7 @@ export default function TjansterCards() {
                 alt="AI generated image of a unicorn sitting along in front of a desk with several monitors and a laptop"
                 width={300}
                 height={300}
+                layout="responsive"
                 className="rounded-t-lg h-[200px] object-cover "
               />
               <CardContent className="mt-5">
