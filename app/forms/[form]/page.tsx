@@ -103,7 +103,8 @@ export default function DynamicForm({ params }: { params: { form: string } }) {
             htmlFor="addUrl"
             className="dark:text-white mt-4 mb-3 text-left"
           >
-            URL till webbplatsen du vill att vi granskar
+            URL till webbplatsen du vill att vi granskar i formatet:{' '}
+            https://www.dinwebbplats.se
           </label>
           <input
             id="addUrl"
@@ -112,7 +113,7 @@ export default function DynamicForm({ params }: { params: { form: string } }) {
             type="url"
             required
             maxLength={500}
-            placeholder="URL till webbplatsen du vill att vi granskar"
+            placeholder="https://www.dinwebbplats.se"
           />
 
           <button

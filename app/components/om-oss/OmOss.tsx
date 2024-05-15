@@ -44,10 +44,10 @@ export default function OmOss() {
         den digitala världen tillgänglig för alla.{' '}
       </p>{' '}
       <p className={classes.text}>
-        Är du den som redan drömmer i kod, eller kanske du fortfarande tror att
-        &quot;cookie&quot; bara är något gott till kaffet? Oavsett, du är på
-        rätt ställe. Vi är här för att göra din digitala resa så smidig och
-        rolig som möjligt.{' '}
+        Är du tech-nörden som drömmer i kod? Eller är du den som fortfarande
+        tror att &quot;cookie&quot; bara är något gott till kaffet? Oavsett, du
+        är på rätt ställe. Vi är här för att göra din digitala resa så smidig
+        och rolig som möjligt.{' '}
       </p>{' '}
       <h2 className="text-center">Vi som är NextToEdit Tech Solutions</h2>
       <motion.div

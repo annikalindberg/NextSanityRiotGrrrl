@@ -48,12 +48,14 @@ export function FaqTillganglighet() {
             Vad innebär det att en webbplats är tillgänglig?
           </AccordionTrigger>
           <AccordionContent>
-            En tillgänglighetsoptimerad webbplats är en webbplats som är
-            utformad och utvecklad för att vara användbar för alla människor,
-            inklusive personer med funktionsnedsättningar. Det innebär att
-            webbplatsen är utformad för att vara lätt att navigera, förstå och
-            använda för alla användare, oavsett deras förmåga eller tekniska
-            kunskaper.{' '}
+            <p>
+              En tillgänglighetsoptimerad webbplats är en webbplats som är
+              utformad och utvecklad för att vara användbar för alla människor,
+              inklusive personer med funktionsnedsättningar. Det innebär att
+              webbplatsen är utformad för att vara lätt att navigera, förstå och
+              använda för alla användare, oavsett deras förmåga eller tekniska
+              kunskaper.{' '}
+            </p>
             <p className="mt-4">
               Det innebär också att den är byggd för att fungera optimalt med
               exempelvis skärmläsare och för den som navigerar med tangentbord.
@@ -101,9 +103,12 @@ export function FaqTillganglighet() {
             Varför är tillgänglighet viktigt för en webbplats?
           </AccordionTrigger>
           <AccordionContent>
-            Tillgänglighet är viktigt för en webbplats av flera skäl. För det
-            första är det ett etiskt krav att se till att alla användare har
-            tillgång till information och tjänster på webben.{' '}
+            <p>
+              {' '}
+              Tillgänglighet är viktigt för en webbplats av flera skäl. För det
+              första är det ett etiskt krav att se till att alla användare har
+              tillgång till information och tjänster på webben.{' '}
+            </p>
             <p className="mt-4">
               För det andra kan en tillgänglighetsoptimerad webbplats öka din
               målgrupps storlek och förbättra användarupplevelsen för alla
@@ -117,10 +122,13 @@ export function FaqTillganglighet() {
             Hur testar jag om min webbplats är tillgänglighetsoptimerad?
           </AccordionTrigger>
           <AccordionContent>
-            Det finns flera verktyg och metoder för att testa om din webbplats
-            är tillgänglighetsoptimerad. Ett enkelt sätt är att använda
-            webbaserade verktyg som Lighthouse eller WAVE som kan identifiera
-            tillgänglighetsproblem på din webbplats.{' '}
+            <p>
+              {' '}
+              Det finns flera verktyg och metoder för att testa om din webbplats
+              är tillgänglighetsoptimerad. Ett enkelt sätt är att använda
+              webbaserade verktyg som Lighthouse eller WAVE som kan identifiera
+              tillgänglighetsproblem på din webbplats.{' '}
+            </p>
             <p>
               Oftast räcker det inte med att testa med ett av dessa verktyg,
               eftersom olika verktyg kan hitta olika problem. Det är därför en
@@ -177,14 +185,17 @@ export function FaqTillganglighet() {
             Varför hänger SEO och tillgänglighet ihop?
           </AccordionTrigger>
           <AccordionContent>
-            Tillgänglighet och sökmotoroptimering (SEO) djupt sammanlänkade. En
-            tillgänglig webbplats är lättare att indexera och förstå för
-            sökmotorer som Google, vilket leder till högre placeringar i
-            sökresultat. Att optimera din webbplats för tillgänglighet innebär
-            att göra den mer läsbar för både användare och sökmotorer. Till
-            exempel, om du använder korrekt HTML-kodning och alt-text för
-            bilder, kan sökmotorer förstå innehållet på din webbplats bättre och
-            ranka den högre i sökresultat.{' '}
+            <p>
+              {' '}
+              Tillgänglighet och sökmotoroptimering (SEO) djupt sammanlänkade.
+              En tillgänglig webbplats är lättare att indexera och förstå för
+              sökmotorer som Google, vilket leder till högre placeringar i
+              sökresultat. Att optimera din webbplats för tillgänglighet innebär
+              att göra den mer läsbar för både användare och sökmotorer. Till
+              exempel, om du använder korrekt HTML-kodning och alt-text för
+              bilder, kan sökmotorer förstå innehållet på din webbplats bättre
+              och ranka den högre i sökresultat.{' '}
+            </p>
             <p className="mt-3">
               Dessutom, många av de åtgärder som krävs för att göra en webbplats
               tillgänglighetsoptimerad, såsom att förbättra laddningstiden och
@@ -233,12 +244,15 @@ export function FaqTillganglighet() {
             och ful?
           </AccordionTrigger>
           <AccordionContent>
-            Nej, tvärtom! En tillgänglighetsoptimerad webbplats är en webbplats
-            som är utformad och utvecklad för att vara användbar för alla
-            människor, inklusive personer med funktionsnedsättningar. Det
-            innebär att webbplatsen är utformad för att vara lätt att navigera,
-            förstå och använda för alla användare, oavsett deras förmåga eller
-            tekniska kunskaper.{' '}
+            <p>
+              {' '}
+              Nej, tvärtom! En tillgänglighetsoptimerad webbplats är en
+              webbplats som är utformad och utvecklad för att vara användbar för
+              alla människor, inklusive personer med funktionsnedsättningar. Det
+              innebär att webbplatsen är utformad för att vara lätt att
+              navigera, förstå och använda för alla användare, oavsett deras
+              förmåga eller tekniska kunskaper.{' '}
+            </p>
             <p className="mt-4">
               En tillgänglighetsoptimerad webbplats är en webbplats som är
               användarvänlig, lätt att navigera och som fungerar felfritt på
@@ -274,12 +288,15 @@ export function FaqTillganglighet() {
             tillgänglig utan att behöva göra en hel omdesign. Är det sant?
           </AccordionTrigger>
           <AccordionContent>
-            På senare tiden har det kommit tekniker på marknaden som säger sig
-            kunna förbättra tillgängligheten på en webbplats med olika tillägg
-            som kan läggas till på en befintlig webbplats, så kallade
-            overlay-lösningar. Dessa lösningar har blivit starkt kritiserade av
-            användare som använder hjälpmedel som skärmläsare, eftersom de ofta
-            inte fungerar korrekt med dessa hjälpmedel.
+            <p>
+              {' '}
+              På senare tiden har det kommit tekniker på marknaden som säger sig
+              kunna förbättra tillgängligheten på en webbplats med olika tillägg
+              som kan läggas till på en befintlig webbplats, så kallade
+              overlay-lösningar. Dessa lösningar har blivit starkt kritiserade
+              av användare som använder hjälpmedel som skärmläsare, eftersom de
+              ofta inte fungerar korrekt med dessa hjälpmedel.
+            </p>
             <p className="mt-3 mb-3">
               {' '}
               Det är viktigt att komma ihåg att tillgänglighet inte är något som

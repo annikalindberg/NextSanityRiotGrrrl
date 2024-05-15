@@ -7,6 +7,7 @@ import banner from '@/public/images/banner2.svg'
 import womanbaby from '@/public/images/womenbaby.svg'
 import armprotes from '@/public/images/tjej-armprotes.svg'
 import { CTAButton } from './cta-buttons'
+import Direktivet from '../components/Direktivet-accordion'
 
 const articleVariants = {
   initial: { opacity: 0, y: 50 },
@@ -71,9 +72,10 @@ export default function Tillganglighet() {
           </p>
           <p className="mt-4">
             Tillgänglighet betyder att din webbplats är byggd så att alla,
-            oavsett funktionsvariation, enkelt kan interagera med den. Detta
-            inkluderar allt från skärmläsarvänlig text till lättanvända
-            interaktiva element för personer med begränsad rörlighet.
+            oavsett funktionsvariation, enkelt kan interagera med den.
+            Textelement ska kunna läsas av skärmläsare, det ska gå att navigera
+            med endast tangentbord och personer med nedsatt motorik ska utan
+            hinder kunna klicka på länkar.
           </p>{' '}
           <h3>Varför tillgänglighetsoptimera?</h3>
           <p>
@@ -84,7 +86,11 @@ export default function Tillganglighet() {
             tech-startup eller en stor e-handel, så är din webbplats en av dina{' '}
             <strong>viktigaste tillgångar</strong>. Oavsett vad målet är med din
             verksamhet, är din webbplats hjärtat i din digitala strategi och
-            ditt ansikte utåt. Över 20% av befolkningen lever med en permanent
+            ditt ansikte utåt.
+          </p>{' '}
+          <p className="mt-4">
+            {' '}
+            Över 20% av befolkningen lever med en permanent
             funktionsnedsättning. I Sverige, där nästan alla, 97.2% av
             befolkningen, använder internet dagligen, innebär detta att cirka 2
             miljoner människor kan stöta på hinder när de besöker en webbplats
@@ -159,27 +165,50 @@ export default function Tillganglighet() {
             online.
           </p>
           <h2>4. Den nya lagen om tillgänglighet - 2025 </h2>
-          <p>
+          <p className="mt-4">
             Att ignorera tillgänglighet kan inte bara skada ditt varumärkes
-            anseende, många länder har även lagar som kräver
-            tillgänglighetsstandarder för digitala plattformar, och att inte
-            uppfylla dessa krav kan resultera i kostsamma rättsprocesser.
+            anseende. Det kan också få juridiska påföljder. Många länder har
+            lagar som kräver tillgänglighetsstandarder för digitala plattformar.
+            Att inte uppfylla dessa krav kan resultera i kostsamma
+            rättsprocesser. Den nya lagen som börjar gälla 2025,
+            (tillgänglighetsdirektivet) har likheter med
+            webbtillgänglighetsdirektivet för offenlig sektor som började gälla
+            2019.{' '}
+          </p>
+          <Direktivet />
+          {/*
           </p>{' '}
-          <p>
-            Sedan 2018 krävs att offentliga webbplatser i Sverige ska vara
+          <h3>Webbtillgänglighetsdirektivet (2019) </h3>
+          <p className="mt-4">
+            Du har nog hört talas om DOS-lagen, eller Lagen om tillgänglighet
+            till digital offentlig service. Webbtillgänglighetsdirektivet är
+            dess juridiska benämning. EU:s webbtillgänglighetsdirektiv är en
+            gemensam EU-lagstiftning som trädde i kraft i svensk lag 1 januari
+            2019. Lagen säger att offfentliga webbplatser i Sverige ska vara
             tillgängliga, och från och med 2025 gäller detta även för privata
             företag. Att inte följa dessa krav kan leda till sanktioner.
           </p>
-          <h3>Vad innebär tillgänglighetsdirektivet?</h3>
-          <p>
-            I Sverige kommer från och med 2025 även privata och kommeriella
-            aktörer komma att omfattas av lagarna om digital tillgänglighet.
-            Direktivet innebär att nya produkter och tjänster bör uppfylla
-            kraven enligt standarden EN 301 549 tillsammans med WCAG 2.1. En
-            kontrollmyndighet kommer att granska att kraven uppfylls, och
-            besluta om sanktionsavgift till lägst 10 000 och högst 10 000 000
-            SEK.
-          </p>
+          <h3>Vad innebär EU:s tillgänglighetsdirektiv (2025)?</h3>
+          <p className="mt-4">
+            Från och med 2025 kommer även privata och kommersiella aktörer i
+            Sverige att att omfattas av lagarna om digital tillgänglighet.
+            Europaparlamentets och rådets direktiv om tillgänglighetskrav för
+            produkter och tjänster, även kallat tillgänglighetsdirektivet,
+            handlar om att göra livet enklare för människor med
+            funktionsnedsättningar och äldre i EU. Det innebär att produkter och
+            tjänster måste bli mer tillgängliga för dem. Genom att ha gemensamma
+            regler för tillgänglighet blir det också lättare för företag att
+            förstå och följa lagarna. Det kan minska krångel och göra det
+            lättare att handla mellan olika EU-länder. Så,
+            tillgänglighetsdirektivet handlar både om att hjälpa människor och
+            förenkla för företag. Direktivet innebär att nya produkter och
+            tjänster bör uppfylla kraven enligt standarden EN 301 549
+            tillsammans med WCAG 2.1. En kontrollmyndighet kommer att granska
+            att kraven uppfylls, och besluta om sanktionsavgift till lägst 10
+            000 och högst 10 000 000 SEK. Företag som inte följer lagen riskerar
+            alltså böter och kan till och med få sina produkter eller tjänster
+            borttagna från marknaden.
+          </p> */}
           <Image
             alt="Illustration av en person som skriver på en laptop och en annan person som tittar på en mobiltelefon."
             src={armprotes}

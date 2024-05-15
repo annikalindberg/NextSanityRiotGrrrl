@@ -47,11 +47,14 @@ export function FaqWebbutveckling() {
             Vad innebär det att bygga en &quot;handkodad&quot; webbsida?
           </AccordionTrigger>
           <AccordionContent>
-            En handkodad webbsida betyder att varje del av din webbplats skapas
-            från grunden med precision och anpassning i åtanke. Till skillnad
-            från plattformar som använder förbyggda teman, skapar jag unika
-            digitala lösningar som exakt uppfyller dina behov och optimerar för
-            både tillgänglighet och sökmotorer.
+            <p>
+              {' '}
+              En handkodad webbsida betyder att varje del av din webbplats
+              skapas från grunden med precision och anpassning i åtanke. Till
+              skillnad från plattformar som använder förbyggda teman, skapar vi
+              unika digitala lösningar som exakt uppfyller dina behov och
+              optimerar för både tillgänglighet och sökmotorer.
+            </p>
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
@@ -60,13 +63,16 @@ export function FaqWebbutveckling() {
             plattformar?
           </AccordionTrigger>
           <AccordionContent>
-            Att välja en handkodad webbsida ger dig fullständig kontroll och
-            flexibilitet över din webbnärvaro. No-code plattformar kan verka
-            bekväma, men de kommer ofta med begränsningar som kan hämma din
-            webbplats prestanda och skalbarhet. En skräddarsydd webbsida
-            optimerad för SEO säkerställer att du inte bara syns bättre i
-            sökresultaten, utan också att din sida laddar snabbt och fungerar
-            felfritt på alla enheter.
+            <p>
+              {' '}
+              Att välja en handkodad webbsida ger dig fullständig kontroll och
+              flexibilitet över din webbnärvaro. No-code plattformar kan verka
+              bekväma, men de kommer ofta med begränsningar som kan hämma din
+              webbplats prestanda och skalbarhet. En skräddarsydd webbsida
+              optimerad för SEO säkerställer att du inte bara syns bättre i
+              sökresultaten, utan också att din sida laddar snabbt och fungerar
+              felfritt på alla enheter.
+            </p>
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">
@@ -74,12 +80,15 @@ export function FaqWebbutveckling() {
             Hur påverkar en handkodad webbsida min digitala närvaro?
           </AccordionTrigger>
           <AccordionContent>
-            En handkodad, SEO-optimerad webbsida höjer din webbplats i
-            sökmotorernas resultat, vilket förbättrar din synlighet och lockar
-            fler besökare. Dessutom är prestandaoptimeringen som jag
-            implementerar på din webbsida avgörande för både användarupplevelsen
-            och sökmotorns rankning, vilket leder till bättre resultat och högre
-            engagemang.
+            <p>
+              {' '}
+              En handkodad, SEO-optimerad webbsida höjer din webbplats i
+              sökmotorernas resultat, vilket förbättrar din synlighet och lockar
+              fler besökare. Dessutom är prestandaoptimeringen som vi
+              implementerar på din webbsida avgörande för både
+              användarupplevelsen och sökmotorns rankning, vilket leder till
+              bättre resultat och högre engagemang.
+            </p>
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-4">
@@ -88,24 +97,30 @@ export function FaqWebbutveckling() {
             webbsida?
           </AccordionTrigger>
           <AccordionContent>
-            Med en startkostnad från endast 7 000 SEK erbjuder jag prisvärda
-            webbutvecklingstjänster som är betydligt mer kostnadseffektiva över
-            tid jämfört med månadskostnader för no-code plattformar. Min
-            flexibla prismodell gör det enklare för dig att starta och expandera
-            din webbnärvaro utan att kompromissa med kvaliteten.
+            <p>
+              {' '}
+              Med en startkostnad från endast 7 000 SEK erbjuder vi prisvärda
+              webbutvecklingstjänster som är betydligt mer kostnadseffektiva
+              över tid jämfört med månadskostnader för no-code plattformar. Min
+              flexibla prismodell gör det enklare för dig att starta och
+              expandera din webbnärvaro utan att kompromissa med kvaliteten.
+            </p>
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-5">
           <AccordionTrigger className="text-left">
-            Hur kan jag få hjälp och support efter att min webbsida har
+            Hur kan vi få hjälp och support efter att min webbsida har
             lanserats?
           </AccordionTrigger>
           <AccordionContent>
-            När du väljer mig som din webbutvecklare får du mer än bara en
-            tjänst; du får en partner. Jag erbjuder personlig support och
-            coachning för att hjälpa dig att underhålla och öka trafiken till
-            din webbsida. Tillsammans arbetar vi för att din digitala närvaro
-            ska växa och anpassas efter dina förändrade behov.
+            <p>
+              {' '}
+              När du väljer oss som din webbutvecklare får du mer än bara en
+              tjänst; du får en partner. Vi erbjuder personlig support och
+              coachning för att hjälpa dig att underhålla och öka trafiken till
+              din webbsida. Tillsammans arbetar vi för att din digitala närvaro
+              ska växa och anpassas efter dina förändrade behov.
+            </p>
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-6">
@@ -113,20 +128,30 @@ export function FaqWebbutveckling() {
             Hur säkerställer du att webbsidan är tillgänglig för alla användare?
           </AccordionTrigger>
           <AccordionContent>
-            Som expert på tillgänglighet bygger jag in tillgänglighetsstandarder
-            direkt i koden från starten av ditt projekt. Jag följer noggrant
-            WCAG-riktlinjer för att garantera att din webbsida är användarvänlig
-            för personer med olika funktionsnedsättningar. Detta innefattar
-            användning av lättläst text, implementering av funktioner som
-            stödjer skärmläsare, samt säkerställande av god kontrast och smidig
-            navigering. Tillgänglighetstester är en integrerad del av min
-            webbutvecklingstjänst. Jag utför omfattande tester för att
-            identifiera och åtgärda eventuella tillgänglighetsproblem innan din
-            webbsida lanseras. Detta tillvägagångssätt minimerar risken för
-            framtida överraskningar och säkerställer att din webbsida är fullt
-            tillgänglig för alla användare från dag ett. Att välja mig som din
-            webbutvecklare betyder att du investerar i en högkvalitativ,
-            tillgänglig och framtidssäker digital närvaro.
+            <p>
+              {' '}
+              Som expert på tillgänglighet bygger vi in
+              tillgänglighetsstandarder direkt i koden från starten av ditt
+              projekt. Vi följer noggrant WCAG-riktlinjer för att garantera att
+              din webbsida är användarvänlig för personer med olika
+              funktionsnedsättningar. Detta innefattar användning av lättläst
+              text, implementering av funktioner som stödjer skärmläsare, samt
+              säkerställande av god kontrast och smidig navigering.
+              Tillgänglighetstester är en integrerad del av min
+              webbutvecklingstjänst.
+            </p>{' '}
+            <p>
+              {' '}
+              Vi utför omfattande tester för att identifiera och åtgärda
+              eventuella tillgänglighetsproblem innan din webbsida lanseras.
+              Detta tillvägagångssätt minimerar risken för framtida
+              överraskningar och säkerställer att din webbsida är fullt
+              tillgänglig för alla användare från dag ett.
+            </p>{' '}
+            <p>
+              Att välja oss som din webbutvecklare betyder att du investerar i
+              en högkvalitativ, tillgänglig och framtidssäker digital närvaro.
+            </p>
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-7">
@@ -135,11 +160,14 @@ export function FaqWebbutveckling() {
             marknadsföring?
           </AccordionTrigger>
           <AccordionContent>
-            Skräddarsydda landningssidor är optimerade för att konvertera
-            besökare till leads eller kunder. Jag designar landningssidor som är
-            visuellt tilltalande, laddar snabbt och är skräddarsydda för att
-            möta specifika kampanjmål, vilket ökar din ROI från digitala
-            marknadsföringsinsatser.
+            <p>
+              {' '}
+              Skräddarsydda landningssidor är optimerade för att konvertera
+              besökare till leads eller kunder. Vi designar landningssidor som
+              är visuellt tilltalande, laddar snabbt och är skräddarsydda för
+              att möta specifika kampanjmål, vilket ökar din ROI från digitala
+              marknadsföringsinsatser.
+            </p>
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-8">
@@ -147,7 +175,7 @@ export function FaqWebbutveckling() {
             Hur optimerar du webbsidor för snabbare laddningstider?
           </AccordionTrigger>
           <AccordionContent>
-            Jag använder moderna tekniker som bildkomprimering, minifiering av
+            Vi använder moderna tekniker som bildkomprimering, minifiering av
             CSS och JavaScript, samt nätverksoptimering för att minska
             laddningstiderna. Dessa åtgärder förbättrar inte bara
             användarupplevelsen utan också din webbplats ranking i sökmotorerna.
@@ -155,13 +183,13 @@ export function FaqWebbutveckling() {
         </AccordionItem>
         <AccordionItem value="item-9">
           <AccordionTrigger className="text-left">
-            Kan jag uppdatera min webbsida själv efter att den är utvecklad?
+            Kan vi uppdatera min webbsida själv efter att den är utvecklad?
           </AccordionTrigger>
           <AccordionContent>
-            Absolut, jag bygger din webbsida med tanke på användarvänlighet.
+            Absolut, vi bygger din webbsida med tanke på användarvänlighet.
             Möjligheten att självständigt uppdatera och ändra innehåll på din
             webbplats ingår i kostnaden för vissa av mina paket. Efter
-            lanseringen tillhandahåller jag de nödvändiga verktygen och
+            lanseringen tillhandahåller vi de nödvändiga verktygen och
             utbildningen så att du kan hantera din webbsida själv, vilket ger
             dig full kontroll och oberoende. För det mest kostnadseffektiva
             paketet finns möjlighet att köpa till tjänster för underhåll och
@@ -175,7 +203,7 @@ export function FaqWebbutveckling() {
             Vem äger rättigheterna till koden och designen på webbsidan?
           </AccordionTrigger>
           <AccordionContent>
-            När du anlitar mig för att bygga din webbsida överför jag alla
+            När du anlitar oss för att bygga din webbsida överför vi alla
             rättigheter till koden och designen direkt till dig som kund. Detta
             skiljer sig från många no-code plattformar, där plattformen behåller
             äganderätten till den underliggande koden och designen. Genom att
