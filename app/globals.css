@@ -134,7 +134,7 @@
   }
 
   p {
-    @apply text-base mt-4 md:text-lg lg:text-xl;
+    @apply text-lg mt-4 md:text-lg lg:text-xl;
 
     font-family: var(--font-body);
   }

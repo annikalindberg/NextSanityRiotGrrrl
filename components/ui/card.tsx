@@ -83,7 +83,7 @@ const CardButton = React.forwardRef<
   <a
     ref={ref}
     className={cn(
-      'inline-block px-4 py-2 text-sm font-medium text-white bg-rose-500 rounded-lg transition-colors hover:bg-rose-600',
+      'inline-block px-4 py-2 text-sm font-bold text-sky-950 bg-pink-100 rounded-lg transition-colors hover:bg-rose-600',
       className
     )}
     {...props}
