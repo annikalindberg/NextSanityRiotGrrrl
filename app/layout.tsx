@@ -23,7 +23,8 @@ const ptSans = PT_Sans({
 
 export const metadata: Metadata = {
   title: 'NextToEdit Tech Solutions',
-  description: 'NextToEdit Tech Solutions',
+  description:
+    'NextToEdit Tech Solutions är en webbyrå som hjälper småföretag och föreningar att skapa hållbara och tillgängliga webbplatser. Vi gör webbplatser som är snabba, säkra och tillgängliga för alla. Våra prisplaner är tydliga och anpassade för småföretag och föreningar. Vi erbjuder även konsulttjänster inom webbutveckling och tillgänglighet.',
 }
 
 export default function RootLayout({
@@ -47,6 +48,11 @@ export default function RootLayout({
               `,
           }}
         />
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/png" />
       </head>
       <body className={`${nunito.className} ${ptSans.className}`}>
         <ThemeProvider

@@ -34,7 +34,7 @@ export default function TjansterCards() {
       <section className="max-w-3xl mx-auto px-4 ">
         <h1 className="mt-5 ml-6">Tjänster</h1>
         <section className="max-w-3xl mx-auto px-4 ">
-          <div className="grid grid-cols-1 md:grid-cols-2 mt-5 mb-5 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-5 mb-5 gap-5">
             <Card className="border-4 border-rose-900 dark:border-fuchsia-100">
               {/* Your card content here */}
               <Image
