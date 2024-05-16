@@ -152,8 +152,8 @@ export function Audits() {
           ))}{' '}
         </div>{' '}
       </motion.section>{' '}
-      <p className=" text-[#36485C] dark:text-white lg:text-xl">
-        * Alla priser exklusive moms
+      <p className=" text-xl text-[#36485C] dark:text-white lg:text-xl">
+        * Alla priser inklusive moms
       </p>
       <section
         {...fadeInAnimationVariants}
