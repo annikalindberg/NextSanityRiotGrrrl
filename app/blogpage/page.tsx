@@ -53,7 +53,7 @@ export default async function BlogPage() {
                     className="hover:underline"
                     href={`/blog/${post.currentSlug}`}
                   >
-                    Take me to {post.title}
+                    {post.title}
                   </Link>
                 </Button>
               </CardContent>
