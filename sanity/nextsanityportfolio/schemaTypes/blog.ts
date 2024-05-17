@@ -29,7 +29,19 @@ export default {
         },
       ],
     },
-
+    {
+      name: 'additionalImage',
+      type: 'image',
+      options: {hotspot: true},
+      title: 'Additional Image',
+      fields: [
+        {
+          name: 'alt',
+          title: 'Alt',
+          type: 'string',
+        },
+      ],
+    },
     {
       name: 'smallDescription',
       type: 'text',

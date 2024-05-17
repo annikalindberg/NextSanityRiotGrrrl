@@ -22,7 +22,9 @@ async function getData(slug: string) {
     {"currentSlug": slug.current,
       title,
       content,
-      titleImage}[0]
+      titleImage,
+    additionalImage}[0],
+    
     `
 
   const data = await client.fetch(query)
@@ -58,6 +60,17 @@ export default async function BlogArticle({
             className="rounded-lg"
           />
         </div>
+        {data.additionalImage && (
+          <div className="relative h-96 mt-20">
+            <Image
+              src={urlFor(data.additionalImage.asset._ref).url()}
+              alt={data.additionalImage.alt}
+              layout="fill"
+              objectFit="cover" // This can be cover, contain, etc.
+              className="rounded-lg"
+            />
+          </div>
+        )}
 
         <div className="mt-16 prose prose-blue prose-lg dark:prose-invert prose-li:marker:text-primary prose-a:text-primary">
           <PortableText value={data.content} />
