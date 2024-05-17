@@ -2,8 +2,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { BsLinkedin } from 'react-icons/bs'
-import { FaGithubSquare } from 'react-icons/fa'
-import { RxEnvelopeClosed } from 'react-icons/rx'
+import { BsFacebook } from 'react-icons/bs'
+
 import { InstagramLogoIcon } from '@radix-ui/react-icons'
 import Image from 'next/image'
 import Logo from '@/public/images/GreenLogo.png'
@@ -27,11 +27,11 @@ export default function Footer() {
           <h3 className="text-lg md:text-xl dark:text-gray-300">Följ oss!</h3>
           <div className="flex flex-col gap-2">
             <Link
-              href="https://www.linkedin.com/in/annika-lindberg-frontend-developer/"
+              href="https://www.linkedin.com/company/102953392/admin/feed/posts/"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Visit Annika's LinkedIn profile - opens in new tab"
-              title="External link to Annika's LinkedIn"
+              aria-label="Besök NextToEdit Solutions LinkedIn sida - öppnas i ny flik"
+              title="Extern länk till NextToEdit Solutions LinkedIn"
               className="max-w-28 bg-white-50 text-gray-700 hover:text-gray-900 flex items-center gap-2 p-2 rounded-full focus:ring-2 focus:ring-cyan-500 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white"
             >
               LinkedIn <BsLinkedin className="md:w-5 md:h-5" />
@@ -46,6 +46,16 @@ export default function Footer() {
             >
               Instagram <InstagramLogoIcon className="md:w-5 md:h-5" />
             </Link>
+            <Link
+              href="https://www.facebook.com/profile.php?id=61559664455443"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit NextToEdit Facebook page - opens in new tab"
+              title="External link to NextToEdit Facebook"
+              className="max-w-28 bg-white-50 text-gray-700 hover:text-gray-900 flex items-center gap-2 p-2 rounded-full focus:ring-2 focus:ring-cyan-500 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white"
+            >
+              Facebook <BsFacebook className="md:w-5 md:h-5" />
+            </Link>
           </div>
         </div>
         <div className="flex flex-col  space-y-2">
@@ -55,6 +65,7 @@ export default function Footer() {
             buttonLabel="Boka kostnadsfri Audit"
           />
         </div>
+
         <div className="flex flex-col space-y-2">
           <h3 className="text-lg md:text-xl dark:text-gray-300">Tjänster</h3>
           <Link
