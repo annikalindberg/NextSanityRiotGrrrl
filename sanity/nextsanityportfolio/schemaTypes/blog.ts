@@ -19,14 +19,15 @@ export default {
     {
       name: 'titleImage',
       type: 'image',
+      options: {hotspot: true},
       title: 'Title Image',
-            fields: [
-          {
-            name: "alt",
-            title: "Alt",
-            type: "string"
-          }
-        ]
+      fields: [
+        {
+          name: 'alt',
+          title: 'Alt',
+          type: 'string',
+        },
+      ],
     },
 
     {
@@ -43,8 +44,6 @@ export default {
           type: 'block',
         },
       ],
-
     },
-
   ],
 }
