@@ -22,9 +22,7 @@ async function getData(slug: string) {
     {"currentSlug": slug.current,
       title,
       content,
-      titleImage,
-    additionalImage}[0],
-    
+titleImage}[0]    
     `
 
   const data = await client.fetch(query)

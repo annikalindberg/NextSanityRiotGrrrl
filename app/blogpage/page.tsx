@@ -18,8 +18,8 @@ async function getData() {
     title,
       smallDescription,
       "currentSlug": slug.current,
-      titleImage,
-            additionalImage
+      titleImage
+  
 
   }`
 
