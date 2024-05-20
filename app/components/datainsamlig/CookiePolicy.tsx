@@ -8,9 +8,9 @@ const CookiePolicy = () => {
       <h1 className="text-2xl font-bold mb-4">Cookiepolicy</h1>
       <p className="mt-4 mb-2">
         Denna cookiepolicy förklarar hur vi på NextToEdit Tech Solutions
-        använder cookies och liknande teknologier på vår webbplats [Din
-        Webbplats URL]. Genom att använda vår webbplats samtycker du till
-        användningen av cookies enligt denna policy.
+        använder cookies och liknande teknologier på vår webbplats
+        www.nexttoedit-tech.com. Genom att använda vår webbplats samtycker du
+        till användningen av cookies enligt denna policy.
       </p>
       <h2 className="text-xl font-bold mt-4 mb-2">Vad är cookies?</h2>
       <p className="mt-4 mb-2">

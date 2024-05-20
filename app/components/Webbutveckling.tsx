@@ -68,24 +68,27 @@ const Webbutveckling = () => (
           {
             title: 'Kickstart - snabbt och enkelt',
             description:
-              'Låt oss kickstarta din närvaro online med en professionell webbplats som inte spränger budgeten. Perfekt för småföretagare som behöver en snygg, funktionell webbplats snabbt och enkelt. Kom igång snabbt och effektivt med vårt snabbstart-paket. ',
+              'Låt oss kickstarta din närvaro online med en professionell webbplats som inte spränger budgeten. Perfekt för mindre företag som behöver en snygg, funktionell webbplats snabbt och enkelt. Kom igång snabbt och effektivt med vårt snabbstart-paket. ',
             price: '12 000 kr',
             features: [
-              'Perfekt för småföretagare och som behöver en snygg, funktionell webbplats snabbt och enkelt.',
               /*               'Responsiv och SEO-optimerad webbplats redo att lanseras inom 1-2 veckor.',
-               */ 'Upp till 5 sidor ingår, perfekt för en effektiv och professionell närvaro online',
-              '1 kontaktformulär',
+               */ 'Upp till 5 sektioner (eller sidor) ingår, perfekt för en effektiv och professionell närvaro online',
+              'Kontaktformulär',
+              'Licensfria bilder och grafiska element',
+              'Ditt valda domännamn samt hosting ingår i 1 år (efter det överlåtes domännamn och hosting till dig om inget annat avtalas)',
+
               'Byggd enligt bästa praxis för tillgänglighet och SEO',
               /*               'CMS för 1 huvudsida och obegränsat antal subsidor',
                */ /* '2 tillfällen personlig utbildning av mig för självständig uppdatering. Inga förkunskaper krävs', */
               'Skalbart och flexibelt för framtida tillägg',
+              'Regelbunden uppdatering och support för att säkerställa att din webbplats fungerar som den ska, ingår mot en mindre fast månadsavgift',
             ],
             notIncluded: [
               'Copywriting (du skriver texterna själv)',
-              'Bilder (du tillhandahåller bilder)',
-              'Designanpassningar (du får välja mellan några fasta designmallar)',
+              'Designanpassningar (du väljer mellan några fasta designmallar)',
               'Extra funktionalitet (t.ex. e-handel, bokningssystem, medlemskap)',
-              'Anpassad SEO-strategi (du får en grundläggande SEO-optimering)',
+              'Anpassad SEO-strategi (grundläggande SEO-optimering ingår alltid)',
+              ,
             ],
 
             buttonLabel: 'Bokningsförfrågan av Kickstart-paketet',
@@ -182,7 +185,7 @@ const Webbutveckling = () => (
               {card.notIncluded && card.notIncluded.length > 0 && (
                 <>
                   <h3 className="pt-4 text-2xl text-center leading-10">
-                    Ingår <strong> inte </strong>i paketet
+                    Ingår <strong> inte </strong>i paketet men kan köpas till:
                   </h3>
                   <ol className="mt-4 text-xs md:text-lg ">
                     {card.notIncluded.map((noFeature, noFeatureIndex) => (
