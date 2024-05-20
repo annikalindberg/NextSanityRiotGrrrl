@@ -1,13 +1,6 @@
-import {validation} from 'sanity'
-import authorType from './author'
-import {BookIcon} from '@sanity/icons'
-import {defineField, defineType} from 'sanity'
-import {init} from 'next/dist/compiled/webpack/webpack'
-
 export default {
   name: 'blog',
   type: 'document',
-  icon: BookIcon,
   title: 'Blog',
   fields: [
     {
@@ -21,7 +14,6 @@ export default {
       title: 'Slug of your blog article',
       options: {
         source: 'title',
-        maxLength: 96,
       },
     },
     {
@@ -32,7 +24,7 @@ export default {
       fields: [
         {
           name: 'alt',
-          title: 'Alternative text',
+          title: 'Alt',
           type: 'string',
         },
       ],
@@ -47,7 +39,6 @@ export default {
           name: 'alt',
           title: 'Alt',
           type: 'string',
-          description: 'Important for SEO and accessiblity.',
         },
       ],
     },
@@ -65,12 +56,6 @@ export default {
           type: 'block',
         },
       ],
-    },
-    {
-      name: 'date',
-      type: 'datetime',
-      title: 'Date of publication',
-      initialValue: () => new Date().toISOString(),
     },
   ],
 }

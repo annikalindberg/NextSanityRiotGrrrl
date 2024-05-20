@@ -72,12 +72,12 @@ const Webbutveckling = () => (
             price: '12 000 kr',
             features: [
               'Perfekt för småföretagare och som behöver en snygg, funktionell webbplats snabbt och enkelt.',
-              'Responsiv och SEO-optimerad webbplats redo att lanseras inom 1-2 veckor.',
-              'Upp till 5 sidor ingår, perfekt för en effektiv och professionell närvaro online',
+              /*               'Responsiv och SEO-optimerad webbplats redo att lanseras inom 1-2 veckor.',
+               */ 'Upp till 5 sidor ingår, perfekt för en effektiv och professionell närvaro online',
               '1 kontaktformulär',
               'Byggd enligt bästa praxis för tillgänglighet och SEO',
-              'CMS för 1 huvudsida och obegränsat antal subsidor',
-              '2 tillfällen personlig utbildning av mig för självständig uppdatering. Inga förkunskaper krävs',
+              /*               'CMS för 1 huvudsida och obegränsat antal subsidor',
+               */ /* '2 tillfällen personlig utbildning av mig för självständig uppdatering. Inga förkunskaper krävs', */
               'Skalbart och flexibelt för framtida tillägg',
             ],
             notIncluded: [
