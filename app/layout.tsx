@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 import ActiveSectionContextProvider from './components/annika/active-section-context'
 import ThemeContextProvider from './components/annika/theme-context'
 import CookieBanner from './components/datainsamlig/CookieBanner'
+import TestBanner from './components/testbanner'
 
 const gtag = `https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}` // Google Analytics
 
@@ -62,6 +63,7 @@ export default function RootLayout({
           disableTransitionOnChange // Prevent transition on initial page load and theme change (re-enable with a delay) to avoid a flash of light and dark mode on initial load (remove if not important to you)
         >
           <Navigation />
+          <TestBanner />
           <ThemeContextProvider>
             <ActiveSectionContextProvider>
               <main>{children}</main>
