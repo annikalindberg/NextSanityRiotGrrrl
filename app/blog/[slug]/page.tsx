@@ -22,7 +22,8 @@ async function getData(slug: string) {
     {"currentSlug": slug.current,
       title,
       content,
-titleImage}[0]    
+      smallDescription,
+titleImage}[0]
     `
 
   const data = await client.fetch(query)
@@ -49,10 +50,13 @@ export default async function BlogArticle({
             {data.title}
           </span>
         </h1>
+        <p className="mt-4 text-center text-lg text-gray-600 dark:text-gray-300">
+          {data.smallDescription}
+        </p>
         <div className="relative h-96 mt-20">
           <Image
             src={urlFor(data.titleImage).url()}
-            alt="Title Image"
+            alt={data.titleImage.alt}
             layout="fill"
             objectFit="cover" // This can be cover, contain, etc.
             className="rounded-lg"

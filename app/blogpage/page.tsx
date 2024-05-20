@@ -18,7 +18,8 @@ async function getData() {
     title,
       smallDescription,
       "currentSlug": slug.current,
-      titleImage
+      titleImage, 
+      
   
 
   }`
@@ -40,7 +41,7 @@ export default async function BlogPage() {
             <Card key={idx}>
               <Image
                 src={urlFor(post.titleImage).url()}
-                alt="image"
+                alt={post.titleImage.alt}
                 width={500}
                 height={500}
                 className="rounded-t-lg h-[200px] object-cover"
