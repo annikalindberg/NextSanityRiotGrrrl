@@ -6,7 +6,7 @@ export interface simpleBlogCard {
 }
 
 export interface fullBlog {
-  smallDescription: ReactNode
+  smallDescription: string
   currentSlug: string
   title: string
   content: any
