@@ -144,7 +144,8 @@ export function Audits() {
                 href={`/forms/${slugify(card.title)}`}
                 aria-label={`Boka ${card.title}`}
                 className="mt-4 rounded bg-rose-900 text-white dark:bg-fuchsia-100 dark:text-slate-900 py-2 px-4 font-medium hover:bg-rose-800 dark:hover:bg-fuchsia-200 transition-colors duration-500 ease-in-out transform hover:scale-105 "
-                onClick={() => console.log(`${card.buttonLabel} clicked`)}
+                /*                 onClick={() => console.log(`${card.buttonLabel} clicked`)}
+                 */
               >
                 {card.buttonLabel}
               </Link>

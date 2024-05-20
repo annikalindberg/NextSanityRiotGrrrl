@@ -32,15 +32,14 @@ export default function WhatToExpect() {
           initial={{ x: -200, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ type: 'spring', stiffness: 100, delay: 0.5 }}
-          className="flex flex-col lg:flex-row items-center"
+          className="flex flex-col  items-center"
         >
           <Image
             src={jorden}
             alt="En hand sträcker ut en delad jordglob med gröna träd, en cykel och 3 vindkraftverk."
             width={200}
             height={200}
-            layout="responsive"
-            className="md:max-w-md max-h-60 my-4 md:my-0"
+            className="md:max-w-md max-h-60 my-4 md:mx-4"
           />
           <motion.ul
             initial={{ opacity: 0, y: 100 }}
@@ -132,7 +131,6 @@ export default function WhatToExpect() {
             alt="Gaffatejp"
             width={200}
             height={200}
-            layout="responsive"
             className="md:max-w-xl max-h-60 align-top  md:my-0"
           />
         </motion.div>
