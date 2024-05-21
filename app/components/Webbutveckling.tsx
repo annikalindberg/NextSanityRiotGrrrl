@@ -69,7 +69,7 @@ const Webbutveckling = () => (
             title: 'Kickstart - snabbt och enkelt',
             description:
               'Låt oss kickstarta din närvaro online med en professionell webbplats som inte spränger budgeten. Perfekt för mindre företag som behöver en snygg, funktionell webbplats snabbt och enkelt. Kom igång snabbt och effektivt med vårt snabbstart-paket. ',
-            price: '12 000 kr',
+            price: '15 000 kr',
             features: [
               /*               'Responsiv och SEO-optimerad webbplats redo att lanseras inom 1-2 veckor.',
                */ 'Upp till 5 sektioner (eller sidor) ingår, perfekt för en effektiv och professionell närvaro online',
