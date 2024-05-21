@@ -12,7 +12,7 @@ export default function DynamicForm({ params }: { params: { form: string } }) {
     <section className="max-w-3xl mx-auto px-4 ">
       <motion.section
         id="contact"
-        className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
+        className="mb-20 sm:mb-28 w-[min(100%,38rem)] "
         initial={{
           opacity: 0,
         }}
@@ -32,16 +32,35 @@ export default function DynamicForm({ params }: { params: { form: string } }) {
         <p className="text-gray-700 mt-6 dark:text-white/80">
           Fyll i formuläret nedan för att skicka en bokningsförfrågan.
         </p>
+        <h2>Öppningserbjudande</h2>
         <p className="text-gray-700 mt-6 dark:text-white/80">
-          Vi återkommer till dig inom 24 timmar.
+          För att ta del av vårat öppningserbjudande där vi ger 60% rabatt till
+          de första som bokar vårt paket &quot;Kickstart - snabbt och
+          enkelt&quot; - skriv in rabattkoden &quot;öppningserbjudande -
+          hemsida&quot; i meddelandefältet.{' '}
         </p>
+        <p>
+          {' '}
+          Vi kommer att meddela dig om du är en av de första 4 som bokar, och då
+          bli en av våra första kunder som kommer att erbjudas en
+          kvalitetshemsida som är SEO-optimerad, tillgänglighets-optimerad, med
+          unik design.{' '}
+        </p>{' '}
+        <p>Med 60% rabatt av ordinarie pris. </p>
+        <p>
+          Blir du inte en av de första 4 så kommer du att få en offert med
+          ordinarie pris efter att du skickat in din förfrågan.{' '}
+        </p>
+        <p className="text-gray-700 mt-6 dark:text-white/80">
+          Vi återkommer alltid till dig inom 24 timmar.
+        </p>
+        <h2>Kostnadsfri tillgänglighets-audit</h2>
         <p className="text-gray-700 mt-6 dark:text-white/80">
           Gäller ditt ärende en bokning av &quot;kostnadsfri audit&quot; kommer
           vi att skicka en sammanställlning med resultat och förslag på åtgärder
           inom 1-5 arbetsdagar, till den e-post adress du uppger. Vid oväntat
           högt tryck kan det ta längre tid.{' '}
         </p>
-
         {/*         <p className="text-gray-700 mt-6 dark:text-white/80">
           Please contact me directly at{' '}
           <a
@@ -52,7 +71,6 @@ export default function DynamicForm({ params }: { params: { form: string } }) {
           </a>{' '}
           or through this form.
         </p> */}
-
         <form
           className="mt-10 flex flex-col dark:text-black"
           onSubmit={async event => {
