@@ -39,7 +39,7 @@ async function getData(slug: string) {
       content,
       smallDescription,
       titleImage,
-      additionalImage // Included additionalImage in the query
+      additionalImage,
     }[0]
   `
 
