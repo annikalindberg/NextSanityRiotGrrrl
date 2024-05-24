@@ -3,10 +3,10 @@ import { fullBlog } from '../../lib/interface'
 import Image from 'next/image'
 import { PortableText } from '@portabletext/react'
 
-const baseURL =
+/* const baseURL =
   process.env.NODE_ENV === 'development'
     ? 'http://localhost:3000'
-    : 'https://www.nexttoedit-tech.com'
+    : 'https://www.nexttoedit-tech.com' */
 
 export async function generateMetadata({
   params,
@@ -67,32 +67,33 @@ export default async function BlogArticle({
           </span>
         </h1>
 
-        <p className="mt-4 text-center text-lg text-gray-600 dark:text-gray-300">
+        <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
           {data.smallDescription}
         </p>
 
-        <div className="relative h-96 mt-20">
+        <div className="relative max-w-3xl mx-auto mt-20 ">
           <Image
             src={urlFor(data.titleImage).url()}
             alt={data.titleImage.alt}
-            fill // Using the fill prop
-            sizes="(max-width: 768px) 100vw, 50vw" // Added sizes prop
-            className="rounded-lg object-cover"
+            width={400}
+            height={500}
+            /*             sizes="(max-width: 768px) 100vw, 50vw" // Added sizes prop
+             */ className="rounded-lg"
           />
         </div>
 
-        {data.additionalImage && (
+        {/* {data.additionalImage && (
           <div className="relative h-96 mt-20">
             <Image
               src={urlFor(data.additionalImage.asset._ref).url()}
               alt={data.additionalImage.alt}
               fill // Using the fill prop
               sizes="(max-width: 768px) 100vw, 50vw" // Added sizes prop
-              className="rounded-lg object-cover"
+              className="rounded-lg object-fit "
             />
           </div>
         )}
-
+ */}
         <div className="mt-16 prose prose-blue prose-lg dark:prose-invert prose-li:marker:text-primary prose-a:text-primary">
           <PortableText value={data.content} />
         </div>

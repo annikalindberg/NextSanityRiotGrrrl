@@ -1,4 +1,6 @@
-export default {
+import {defineType} from 'sanity'
+
+export default defineType({
   name: 'blog',
   type: 'document',
   title: 'Blog',
@@ -15,6 +17,12 @@ export default {
       options: {
         source: 'title',
       },
+    },
+    {
+      name: 'author',
+      type: 'reference',
+      title: 'Author',
+      to: [{type: 'author'}],
     },
     {
       name: 'titleImage',
@@ -48,6 +56,11 @@ export default {
       title: 'Small Description',
     },
     {
+      name: 'date',
+      type: 'date',
+      title: 'Date',
+    },
+    {
       name: 'content',
       type: 'array',
       title: 'Content',
@@ -58,4 +71,4 @@ export default {
       ],
     },
   ],
-}
+})

@@ -42,9 +42,9 @@ export default async function BlogPage() {
               <Image
                 src={urlFor(post.titleImage).url()}
                 alt={post.titleImage.alt}
-                width={500}
-                height={500}
-                className="rounded-t-lg h-[200px] object-cover"
+                width={700}
+                height={100}
+                className="rounded-t-lg h-[600px] md:h-[300px] object-cover "
               />
               <CardContent className="mt-5">
                 <h3 className="text-lg line-clamp-2 font-bold">{post.title}</h3>
