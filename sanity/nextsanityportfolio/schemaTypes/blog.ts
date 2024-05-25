@@ -1,6 +1,5 @@
-import {defineType} from 'sanity'
-
-export default defineType({
+// blog.js (Sanity schema)
+export default {
   name: 'blog',
   type: 'document',
   title: 'Blog',
@@ -8,67 +7,52 @@ export default defineType({
     {
       name: 'title',
       type: 'string',
-      title: 'Title of blog article',
+      title: 'Title',
     },
     {
       name: 'slug',
       type: 'slug',
-      title: 'Slug of your blog article',
+      title: 'Slug',
       options: {
         source: 'title',
+        maxLength: 96,
       },
     },
     {
       name: 'author',
       type: 'reference',
-      title: 'Author',
       to: [{type: 'author'}],
-    },
-    {
-      name: 'titleImage',
-      type: 'image',
-      options: {hotspot: true},
-      title: 'Title Image',
-      fields: [
-        {
-          name: 'alt',
-          title: 'Alt',
-          type: 'string',
-        },
-      ],
-    },
-    {
-      name: 'additionalImage',
-      type: 'image',
-      options: {hotspot: true},
-      title: 'Additional Image',
-      fields: [
-        {
-          name: 'alt',
-          title: 'Alt',
-          type: 'string',
-        },
-      ],
-    },
-    {
-      name: 'smallDescription',
-      type: 'text',
-      title: 'Small Description',
-    },
-    {
-      name: 'date',
-      type: 'date',
-      title: 'Date',
     },
     {
       name: 'content',
       type: 'array',
-      title: 'Content',
-      of: [
-        {
-          type: 'block',
-        },
-      ],
+      of: [{type: 'block'}],
+    },
+    {
+      name: 'smallDescription',
+      type: 'string',
+      title: 'Small Description',
+    },
+    {
+      name: 'titleImage',
+      type: 'image',
+      title: 'Title Image',
+      options: {
+        hotspot: true,
+      },
+    },
+    {
+      name: 'additionalImage',
+      type: 'image',
+      title: 'Additional Image',
+      options: {
+        hotspot: true,
+      },
+    },
+    {
+      name: 'publishedAt',
+      type: 'datetime',
+      title: 'Published At',
     },
   ],
-})
+}

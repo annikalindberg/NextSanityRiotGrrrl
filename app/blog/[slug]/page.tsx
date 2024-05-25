@@ -2,11 +2,7 @@ import { client, urlFor } from '../../lib/client'
 import { fullBlog } from '../../lib/interface'
 import Image from 'next/image'
 import { PortableText } from '@portabletext/react'
-
-/* const baseURL =
-  process.env.NODE_ENV === 'development'
-    ? 'http://localhost:3000'
-    : 'https://www.nexttoedit-tech.com' */
+import { format } from 'date-fns'
 
 export async function generateMetadata({
   params,
@@ -17,7 +13,7 @@ export async function generateMetadata({
   return {
     title: data.title,
     description: data.smallDescription,
-    metadataBase: new URL('https://www.nexttoedit-tech.com'), // Use the baseURL determined above
+    metadataBase: new URL('https://www.nexttoedit-tech.com'),
     openGraph: {
       title: data.title,
       description: data.content,
@@ -30,16 +26,22 @@ export async function generateMetadata({
     },
   }
 }
+
 async function getData(slug: string) {
   const query = `
     *[_type == "blog" && slug.current == '${slug}']
     {
       "currentSlug": slug.current,
       title,
+      author->{
+        name,
+        image
+      },
       content,
       smallDescription,
       titleImage,
       additionalImage,
+      publishedAt,
     }[0]
   `
 
@@ -53,7 +55,9 @@ export default async function BlogArticle({
   params: { slug: string }
 }) {
   const data: fullBlog = await getData(params.slug)
-  console.log(data) // This will log the fetched data or null
+  const publishedDate = data.publishedAt
+    ? format(new Date(data.publishedAt), 'PPP')
+    : 'Unknown Date'
 
   return (
     <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -71,29 +75,39 @@ export default async function BlogArticle({
           {data.smallDescription}
         </p>
 
-        <div className="relative max-w-3xl mx-auto mt-20 ">
+        {/* Author Information */}
+        {data.author && (
+          <div className="flex items-center mt-6">
+            {data.author.image && (
+              <Image
+                src={urlFor(data.author.image).url()}
+                alt={data.author.name ?? 'Author Image'}
+                width={50}
+                height={50}
+                className="rounded-full"
+              />
+            )}
+            <div className="ml-4">
+              <p className="text-lg text-gray-600 dark:text-gray-300">
+                {data.author.name ?? 'Unknown Author'}
+              </p>
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                {publishedDate}
+              </p>
+            </div>
+          </div>
+        )}
+
+        <div className="relative max-w-3xl mx-auto mt-10">
           <Image
             src={urlFor(data.titleImage).url()}
             alt={data.titleImage.alt}
             width={400}
             height={500}
-            /*             sizes="(max-width: 768px) 100vw, 50vw" // Added sizes prop
-             */ className="rounded-lg"
+            className="rounded-lg"
           />
         </div>
 
-        {/* {data.additionalImage && (
-          <div className="relative h-96 mt-20">
-            <Image
-              src={urlFor(data.additionalImage.asset._ref).url()}
-              alt={data.additionalImage.alt}
-              fill // Using the fill prop
-              sizes="(max-width: 768px) 100vw, 50vw" // Added sizes prop
-              className="rounded-lg object-fit "
-            />
-          </div>
-        )}
- */}
         <div className="mt-16 prose prose-blue prose-lg dark:prose-invert prose-li:marker:text-primary prose-a:text-primary">
           <PortableText value={data.content} />
         </div>

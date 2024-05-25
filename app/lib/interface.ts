@@ -1,3 +1,4 @@
+import { author } from '../../sanity/nextsanityportfolio/schemaTypes/author'
 export interface simpleBlogCard {
   title: string
   smallDescription: string
@@ -11,6 +12,8 @@ export interface fullBlog {
   title: string
   content: any
   titleImage: any
+  publishedAt: string
+  author?: Author
   image: string
   additionalImage: {
     asset: {
@@ -19,7 +22,11 @@ export interface fullBlog {
     alt: string
   }
 }
-
+export interface Author {
+  image: any
+  name?: string
+  picture?: any
+}
 // lib/interface.ts
 export interface Project {
   slug: string
