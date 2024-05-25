@@ -1,4 +1,3 @@
-import { author } from '../../sanity/nextsanityportfolio/schemaTypes/author'
 export interface simpleBlogCard {
   title: string
   smallDescription: string
