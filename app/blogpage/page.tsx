@@ -38,13 +38,13 @@ export default async function BlogPage() {
       <section className="max-w-3xl mx-auto px-6 py-4 ">
         <div className="grid grid-cols-1  md:grid-cols-2 mt-5 mb-5 gap-5">
           {data.map((post, idx) => (
-            <Card key={idx}>
+            <Card key={idx} className="overflow-hidden">
               <Image
                 src={urlFor(post.titleImage).url()}
                 alt={post.titleImage.alt}
                 width={700}
                 height={100}
-                className="rounded-t-lg h-[600px] md:h-[300px] object-cover "
+                className="rounded-t-lg h-60 md:h-40 object-cover w-full"
               />
               <CardContent className="mt-5">
                 <h3 className="text-lg line-clamp-2 font-bold">{post.title}</h3>
