@@ -4,8 +4,8 @@ import TjansterCards from './components/homepagebanners/TjansterCards'
 import OmOss from './components/om-oss/OmOss'
 import Tillganglighet from './components/Tillganglighet'
 import ErbjudandeCards from './components/homepagebanners/ErbjudandenCards'
-import BlogCards from './components/BlogCards'
-
+/* import BlogCards from './components/BlogCards'
+ */
 export default function Home() {
   return (
     <>
@@ -20,7 +20,8 @@ export default function Home() {
         <h2 className="text-3xl font-bold text-center">
           Senaste från vår blogg
         </h2>
-        <BlogCards />
+        {/*         <BlogCards />
+         */}{' '}
       </div>
     </>
   )

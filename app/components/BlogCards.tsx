@@ -28,7 +28,7 @@ const BlogCard = ({ post }: { post: any }) => {
     : 'Unknown Date'
 
   return (
-    <div className="p-4 border rounded-lg shadow-sm  bg-green-50">
+    <div className="p-4 border rounded-lg shadow-sm max-w-sm bg-green-50">
       <Image
         src={urlFor(post.titleImage).url()}
         alt={post.titleImage.alt}
@@ -55,7 +55,7 @@ export default async function BlogCards() {
   const latestPosts = await fetchLatestPosts()
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 m-12">
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 m-12">
       {latestPosts.map((post: any, idx: number) => (
         <BlogCard key={idx} post={post} />
       ))}
