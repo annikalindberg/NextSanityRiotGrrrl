@@ -4,13 +4,14 @@ import { client, urlFor } from '../lib/client'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
+import BlogCards from '../components/BlogCards'
 
 export const metadata = {
   title: 'Blogg om webbutveckling och tillgänglighet',
   description:
     'Håll dig uppdaterad om vad som händer inom webbutveckling och tillgänglighetsoptimering. Lär dig om fördelarna med handkodade sidor och hur tillgängliga webbplatser gynnar alla användare, få handfasta tips och hacks för att öka din SEO, webbtrafik och skapa fantastiska användarupplevelser.',
 }
-export const revalidate = 30 // revalidate at most 30 seconds
+/* export const revalidate = 30 // revalidate at most 30 seconds
 
 async function getData() {
   const query = `
@@ -19,24 +20,28 @@ async function getData() {
       smallDescription,
       "currentSlug": slug.current,
       titleImage, 
+      author->{
+        name,
+        image
+      },
+      publishedAt
       
   
 
-  }`
+  }` */
 
-  const data = await client.fetch(query)
+/*   const data = await client.fetch(query)
 
   return data
 }
-
+*/
 export default async function BlogPage() {
-  const data: simpleBlogCard[] = await getData()
-
-  console.log(data)
+  /*   const data: simpleBlogCard[] = await getData()
+   */
   return (
     <>
       <section className="max-w-3xl mx-auto px-6 py-4 ">
-        <div className="grid grid-cols-1  md:grid-cols-2 mt-5 mb-5 gap-5">
+        {/*         <div className="grid grid-cols-1  md:grid-cols-2 mt-5 mb-5 gap-5">
           {data.map((post, idx) => (
             <Card key={idx} className="overflow-hidden">
               <Image
@@ -62,7 +67,8 @@ export default async function BlogPage() {
               </CardContent>
             </Card>
           ))}
-        </div>
+        </div> */}
+        <BlogCards />
       </section>
     </>
   )

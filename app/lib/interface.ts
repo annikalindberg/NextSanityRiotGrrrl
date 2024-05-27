@@ -3,6 +3,8 @@ export interface simpleBlogCard {
   smallDescription: string
   currentSlug: string
   titleImage: any
+  publishedAt: string
+  author?: Author
 }
 
 export interface fullBlog {
