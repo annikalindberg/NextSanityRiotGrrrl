@@ -55,6 +55,7 @@ export default async function BlogArticle({
   params: { slug: string }
 }) {
   const data: fullBlog = await getData(params.slug)
+
   const publishedDate = data.publishedAt
     ? format(new Date(data.publishedAt), 'PPP')
     : 'Unknown Date'
@@ -70,33 +71,12 @@ export default async function BlogArticle({
             {data.title}
           </span>
         </h1>
-
+        <p className="text-sm text-gray-500 dark:text-gray-400">
+          {publishedDate}
+        </p>
         <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
           {data.smallDescription}
         </p>
-
-        {/* Author Information */}
-        {data.author && (
-          <div className="flex items-center mt-6">
-            {data.author.image && (
-              <Image
-                src={urlFor(data.author.image).url()}
-                alt={data.author.name ?? 'Author Image'}
-                width={50}
-                height={50}
-                className="rounded-full"
-              />
-            )}
-            <div className="ml-4">
-              <p className="text-lg text-gray-600 dark:text-gray-300">
-                {data.author.name ?? 'Unknown Author'}
-              </p>
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                {publishedDate}
-              </p>
-            </div>
-          </div>
-        )}
 
         <div className="relative max-w-3xl mx-auto mt-10">
           <Image
@@ -111,6 +91,26 @@ export default async function BlogArticle({
         <div className="mt-16 prose prose-blue prose-lg dark:prose-invert prose-li:marker:text-primary prose-a:text-primary">
           <PortableText value={data.content} />
         </div>
+
+        {/* Author Information at the Bottom */}
+        {data.author && (
+          <div className="flex items-center mt-10">
+            {data.author.image && (
+              <Image
+                src={urlFor(data.author.image).url()}
+                alt={data.author.name ?? 'Author Image'}
+                width={50}
+                height={50}
+                className="rounded-full"
+              />
+            )}
+            <div className="ml-4">
+              <p className="text-lg text-gray-600 dark:text-gray-300">
+                {data.author.name ?? 'Unknown Author'}
+              </p>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   )
