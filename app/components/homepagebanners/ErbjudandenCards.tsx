@@ -19,9 +19,9 @@ Lycka till och hoppas att vi hörs! 🌟`,
 
 export default function ErbjudandeCards() {
   return (
-    <div className="pt-10 pb-10">
+    <div className=" md:mt-5 pb-10">
       <section className="max-w-7xl mx-auto px-4">
-        <h1 className="mt-5 text-3xl font-bold text-center">
+        <h1 className="mt-2 text-3xl font-bold text-center">
           Öppningserbjudande 60% rabatt
         </h1>
         <section className="max-w-7xl mx-auto px-4">
