@@ -6,6 +6,7 @@ import classes from '../components/pricing.module.css'
 import Check from '@/public/assets/check.svg'
 import { FaMinus } from 'react-icons/fa'
 import uncheck from '@/public/assets/uncheck.svg'
+import ErbjudandeCards from './homepagebanners/ErbjudandenCards'
 
 const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, '-')
 
@@ -21,6 +22,7 @@ const animationProps = {
 
 const Webbutveckling = () => (
   <>
+    <ErbjudandeCards />
     <motion.div
       {...animationProps}
       transition={{ delay: 0.175 }}
