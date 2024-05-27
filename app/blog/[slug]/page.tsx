@@ -40,8 +40,20 @@ async function getData(slug: string) {
       },
       content,
       smallDescription,
-      titleImage,
-      additionalImage,
+      titleImage{
+        asset->{
+          _id,
+          url
+        },
+        alt
+      },
+      additionalImage{
+        asset->{
+          _id,
+          url
+        },
+        alt
+      },
       publishedAt,
     }[0]
   `

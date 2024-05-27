@@ -40,14 +40,42 @@ export default {
       options: {
         hotspot: true,
       },
+      fields: [
+        {
+          name: 'caption',
+          type: 'string',
+          title: 'Image caption',
+          description: 'Caption displayed below the image.',
+        },
+        {
+          name: 'alt',
+          type: 'string',
+
+          title: 'Alternative Text',
+        },
+      ],
     },
     {
       name: 'additionalImage',
       type: 'image',
+      alt: 'Additional Image',
       title: 'Additional Image',
       options: {
         hotspot: true,
       },
+      fields: [
+        {
+          name: 'caption',
+          type: 'string',
+          title: 'Image caption',
+          description: 'Caption displayed below the image.',
+        },
+        {
+          name: 'alt',
+          type: 'string',
+          title: 'Alternative Text',
+        },
+      ],
     },
     {
       name: 'publishedAt',
