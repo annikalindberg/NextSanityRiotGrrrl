@@ -14,7 +14,7 @@ export async function generateMetadata({
   return {
     title: data.title,
     description: data.smallDescription,
-    metadataBase: new URL('https://www.nexttoedit-tech.com'),
+    metadataBase: new URL('https://www.nexttoedit-tech.com/blog/[slug]'),
     openGraph: {
       title: data.title,
       description: data.content,
