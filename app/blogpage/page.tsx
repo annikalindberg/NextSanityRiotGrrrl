@@ -41,6 +41,13 @@ export default async function BlogPage() {
   return (
     <>
       <section className="max-w-3xl mx-auto px-6 py-4 ">
+        <h1 className="text-4xl font-bold">NextToEdit Blogg</h1>
+        <p className="text-gray-500 dark:text-gray-400">
+          Här hittar du våra senaste blogginlägg om webbutveckling och
+          tillgänglighetsoptimering. Vi delar med oss av tips och tricks för att
+          skapa fantastiska användarupplevelser och öka din webbtrafik. Vill du
+          att vi skriver om något speciellt? Kontakta oss!
+        </p>
         {/*         <div className="grid grid-cols-1  md:grid-cols-2 mt-5 mb-5 gap-5">
           {data.map((post, idx) => (
             <Card key={idx} className="overflow-hidden">

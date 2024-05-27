@@ -28,13 +28,14 @@ const BlogCard = ({ post }: { post: any }) => {
     : 'Unknown Date'
 
   return (
-    <div className="p-4 border rounded-lg shadow-sm">
+    <div className="p-4 border rounded-lg shadow-sm  bg-green-50">
       <Image
         src={urlFor(post.titleImage).url()}
         alt={post.titleImage.alt}
         width={400}
         height={200}
-        className="rounded-lg"
+        className="
+rounded-t-lg h-60 md:h-40 object-cover w-full "
       />
       <h3 className="mt-4 text-xl font-semibold">{post.title}</h3>
       <p className="mt-2 text-sm text-gray-600">{post.smallDescription}</p>
@@ -44,7 +45,7 @@ const BlogCard = ({ post }: { post: any }) => {
         className="mt-4 inline-block text-primary hover:underline"
         aria-label={`Läs hela artikeln ${post.title}`}
       >
-        Läs hela &quot; {post.title} &quot;
+        Läs hela &quot;{post.title}&quot;
       </Link>
     </div>
   )
@@ -54,7 +55,7 @@ export default async function BlogCards() {
   const latestPosts = await fetchLatestPosts()
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 m-12">
       {latestPosts.map((post: any, idx: number) => (
         <BlogCard key={idx} post={post} />
       ))}
