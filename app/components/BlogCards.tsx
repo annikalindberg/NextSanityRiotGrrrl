@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
-export const revalidate = 30 // revalidate at most 30 seconds
+export const revalidate = 30 // revalidate at most 30 seconds // Add this line to revalidate the page every 30 seconds to keep the data fresh and up to date
 
 async function getData() {
   const query = `
@@ -25,7 +25,7 @@ async function getData() {
   }`
 
   const data = await client.fetch(query)
-
+  console.log(data)
   return data
 }
 

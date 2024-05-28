@@ -4,7 +4,35 @@ import Image from 'next/image'
 import { PortableText } from '@portabletext/react'
 import { format } from 'date-fns'
 import BlogCards from '../../components/BlogCards'
+import Link from 'next/link'
 
+/* const components = {
+  types: {
+    block: ({ children }: any) => <p>{children}</p>,
+  },
+  marks: {
+    link: ({ value, children }: any) => {
+      const { href } = value
+      if (href.startsWith('/')) {
+        return (
+          <Link href={href} className="text-primary">
+            {children}
+          </Link>
+        )
+      }
+      return (
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary"
+        >
+          {children}
+        </a>
+      )
+    },
+  },
+} */
 export async function generateMetadata({
   params,
 }: {
@@ -59,6 +87,8 @@ async function getData(slug: string) {
   `
 
   const data = await client.fetch(query)
+  console.log('Fetched Data:', data)
+
   return data
 }
 
@@ -68,6 +98,7 @@ export default async function BlogArticle({
   params: { slug: string }
 }) {
   const data: fullBlog = await getData(params.slug)
+  console.log('Fetched Data:', data) // Debugging log
 
   const publishedDate = data.publishedAt
     ? format(new Date(data.publishedAt), 'PPP')

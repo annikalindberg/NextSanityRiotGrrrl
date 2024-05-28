@@ -25,7 +25,7 @@ async function getData() {
         image
       },
       publishedAt
-      
+    
   
 
   }`
