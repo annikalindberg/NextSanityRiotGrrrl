@@ -5,6 +5,8 @@ export interface simpleBlogCard {
   titleImage: any
   publishedAt: string
   author?: Author
+  /*   content: BlockContent[] // Add this line to include block content
+   */
 }
 
 export interface fullBlog {
@@ -41,3 +43,35 @@ export interface Project {
   notes?: string
   futureImprovements?: string
 }
+
+/* export interface BlockContent {
+  asset: any
+  alt: string
+  children: any
+  _type: 'block'
+  styles: {
+    title: string
+    value: string
+  }[]
+  lists: {
+    title: string
+    value: string
+  }[]
+  marks: {
+    decorators: {
+      title: string
+      value: string
+    }[]
+    annotations: {
+      title: string
+      name: string
+      type: string
+      fields: {
+        title: string
+        name: string
+        type: string
+      }[]
+    }[]
+  }
+}
+ */

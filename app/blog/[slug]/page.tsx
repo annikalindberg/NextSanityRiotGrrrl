@@ -97,14 +97,23 @@ export default async function BlogArticle({
             alt={data.titleImage.alt}
             width={400}
             height={500}
-            className="rounded-lg"
+            className="rounded-lg "
           />
         </div>
 
         <div className="mt-16 prose prose-blue prose-lg dark:prose-invert prose-li:marker:text-primary prose-a:text-primary">
           <PortableText value={data.content} />
         </div>
-
+        {/*         <div className="relative max-w-3xl mx-auto mt-10">
+          <Image
+            src={urlFor(data.additionalImage).url()}
+            alt={data.additionalImage.alt}
+            width={400}
+            height={500}
+            className="rounded-lg flex justify-center items-center
+        "
+          />
+        </div> */}
         {/* Author Information at the Bottom */}
         {data.author && (
           <div className="flex items-center mt-10">

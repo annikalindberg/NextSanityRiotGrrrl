@@ -4,6 +4,7 @@ import { client, urlFor } from '../lib/client'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
+import { BlockContent } from '../lib/interface'
 
 export const revalidate = 30 // revalidate at most 30 seconds
 
