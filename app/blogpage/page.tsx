@@ -41,7 +41,7 @@ export default function BlogPage() {
   return (
     <>
       <section className="max-w-3xl mx-auto px-6 py-4 ">
-        <h1 className="text-4xl font-bold">NextToEdit Blogg</h1>
+        <p className="text-4xl font-bold">NextToEdit Blogg</p>
         <p className="text-gray-500 dark:text-gray-400">
           Här hittar du våra senaste blogginlägg om webbutveckling och
           tillgänglighetsoptimering. Vi delar med oss av tips och tricks för att
