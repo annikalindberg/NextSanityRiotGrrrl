@@ -135,9 +135,9 @@ export default async function BlogArticle({
         )}
       </div>
       <section className="max-w-3xl mx-auto px-6 py-4 ">
-        <h1 className="text-center text-3xl font-bold mt-5 mb-5">
+        <h3 className="text-center text-3xl font-bold mt-5 mb-5">
           Läs de senaste inläggen
-        </h1>
+        </h3>
         <BlogCards />
       </section>
     </section>
