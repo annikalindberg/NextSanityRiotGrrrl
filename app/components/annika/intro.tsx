@@ -50,7 +50,7 @@ export default function Intro() {
       >
         {' '}
         <div className="font-bold text-fuchsia-950 dark:text-pink-50 ">
-          Annika{' '}
+          Annika Lindberg
         </div>
         <div className=" text-teal-900 dark:text-teal-50 mb-20">
           Konsult inom Frontend och Fullstack-utveckling
