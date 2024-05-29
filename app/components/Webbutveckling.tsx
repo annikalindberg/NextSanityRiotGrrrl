@@ -36,10 +36,10 @@ const Webbutveckling = () => (
         </h1>
         <ul className="flex flex-col justify-center space-y-2 lg:text-xl">
           {[
-            'SEO-optimerade, skräddarsydda hemsidor efter dina behov',
+            'SEO-optimerade, skräddarsydda hemsidor efter dina behov.',
             'Handkodade, tillgänglighets- och SEO-optimerade hemsidor',
-            'Flexibel och konkurrenskraftig prismodell',
-            'Glöm begränsningarna med no-code plattformar; välj en lösning som växer med din verksamhet',
+            'Flexibel och konkurrenskraftig prismodell.',
+            'Glöm begränsningarna med no-code plattformar; välj en lösning som växer med din verksamhet.',
           ].map((item, index) => (
             <motion.li
               key={index}
@@ -75,21 +75,21 @@ const Webbutveckling = () => (
             features: [
               /*               'Responsiv och SEO-optimerad webbplats redo att lanseras inom 1-2 veckor.',
                */ 'Upp till 5 sektioner (eller sidor) ingår, perfekt för en effektiv och professionell närvaro online',
-              'Kontaktformulär',
-              'Licensfria bilder och grafiska element',
-              'Ditt valda domännamn samt hosting ingår i 1 år (efter det överlåtes domännamn och hosting till dig om inget annat avtalas)',
+              'Kontaktformulär.',
+              'Licensfria bilder och grafiska element.',
+              'Ditt valda domännamn samt hosting ingår i 1 år (efter det överlåtes domännamn och hosting till dig om inget annat avtalas).',
 
               'Byggd enligt bästa praxis för tillgänglighet och SEO',
               /*               'CMS för 1 huvudsida och obegränsat antal subsidor',
                */ /* '2 tillfällen personlig utbildning av mig för självständig uppdatering. Inga förkunskaper krävs', */
-              'Skalbart och flexibelt för framtida tillägg',
-              'Regelbunden uppdatering och support för att säkerställa att din webbplats fungerar som den ska, ingår mot en mindre fast månadsavgift',
+              'Skalbart och flexibelt för framtida tillägg.',
+              'Regelbunden uppdatering och support för att säkerställa att din webbplats fungerar som den ska, ingår mot en mindre fast månadsavgift.',
             ],
             notIncluded: [
               'Copywriting (du skriver texterna själv)',
-              'Designanpassningar (du väljer mellan några fasta designmallar)',
-              'Extra funktionalitet (t.ex. e-handel, bokningssystem, medlemskap)',
-              'Anpassad SEO-strategi (grundläggande SEO-optimering ingår alltid)',
+              'Designanpassningar (du väljer mellan några fasta designmallar).',
+              'Extra funktionalitet (t.ex. e-handel, bokningssystem, medlemskap).',
+              'Anpassad SEO-strategi (grundläggande SEO-optimering ingår alltid).',
               ,
             ],
 
@@ -103,23 +103,23 @@ const Webbutveckling = () => (
             price: '30 000 kr',
             features: [
               'Allt som ingår i Kickstart-paketet plus:',
-              'Specialdesignad webbplats med unik design och funktionalitet som animeringar',
-              'Möjlighet att skapa obegränsat antal sidor',
-              'Olika typer av formulär och interaktioner',
-              'Möjlighet att anpassa design och funktionalitet efter dina behov',
+              'Specialdesignad webbplats med unik design och funktionalitet som animeringar.',
+              'Möjlighet att skapa obegränsat antal sidor.',
+              'Olika typer av formulär och interaktioner.',
+              'Möjlighet att anpassa design och funktionalitet efter dina behov.',
 
-              'Skräddarsytt CMS för innehållshantering av upp till 3 unika sidor',
-              'Avancerad SEO (Search Engine Optimization)strategi, analyserad och framtagen specifikt för dina mål och din målgrupp',
-              '3 tillfällen i hur du själv kan uppdatera och underhålla din webbplats',
-              'Tillgänglighetsredogörelse',
-              'Manuell tillgänglighetstestning och korrigeringar som säkerställer att din webbplats är tillgänglig för tillämpliga lagar och riktlinjer såsom WCAG 2.2, Tillgänglighetsdirektivet och Europastandarden EN 301 549',
-              'Feedback på texter och bilder för att optimera ton och språk efter dina mål och din målgrupp',
-              'Fullständiga rättigheter till design och kod',
-              'Bilder med licens för kommersiellt bruk',
+              'Skräddarsytt CMS för innehållshantering av upp till 3 unika sidor.',
+              'Avancerad SEO (Search Engine Optimization)strategi, analyserad och framtagen specifikt för dina mål och din målgrupp.',
+              '3 tillfällen i hur du själv kan uppdatera och underhålla din webbplats.',
+              'Tillgänglighetsredogörelse.',
+              'Manuell tillgänglighetstestning och korrigeringar som säkerställer att din webbplats är tillgänglig för tillämpliga lagar och riktlinjer såsom WCAG 2.2, Tillgänglighetsdirektivet och Europastandarden EN 301 549.',
+              'Feedback på texter och bilder för att optimera ton och språk efter dina mål och din målgrupp.',
+              'Fullständiga rättigheter till design och kod.',
+              'Bilder med licens för kommersiellt bruk.',
             ],
             notIncluded: [
-              'Copywriting (du skriver texterna själv)',
-              'Extra funktionalitet (t.ex. e-handel, bokningssystem, medlemskap)',
+              'Copywriting (du skriver texterna själv).',
+              'Extra funktionalitet (t.ex. e-handel, bokningssystem, medlemskap).',
             ],
             buttonLabel: 'Jag vill ha en webbplats att växa i',
             bgClass: 'bg-blue-100 shadow-4xl dark:bg-fuchsia-950',
@@ -132,14 +132,14 @@ const Webbutveckling = () => (
             price: 'Offert',
             features: [
               'Våra Enterprise-lösningar är skräddarsydda för att passa dina behov och mål och kravställning sker i samråd med dig och ditt team för att säkerställa att vi levererar en lösning som passar just er.',
-              'En "discovery-fas" där vi tillsammans med dig och ditt team går igenom era behov och mål för att skapa en lösning som passar just er',
-              'Strategiskt innehållsanalys och strukturering för att maximera konverteringar',
-              'Skräddarsydda formulär och interaktioner',
-              'Multilinguellt språkval (stöd att kunnna välja språk)',
-              'UX (User Experience) och UI (User Interface) design för att skapa en användarvänlig och tilltalande webbplats',
-              'Robusta och skalbara webbapplikationer med större mängder data, en mer avancerad autentisering med krav på högre säkerhet och prestanda',
-              'En djupgående analys av din nuvarande webbplats och digitala närvaro för att identifiera möjligheter och utmaningar',
-              'UX-research, flödesscheman, prototyping i iterativa processer för att optimera utformaning och funktionalitet efter användarens behov',
+              'En "discovery-fas" där vi tillsammans med dig och ditt team går igenom era behov och mål för att skapa en lösning som passar just er.',
+              'Strategiskt innehållsanalys och strukturering för att maximera konverteringar.',
+              'Skräddarsydda formulär och interaktioner.',
+              'Multilinguellt språkval (stöd att kunnna välja språk).',
+              'UX (User Experience) och UI (User Interface) design för att skapa en användarvänlig och tilltalande webbplats.',
+              'Robusta och skalbara webbapplikationer med större mängder data, en mer avancerad autentisering med krav på högre säkerhet och prestanda.',
+              'En djupgående analys av din nuvarande webbplats och digitala närvaro för att identifiera möjligheter och utmaningar.',
+              'UX-research, flödesscheman, prototyping i iterativa processer för att optimera utformaning och funktionalitet efter användarens behov.',
             ],
             buttonLabel: 'Jag vill veta mer om enterprise-lösningar',
             bgClass: 'bg-green-100 shadow-4xl dark:bg-cyan-950',
@@ -232,11 +232,11 @@ const Webbutveckling = () => (
       <h3>I alla paket ingår:</h3>
       <ul className="flex flex-col justify-center space-y-2 lg:text-xl">
         {[
-          'Domännamn och hosting ingår i 1 år (efter det överlåtes domännamn och hosting till dig om inget annat avtalas)',
+          'Domännamn och hosting ingår i 1 år (efter det överlåtes domännamn och hosting till dig om inget annat avtalas).',
           'Responsiv design som anpassar sig till alla skärmstorlekar',
-          'Optimering för sökmotorer (SEO)',
-          'Bildoptimering och laddningstidsoptimering',
-          'Tillgänglighetsstandard i enlighet med WCAG 2.2 (nivå AA), tillgänglighetsdirektivet och Europastandarden EN 301 549',
+          'Optimering för sökmotorer (SEO).',
+          'Bildoptimering och laddningstidsoptimering.',
+          'Tillgänglighetsstandard i enlighet med WCAG 2.2 (nivå AA), tillgänglighetsdirektivet och Europastandarden EN 301 549.',
         ].map((item, index) => (
           <motion.li
             key={index}
