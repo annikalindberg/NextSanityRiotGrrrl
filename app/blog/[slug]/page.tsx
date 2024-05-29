@@ -6,46 +6,35 @@ import { format } from 'date-fns'
 import BlogCards from '../../components/BlogCards'
 import Link from 'next/link'
 
-/* const components = {
-  types: {
-    block: ({ children }: any) => <p>{children}</p>,
-  },
-  marks: {
-    link: ({ value, children }: any) => {
-      const { href } = value
-      if (href.startsWith('/')) {
-        return (
-          <Link href={href} className="text-primary">
-            {children}
-          </Link>
-        )
+// Utility function to extract plain text from Portable Text
+function extractPlainText(blocks: any[]) {
+  return blocks
+    .map((block: { _type: string; children: any[] }) => {
+      if (block._type !== 'block' || !block.children) {
+        return ''
       }
-      return (
-        <a
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary"
-        >
-          {children}
-        </a>
-      )
-    },
-  },
-} */
+      return block.children.map((child: { text: any }) => child.text).join('')
+    })
+    .join('\n')
+}
+
 export async function generateMetadata({
   params,
 }: {
   params: { slug: string }
 }) {
   const data = await getData(params.slug)
+  const plainTextContent = extractPlainText(data.content)
+
   return {
     title: data.title,
     description: data.smallDescription,
-    metadataBase: new URL('https://www.nexttoedit-tech.com/blog/[slug]'),
+    metadataBase: new URL(
+      `https://www.nexttoedit-tech.com/blog/${params.slug}`
+    ),
     openGraph: {
       title: data.title,
-      description: data.content,
+      description: plainTextContent,
       images: [
         {
           url: urlFor(data.titleImage).url(),
