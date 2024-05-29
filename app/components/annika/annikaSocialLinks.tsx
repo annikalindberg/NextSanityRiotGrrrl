@@ -20,6 +20,7 @@ export default function AnnikSocialLinks() {
     >
       {/* Adjusted padding for smaller screens */}
       <Link
+        role="button"
         href="https://www.annikalindberg-ts.com/#contact"
         className="group bg-gradient-to-bl from-fuchsia-900 to-pink-600 text-white px-5 py-2 sm:px-7 sm:py-3 flex items-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 hover:bg-orange-900 active:scale-105 transition dark:text-stone-100 dark:hover:bg-red-900 cursor-pointer borderBlack"
         rel="noopener noreferrer"

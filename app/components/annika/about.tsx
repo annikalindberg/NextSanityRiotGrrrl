@@ -92,38 +92,6 @@ export default function About() {
             <HiDownload className="opacity-60 group-hover:translate-y- transition" />
             <FaRegFilePdf />
           </a>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 md:gap-4">
-            <div className="flex flex-col items-center sm:flex-row">
-              <p className="text-sm mb-2 sm:mb-0 sm:mr-2">
-                Lägg till mig på LinkedIn
-              </p>
-              {/* Adjusted to block elements */}
-              <Link
-                className="block bg-white-50 p-2 md:p-3 text-gray-700 hover:text-gray-950 flex items-center gap-1 md:gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white"
-                href="https://www.linkedin.com/in/annika-lindberg-frontend-developer/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Visit Annikas Linkedin profile page - opens in new tab"
-                title="External link to Annikas LinkedIn"
-              >
-                <BsLinkedin />
-              </Link>
-            </div>
-            <div className="flex flex-col items-center sm:flex-row">
-              <p className="text-sm mb-2 sm:mb-0 sm:mr-2">och GitHub</p>
-              {/* Adjusted to block elements */}
-              <Link
-                className="block bg-white-50 p-2 md:p-3 text-gray-700 flex items-center gap-1 md:gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white"
-                href="https://github.com/annikalindberg"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="External link to Annikas GitHub"
-                aria-label="Visit Annikas Github profile page - opens in new tab"
-              >
-                <FaGithubSquare />
-              </Link>
-            </div>
-          </div>
         </motion.div>
       </div>
     </motion.section>
