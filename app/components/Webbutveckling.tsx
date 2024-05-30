@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import classes from '../components/pricing.module.css'
 import Check from '@/public/assets/check.svg'
-import { FaMinus } from 'react-icons/fa'
 import uncheck from '@/public/assets/uncheck.svg'
 import ErbjudandeCards from './homepagebanners/ErbjudandenCards'
 
@@ -93,7 +92,8 @@ const Webbutveckling = () => (
               ,
             ],
 
-            buttonLabel: 'Bokningsförfrågan av Kickstart-paketet',
+            buttonLabel:
+              'Bokningsförfrågan av Kickstart-paketet (öppningserbjudande)',
             bgClass: 'bg-stone-50 dark:bg-rose-950',
           },
           {
@@ -145,6 +145,23 @@ const Webbutveckling = () => (
             bgClass: 'bg-green-100 shadow-4xl dark:bg-cyan-950',
             widthClass: '',
           },
+          {
+            title: 'Hjälp mig välja',
+            description:
+              'Vi tror inte på one-size-fits-all. Våra paketerbjudanden är till för att du som kund ska få en bild av vad det är du betalar för när du beställer tjänster av oss. Känner du dig osäker på vilka dina behöv är när det gäller hemsida, erbjuder vi ett kostnadsfritt och förutsättningslöst digitalt möte där vi tillsammans kartlägger dina behov och sätter ihop ett paket som passar. I alla hemsidepaket ingår',
+            price: '',
+            features: [
+              'Domännamn och hosting i ett år (efter det överlåtes det till dig om inget annat avtalas).',
+              'Responsiv design som anpassar sig till alla skärmstorlekar',
+              'Optimering för sökmotorer (SEO).',
+              'Bildoptimering och laddningstidsoptimering.',
+              'Tillgänglighetsstandard i enlighet med WCAG 2.2 (nivå AA), tillgänglighetsdirektivet och Europastandarden EN 301 549.',
+            ],
+            buttonLabel:
+              'Jag är osäker på vilket paket som passar mig - hjälp mig välja',
+            bgClass: 'bg-rose-100 shadow-4xl dark:bg-rose-950',
+            widthClass: '',
+          },
         ].map((card, index) => (
           <article
             aria-label="{card.title}"
@@ -156,7 +173,7 @@ const Webbutveckling = () => (
                 {card.title}
               </h3>
               <p
-                className={`${classes.multiLineEllipsis} text-center md:mx-auto  text-xs md:text-sm leading-5`}
+                className={`${classes.multiLineEllipsis}  md:mx-auto  text-xs md:text-sm leading-5`}
               >
                 {card.description}
               </p>
@@ -229,39 +246,8 @@ const Webbutveckling = () => (
           </article>
         ))}
       </div>
-      <h3>I alla paket ingår:</h3>
-      <ul className="flex flex-col justify-center space-y-2 lg:text-xl">
-        {[
-          'Domännamn och hosting ingår i 1 år (efter det överlåtes domännamn och hosting till dig om inget annat avtalas).',
-          'Responsiv design som anpassar sig till alla skärmstorlekar',
-          'Optimering för sökmotorer (SEO).',
-          'Bildoptimering och laddningstidsoptimering.',
-          'Tillgänglighetsstandard i enlighet med WCAG 2.2 (nivå AA), tillgänglighetsdirektivet och Europastandarden EN 301 549.',
-        ].map((item, index) => (
-          <motion.li
-            key={index}
-            className="flex items-center dark:text-white"
-            variants={animationProps}
-            initial="initial"
-            whileInView="animate"
-            custom={index}
-          >
-            <Image
-              src={Check}
-              alt=""
-              aria-hidden="true"
-              width={16}
-              height={16}
-              className="mr-2 dark:bg-white"
-            />
-            {item}
-          </motion.li>
-        ))}
-      </ul>
-    </motion.div>{' '}
-    <p className="text-xl text-[#36485C] dark:text-white lg:text-xl">
-      * Alla priser inklusive moms
-    </p>
+      <h3> * Alla priser inklusive moms</h3>
+    </motion.div>
   </>
 )
 

@@ -29,12 +29,9 @@ export function Audits() {
         className="py-12 lg:py-15"
         aria-label="Pricing Options"
       >
-        <h1 className="text-center mb-6 text-2xl dark:text-white md:text-3xl lg:text-3xl font-semibold text-[#36485C]">
+        <h2 className=" mb-6 text-2xl dark:text-white md:text-3xl lg:text-3xl font-semibold text-[#36485C]">
           Hur tillgänglig är din webbplats?{' '}
           <div className="mt-4"> Låt oss testa! </div>
-        </h1>
-        <h2 className=" text-[#36485C] text-center dark:text-white text-lg lg:text-2xl mt-5">
-          Boka kostnadsfri audit idag!
         </h2>
         <p className="md:pt-6 md:pb-6 max-w-3xl md:mx-auto  lg:text-xl">
           Vi är experter på tillgänglighet för webb med 15 år i branchen. Vi

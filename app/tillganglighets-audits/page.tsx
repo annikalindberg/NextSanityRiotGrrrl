@@ -1,6 +1,7 @@
 import { FaqTillganglighet } from '../components/Faq-tillganglighet'
 import { Audits } from '../components/Audits'
 import React from 'react'
+import TjansterCards from '../components/homepagebanners/TjansterCards'
 
 export const metadata = {
   title: 'Tillgänglighetsaudits | NextToEdit Tech Solutions',
@@ -10,9 +11,13 @@ export const metadata = {
 
 export default function TillganglighetsAudits() {
   return (
-    <section className="max-w-3xl mx-auto px-4  ">
-      <Audits />
-      <FaqTillganglighet />
-    </section>
+    <div className="bg-gradient-to-t from-rose-100 to-yellow-50 dark:bg-gradient-to-t dark:to-indigo-950 dark:from-teal-950 pt-10 pb-10">
+      <section className="max-w-3xl mx-auto px-4 ">
+        <h1 className="mt-5 ml-6">Tillgänglighets-audits</h1>
+        <Audits />
+        <TjansterCards />
+        <FaqTillganglighet />
+      </section>
+    </div>
   )
 }
