@@ -35,6 +35,7 @@ export default async function BlogCards() {
   return (
     <>
       <section className="max-w-3xl mx-auto px-6 py-4 ">
+        <h1 className="mt-5 ml-6">Senaste från bloggen</h1>
         <div className="grid grid-cols-1  md:grid-cols-2 mt-5 mb-5 gap-5">
           {data.map((post, idx) => (
             <Card key={idx} className="overflow-hidden">
