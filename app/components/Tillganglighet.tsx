@@ -247,7 +247,7 @@ export default function Tillganglighet() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.175 }}
             className="py-1 lg:py-15 mt-4 mb-4"
-            aria-label="Pricing Options"
+            aria-label="Sammanfattning av fördelar med tillgänglighetsoptimering"
           >
             <p>
               Sammanfattningsvis, en tillgänglig webbplats är inte bara en

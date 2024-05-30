@@ -1,20 +1,24 @@
 import React from 'react'
 import { FaqTillganglighet } from '../components/Faq-tillganglighet'
 import { FaqWebbutveckling } from '../components/Faq-webbutveckling'
+import faq from '@/public/images/faq.svg'
+import Image from 'next/image'
 
 export const metadata = {
   title:
-    'FAQ om Webbutveckling och Tillgänglighet – Guide till Skräddarsydda Webbplatser',
+    'Vanliga frågor och svar om Webbutveckling och Tillgänglighet – Guide till Skräddarsydda Webbplatser',
 
   description:
-    'Utforska våra FAQs för att förstå hur skräddarsydd webbutveckling och tillgänglighetsoptimering kan förbättra din webbnärvaro. Lär dig om fördelarna med handkodade sidor och hur tillgängliga webbplatser gynnar alla användare.',
+    'Vad innebär "handkodad" hemsida och vilka är fördelarna för dig med en handkodad hemsida jämfört med att använda mallar och "drag-and-drop-plattformar" som metod? Vad tjänar jag på att min hemsida är tillgänglighetsoptimerad? Här har vi samlat de vanligaste frågorna våra användare har kring våra tjänster inom webbutveckling och tillgänglighet.',
 }
 
 export default function Faq() {
   return (
     <>
-      <h1 className="pl-4 lg:pl-12">FAQ tillgänglighet och Webbutveckling</h1>
-
+      <div className="flex flex-row justify-between ">
+        <h1 className="pl-4 lg:pl-12">Vanliga frågor och svar</h1>
+        <Image src={faq} alt="Vanliga frågor och svar" />
+      </div>
       <section className="max-w-3xl mx-auto px-4   ">
         <div className=" p-6 md:p-10" aria-label="Frequently Asked Questions">
           <FaqTillganglighet />

@@ -27,7 +27,7 @@ export function Audits() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.175 }}
         className="py-12 lg:py-15"
-        aria-label="Pricing Options"
+        aria-label="Prisalternativ för tillgänglighets-audits"
       >
         <h2 className=" mb-6 text-2xl dark:text-white md:text-3xl lg:text-3xl font-semibold text-[#36485C]">
           Hur tillgänglig är din webbplats?{' '}

@@ -78,6 +78,7 @@ export function Navigation() {
             <NavigationMenuLink asChild>
               <a href="/">
                 <Image
+                  aria-label="NextToEdit Tech Solutions Logotyp"
                   alt="Logo"
                   src={Logo}
                   width={500} // Maximum width the image can scale up to
@@ -99,7 +100,7 @@ export function Navigation() {
             </Link>{' '}
             <Link href="/faq" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                FAQ{' '}
+                Frågor och svar{' '}
               </NavigationMenuLink>
             </Link>
             <NavigationMenuTrigger className="">Mer</NavigationMenuTrigger>

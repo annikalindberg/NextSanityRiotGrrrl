@@ -27,7 +27,7 @@ const Webbutveckling = () => (
       transition={{ delay: 0.175 }}
       animate={{ opacity: 1, y: 0, transition: { delay: 0.175 } }}
       className="py-12 lg:py-15"
-      aria-label="Pricing Options"
+      aria-label="Prisalternativ för webbutveckling"
     >
       <div className="flex flex-col items-center justify-center gap-3 lg:gap-5">
         <h1 className="mb-6 text-2xl font-semibold text-center text-[#36485C] dark:text-white lg:text-3xl">

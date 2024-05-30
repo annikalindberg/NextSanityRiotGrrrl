@@ -40,8 +40,8 @@ export default function Footer() {
               href="https://www.instagram.com/nexttoedit_solutions/"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Visit NextToEdit Instagram profile page - opens in new tab"
-              title="External link to NextToEdit Instagram"
+              aria-label="Besök NextToEdit Solutions Instagram sida - öppnas i ny flik"
+              title="Extern länk till NextToEdit Instagram"
               className="max-w-28 bg-white-50 text-gray-700 hover:text-gray-900 flex items-center gap-2 p-2 rounded-full focus:ring-2 focus:ring-cyan-500 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white"
             >
               Instagram <InstagramLogoIcon className="md:w-5 md:h-5" />
@@ -50,8 +50,8 @@ export default function Footer() {
               href="https://www.facebook.com/profile.php?id=61559664455443"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Visit NextToEdit Facebook page - opens in new tab"
-              title="External link to NextToEdit Facebook"
+              aria-label="Besök NextToEdit Solutions Facebook sida - öppnas i ny flik"
+              title="Extern länk till NextToEdit Facebook"
               className="max-w-28 bg-white-50 text-gray-700 hover:text-gray-900 flex items-center gap-2 p-2 rounded-full focus:ring-2 focus:ring-cyan-500 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white"
             >
               Facebook <BsFacebook className="md:w-5 md:h-5" />
@@ -121,7 +121,7 @@ export default function Footer() {
             passHref
             className="text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 focus:underline focus:ring-2 focus:ring-cyan-500 transition cursor-pointer"
           >
-            FAQ
+            Frågor och svar
           </Link>
           <Link
             href="/cookiepolicy"

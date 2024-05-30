@@ -26,7 +26,7 @@ export default function AnnikSocialLinks() {
         rel="noopener noreferrer"
         target="_blank"
         aria-label="Boka möte med mig - öppnas i ny flik"
-        title="External link to Annikas contact form"
+        title="External länk till Annikas kontaktformulär"
       >
         Boka möte med mig{' '}
         <BsArrowRight className="opacity-70 group-hover:translate-x-5 transition" />
@@ -37,7 +37,7 @@ export default function AnnikSocialLinks() {
         className="group bg-rose-700 text-white hover:bg-red-950 px-5 py-2 sm:px-7 sm:py-3 flex items-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:hover:text-white-50 dark:hover:bg-zinc-700 dark:bg-gradient-to-br from-zinc-900 to-cyan-900"
         href="/AnnikaLindberg-CV1.2.pdf"
         download="AnnikaLindberg-CV.pdf"
-        aria-label="Download Annikas CV - opens in new tab"
+        aria-label="Ladda ner mitt CV som PDF - öppnas i ny flik"
       >
         Ladda ner mitt CV{' '}
         <HiDownload className="opacity-80 group-hover:translate-y- transition" />
@@ -52,7 +52,7 @@ export default function AnnikSocialLinks() {
           href="https://www.linkedin.com/in/annika-lindberg-frontend-developer/"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Visit Annikas Linkedin profile page - opens in new tab"
+          aria-label="Besök Annikas LinkedIn - öppnas i ny flik"
           title="External link to Annikas LinkedIn"
         >
           <BsLinkedin />
@@ -64,7 +64,7 @@ export default function AnnikSocialLinks() {
           target="_blank"
           rel="noopener noreferrer"
           title="External link to Annikas GitHub"
-          aria-label="Visit Annikas Github profile page - opens in new tab"
+          aria-label="Besök Annikas GitHub - öppnas i ny flik"
         >
           <FaGithubSquare />
         </Link>
