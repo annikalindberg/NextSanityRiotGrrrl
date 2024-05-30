@@ -48,8 +48,7 @@ const CookieBanner: React.FC = () => {
     window.gtag('consent', 'update', {
       analytics_storage: newValue,
     })
-    /*     console.log('Cookie Preferences Saved:', preferences)
-     */
+    console.log('Cookie Preferences Saved:', preferences)
   }
 
   const acceptAllCookies = () => {
@@ -85,7 +84,7 @@ const CookieBanner: React.FC = () => {
         analysera webbplatstrafik och ge bättre användarupplevelser. Genom att
         fortsätta använda denna webbplats samtycker du till vår användning av
         cookies. Läs mer i vår{' '}
-        <Link className="font-semibold text-[#8A2BE2]" href="/cookies">
+        <Link className="font-semibold text-[#8A2BE2]" href="/cookiepolicy">
           cookiepolicy
         </Link>
       </p>
