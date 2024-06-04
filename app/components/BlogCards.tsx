@@ -47,7 +47,7 @@ export default async function BlogCards() {
                 className="rounded-t-lg h-60 md:h-40 object-cover w-full"
               />
               <CardContent className="mt-5">
-                <h3 className="text-lg line-clamp-2 font-bold">{post.title}</h3>
+                <h2 className="text-lg line-clamp-2 font-bold">{post.title}</h2>
                 <p className="line-clamp-3 text-sm mt-2 text-gray-600 dark:text-gray-300">
                   {post.smallDescription}
                 </p>
