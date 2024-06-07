@@ -53,7 +53,7 @@ export default async function BlogCards() {
                 </p>
                 <Button asChild className="w-full mt-7">
                   <Link
-                    className="hover:underline"
+                    className="hover:underline text-xs"
                     href={`/blog/${post.currentSlug}`}
                   >
                     {post.title}
