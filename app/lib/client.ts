@@ -5,7 +5,7 @@ export const client = createClient({
   apiVersion: '2021-03-25',
   dataset: process.env.SANITY_DATASET!,
   projectId: process.env.SANITY_PROJECT_ID!,
-  useCdn: true,
+  useCdn: false,
 })
 
 const builder = imageUrlBuilder(client)
