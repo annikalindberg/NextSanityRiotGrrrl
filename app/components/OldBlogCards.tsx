@@ -1,5 +1,5 @@
 // components/BlogCards.tsx
-import { client, urlFor } from '../lib/client'
+/* import { client, urlFor } from '../lib/client'
 import Image from 'next/image'
 import { format } from 'date-fns'
 import Link from 'next/link'
@@ -62,3 +62,4 @@ export default async function BlogCards() {
     </div>
   )
 }
+ */

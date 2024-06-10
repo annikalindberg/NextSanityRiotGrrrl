@@ -1,8 +1,7 @@
 'use client'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import Check from '@/public/assets/check.svg'
-import Link from 'next/link'
+
 import { CTAButton } from '../cta-buttons'
 import annika from '@/public/images/annika.svg'
 import highfive from '@/public/images/highfive.svg'
