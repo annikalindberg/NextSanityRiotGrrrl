@@ -25,7 +25,7 @@ const ptSans = PT_Sans({
 export const metadata: Metadata = {
   title: 'NextToEdit Tech Solutions',
   description:
-    'NextToEdit Tech Solutions är en webbyrå som hjälper småföretag och föreningar att skapa hållbara och tillgängliga webbplatser. Vi gör webbplatser som är snabba, säkra och tillgängliga för alla. Våra prisplaner är tydliga och anpassade för småföretag och föreningar. Vi erbjuder även konsulttjänster inom webbutveckling och tillgänglighet.',
+    'Vi skapar hållbara och tillgängliga webbplatser. Vill du ha en hemsida som är kodad från grunden i de senaste teknikerna är det oss du ska kontakta. Våra prisplaner är tydliga och anpassade för småföretag och föreningar. Vi erbjuder även konsulttjänster inom webbutveckling och tillgänglighet.',
 }
 
 export default function RootLayout({
