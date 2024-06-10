@@ -1,11 +1,11 @@
-import { Card, CardContent } from '@/components/ui/card'
+/* import { Card, CardContent } from '@/components/ui/card'
 import { simpleBlogCard } from '../lib/interface'
 import { client, urlFor } from '../lib/client'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
-export const revalidate = 30 // revalidate at most 30 seconds // Add this line to revalidate the page every 30 seconds to keep the data fresh and up to date
+export const revalidate = 10
 
 async function getData() {
   const query = `
@@ -64,8 +64,10 @@ export default async function BlogCards() {
           ))}
         </div>
         {/*         <BlogCards />
-         */}{' '}
-      </section>
+         */ {
+  ;(' ')
+}
+/*     </section>
     </>
   )
-}
+} */

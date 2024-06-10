@@ -3,8 +3,8 @@ import { fullBlog } from '../../lib/interface'
 import Image from 'next/image'
 import { PortableText } from '@portabletext/react'
 import { format } from 'date-fns'
-import BlogCards from '../../components/BlogCards'
-import Link from 'next/link'
+/* import BlogCards from '../../components/BlogCards'
+ */ import Link from 'next/link'
 
 // Utility function to extract plain text from Portable Text
 function extractPlainText(blocks: any[]) {
@@ -158,7 +158,8 @@ export default async function BlogArticle({
         <h3 className="text-center text-3xl font-bold mt-5 mb-5">
           Läs de senaste inläggen
         </h3>
-        <BlogCards />
+        {/*         <BlogCards />
+         */}{' '}
       </section>
     </section>
   )
