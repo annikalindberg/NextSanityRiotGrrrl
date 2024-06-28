@@ -41,12 +41,7 @@ export default function DynamicForm({ params }: { params: { form: string } }) {
         </p>
         <p>
           {' '}
-          Vi kommer att meddela dig om du är en av de första 4 som bokar, och då
-          bli en av våra första kunder som kommer att erbjudas en
-          kvalitetshemsida som är SEO-optimerad, tillgänglighets-optimerad, med
-          unik design.{' '}
-        </p>{' '}
-        <p>Med 60% rabatt av ordinarie pris. </p>
+      Observera att detta är ett begränsat erbjudande och gäller bara de som är bland de första 4 att boka.{' '} Du får då en offert med 60% rabatt av ordinarie pris.{' '}
         <p>
           Blir du inte en av de första 4 så kommer du att få en offert med
           ordinarie pris efter att du skickat in din förfrågan.{' '}
