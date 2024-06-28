@@ -32,12 +32,12 @@ export default function DynamicForm({ params }: { params: { form: string } }) {
         <p className="text-gray-700 mt-6 dark:text-white/80">
           Fyll i formuläret nedan för att skicka en bokningsförfrågan.
         </p>
-        <h2>Öppningserbjudande</h2>
+        <h2>Sommar-erbjudande</h2>
         <p className="text-gray-700 mt-6 dark:text-white/80">
-          För att ta del av vårat öppningserbjudande där vi ger 60% rabatt till
+          För att ta del av vårat sommar-erbjudande där vi ger 60% rabatt till
           de första som bokar vårt paket &quot;Kickstart - snabbt och
-          enkelt&quot; - skriv in rabattkoden &quot;öppningserbjudande -
-          hemsida&quot; i meddelandefältet.{' '}
+          enkelt&quot; - skriv in rabattkoden &quot;semester&quot; i
+          meddelandefältet.{' '}
         </p>
         <p>
           {' '}

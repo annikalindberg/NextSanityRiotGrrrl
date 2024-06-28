@@ -93,7 +93,7 @@ const Webbutveckling = () => (
             ],
 
             buttonLabel:
-              'Bokningsförfrågan av Kickstart-paketet (öppningserbjudande)',
+              'Bokningsförfrågan av Kickstart-paketet (sommar-ebjudande)',
             bgClass: 'bg-stone-50 dark:bg-rose-950',
           },
           {

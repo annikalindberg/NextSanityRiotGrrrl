@@ -49,7 +49,7 @@ export function Audits() {
               title: 'Kostnadsfri Audit',
               description:
                 'Perfekt för dig som är osäker på hur din hemsida presterar tillgänglighetsmässigt och vill ha en första överblick.',
-              price: 'öppningserbjudande',
+              price: 'sommar-erbjudande',
               offer: 'Kostnadsfritt',
               linethroughPrice: '4 000 kr',
               features: [

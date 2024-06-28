@@ -5,8 +5,8 @@ import erbjudande from '@/public/images/erbjudande2.svg'
 
 const tjanst = [
   {
-    title: 'Öppningserbjudande hemsida',
-    description: `Vi har ett öppningserbjudande för dig som behöver en ny hemsida. De 4 första som bokar vårt paket "Kickstart - snabbt och enkelt", kommer att få 60% (!) i rabatt på ordinarie pris.
+    title: 'Sommar-erbjudande hemsida',
+    description: `Vi har ett sommar-erbjudande för dig som behöver en ny hemsida. De 4 första som bokar vårt paket "Kickstart - snabbt och enkelt", kommer att få 60% (!) i rabatt på ordinarie pris.
 Så är du sugen på att få en kvalitetshemsida levererad inom 2 veckor, SEO-optimerad, tillgänglighets-optimerad, unik design med 60% rabatt av ordinarie pris?
 Det enda vi vill ha i utbyte är chansen att få några fina vitsord av dig (om du blir nöjd såklart, vilket vi lovar att du kommer bli) och att du kanske vill rekommendera oss vidare sen 🙏🏻
 
