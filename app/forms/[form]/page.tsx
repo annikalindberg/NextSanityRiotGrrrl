@@ -54,13 +54,13 @@ export default function DynamicForm({ params }: { params: { form: string } }) {
         <p className="text-gray-700 mt-6 dark:text-white/80">
           Vi återkommer alltid till dig inom 24 timmar.
         </p>
-        <h2>Kostnadsfri tillgänglighets-audit</h2>
+        {/*        <h2>Kostnadsfri tillgänglighets-audit</h2>
         <p className="text-gray-700 mt-6 dark:text-white/80">
           Gäller ditt ärende en bokning av &quot;kostnadsfri audit&quot; kommer
           vi att skicka en sammanställlning med resultat och förslag på åtgärder
           inom 1-5 arbetsdagar, till den e-post adress du uppger. Vid oväntat
           högt tryck kan det ta längre tid.{' '}
-        </p>
+        </p> */}
         {/*         <p className="text-gray-700 mt-6 dark:text-white/80">
           Please contact me directly at{' '}
           <a

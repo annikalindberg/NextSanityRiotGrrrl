@@ -22,7 +22,10 @@ export default function ErbjudandeCards() {
     <div className=" md:mt-5 pb-10">
       <section className="max-w-7xl mx-auto px-4">
         <h1 className="mt-2 text-3xl font-bold text-center">
-          Öppningserbjudande 60% rabatt
+          Sommar-erbjudande{' '}
+          <span aria-hidden className="text-rose-900">
+            ☀️
+          </span>
         </h1>
         <section className="max-w-7xl mx-auto px-4">
           <div className="flex justify-center mt-5 mb-5">
@@ -39,20 +42,25 @@ export default function ErbjudandeCards() {
               <CardContent className="p-5">
                 <h3 className="text-lg font-bold">{tjanst[0].title}</h3>
                 <p>
-                  Vi har ett mycket förmånligt öppningserbjudande för dig som
-                  behöver en ny hemsida.{' '}
+                  Är du egenföretagare? Behöver du ny hemsida? Tänkte du bygga
+                  den själv på &rdquo;semestern&rdquo; ? för dig som behöver en
+                  ny hemsida.{' '}
                 </p>
-                <h3>Hur gör jag för att ta del av erbjudandet? </h3>
+                <h3>Ta del av erbjudandet: </h3>
 
                 <p className="text-sm mt-2 text-gray-600 dark:text-gray-300">
-                  Enkelt! Bli en av de 4 första som bokar vårt paket
-                  &quot;Kickstart - snabbt och enkelt&quot;, kommer att få 60% i
-                  rabatt på ordinarie pris.
+                  1. Klicka på &ldquo;Bokningsförfrågan av
+                  &ldquo;Kickstart-paketet - snabbt och enkelt&rdquo;{' '}
                 </p>
                 <p className="text-sm mt-2 text-gray-600 dark:text-gray-300">
-                  Så är du sugen på att få en kvalitetshemsida levererad inom 2
-                  veckor, SEO-optimerad, tillgänglighets-optimerad, unik design
-                  med 60% rabatt av ordinarie pris?{' '}
+                  {' '}
+                  2. Invänta svar (inom 24 h)
+                </p>
+                <p className="text-sm mt-2 text-gray-600 dark:text-gray-300">
+                  Blir du en av de första 3 som skickar förfrågan får du
+                  Kickstart-paketet (med allt som ingår) för ENDAST 7 000 sek
+                  (inklusive moms). Vilket är mer än 50% rabatt på ordinarie
+                  pris.{' '}
                 </p>
                 <p className="text-sm mt-2 text-gray-600 dark:text-gray-300">
                   Det enda vi vill ha i utbyte är chansen att få några fina
