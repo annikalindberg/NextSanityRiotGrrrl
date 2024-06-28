@@ -39,9 +39,12 @@ export default function DynamicForm({ params }: { params: { form: string } }) {
           enkelt&quot; - skriv in rabattkoden &quot;semester&quot; i
           meddelandefältet.{' '}
         </p>
-        <p>
+        <p className="text-gray-700 mt-6 dark:text-white/80">
           {' '}
-      Observera att detta är ett begränsat erbjudande och gäller bara de som är bland de första 4 att boka.{' '} Du får då en offert med 60% rabatt av ordinarie pris.{' '}
+          Observera att detta är ett begränsat erbjudande och gäller bara de som
+          är bland de första 4 att boka. Du får då en offert med 60% rabatt av
+          ordinarie pris.{' '}
+        </p>
         <p>
           Blir du inte en av de första 4 så kommer du att få en offert med
           ordinarie pris efter att du skickat in din förfrågan.{' '}
@@ -131,7 +134,7 @@ export default function DynamicForm({ params }: { params: { form: string } }) {
 
           <button
             type="submit"
-            className="bg-gradient-to-r from-green-200 via-red-200 to-purple-200 text-slate-950 font-bold py-3 rounded-lg mt-5 focus: "
+            className="bg-gradient-to-r from-green-200 via-red-200 to-purple-200 text-slate-950 font-bold py-3 rounded-lg mt-5 focus:  "
           >
             Skicka förfrågan
           </button>

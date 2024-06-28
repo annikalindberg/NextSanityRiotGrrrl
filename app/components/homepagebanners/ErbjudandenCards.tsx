@@ -29,7 +29,7 @@ export default function ErbjudandeCards() {
         </h1>
         <section className="max-w-7xl mx-auto px-4">
           <div className="flex justify-center mt-5 mb-5">
-            <Card className="w-full max-w-4xl bg-gradient-to-t from-rose-100 to-teal-100 dark:bg-gradient-to-t dark:from-indigo-950 dark:to-teal-950 border-4 border-rose-900 dark:border-fuchsia-100 shadow-lg transform transition-transform hover:scale-105 rounded-lg overflow-hidden">
+            <Card className="w-full text-center max-w-4xl bg-gradient-to-t from-rose-100 to-teal-100 dark:bg-gradient-to-t dark:from-indigo-950 dark:to-teal-950 border-4 border-rose-900 dark:border-fuchsia-100 shadow-lg transform transition-transform hover:scale-105 rounded-lg overflow-hidden">
               <div className="relative w-full h-64">
                 <Image
                   src={erbjudande}
