@@ -29,7 +29,7 @@ export default function ErbjudandeCards() {
         </h1>
         <section className="max-w-7xl mx-auto px-4">
           <div className="flex justify-center mt-5 mb-5">
-            <Card className="w-full text-center max-w-4xl bg-gradient-to-t from-rose-100 to-teal-100 dark:bg-gradient-to-t dark:from-indigo-950 dark:to-teal-950 border-4 border-rose-900 dark:border-fuchsia-100 shadow-lg transform transition-transform hover:scale-105 rounded-lg overflow-hidden">
+            <Card className="w-full max-w-4xl bg-gradient-to-t from-rose-100 to-teal-100 dark:bg-gradient-to-t dark:from-indigo-950 dark:to-teal-950 border-4 border-rose-900 dark:border-fuchsia-100 shadow-lg transform transition-transform hover:scale-105 rounded-lg overflow-hidden">
               <div className="relative w-full h-64">
                 <Image
                   src={erbjudande}
@@ -43,11 +43,20 @@ export default function ErbjudandeCards() {
                 <h3 className="text-lg font-bold">{tjanst[0].title}</h3>
                 <p>
                   Är du egenföretagare? Behöver du ny hemsida? Tänkte du bygga
-                  den själv på &rdquo;semestern&rdquo; ? för dig som behöver en
-                  ny hemsida.{' '}
+                  den själv på &rdquo;semestern&rdquo; för att spara pengar? Då
+                  har vi ett sommar-erbjudande för dig som kommer göra att du
+                  sparar <strong> både</strong> tid och pengar.
+                </p>
+                <p>
+                  Och kanske tar dig an hösten med lite mera energi, och{' '}
+                  <strong>betydligt</strong> starkare digital närvaro.
+                </p>{' '}
+                <p>Vad väntar du på?</p>{' '}
+                <p>
+                  Först till kvarn gäller (eftersom JAG också kommer vilja ta
+                  lite semester <span aria-hidden>😉</span>)
                 </p>
                 <h3>Ta del av erbjudandet: </h3>
-
                 <p className="text-sm mt-2 text-gray-600 dark:text-gray-300">
                   1. Klicka på &ldquo;Bokningsförfrågan av
                   &ldquo;Kickstart-paketet - snabbt och enkelt&rdquo;{' '}
@@ -56,7 +65,6 @@ export default function ErbjudandeCards() {
                   3. Fyll i din information och skriv in rabattkoden
                   &ldquo;semester&rdquo; i meddelandefältet.{' '}
                 </p>
-
                 <p className="text-sm mt-2 text-gray-600 dark:text-gray-300">
                   {' '}
                   3. Invänta svar (inom 24 h)
@@ -74,7 +82,7 @@ export default function ErbjudandeCards() {
                   sen 🙏🏻
                 </p>
                 <CardButton
-                  className="w-full mt-5 bg-rose-900 text-white py-2 px-4 rounded hover:bg-rose-800 dark:bg-fuchsia-100 dark:text-slate-900 dark:hover:bg-fuchsia-200"
+                  className="w-full mt-5 text-center bg-rose-900 text-white py-2 px-4 rounded hover:bg-rose-800 dark:bg-fuchsia-100 dark:text-slate-900 dark:hover:bg-fuchsia-200"
                   href={tjanst[0].url}
                 >
                   Ta mig till {tjanst[0].title}
