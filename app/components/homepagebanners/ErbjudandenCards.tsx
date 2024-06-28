@@ -53,8 +53,13 @@ export default function ErbjudandeCards() {
                   &ldquo;Kickstart-paketet - snabbt och enkelt&rdquo;{' '}
                 </p>
                 <p className="text-sm mt-2 text-gray-600 dark:text-gray-300">
+                  3. Fyll i din information och skriv in rabattkoden
+                  &ldquo;semester&rdquo; i meddelandefältet.{' '}
+                </p>
+
+                <p className="text-sm mt-2 text-gray-600 dark:text-gray-300">
                   {' '}
-                  2. Invänta svar (inom 24 h)
+                  3. Invänta svar (inom 24 h)
                 </p>
                 <p className="text-sm mt-2 text-gray-600 dark:text-gray-300">
                   Blir du en av de första 3 som skickar förfrågan får du
