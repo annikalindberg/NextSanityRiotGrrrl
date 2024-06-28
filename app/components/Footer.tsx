@@ -65,7 +65,7 @@ export default function Footer() {
             passHref
             className="text-lg  text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 focus:underline focus:ring-2 focus:ring-cyan-500 transition cursor-pointer"
           >
-            Sommar-erbjudande - 60% rabatt på hemsidor
+            Sommar-erbjudande ☀️ - 50% rabatt på hemsidor
           </Link>
 
           <SmallCTAButton
