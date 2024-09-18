@@ -77,38 +77,46 @@ export default function OmOss() {
                 <AccordionContent>
                   <h3> Från akademisk kunskap till teknisk skicklighet</h3>
                   <p className={classes.textSmall}>
-                    Annika kombinerar sin akademiska bakgrund inom beteende- och
-                    genusvetenskap med en passion för teknik och kodning. Med
-                    mer än femton års erfarenhet inom tillgänglighetsarbete,
-                    projektledning och utbildning är hon en expert på att skapa
-                    inkluderande digitala miljöer som välkomnar alla användare.{' '}
+                    Som frontendutvecklare, UX-designer och utbildare har jag en
+                    unik kombination av teknisk kompetens och pedagogisk
+                    erfarenhet som gör mig särskilt lämpad att undervisa i
+                    digital tillgänglighet. Min resa började i offentlig och
+                    ideell sektor, där jag under över ett decennium arbetade med
+                    projektledning och utbildning. Genom detta lärde jag mig att
+                    hantera komplexa processer och att anpassa utbildning efter
+                    olika målgruppers behov.{' '}
                   </p>
                   <h3> En banbrytande kraft för jämlikhet och inkludering</h3>
                   <p className={classes.textSmall}>
-                    Med en gedigen akademisk grund inom beteende- och
-                    genusvetenskap har Annika dedikerat sig åt att främja
-                    inkludering, jämlikhet och påverkansarbete. Tack vare hennes
-                    omfattande erfarenhet av att skapa välkomnande digitala
-                    miljöer är hon en ledare i att skapa webbplatser som
-                    välkomnar alla användare, samt att leda projekt och
-                    utbildningar inom tillgänglighet.{' '}
+                    När jag sedan övergick till tech-världen, öppnade det nya
+                    möjligheter att kombinera min passion för frontendutveckling
+                    och UX-design med min erfarenhet av pedagogik. I min roll
+                    som lärare inom frontendutveckling har jag haft möjligheten
+                    att undervisa i teknologier som JavaScript, TypeScript och
+                    React, samtidigt som jag introducerat mina studenter till
+                    grunderna i användbarhet och tjänstedesigndesign.{' '}
                   </p>
                   <h3> Teknisk expertis i praktiken</h3>
                   <p className={classes.textSmall}>
-                    Annikas bakgrund från den ideella sektorn, där hon har lett
-                    utvecklingen av digitala plattformar och
-                    utbildningsverksamhet, gör henne till en ovärderlig resurs.
-                    Hon är tekniskt kompetent både inom Frontend- och
-                    fullstack-utveckling och är passionerad för att integrera
-                    tillgänglighet i alla faser av webbutvecklingen, från design
-                    till kodning och slutproduktion.{' '}
+                    UX-design för mig handlar om att skapa digitala lösningar
+                    som alla användare, inte bara kan använda, utan vill
+                    använda. Tillgänglighet är en central del av mitt arbete,
+                    både som utvecklare och utbildare. Jag brinner för att lära
+                    ut hur man bygger inkluderande webbplatser som fungerar för
+                    alla, oavsett förmåga. Jag tror starkt på att kodning och
+                    UX-design är färdigheter som kan läras av alla, och jag har
+                    en särskild passion för att stötta kvinnor och
+                    underrepresenterade grupper att ta klivet in i tech-världen.{' '}
                   </p>
                   <p className={classes.textSmall}>
                     {' '}
-                    Tekniskt är hon lika hemma i Frontend som i
-                    fullstack-utveckling och brinner för att integrera
-                    tillgänglighet i alla faser av webbutvecklingen, från design
-                    och flödes-scheman till kod och slutlig produktion.
+                    Min undervisningsfilosofi bygger på att skapa en trygg och
+                    inspirerande lärmiljö där det är okej att göra misstag.
+                    Genom att ge studenterna verktygen och självförtroendet de
+                    behöver för att experimentera och misslyckas, hjälper jag
+                    dem att utvecklas både tekniskt och kreativt. Att vara den
+                    förebild jag själv saknade när jag började är en av mina
+                    största drivkrafter.
                   </p>
                 </AccordionContent>
               </AccordionItem>

@@ -28,20 +28,30 @@ export default function About() {
         15 + års erfarenhet av tillgänglighetsarbete, projektledning och
         utbildning
       </h3>
-      <p className="mt-4">
-        För mig är tillgänglighet en naturlig del av webbutvecklings alla faser,
-        från design till utveckling och testning. Jag praktiserar tillgänglighet
-        både i kod och design för att uppfylla aktuella standarder, men har även
-        lång erfarenhet av att använda ett inkluderande språk i allt från
-        copywriting, design och kommunikation.
+      <p className="mt-8">
+        Jag är en driven utvecklare med fokus på tillgänglighet och
+        användbarhet. Jag har en passion för att skapa webbplatser som är
+        optimerade utifrån tillgänglighet, SEO och användbarhet. Jag är grundare
+        av NextToEdit Tech Solutions och är även konsult inom utbildaning
+        (frontend och UX) tillgänglighetsgranskning av webbplatser och
+        frontendutveckling. Kontakta mig för kontrakt eller samarbete.
       </p>
+
       <p className="font-medium mt-4">
-        Med en bakgrund som utbildare och projektledare inom offentlig sektor
-        och ideell sektor, har jag alltid drivits av att möta och lösa
-        utmaningar. Efter över tio år i dessa roller, tog jag klivet in i
-        tech-världen och har inte sett tillbaka sedan dess. Min dagliga
-        drivkraft är passionen för kodning och att skapa användbara,
-        tillgängliga digitala lösningar.
+        Med en bakgrund som utbildare och projektledare inom offentlig och
+        ideell sektor har jag alltid drivits av att möta och lösa utmaningar.
+        Efter över tio år i dessa roller tog jag steget in i tech-världen,
+        vilket öppnade många nya dörrar och oanade möjligheter. I min roll som
+        utbildare inom frontendutveckling kan jag kombinera min erfarenhet inom
+        pedagogik, processledning och facilitering med min stora passion för
+        frontendutveckling, UX-design och tillgänglighet. Jag är övertygad om
+        att alla, med rätt förutsättningar, kan lära sig att koda. Min största
+        drivkraft är att motivera, introducera och inspirera särskilt kvinnor,
+        unga tjejer och underrepresenterade grupper att våga ta steget in i
+        denna värld och visa att det går – så länge man hittar sitt eget sätt
+        att känna trygghet och vågar testa och (miss)lyckas. Att kunna vara den
+        förebild jag själv saknade när jag var yngre är en av mina största
+        drivkrafter.
       </p>
       <hr className="w-10 h-1 mx-auto my-8 bg-cyan-600 border-0 rounded md:my-12 dark:bg-pink-500" />
       <h3 className="text-2xl text-center font-bold mb-8 mt-8 mr-5 text-cyan-800 dark:text-cyan-200">

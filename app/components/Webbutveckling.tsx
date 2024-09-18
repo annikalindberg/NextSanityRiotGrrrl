@@ -5,8 +5,8 @@ import Link from 'next/link'
 import classes from '../components/pricing.module.css'
 import Check from '@/public/assets/check.svg'
 import uncheck from '@/public/assets/uncheck.svg'
-import ErbjudandeCards from './homepagebanners/ErbjudandenCards'
-
+/* import ErbjudandeCards from './homepagebanners/ErbjudandenCards'
+ */
 const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, '-')
 
 // Simplified animation object
@@ -21,7 +21,8 @@ const animationProps = {
 
 const Webbutveckling = () => (
   <>
-    <ErbjudandeCards />
+    {/*     <ErbjudandeCards />
+     */}{' '}
     <motion.div
       {...animationProps}
       transition={{ delay: 0.175 }}
