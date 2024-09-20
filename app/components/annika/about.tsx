@@ -94,7 +94,7 @@ export default function About() {
         >
           <a
             className="group mb-6 bg-red-50 hover:bg-red-100 px-5 py-2 md:px-7 md:py-3 flex items-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:hover:text-white-50 dark:hover:bg-zinc-700 dark:bg-gradient-to-br from-zinc-900 to-cyan-900"
-            href="/AnnikaLindberg-CV1.2.pdf"
+            href="/AnnikaLindberg-CV1.3.pdf"
             download="AnnikaLindberg-CV.pdf"
             aria-label="Ladda ner mitt CV som PDF - öppnas i ny flik"
           >
