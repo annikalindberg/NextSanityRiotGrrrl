@@ -25,7 +25,7 @@ export default function DynamicForm({ params }: { params: { form: string } }) {
         <p className="text-gray-700 mt-6 dark:text-white/80">
           Fyll i formuläret nedan för att skicka en bokningsförfrågan.
         </p>
-        <h2>Sommar-erbjudande</h2>
+        {/*   <h2>Sommar-erbjudande</h2>
         <p className="text-gray-700 mt-6 dark:text-white/80">
           För att ta del av vårat sommar-erbjudande där vi ger 50% rabatt till
           de första som bokar vårt paket &quot;Kickstart - snabbt och
@@ -40,7 +40,7 @@ export default function DynamicForm({ params }: { params: { form: string } }) {
         <p>
           Blir du inte en av de första 4 så kommer du att få en offert med
           ordinarie pris efter att du skickat in din förfrågan.
-        </p>
+        </p> */}
         <p className="text-gray-700 mt-6 dark:text-white/80">
           Vi återkommer alltid till dig inom 24 timmar.
         </p>

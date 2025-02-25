@@ -60,13 +60,13 @@ export default function Footer() {
         </div>
         <div className="flex flex-col  space-y-2">
           <h3 className="text-lg md:text-xl dark:text-gray-300">Erbjudanden</h3>
-          <Link
+          {/*      <Link
             href="/erbjudanden"
             passHref
             className="text-lg  text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 focus:underline focus:ring-2 focus:ring-cyan-500 transition cursor-pointer"
           >
             Sommar-erbjudande ☀️ - 50% rabatt på hemsidor
-          </Link>
+          </Link> */}
 
           <SmallCTAButton
             title="Kostnadsfri Audit"
